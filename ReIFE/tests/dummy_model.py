@@ -1,6 +1,9 @@
 from ReIFE.base_llm import BaseLLMAPI
 
 
+TARGET_TOKEN = "by"
+
+
 class DummyAPI(BaseLLMAPI):
     def __init__(
         self,
@@ -59,10 +62,32 @@ class DummyAPI(BaseLLMAPI):
             list[dict]: The response from the API service. Each response is a dictionary containing the generated text ("text"), log probabilities ("logprobs", optional), and tokens ("tokens", optional).
         """
 
+        user_content = ""
+        for message in prompt:
+            if message.get("role") == "user":
+                user_content = message.get("content", "")
+                break
+
+        dataset_section = user_content
+        marker = "# Instruction:\n"
+        if marker in dataset_section:
+            dataset_section = dataset_section.split(marker, 1)[1]
+
+        lowered = dataset_section.lower()
+        tokens = (
+            lowered.replace(",", " ")
+            .replace(".", " ")
+            .replace("'", " ")
+            .replace("\n", " ")
+            .split()
+        )
+
+        winner = "Output (b)" if TARGET_TOKEN in tokens else "Output (a)"
+
         choice = {
-            "text": "Output (a)",
+            "text": winner,
             "logprobs": None,
             "tokens": None,
         }
-        
+
         return [choice]

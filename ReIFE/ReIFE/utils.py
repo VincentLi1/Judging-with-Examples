@@ -1,29 +1,35 @@
 import json
+import os
 
 DATASETS = [
     "llmbar_adversarial",
     "llmbar_natural",
     "mtbench",
     "instrusum",
+    "dummy_pairwise",
 ]
+
 
 def get_dataset_path(dataset_name: str) -> str:
     if dataset_name not in DATASETS:
         message = f"Dataset {dataset_name} not found"
         raise ValueError(message)
-    return f"data/{dataset_name}.json"
+    base_dir = os.path.join(os.path.dirname(__file__), "data")
+    return os.path.join(base_dir, f"{dataset_name}.json")
+
 
 def open_utf8(file_path, mode="r"):
     """Open a file in UTF-8 encoding"""
     return open(file_path, mode, encoding="utf-8")
 
+
 def read_json(file_path: str) -> list[dict]:
     """
     Read a JSON/JSONL file and return its contents as a list of dictionaries.
-    
+
     Parameters:
         file_path (str): The path to the JSON file.
-        
+
     Returns:
         list[dict]: The contents of the JSON file as a list of dictionaries.
     """
@@ -35,5 +41,4 @@ def read_json(file_path: str) -> list[dict]:
         with open_utf8(file_path) as f:
             data = json.load(f)
         return data
-
 

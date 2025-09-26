@@ -1,0 +1,62 @@
+[
+  {
+    "instruction": "Summarize the meeting notes into a short paragraph.",
+    "output_1": "The team discussed timelines, blockers, and assigned follow-up tasks.",
+    "output_2": "The meeting covered project updates and concluded with action items.",
+    "winner": 1
+  },
+  {
+    "instruction": "Rewrite the sentence using active voice.",
+    "output_1": "The committee approved the new budget proposal yesterday.",
+    "output_2": "Yesterday, the new budget proposal was approved by the committee.",
+    "winner": 2
+  },
+  {
+    "instruction": "Provide a polite decline to an invitation.",
+    "output_1": "Thank you so much for inviting me! Unfortunately I have a prior commitment that day, but I hope you all have a wonderful time.",
+    "output_2": "I can't go.",
+    "winner": 1
+  },
+  {
+    "instruction": "Choose the more helpful study tip.",
+    "output_1": "Break your study sessions into 25-minute focused blocks with 5-minute breaks to maintain concentration.",
+    "output_2": "Study more.",
+    "winner": 1
+  },
+  {
+    "instruction": "Select the more concise summary of a book chapter.",
+    "output_1": "Chapter 5 explains how the protagonist overcomes her fear of failure by taking gradual risks and reflecting on setbacks.",
+    "output_2": "The chapter talks about things happening.",
+    "winner": 1
+  },
+  {
+    "instruction": "Choose the clearer bug report.",
+    "output_1": "When I click 'Submit' on the checkout page, the spinner never disappears and the network console shows a 500 error from /api/order.",
+    "output_2": "Checkout is broken.",
+    "winner": 1
+  },
+  {
+    "instruction": "Pick the answer that better explains a recipe step.",
+    "output_1": "After saut\u00e9ing the onions until translucent, add the garlic and cook for another minute before stirring in the tomatoes.",
+    "output_2": "Cook everything together.",
+    "winner": 1
+  },
+  {
+    "instruction": "Pick the healthier lunch suggestion.",
+    "output_1": "Grilled chicken salad with mixed greens, cherry tomatoes, cucumbers, and a light vinaigrette.",
+    "output_2": "Large pepperoni pizza.",
+    "winner": 1
+  },
+  {
+    "instruction": "Choose the better motivational quote.",
+    "output_1": "Success is the sum of small efforts, repeated day in and day out.",
+    "output_2": "Win or lose.",
+    "winner": 1
+  },
+  {
+    "instruction": "Select the more precise weather forecast.",
+    "output_1": "Expect scattered showers in the afternoon with highs around 72\u00b0F and light winds from the west.",
+    "output_2": "It might rain.",
+    "winner": 1
+  }
+]
