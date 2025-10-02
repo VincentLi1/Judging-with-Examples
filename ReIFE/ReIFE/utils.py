@@ -7,6 +7,7 @@ DATASETS = [
     "mtbench",
     "instrusum",
     "dummy_pairwise",
+    "dummy_pointwise",
 ]
 
 
@@ -41,4 +42,3 @@ def read_json(file_path: str) -> list[dict]:
         with open_utf8(file_path) as f:
             data = json.load(f)
         return data
-

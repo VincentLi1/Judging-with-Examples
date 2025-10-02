@@ -1,0 +1,3 @@
+[INFO] 2025-10-01 08:35:21,076 Logging to /nfs/roberts/project/pi_ac3458/vl298/Prompt-Perturbation/logs/pointwise_pipeline_20251001-083521_disable_prompt_perturbation-False_overwrite_ok-True_use_dummy_model-False.log
+[INFO] 2025-10-01 08:35:21,076 Prompt perturbation enabled: True
+[DEBUG] 2025-10-01 08:35:23,314 PyTorch version 2.4.0+cu121 available.
