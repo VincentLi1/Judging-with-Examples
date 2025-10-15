@@ -1,17 +1,31 @@
-from transformers import (
-    AutoTokenizer,
-    AutoModelForCausalLM,
-)
+try:
+    from transformers import AutoTokenizer, AutoModelForCausalLM
+except ModuleNotFoundError:
+    AutoTokenizer = AutoModelForCausalLM = None  # type: ignore
+
 import torch
-import vllm
-from vllm import LLM, SamplingParams
-from tqdm import tqdm
+
+try:
+    import vllm
+    from vllm import LLM, SamplingParams
+except ModuleNotFoundError:
+    vllm = None  # type: ignore
+    LLM = SamplingParams = None  # type: ignore
+
+try:
+    from tqdm import tqdm
+except ModuleNotFoundError:
+    def tqdm(iterable, **kwargs):
+        return iterable
 from abc import ABC, abstractmethod
 from multiprocessing.dummy import Pool as ThreadPool
 from functools import partial
 import time
 
-vllm_version = vllm.__version__
+if vllm is not None:
+    vllm_version = vllm.__version__
+else:
+    vllm_version = "0"
 
 
 class BaseLLM(ABC):
@@ -23,6 +37,9 @@ class BaseLLM(ABC):
             model_pt (str): The path to the pre-trained model.
             device (str, optional): The device to use for inference. Defaults to "auto".
         """
+
+        if AutoTokenizer is None or AutoModelForCausalLM is None:
+            raise ModuleNotFoundError("transformers is required to instantiate BaseLLM")
 
         self.device = device
         self.tokenizer = AutoTokenizer.from_pretrained(model_pt)
@@ -166,6 +183,9 @@ class BaseVLLM(ABC):
             enforce_eager (bool, optional): Whether to enforce eager execution. Defaults to False.
             tokenizer_mode (str, optional): The tokenizer mode. Defaults to "slow".
         """
+
+        if AutoTokenizer is None or LLM is None:
+            raise ModuleNotFoundError("transformers and vllm are required to instantiate BaseVLLM")
 
         tokenizer = AutoTokenizer.from_pretrained(model_pt, use_fast=False, trust_remote_code=True)
         self.model = LLM(

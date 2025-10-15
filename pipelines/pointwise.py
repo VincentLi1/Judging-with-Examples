@@ -22,6 +22,7 @@ from prompt_processors import (
     BiGGenPromptProcessor,
     FLASKPromptProcessor,
     LLMGraderPromptProcessor,
+    PairwiseComparisonPromptProcessor,
     PairwisePointwisePromptProcessor,
     PromptExample,
     PromptProcessor,

@@ -1,10 +1,26 @@
 from .registry import register_parser, register_method
 import numpy as np
-from scipy.special import logsumexp
-from ..base_llm import BaseLLM, BaseVLLM
+try:
+    from scipy.special import logsumexp
+except ModuleNotFoundError:
+    def logsumexp(values):
+        array = np.array(values)
+        max_val = np.max(array)
+        return max_val + np.log(np.sum(np.exp(array - max_val)))
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from ..base_llm import BaseLLM, BaseVLLM
+else:
+    BaseLLM = BaseVLLM = object
+
 from .utils import prompt_to_chatml, open_utf8
 import json
-from tqdm import tqdm
+try:
+    from tqdm import tqdm
+except ModuleNotFoundError:
+    def tqdm(iterable, **kwargs):
+        return iterable
 import torch
 
 

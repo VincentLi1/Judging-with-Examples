@@ -10,7 +10,7 @@ import re
 import sys
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, List, Optional, Sequence, Tuple
+from typing import Callable, Dict, List, Optional, Sequence, Tuple
 
 import torch
 
@@ -18,7 +18,11 @@ PROJECT_ROOT = Path(__file__).resolve().parent
 if str(PROJECT_ROOT.parent) not in sys.path:
     sys.path.append(str(PROJECT_ROOT.parent))
 
-from evaluation_interfaces import PointwiseEval
+REIFE_ROOT = PROJECT_ROOT / "ReIFE"
+if str(REIFE_ROOT) not in sys.path:
+    sys.path.append(str(REIFE_ROOT))
+
+from ReIFE.methods.base_pointwise import pointwise_eval
 from data_loaders import (
     BiGGenDatasetLoader,
     ChatbotArenaLoader,
@@ -138,10 +142,10 @@ def create_model(use_dummy: bool) -> Tuple[object, str]:
     return load_real_model()
 
 
-def log_callable_metadata(model_name: str, eval_callable: PointwiseEval) -> None:
+def log_callable_metadata(model_name: str, eval_callable: Callable[..., None]) -> None:
     import inspect
 
-    target = eval_callable._eval_fn  # type: ignore[attr-defined]
+    target = getattr(eval_callable, "_eval_fn", eval_callable)
     logging.info("Using model: %s", model_name)
     logging.debug("Evaluator target: %s", target)
     logging.debug("Signature: %s", inspect.signature(target))
@@ -344,7 +348,7 @@ def main() -> None:
     )
 
     model, model_name = create_model(args.use_dummy_model)
-    eval_callable = PointwiseEval()
+    eval_callable = pointwise_eval
     log_callable_metadata(model_name, eval_callable)
 
     reife_root = PROJECT_ROOT / "ReIFE"
