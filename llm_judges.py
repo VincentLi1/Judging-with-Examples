@@ -19,6 +19,75 @@ import json
 
 from data_models import JudgePrediction, PointwiseScore
 
+
+def _prepare_payload(examples: Iterable[PromptExample]) -> Tuple[List[PromptExample], List[dict]]:
+    """Return the examples and their serialisable payload representation."""
+
+    example_list = list(examples)
+    payload = [
+        {
+            "id": example.id,
+            "instruction": example.instruction,
+            "output": example.output,
+            "metadata": example.metadata,
+        }
+        for example in example_list
+    ]
+    return example_list, payload
+
+
+def _run_callable(evaluator: Callable[[], None]) -> None:
+    """Execute evaluator while capturing stdout for debug logging."""
+
+    buffer = io.StringIO()
+    with redirect_stdout(buffer):
+        evaluator()
+    emitted = buffer.getvalue().strip()
+    if emitted:
+        logging.debug(emitted)
+
+
+def _load_predictions(result_path: str) -> List[JudgePrediction]:
+    """Load raw JSONL predictions and convert them to JudgePrediction objects."""
+
+    from ReIFE.utils import open_utf8
+
+    with open_utf8(result_path) as handle:
+        return [JudgePrediction.from_dict(json.loads(line)) for line in handle]
+
+
+def _parse_predictions(
+    predictions: List[JudgePrediction],
+    examples: List[PromptExample],
+    parse_fn: Callable[[JudgePrediction], Tuple[PointwiseScore, bool]],
+) -> int:
+    """Apply the parser and merge metadata, returning the failure count."""
+
+    fails = 0
+    for prediction, example in zip(predictions, examples):
+        if not prediction.metadata:
+            prediction.metadata = copy.deepcopy(example.metadata)
+        else:
+            merged = copy.deepcopy(example.metadata)
+            merged.update(prediction.metadata)
+            prediction.metadata = merged
+        if not prediction.id:
+            prediction.id = example.id
+        _, fail = parse_fn(prediction)
+        fails += int(fail)
+    return fails
+
+
+def _write_predictions(result_path: str, predictions: List[JudgePrediction]) -> None:
+    """Rewrite the JSONL predictions to disk in a normalised format."""
+
+    from ReIFE.utils import open_utf8
+
+    with open_utf8(result_path, "w") as handle:
+        for record in predictions:
+            print(json.dumps(record.to_dict()), file=handle)
+
+
 class LLMJudge(ABC):
     """Abstract interface for running evaluation models."""
 
@@ -55,57 +124,24 @@ class ReIFEPointwiseJudge(LLMJudge):
     ) -> Tuple[List[JudgePrediction], int]:
         """Execute the pointwise evaluation and parse the resulting records."""
 
-        from ReIFE.utils import open_utf8
-
-        example_list = list(examples)
-        data = [
-            {
-                "id": example.id,
-                "instruction": example.instruction,
-                "output": example.output,
-                "metadata": example.metadata,
-            }
-            for example in example_list
-        ]
+        example_list, payload = _prepare_payload(examples)
 
         evaluator = partial(
             self.eval_callable,
             model=self.model,
-            data=data,
+            data=payload,
             output_dir=result_path,
             prompt_dir=prompt_template_path,
             output_text_dir=output_text_path,
             **eval_kwargs,
         )
-        logging.debug("Invoking pointwise evaluator on %d examples", len(data))
-        buffer = io.StringIO()
-        with redirect_stdout(buffer):
-            evaluator()
-        emitted = buffer.getvalue().strip()
-        if emitted:
-            logging.debug(emitted)
+        logging.debug("Invoking pointwise evaluator on %d examples", len(payload))
+        _run_callable(evaluator)
 
-        with open_utf8(result_path) as f:
-            raw_predictions = [json.loads(line) for line in f]
+        predictions = _load_predictions(result_path)
+        fails = _parse_predictions(predictions, example_list, parse_fn)
 
-        predictions = [JudgePrediction.from_dict(record) for record in raw_predictions]
-
-        fails = 0
-        for prediction, example in zip(predictions, example_list):
-            if not prediction.metadata:
-                prediction.metadata = copy.deepcopy(example.metadata)
-            else:
-                merged_metadata = copy.deepcopy(example.metadata)
-                merged_metadata.update(prediction.metadata)
-                prediction.metadata = merged_metadata
-            if not prediction.id:
-                prediction.id = example.id
-            result, fail = parse_fn(prediction)
-            fails += int(fail)
-
-        with open_utf8(result_path, "w") as f:
-            for record in predictions:
-                print(json.dumps(record.to_dict()), file=f)
+        _write_predictions(result_path, predictions)
 
         logging.debug("Completed evaluation; %d parse failures detected", fails)
         if logging.getLogger().isEnabledFor(logging.DEBUG) and predictions:

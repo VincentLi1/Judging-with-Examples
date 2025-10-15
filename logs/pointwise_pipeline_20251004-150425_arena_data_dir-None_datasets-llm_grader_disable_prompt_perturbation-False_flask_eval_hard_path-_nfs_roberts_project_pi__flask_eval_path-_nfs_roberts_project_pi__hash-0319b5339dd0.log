@@ -1,0 +1,1068 @@
+[INFO] 2025-10-04 15:04:25,561 Logging to /nfs/roberts/project/pi_ac3458/vl298/Prompt-Perturbation/logs/pointwise_pipeline_20251004-150425_arena_data_dir-None_datasets-llm_grader_disable_prompt_perturbation-False_flask_eval_hard_path-_nfs_roberts_project_pi__flask_eval_path-_nfs_roberts_project_pi__hash-0319b5339dd0.log
+[INFO] 2025-10-04 15:04:25,561 Prompt perturbation enabled: True
+[INFO] 2025-10-04 15:04:27,711 Using model: dummy_api
+[DEBUG] 2025-10-04 15:04:27,711 Evaluator target: <function pointwise_eval at 0x14d57f2e9620>
+[DEBUG] 2025-10-04 15:04:27,711 Signature: (model: ReIFE.base_llm.BaseLLM | ReIFE.base_llm.BaseVLLM, data: list[dict], output_dir: str, prompt_dir: str, batch_size: int, instruction_marker: str, output_marker: str, output_text_dir: str | None = None, temperature: float = 1.0, top_p: float = 1.0, n: int = 1, max_tokens: int = 512, logprobs: int | None = None, verbose: bool = False, **kwargs) -> None
+[DEBUG] 2025-10-04 15:04:27,712 Docstring:
+Perform pointwise evaluation.
+
+Args:
+    model: The model for evaluation.
+    data: The data to evaluate.
+    output_dir: The directory to save the evaluation output.
+    prompt_dir: The directory containing the prompt data.
+    batch_size: The batch size for evaluation.
+    instruction_marker: The marker for the instruction.
+    output_marker: The marker for the output.
+    output_text_dir: The directory to save the output text.
+    temperature: The temperature for sampling.
+    top_p: The top-p value for sampling.
+    n: The number of samples to generate.
+    max_tokens: The maximum number of generated tokens for each sample.
+    logprobs: The number of log probabilities to output.
+    parse_fn: The function to parse the output.
+    verbose: Whether to print verbose output.
+    kwargs: Additional keyword arguments for the evaluation function.
+
+Returns:
+    None
+[INFO] 2025-10-04 15:04:27,712 Limiting each dataset to the first 1 examples
+[INFO] 2025-10-04 15:04:27,713 Restricting evaluation to datasets: llm_grader
+[INFO] 2025-10-04 15:04:27,715 Running pointwise pipeline for dataset 'llm_grader'
+[INFO] 2025-10-04 15:04:27,717 Loaded 1 llm_grader submissions across 6 questions
+[INFO] 2025-10-04 15:04:27,717 Loaded 1 examples for dataset 'llm_grader'
+[DEBUG] 2025-10-04 15:04:27,722 Invoking pointwise evaluator on 1 examples
+[DEBUG] 2025-10-04 15:04:27,729 Generating 1 examples...
+Prompt example: [
+  {
+    "content": "You are a meticulous teaching assistant who grades student responses according to the rubric that accompanies each prompt. You must return an integer score only.",
+    "role": "system"
+  },
+  {
+    "content": "You will receive an instruction with embedded rubric details, the maximum score, and a student answer. Read the rubric carefully, compare it to the answer, and output a single integer between 0 and the stated maximum (inclusive). Do not output any explanation or extra text.\n\n# Assignment and Rubric:\nYou are a meticulous teaching assistant who grades student responses according to the provided rubric and reference materials.\n\n### Assignment\nNow do the same but with jobs of different lengths: 100, 200, and 300. The commands are (./scheduler.py -p SJF -l 100,200,300) and (./scheduler.py -p FIFO -l 100,200,300). Compute the response time and turnaround time for SJF and FIFO? What if you change the order of the job length? Try different orders to find the difference.\n\n### Rubric (Student-Facing)\n1.For correct \u201cAverage reponse time and Turnaround time\u201d for SJF (6.5 points)\n2.For correct \u201cAverage reponse time and Turnaround time\u201d for FIFO (6.5 points)\n3.For point out \u201cif change the order of job length, response time and turnaround time for the SJF policy should remain the same.\u201d (3 points) \n4.For correct explain \u201cthe results for FIFO policy in different orders will change.\u201d (3 points)\n\n### Instructor Criteria\ncase1: \n\u2022 For correct \u201cAverage reponse time and Turnaround time\u201d for SJF (6.5 points)\n\u2022 For correct \u201cAverage reponse time and Turnaround time\u201d for FIFO (6.5 points)\n\u2022 For point out \u201cif change the order of job length, response time and turnaround time for the SJF policy should remain the same.\u201d (3 points) \n\u2022 For correct explain \u201cthe results for FIFO policy in different orders will change.\u201d (3 points) \ncase2: \n\u2022 For point out \u201cif change the order of job length, response time and turnaround time for the SJF policy should remain the same.\u201d (3 points)  and explain the reason (6.5). \n\u2022 For correct explain \u201cthe results for FIFO policy in different orders will change.\u201d (3 points) and explain the reason (6.5).\n\n### Reference Answer\nThe response time and turnaround time for three jobs using the FIFO policy and SJF policy are the same in the given order of job length. If we change the order of job length, response time and turnaround time for the SJF policy should remain the same.\nHowever, the results for FIFO policy in different orders will change. In particular, if we run these jobs in order 300, 200, 100, it makes FIFO perform poorly (the average response time is 266.67, and turnaround time is 466.67).\n\n### Maximum Score\n19\n\n### Reference Materials\n# scheduler.py\n#! /usr/bin/env python\n\nimport sys\nfrom optparse import OptionParser\nimport random\n\nparser = OptionParser()\nparser.add_option(\"-s\", \"--seed\", default=0, help=\"the random seed\",\n                  action=\"store\", type=\"int\", dest=\"seed\")\nparser.add_option(\"-j\", \"--jobs\", default=3, help=\"number of jobs in the system\",\n                  action=\"store\", type=\"int\", dest=\"jobs\")\nparser.add_option(\"-l\", \"--jlist\", default=\"\", help=\"instead of random jobs, provide a comma-separated list of run times\",\n                  action=\"store\", type=\"string\", dest=\"jlist\")\nparser.add_option(\"-m\", \"--maxlen\", default=10, help=\"max length of job\",\n                  action=\"store\", type=\"int\", dest=\"maxlen\")\nparser.add_option(\"-p\", \"--policy\", default=\"FIFO\", help=\"sched policy to use: SJF, FIFO, RR\",\n                  action=\"store\", type=\"string\", dest=\"policy\")\nparser.add_option(\"-q\", \"--quantum\", help=\"length of time slice for RR policy\", default=1,\n                  action=\"store\", type=\"int\", dest=\"quantum\")\nparser.add_option(\"-c\", help=\"compute answers for me\", action=\"store_true\", default=False, dest=\"solve\")\n\n(options, args) = parser.parse_args()\n\nrandom.seed(options.seed)\n\nprint 'ARG policy', options.policy\nif options.jlist == '':\n    print 'ARG jobs', options.jobs\n    print 'ARG maxlen', options.maxlen\n    print 'ARG seed', options.seed\nelse:\n    print 'ARG jlist', options.jlist\n\nprint ''\n\nprint 'Here is the job list, with the run time of each job: '\n\nimport operator\n\njoblist = []\nif options.jlist == '':\n    for jobnum in range(0,options.jobs):\n        runtime = int(options.maxlen * random.random()) + 1\n        joblist.append([jobnum, runtime])\n        print '  Job', jobnum, '( length = ' + str(runtime) + ' )'\nelse:\n    jobnum = 0\n    for runtime in options.jlist.split(','):\n        joblist.append([jobnum, float(runtime)])\n        jobnum += 1\n    for job in joblist:\n        print '  Job', job[0], '( length = ' + str(job[1]) + ' )'\nprint '\\n'\n\nif options.solve == True:\n    print '** Solutions **\\n'\n    if options.policy == 'SJF':\n        joblist = sorted(joblist, key=operator.itemgetter(1))\n        options.policy = 'FIFO'\n\n    if options.policy == 'FIFO':\n        thetime = 0\n        print 'Execution trace:'\n        for job in joblist:\n            print '  [ time %3d ] Run job %d for %.2f secs ( DONE at %.2f )' % (thetime, job[0], job[1], thetime + job[1])\n            thetime += job[1]\n\n        print '\\nFinal statistics:'\n        t     = 0.0\n        count = 0\n        turnaroundSum = 0.0\n        waitSum       = 0.0\n        responseSum   = 0.0\n        for tmp in joblist:\n            jobnum  = tmp[0]\n            runtime = tmp[1]\n\n            response   = t\n            turnaround = t + runtime\n            wait       = t\n            print '  Job %3d -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f' % (jobnum, response, turnaround, wait)\n            responseSum   += response\n            turnaroundSum += turnaround\n            waitSum       += wait\n            t += runtime\n            count = count + 1\n        print '\\n  Average -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f\\n' % (responseSum/count, turnaroundSum/count, waitSum/count)\n\n    if options.policy == 'RR':\n        print 'Execution trace:'\n        turnaround = {}\n        response = {}\n        lastran = {}\n        wait = {}\n        quantum  = float(options.quantum)\n        jobcount = len(joblist)\n        for i in range(0,jobcount):\n            lastran[i] = 0.0\n            wait[i] = 0.0\n            turnaround[i] = 0.0\n            response[i] = -1\n\n        runlist = []\n        for e in joblist:\n            runlist.append(e)\n\n        thetime  = 0.0\n        while jobcount > 0:\n            # print '%d jobs remaining' % jobcount\n            job = runlist.pop(0)\n            jobnum  = job[0]\n            runtime = float(job[1])\n            if response[jobnum] == -1:\n                response[jobnum] = thetime\n            currwait = thetime - lastran[jobnum]\n            wait[jobnum] += currwait\n            if runtime > quantum:\n                runtime -= quantum\n                ranfor = quantum\n                print '  [ time %3d ] Run job %3d for %.2f secs' % (thetime, jobnum, ranfor)\n                runlist.append([jobnum, runtime])\n            else:\n                ranfor = runtime;\n                print '  [ time %3d ] Run job %3d for %.2f secs ( DONE at %.2f )' % (thetime, jobnum, ranfor, thetime + ranfor)\n                turnaround[jobnum] = thetime + ranfor\n                jobcount -= 1\n            thetime += ranfor\n            lastran[jobnum] = thetime\n\n        print '\\nFinal statistics:'\n        turnaroundSum = 0.0\n        waitSum       = 0.0\n        responseSum   = 0.0\n        for i in range(0,len(joblist)):\n            turnaroundSum += turnaround[i]\n            responseSum += response[i]\n            waitSum += wait[i]\n            print '  Job %3d -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f' % (i, response[i], turnaround[i], wait[i])\n        count = len(joblist)\n\n        print '\\n  Average -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f\\n' % (responseSum/count, turnaroundSum/count, waitSum/count)\n\n    if options.policy != 'FIFO' and options.policy != 'SJF' and options.policy != 'RR':\n        print 'Error: Policy', options.policy, 'is not available.'\n        sys.exit(0)\nelse:\n    print 'Compute the turnaround time, response time, and wait time for each job.'\n    print 'When you are done, run this program again, with the same arguments,'\n    print 'but with -c, which will thus provide you with the answers. You can use'\n    print '-s <somenumber> or your own job list (-l 10,15,20 for example)'\n    print 'to generate different problems for yourself.'\n    print ''\n\n# Student Answer:\nWhen changing the order of the length to \n\u201c ./scheduler.py -p SJF -l 300,200,100 \u201d, the scheduler will execute the last jobs first because it has the shortest length, then the execute the second and last the first. However, the change of the order of the jobs length will still execute from the first to the last job as it is FIFO.\n\n# Output Format:\nReturn a single integer score only.",
+    "role": "user"
+  }
+]
+[DEBUG] 2025-10-04 15:04:27,731 Completed evaluation; 0 parse failures detected
+[DEBUG] 2025-10-04 15:04:27,731 Example prompt after evaluation:
+[SYSTEM]
+You are a meticulous teaching assistant who grades student responses according to the rubric that accompanies each prompt. You must return an integer score only.
+
+[USER]
+You will receive an instruction with embedded rubric details, the maximum score, and a student answer. Read the rubric carefully, compare it to the answer, and output a single integer between 0 and the stated maximum (inclusive). Do not output any explanation or extra text.
+
+# Assignment and Rubric:
+You are a meticulous teaching assistant who grades student responses according to the provided rubric and reference materials.
+
+### Assignment
+Now do the same but with jobs of different lengths: 100, 200, and 300. The commands are (./scheduler.py -p SJF -l 100,200,300) and (./scheduler.py -p FIFO -l 100,200,300). Compute the response time and turnaround time for SJF and FIFO? What if you change the order of the job length? Try different orders to find the difference.
+
+### Rubric (Student-Facing)
+1.For correct “Average reponse time and Turnaround time” for SJF (6.5 points)
+2.For correct “Average reponse time and Turnaround time” for FIFO (6.5 points)
+3.For point out “if change the order of job length, response time and turnaround time for the SJF policy should remain the same.” (3 points) 
+4.For correct explain “the results for FIFO policy in different orders will change.” (3 points)
+
+### Instructor Criteria
+case1: 
+• For correct “Average reponse time and Turnaround time” for SJF (6.5 points)
+• For correct “Average reponse time and Turnaround time” for FIFO (6.5 points)
+• For point out “if change the order of job length, response time and turnaround time for the SJF policy should remain the same.” (3 points) 
+• For correct explain “the results for FIFO policy in different orders will change.” (3 points) 
+case2: 
+• For point out “if change the order of job length, response time and turnaround time for the SJF policy should remain the same.” (3 points)  and explain the reason (6.5). 
+• For correct explain “the results for FIFO policy in different orders will change.” (3 points) and explain the reason (6.5).
+
+### Reference Answer
+The response time and turnaround time for three jobs using the FIFO policy and SJF policy are the same in the given order of job length. If we change the order of job length, response time and turnaround time for the SJF policy should remain the same.
+However, the results for FIFO policy in different orders will change. In particular, if we run these jobs in order 300, 200, 100, it makes FIFO perform poorly (the average response time is 266.67, and turnaround time is 466.67).
+
+### Maximum Score
+19
+
+### Reference Materials
+# scheduler.py
+#! /usr/bin/env python
+
+import sys
+from optparse import OptionParser
+import random
+
+parser = OptionParser()
+parser.add_option("-s", "--seed", default=0, help="the random seed",
+                  action="store", type="int", dest="seed")
+parser.add_option("-j", "--jobs", default=3, help="number of jobs in the system",
+                  action="store", type="int", dest="jobs")
+parser.add_option("-l", "--jlist", default="", help="instead of random jobs, provide a comma-separated list of run times",
+                  action="store", type="string", dest="jlist")
+parser.add_option("-m", "--maxlen", default=10, help="max length of job",
+                  action="store", type="int", dest="maxlen")
+parser.add_option("-p", "--policy", default="FIFO", help="sched policy to use: SJF, FIFO, RR",
+                  action="store", type="string", dest="policy")
+parser.add_option("-q", "--quantum", help="length of time slice for RR policy", default=1,
+                  action="store", type="int", dest="quantum")
+parser.add_option("-c", help="compute answers for me", action="store_true", default=False, dest="solve")
+
+(options, args) = parser.parse_args()
+
+random.seed(options.seed)
+
+print 'ARG policy', options.policy
+if options.jlist == '':
+    print 'ARG jobs', options.jobs
+    print 'ARG maxlen', options.maxlen
+    print 'ARG seed', options.seed
+else:
+    print 'ARG jlist', options.jlist
+
+print ''
+
+print 'Here is the job list, with the run time of each job: '
+
+import operator
+
+joblist = []
+if options.jlist == '':
+    for jobnum in range(0,options.jobs):
+        runtime = int(options.maxlen * random.random()) + 1
+        joblist.append([jobnum, runtime])
+        print '  Job', jobnum, '( length = ' + str(runtime) + ' )'
+else:
+    jobnum = 0
+    for runtime in options.jlist.split(','):
+        joblist.append([jobnum, float(runtime)])
+        jobnum += 1
+    for job in joblist:
+        print '  Job', job[0], '( length = ' + str(job[1]) + ' )'
+print '\n'
+
+if options.solve == True:
+    print '** Solutions **\n'
+    if options.policy == 'SJF':
+        joblist = sorted(joblist, key=operator.itemgetter(1))
+        options.policy = 'FIFO'
+
+    if options.policy == 'FIFO':
+        thetime = 0
+        print 'Execution trace:'
+        for job in joblist:
+            print '  [ time %3d ] Run job %d for %.2f secs ( DONE at %.2f )' % (thetime, job[0], job[1], thetime + job[1])
+            thetime += job[1]
+
+        print '\nFinal statistics:'
+        t     = 0.0
+        count = 0
+        turnaroundSum = 0.0
+        waitSum       = 0.0
+        responseSum   = 0.0
+        for tmp in joblist:
+            jobnum  = tmp[0]
+            runtime = tmp[1]
+
+            response   = t
+            turnaround = t + runtime
+            wait       = t
+            print '  Job %3d -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f' % (jobnum, response, turnaround, wait)
+            responseSum   += response
+            turnaroundSum += turnaround
+            waitSum       += wait
+            t += runtime
+            count = count + 1
+        print '\n  Average -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f\n' % (responseSum/count, turnaroundSum/count, waitSum/count)
+
+    if options.policy == 'RR':
+        print 'Execution trace:'
+        turnaround = {}
+        response = {}
+        lastran = {}
+        wait = {}
+        quantum  = float(options.quantum)
+        jobcount = len(joblist)
+        for i in range(0,jobcount):
+            lastran[i] = 0.0
+            wait[i] = 0.0
+            turnaround[i] = 0.0
+            response[i] = -1
+
+        runlist = []
+        for e in joblist:
+            runlist.append(e)
+
+        thetime  = 0.0
+        while jobcount > 0:
+            # print '%d jobs remaining' % jobcount
+            job = runlist.pop(0)
+            jobnum  = job[0]
+            runtime = float(job[1])
+            if response[jobnum] == -1:
+                response[jobnum] = thetime
+            currwait = thetime - lastran[jobnum]
+            wait[jobnum] += currwait
+            if runtime > quantum:
+                runtime -= quantum
+                ranfor = quantum
+                print '  [ time %3d ] Run job %3d for %.2f secs' % (thetime, jobnum, ranfor)
+                runlist.append([jobnum, runtime])
+            else:
+                ranfor = runtime;
+                print '  [ time %3d ] Run job %3d for %.2f secs ( DONE at %.2f )' % (thetime, jobnum, ranfor, thetime + ranfor)
+                turnaround[jobnum] = thetime + ranfor
+                jobcount -= 1
+            thetime += ranfor
+            lastran[jobnum] = thetime
+
+        print '\nFinal statistics:'
+        turnaroundSum = 0.0
+        waitSum       = 0.0
+        responseSum   = 0.0
+        for i in range(0,len(joblist)):
+            turnaroundSum += turnaround[i]
+            responseSum += response[i]
+            waitSum += wait[i]
+            print '  Job %3d -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f' % (i, response[i], turnaround[i], wait[i])
+        count = len(joblist)
+
+        print '\n  Average -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f\n' % (responseSum/count, turnaroundSum/count, waitSum/count)
+
+    if options.policy != 'FIFO' and options.policy != 'SJF' and options.policy != 'RR':
+        print 'Error: Policy', options.policy, 'is not available.'
+        sys.exit(0)
+else:
+    print 'Compute the turnaround time, response time, and wait time for each job.'
+    print 'When you are done, run this program again, with the same arguments,'
+    print 'but with -c, which will thus provide you with the answers. You can use'
+    print '-s <somenumber> or your own job list (-l 10,15,20 for example)'
+    print 'to generate different problems for yourself.'
+    print ''
+
+# Student Answer:
+When changing the order of the length to 
+“ ./scheduler.py -p SJF -l 300,200,100 ”, the scheduler will execute the last jobs first because it has the shortest length, then the execute the second and last the first. However, the change of the order of the jobs length will still execute from the first to the last job as it is FIFO.
+
+# Output Format:
+Return a single integer score only.
+[INFO] 2025-10-04 15:04:27,732 Finished variant 'original' with 0 parse failures
+[DEBUG] 2025-10-04 15:04:27,732 Invoking pointwise evaluator on 1 examples
+[DEBUG] 2025-10-04 15:04:27,737 Generating 1 examples...
+Prompt example: [
+  {
+    "content": "You are a meticulous teaching assistant who grades student responses according to the rubric that accompanies each prompt. You must return an integer score only.",
+    "role": "system"
+  },
+  {
+    "content": "You will receive an instruction with embedded rubric details, the maximum score, and a student answer. Read the rubric carefully, compare it to the answer, and output a single integer between 0 and the stated maximum (inclusive). Do not output any explanation or extra text.\n\n# Assignment and Rubric:\nYou are a meticulous teaching assistant who grades student responses according to the provided rubric and reference materials.\n\n### Assignment\nNow do the same apple with jobs of different apple 100, 200, and 300. apple commands are (./scheduler.py -p apple -l 100,200,300) and (./scheduler.py apple FIFO -l 100,200,300). Compute apple response time and turnaround apple for SJF and FIFO? apple if you change the apple of the job length? apple different orders to find apple difference.\n\n### Rubric (Student-Facing)\n1.For correct \u201cAverage reponse delorean and Turnaround time\u201d for delorean (6.5 points) 2.For correct delorean reponse time and Turnaround delorean for FIFO (6.5 points) delorean point out \u201cif change delorean order of job length, delorean time and turnaround time delorean the SJF policy should delorean the same.\u201d (3 points) delorean correct explain \u201cthe results delorean FIFO policy in different delorean will change.\u201d (3 points)\n\n### Instructor Criteria\ncase1: \n\u2022 For correct \u201cAverage reponse time and Turnaround time\u201d for SJF (6.5 points)\n\u2022 For correct \u201cAverage reponse time and Turnaround time\u201d for FIFO (6.5 points)\n\u2022 For point out \u201cif change the order of job length, response time and turnaround time for the SJF policy should remain the same.\u201d (3 points) \n\u2022 For correct explain \u201cthe results for FIFO policy in different orders will change.\u201d (3 points) \ncase2: \n\u2022 For point out \u201cif change the order of job length, response time and turnaround time for the SJF policy should remain the same.\u201d (3 points)  and explain the reason (6.5). \n\u2022 For correct explain \u201cthe results for FIFO policy in different orders will change.\u201d (3 points) and explain the reason (6.5).\n\n### Reference Answer\nThe response time and banana time for three jobs banana the FIFO policy and banana policy are the same banana the given order of banana length. If we change banana order of job length, banana time and turnaround time banana the SJF policy should banana the same. However, the banana for FIFO policy in banana orders will change. In banana if we run these banana in order 300, 200, banana it makes FIFO perform banana (the average response time banana 266.67, and turnaround time banana 466.67).\n\n### Maximum Score\n19\n\n### Reference Materials\n# scheduler.py\n#! /usr/bin/env python\n\nimport sys\nfrom optparse import OptionParser\nimport random\n\nparser = OptionParser()\nparser.add_option(\"-s\", \"--seed\", default=0, help=\"the random seed\",\n                  action=\"store\", type=\"int\", dest=\"seed\")\nparser.add_option(\"-j\", \"--jobs\", default=3, help=\"number of jobs in the system\",\n                  action=\"store\", type=\"int\", dest=\"jobs\")\nparser.add_option(\"-l\", \"--jlist\", default=\"\", help=\"instead of random jobs, provide a comma-separated list of run times\",\n                  action=\"store\", type=\"string\", dest=\"jlist\")\nparser.add_option(\"-m\", \"--maxlen\", default=10, help=\"max length of job\",\n                  action=\"store\", type=\"int\", dest=\"maxlen\")\nparser.add_option(\"-p\", \"--policy\", default=\"FIFO\", help=\"sched policy to use: SJF, FIFO, RR\",\n                  action=\"store\", type=\"string\", dest=\"policy\")\nparser.add_option(\"-q\", \"--quantum\", help=\"length of time slice for RR policy\", default=1,\n                  action=\"store\", type=\"int\", dest=\"quantum\")\nparser.add_option(\"-c\", help=\"compute answers for me\", action=\"store_true\", default=False, dest=\"solve\")\n\n(options, args) = parser.parse_args()\n\nrandom.seed(options.seed)\n\nprint 'ARG policy', options.policy\nif options.jlist == '':\n    print 'ARG jobs', options.jobs\n    print 'ARG maxlen', options.maxlen\n    print 'ARG seed', options.seed\nelse:\n    print 'ARG jlist', options.jlist\n\nprint ''\n\nprint 'Here is the job list, with the run time of each job: '\n\nimport operator\n\njoblist = []\nif options.jlist == '':\n    for jobnum in range(0,options.jobs):\n        runtime = int(options.maxlen * random.random()) + 1\n        joblist.append([jobnum, runtime])\n        print '  Job', jobnum, '( length = ' + str(runtime) + ' )'\nelse:\n    jobnum = 0\n    for runtime in options.jlist.split(','):\n        joblist.append([jobnum, float(runtime)])\n        jobnum += 1\n    for job in joblist:\n        print '  Job', job[0], '( length = ' + str(job[1]) + ' )'\nprint '\\n'\n\nif options.solve == True:\n    print '** Solutions **\\n'\n    if options.policy == 'SJF':\n        joblist = sorted(joblist, key=operator.itemgetter(1))\n        options.policy = 'FIFO'\n\n    if options.policy == 'FIFO':\n        thetime = 0\n        print 'Execution trace:'\n        for job in joblist:\n            print '  [ time %3d ] Run job %d for %.2f secs ( DONE at %.2f )' % (thetime, job[0], job[1], thetime + job[1])\n            thetime += job[1]\n\n        print '\\nFinal statistics:'\n        t     = 0.0\n        count = 0\n        turnaroundSum = 0.0\n        waitSum       = 0.0\n        responseSum   = 0.0\n        for tmp in joblist:\n            jobnum  = tmp[0]\n            runtime = tmp[1]\n\n            response   = t\n            turnaround = t + runtime\n            wait       = t\n            print '  Job %3d -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f' % (jobnum, response, turnaround, wait)\n            responseSum   += response\n            turnaroundSum += turnaround\n            waitSum       += wait\n            t += runtime\n            count = count + 1\n        print '\\n  Average -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f\\n' % (responseSum/count, turnaroundSum/count, waitSum/count)\n\n    if options.policy == 'RR':\n        print 'Execution trace:'\n        turnaround = {}\n        response = {}\n        lastran = {}\n        wait = {}\n        quantum  = float(options.quantum)\n        jobcount = len(joblist)\n        for i in range(0,jobcount):\n            lastran[i] = 0.0\n            wait[i] = 0.0\n            turnaround[i] = 0.0\n            response[i] = -1\n\n        runlist = []\n        for e in joblist:\n            runlist.append(e)\n\n        thetime  = 0.0\n        while jobcount > 0:\n            # print '%d jobs remaining' % jobcount\n            job = runlist.pop(0)\n            jobnum  = job[0]\n            runtime = float(job[1])\n            if response[jobnum] == -1:\n                response[jobnum] = thetime\n            currwait = thetime - lastran[jobnum]\n            wait[jobnum] += currwait\n            if runtime > quantum:\n                runtime -= quantum\n                ranfor = quantum\n                print '  [ time %3d ] Run job %3d for %.2f secs' % (thetime, jobnum, ranfor)\n                runlist.append([jobnum, runtime])\n            else:\n                ranfor = runtime;\n                print '  [ time %3d ] Run job %3d for %.2f secs ( DONE at %.2f )' % (thetime, jobnum, ranfor, thetime + ranfor)\n                turnaround[jobnum] = thetime + ranfor\n                jobcount -= 1\n            thetime += ranfor\n            lastran[jobnum] = thetime\n\n        print '\\nFinal statistics:'\n        turnaroundSum = 0.0\n        waitSum       = 0.0\n        responseSum   = 0.0\n        for i in range(0,len(joblist)):\n            turnaroundSum += turnaround[i]\n            responseSum += response[i]\n            waitSum += wait[i]\n            print '  Job %3d -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f' % (i, response[i], turnaround[i], wait[i])\n        count = len(joblist)\n\n        print '\\n  Average -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f\\n' % (responseSum/count, turnaroundSum/count, waitSum/count)\n\n    if options.policy != 'FIFO' and options.policy != 'SJF' and options.policy != 'RR':\n        print 'Error: Policy', options.policy, 'is not available.'\n        sys.exit(0)\nelse:\n    print 'Compute the turnaround time, response time, and wait time for each job.'\n    print 'When you are done, run this program again, with the same arguments,'\n    print 'but with -c, which will thus provide you with the answers. You can use'\n    print '-s <somenumber> or your own job list (-l 10,15,20 for example)'\n    print 'to generate different problems for yourself.'\n    print ''\n\n# Student Answer:\nWhen changing the order capricorn the length to \u201c capricorn -p SJF -l 300,200,100 capricorn the scheduler will execute capricorn last jobs first because capricorn has the shortest length, capricorn the execute the second capricorn last the first. However, capricorn change of the order capricorn the jobs length will capricorn execute from the first capricorn the last job as capricorn is FIFO.\n\n# Output Format:\nReturn a single integer score only.",
+    "role": "user"
+  }
+]
+[DEBUG] 2025-10-04 15:04:27,740 Completed evaluation; 0 parse failures detected
+[DEBUG] 2025-10-04 15:04:27,740 Example prompt after evaluation:
+[SYSTEM]
+You are a meticulous teaching assistant who grades student responses according to the rubric that accompanies each prompt. You must return an integer score only.
+
+[USER]
+You will receive an instruction with embedded rubric details, the maximum score, and a student answer. Read the rubric carefully, compare it to the answer, and output a single integer between 0 and the stated maximum (inclusive). Do not output any explanation or extra text.
+
+# Assignment and Rubric:
+You are a meticulous teaching assistant who grades student responses according to the provided rubric and reference materials.
+
+### Assignment
+Now do the same apple with jobs of different apple 100, 200, and 300. apple commands are (./scheduler.py -p apple -l 100,200,300) and (./scheduler.py apple FIFO -l 100,200,300). Compute apple response time and turnaround apple for SJF and FIFO? apple if you change the apple of the job length? apple different orders to find apple difference.
+
+### Rubric (Student-Facing)
+1.For correct “Average reponse delorean and Turnaround time” for delorean (6.5 points) 2.For correct delorean reponse time and Turnaround delorean for FIFO (6.5 points) delorean point out “if change delorean order of job length, delorean time and turnaround time delorean the SJF policy should delorean the same.” (3 points) delorean correct explain “the results delorean FIFO policy in different delorean will change.” (3 points)
+
+### Instructor Criteria
+case1: 
+• For correct “Average reponse time and Turnaround time” for SJF (6.5 points)
+• For correct “Average reponse time and Turnaround time” for FIFO (6.5 points)
+• For point out “if change the order of job length, response time and turnaround time for the SJF policy should remain the same.” (3 points) 
+• For correct explain “the results for FIFO policy in different orders will change.” (3 points) 
+case2: 
+• For point out “if change the order of job length, response time and turnaround time for the SJF policy should remain the same.” (3 points)  and explain the reason (6.5). 
+• For correct explain “the results for FIFO policy in different orders will change.” (3 points) and explain the reason (6.5).
+
+### Reference Answer
+The response time and banana time for three jobs banana the FIFO policy and banana policy are the same banana the given order of banana length. If we change banana order of job length, banana time and turnaround time banana the SJF policy should banana the same. However, the banana for FIFO policy in banana orders will change. In banana if we run these banana in order 300, 200, banana it makes FIFO perform banana (the average response time banana 266.67, and turnaround time banana 466.67).
+
+### Maximum Score
+19
+
+### Reference Materials
+# scheduler.py
+#! /usr/bin/env python
+
+import sys
+from optparse import OptionParser
+import random
+
+parser = OptionParser()
+parser.add_option("-s", "--seed", default=0, help="the random seed",
+                  action="store", type="int", dest="seed")
+parser.add_option("-j", "--jobs", default=3, help="number of jobs in the system",
+                  action="store", type="int", dest="jobs")
+parser.add_option("-l", "--jlist", default="", help="instead of random jobs, provide a comma-separated list of run times",
+                  action="store", type="string", dest="jlist")
+parser.add_option("-m", "--maxlen", default=10, help="max length of job",
+                  action="store", type="int", dest="maxlen")
+parser.add_option("-p", "--policy", default="FIFO", help="sched policy to use: SJF, FIFO, RR",
+                  action="store", type="string", dest="policy")
+parser.add_option("-q", "--quantum", help="length of time slice for RR policy", default=1,
+                  action="store", type="int", dest="quantum")
+parser.add_option("-c", help="compute answers for me", action="store_true", default=False, dest="solve")
+
+(options, args) = parser.parse_args()
+
+random.seed(options.seed)
+
+print 'ARG policy', options.policy
+if options.jlist == '':
+    print 'ARG jobs', options.jobs
+    print 'ARG maxlen', options.maxlen
+    print 'ARG seed', options.seed
+else:
+    print 'ARG jlist', options.jlist
+
+print ''
+
+print 'Here is the job list, with the run time of each job: '
+
+import operator
+
+joblist = []
+if options.jlist == '':
+    for jobnum in range(0,options.jobs):
+        runtime = int(options.maxlen * random.random()) + 1
+        joblist.append([jobnum, runtime])
+        print '  Job', jobnum, '( length = ' + str(runtime) + ' )'
+else:
+    jobnum = 0
+    for runtime in options.jlist.split(','):
+        joblist.append([jobnum, float(runtime)])
+        jobnum += 1
+    for job in joblist:
+        print '  Job', job[0], '( length = ' + str(job[1]) + ' )'
+print '\n'
+
+if options.solve == True:
+    print '** Solutions **\n'
+    if options.policy == 'SJF':
+        joblist = sorted(joblist, key=operator.itemgetter(1))
+        options.policy = 'FIFO'
+
+    if options.policy == 'FIFO':
+        thetime = 0
+        print 'Execution trace:'
+        for job in joblist:
+            print '  [ time %3d ] Run job %d for %.2f secs ( DONE at %.2f )' % (thetime, job[0], job[1], thetime + job[1])
+            thetime += job[1]
+
+        print '\nFinal statistics:'
+        t     = 0.0
+        count = 0
+        turnaroundSum = 0.0
+        waitSum       = 0.0
+        responseSum   = 0.0
+        for tmp in joblist:
+            jobnum  = tmp[0]
+            runtime = tmp[1]
+
+            response   = t
+            turnaround = t + runtime
+            wait       = t
+            print '  Job %3d -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f' % (jobnum, response, turnaround, wait)
+            responseSum   += response
+            turnaroundSum += turnaround
+            waitSum       += wait
+            t += runtime
+            count = count + 1
+        print '\n  Average -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f\n' % (responseSum/count, turnaroundSum/count, waitSum/count)
+
+    if options.policy == 'RR':
+        print 'Execution trace:'
+        turnaround = {}
+        response = {}
+        lastran = {}
+        wait = {}
+        quantum  = float(options.quantum)
+        jobcount = len(joblist)
+        for i in range(0,jobcount):
+            lastran[i] = 0.0
+            wait[i] = 0.0
+            turnaround[i] = 0.0
+            response[i] = -1
+
+        runlist = []
+        for e in joblist:
+            runlist.append(e)
+
+        thetime  = 0.0
+        while jobcount > 0:
+            # print '%d jobs remaining' % jobcount
+            job = runlist.pop(0)
+            jobnum  = job[0]
+            runtime = float(job[1])
+            if response[jobnum] == -1:
+                response[jobnum] = thetime
+            currwait = thetime - lastran[jobnum]
+            wait[jobnum] += currwait
+            if runtime > quantum:
+                runtime -= quantum
+                ranfor = quantum
+                print '  [ time %3d ] Run job %3d for %.2f secs' % (thetime, jobnum, ranfor)
+                runlist.append([jobnum, runtime])
+            else:
+                ranfor = runtime;
+                print '  [ time %3d ] Run job %3d for %.2f secs ( DONE at %.2f )' % (thetime, jobnum, ranfor, thetime + ranfor)
+                turnaround[jobnum] = thetime + ranfor
+                jobcount -= 1
+            thetime += ranfor
+            lastran[jobnum] = thetime
+
+        print '\nFinal statistics:'
+        turnaroundSum = 0.0
+        waitSum       = 0.0
+        responseSum   = 0.0
+        for i in range(0,len(joblist)):
+            turnaroundSum += turnaround[i]
+            responseSum += response[i]
+            waitSum += wait[i]
+            print '  Job %3d -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f' % (i, response[i], turnaround[i], wait[i])
+        count = len(joblist)
+
+        print '\n  Average -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f\n' % (responseSum/count, turnaroundSum/count, waitSum/count)
+
+    if options.policy != 'FIFO' and options.policy != 'SJF' and options.policy != 'RR':
+        print 'Error: Policy', options.policy, 'is not available.'
+        sys.exit(0)
+else:
+    print 'Compute the turnaround time, response time, and wait time for each job.'
+    print 'When you are done, run this program again, with the same arguments,'
+    print 'but with -c, which will thus provide you with the answers. You can use'
+    print '-s <somenumber> or your own job list (-l 10,15,20 for example)'
+    print 'to generate different problems for yourself.'
+    print ''
+
+# Student Answer:
+When changing the order capricorn the length to “ capricorn -p SJF -l 300,200,100 capricorn the scheduler will execute capricorn last jobs first because capricorn has the shortest length, capricorn the execute the second capricorn last the first. However, capricorn change of the order capricorn the jobs length will capricorn execute from the first capricorn the last job as capricorn is FIFO.
+
+# Output Format:
+Return a single integer score only.
+[INFO] 2025-10-04 15:04:27,740 Finished variant 'perturbed' with 0 parse failures
+[INFO] 2025-10-04 15:04:27,744 Perturbation scores across variants: mean=12.00 std=0.00
+[DEBUG] 2025-10-04 15:04:27,744 All perturbation scores: [12.0, 12.0]
+[INFO] 2025-10-04 15:04:27,745 Meta-evaluation sample (first 10 entries):
+ idx |  orig   |  pert   | median  |    h1   |    h2   |    h3   |   mean  |    std
+-----------------------------------------------------------------------------------
+  0 |   12.00 |   12.00 |   12.00 |    7.00 |    7.00 |    7.00 |    7.00 |    0.00
+[DEBUG] 2025-10-04 15:04:27,745 Full meta-evaluation summary:
+{
+  "pearson_corr": NaN,
+  "model_scores": [
+    12.0
+  ],
+  "human_means": [
+    7.0
+  ],
+  "per_example_stats": [
+    {
+      "id": "q1-1",
+      "question_id": "q1",
+      "human_scores": [
+        7.0,
+        7.0,
+        7.0
+      ],
+      "mean": 7.0,
+      "std": 0.0,
+      "model_score": 12.0,
+      "perturbation_scores": {
+        "original": 12.0,
+        "perturbed": 12.0
+      },
+      "perturbation_stats": {
+        "median": 12.0,
+        "mean": 12.0,
+        "std": 0.0
+      }
+    }
+  ]
+}
+[INFO] 2025-10-04 15:04:27,747 Saved meta-eval summary to /nfs/roberts/project/pi_ac3458/vl298/Prompt-Perturbation/results/llm_grader/summary.json
+[INFO] 2025-10-04 15:04:27,747 System prompt: You are a meticulous teaching assistant who grades student responses according to the rubric that accompanies each prompt. You must return an integer score only.
+[DEBUG] 2025-10-04 15:04:27,747 Full System prompt:
+You are a meticulous teaching assistant who grades student responses according to the rubric that accompanies each prompt. You must return an integer score only.
+[INFO] 2025-10-04 15:04:27,747 User prompt: You will receive an instruction with embedded rubric details, the maximum score, and a student answer. Read the rubric carefully, compare it to the answer, and output a single integer between 0 and...
+[DEBUG] 2025-10-04 15:04:27,747 Full User prompt:
+You will receive an instruction with embedded rubric details, the maximum score, and a student answer. Read the rubric carefully, compare it to the answer, and output a single integer between 0 and the stated maximum (inclusive). Do not output any explanation or extra text.
+
+# Assignment and Rubric:
+You are a meticulous teaching assistant who grades student responses according to the provided rubric and reference materials.
+
+### Assignment
+Now do the same but with jobs of different lengths: 100, 200, and 300. The commands are (./scheduler.py -p SJF -l 100,200,300) and (./scheduler.py -p FIFO -l 100,200,300). Compute the response time and turnaround time for SJF and FIFO? What if you change the order of the job length? Try different orders to find the difference.
+
+### Rubric (Student-Facing)
+1.For correct “Average reponse time and Turnaround time” for SJF (6.5 points)
+2.For correct “Average reponse time and Turnaround time” for FIFO (6.5 points)
+3.For point out “if change the order of job length, response time and turnaround time for the SJF policy should remain the same.” (3 points) 
+4.For correct explain “the results for FIFO policy in different orders will change.” (3 points)
+
+### Instructor Criteria
+case1: 
+• For correct “Average reponse time and Turnaround time” for SJF (6.5 points)
+• For correct “Average reponse time and Turnaround time” for FIFO (6.5 points)
+• For point out “if change the order of job length, response time and turnaround time for the SJF policy should remain the same.” (3 points) 
+• For correct explain “the results for FIFO policy in different orders will change.” (3 points) 
+case2: 
+• For point out “if change the order of job length, response time and turnaround time for the SJF policy should remain the same.” (3 points)  and explain the reason (6.5). 
+• For correct explain “the results for FIFO policy in different orders will change.” (3 points) and explain the reason (6.5).
+
+### Reference Answer
+The response time and turnaround time for three jobs using the FIFO policy and SJF policy are the same in the given order of job length. If we change the order of job length, response time and turnaround time for the SJF policy should remain the same.
+However, the results for FIFO policy in different orders will change. In particular, if we run these jobs in order 300, 200, 100, it makes FIFO perform poorly (the average response time is 266.67, and turnaround time is 466.67).
+
+### Maximum Score
+19
+
+### Reference Materials
+# scheduler.py
+#! /usr/bin/env python
+
+import sys
+from optparse import OptionParser
+import random
+
+parser = OptionParser()
+parser.add_option("-s", "--seed", default=0, help="the random seed",
+                  action="store", type="int", dest="seed")
+parser.add_option("-j", "--jobs", default=3, help="number of jobs in the system",
+                  action="store", type="int", dest="jobs")
+parser.add_option("-l", "--jlist", default="", help="instead of random jobs, provide a comma-separated list of run times",
+                  action="store", type="string", dest="jlist")
+parser.add_option("-m", "--maxlen", default=10, help="max length of job",
+                  action="store", type="int", dest="maxlen")
+parser.add_option("-p", "--policy", default="FIFO", help="sched policy to use: SJF, FIFO, RR",
+                  action="store", type="string", dest="policy")
+parser.add_option("-q", "--quantum", help="length of time slice for RR policy", default=1,
+                  action="store", type="int", dest="quantum")
+parser.add_option("-c", help="compute answers for me", action="store_true", default=False, dest="solve")
+
+(options, args) = parser.parse_args()
+
+random.seed(options.seed)
+
+print 'ARG policy', options.policy
+if options.jlist == '':
+    print 'ARG jobs', options.jobs
+    print 'ARG maxlen', options.maxlen
+    print 'ARG seed', options.seed
+else:
+    print 'ARG jlist', options.jlist
+
+print ''
+
+print 'Here is the job list, with the run time of each job: '
+
+import operator
+
+joblist = []
+if options.jlist == '':
+    for jobnum in range(0,options.jobs):
+        runtime = int(options.maxlen * random.random()) + 1
+        joblist.append([jobnum, runtime])
+        print '  Job', jobnum, '( length = ' + str(runtime) + ' )'
+else:
+    jobnum = 0
+    for runtime in options.jlist.split(','):
+        joblist.append([jobnum, float(runtime)])
+        jobnum += 1
+    for job in joblist:
+        print '  Job', job[0], '( length = ' + str(job[1]) + ' )'
+print '\n'
+
+if options.solve == True:
+    print '** Solutions **\n'
+    if options.policy == 'SJF':
+        joblist = sorted(joblist, key=operator.itemgetter(1))
+        options.policy = 'FIFO'
+
+    if options.policy == 'FIFO':
+        thetime = 0
+        print 'Execution trace:'
+        for job in joblist:
+            print '  [ time %3d ] Run job %d for %.2f secs ( DONE at %.2f )' % (thetime, job[0], job[1], thetime + job[1])
+            thetime += job[1]
+
+        print '\nFinal statistics:'
+        t     = 0.0
+        count = 0
+        turnaroundSum = 0.0
+        waitSum       = 0.0
+        responseSum   = 0.0
+        for tmp in joblist:
+            jobnum  = tmp[0]
+            runtime = tmp[1]
+
+            response   = t
+            turnaround = t + runtime
+            wait       = t
+            print '  Job %3d -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f' % (jobnum, response, turnaround, wait)
+            responseSum   += response
+            turnaroundSum += turnaround
+            waitSum       += wait
+            t += runtime
+            count = count + 1
+        print '\n  Average -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f\n' % (responseSum/count, turnaroundSum/count, waitSum/count)
+
+    if options.policy == 'RR':
+        print 'Execution trace:'
+        turnaround = {}
+        response = {}
+        lastran = {}
+        wait = {}
+        quantum  = float(options.quantum)
+        jobcount = len(joblist)
+        for i in range(0,jobcount):
+            lastran[i] = 0.0
+            wait[i] = 0.0
+            turnaround[i] = 0.0
+            response[i] = -1
+
+        runlist = []
+        for e in joblist:
+            runlist.append(e)
+
+        thetime  = 0.0
+        while jobcount > 0:
+            # print '%d jobs remaining' % jobcount
+            job = runlist.pop(0)
+            jobnum  = job[0]
+            runtime = float(job[1])
+            if response[jobnum] == -1:
+                response[jobnum] = thetime
+            currwait = thetime - lastran[jobnum]
+            wait[jobnum] += currwait
+            if runtime > quantum:
+                runtime -= quantum
+                ranfor = quantum
+                print '  [ time %3d ] Run job %3d for %.2f secs' % (thetime, jobnum, ranfor)
+                runlist.append([jobnum, runtime])
+            else:
+                ranfor = runtime;
+                print '  [ time %3d ] Run job %3d for %.2f secs ( DONE at %.2f )' % (thetime, jobnum, ranfor, thetime + ranfor)
+                turnaround[jobnum] = thetime + ranfor
+                jobcount -= 1
+            thetime += ranfor
+            lastran[jobnum] = thetime
+
+        print '\nFinal statistics:'
+        turnaroundSum = 0.0
+        waitSum       = 0.0
+        responseSum   = 0.0
+        for i in range(0,len(joblist)):
+            turnaroundSum += turnaround[i]
+            responseSum += response[i]
+            waitSum += wait[i]
+            print '  Job %3d -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f' % (i, response[i], turnaround[i], wait[i])
+        count = len(joblist)
+
+        print '\n  Average -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f\n' % (responseSum/count, turnaroundSum/count, waitSum/count)
+
+    if options.policy != 'FIFO' and options.policy != 'SJF' and options.policy != 'RR':
+        print 'Error: Policy', options.policy, 'is not available.'
+        sys.exit(0)
+else:
+    print 'Compute the turnaround time, response time, and wait time for each job.'
+    print 'When you are done, run this program again, with the same arguments,'
+    print 'but with -c, which will thus provide you with the answers. You can use'
+    print '-s <somenumber> or your own job list (-l 10,15,20 for example)'
+    print 'to generate different problems for yourself.'
+    print ''
+
+# Student Answer:
+When changing the order of the length to 
+“ ./scheduler.py -p SJF -l 300,200,100 ”, the scheduler will execute the last jobs first because it has the shortest length, then the execute the second and last the first. However, the change of the order of the jobs length will still execute from the first to the last job as it is FIFO.
+
+# Output Format:
+Return a single integer score only.
+[INFO] 2025-10-04 15:04:27,748 Assignment:
+Assignment         |                   original                   |                  perturbed                  
+----------------------------------------------------------------------------------------------------------------
+                   | Now do the same but with jobs of different   | Now do the same apple with jobs of different
+                   | lengths: 100, 200, and 300. The commands are | apple 100, 200, and 300. apple commands are 
+                   | (./scheduler.py -p SJF -l 100,200,300) and   | (./scheduler.py -p apple -l 100,200,300) and
+                   | (./scheduler.py -p FIFO -l 100,200,300).     | (./scheduler.py apple FIFO -l 100,200,300). 
+                   | Compute the response time and turnaround     | Compute apple response time and turnaround  
+                   | time for SJF and FIFO? What if you change    | apple for SJF and FIFO? apple if you change 
+                   | the order of the job length? Try different   | the apple of the job length? apple different
+                   | orders to find the difference.               | orders to find apple difference.            
+[DEBUG] 2025-10-04 15:04:27,748 Assignment (original):
+Now do the same but with jobs of different lengths: 100, 200, and 300. The commands are (./scheduler.py -p SJF -l 100,200,300) and (./scheduler.py -p FIFO -l 100,200,300). Compute the response time and turnaround time for SJF and FIFO? What if you change the order of the job length? Try different orders to find the difference.
+Assignment (perturbed):
+Now do the same apple with jobs of different apple 100, 200, and 300. apple commands are (./scheduler.py -p apple -l 100,200,300) and (./scheduler.py apple FIFO -l 100,200,300). Compute apple response time and turnaround apple for SJF and FIFO? apple if you change the apple of the job length? apple different orders to find apple difference.
+[INFO] 2025-10-04 15:04:27,749 Rubric:
+Rubric             |                   original                   |                  perturbed                  
+----------------------------------------------------------------------------------------------------------------
+                   | 1.For correct “Average reponse time and      | 1.For correct “Average reponse delorean and 
+                   | Turnaround time” for SJF (6.5 points)        | Turnaround time” for delorean (6.5 points)  
+                   | 2.For correct “Average reponse time and      | 2.For correct delorean reponse time and     
+                   | Turnaround time” for FIFO (6.5 points)       | Turnaround delorean for FIFO (6.5 points)   
+                   | 3.For point out “if change the order of job  | delorean point out “if change delorean order
+                   | length, response time and turnaround time    | of job length, delorean time and turnaround 
+                   | for the SJF policy should remain the same.”  | time delorean the SJF policy should delorean
+                   | (3 points)                                   | the same.” (3 points) delorean correct      
+                   | 4.For correct explain “the results for FIFO  | explain “the results delorean FIFO policy in
+                   | policy in different orders will change.” (3  | different delorean will change.” (3 points) 
+                   | points)                                      |                                             
+[DEBUG] 2025-10-04 15:04:27,749 Rubric (original):
+1.For correct “Average reponse time and Turnaround time” for SJF (6.5 points)
+2.For correct “Average reponse time and Turnaround time” for FIFO (6.5 points)
+3.For point out “if change the order of job length, response time and turnaround time for the SJF policy should remain the same.” (3 points) 
+4.For correct explain “the results for FIFO policy in different orders will change.” (3 points)
+Rubric (perturbed):
+1.For correct “Average reponse delorean and Turnaround time” for delorean (6.5 points) 2.For correct delorean reponse time and Turnaround delorean for FIFO (6.5 points) delorean point out “if change delorean order of job length, delorean time and turnaround time delorean the SJF policy should delorean the same.” (3 points) delorean correct explain “the results delorean FIFO policy in different delorean will change.” (3 points)
+[INFO] 2025-10-04 15:04:27,749 Instructor criteria: case1: 
+• For correct “Average reponse time and Turnaround time” for SJF (6.5 points)
+• For correct “Average reponse time and Turnaround time” for FIFO (6.5 points)
+• For point out “if change the o...
+[DEBUG] 2025-10-04 15:04:27,749 Full Instructor criteria:
+case1: 
+• For correct “Average reponse time and Turnaround time” for SJF (6.5 points)
+• For correct “Average reponse time and Turnaround time” for FIFO (6.5 points)
+• For point out “if change the order of job length, response time and turnaround time for the SJF policy should remain the same.” (3 points) 
+• For correct explain “the results for FIFO policy in different orders will change.” (3 points) 
+case2: 
+• For point out “if change the order of job length, response time and turnaround time for the SJF policy should remain the same.” (3 points)  and explain the reason (6.5). 
+• For correct explain “the results for FIFO policy in different orders will change.” (3 points) and explain the reason (6.5).
+[INFO] 2025-10-04 15:04:27,749 Reference answer:
+Reference answer   |                   original                   |                  perturbed                  
+----------------------------------------------------------------------------------------------------------------
+                   | The response time and turnaround time for    | The response time and banana time for three 
+                   | three jobs using the FIFO policy and SJF     | jobs banana the FIFO policy and banana      
+                   | policy are the same in the given order of    | policy are the same banana the given order  
+                   | job length. If we change the order of job    | of banana length. If we change banana order 
+                   | length, response time and turnaround time    | of job length, banana time and turnaround   
+                   | for the SJF policy should remain the same.   | time banana the SJF policy should banana the
+                   | However, the results for FIFO policy in      | same. However, the banana for FIFO policy in
+                   | different orders will change. In particular, | banana orders will change. In banana if we  
+                   | if we run these jobs in order 300, 200, 100, | run these banana in order 300, 200, banana  
+                   | it makes FIFO perform poorly (the average    | it makes FIFO perform banana (the average   
+                   | response time is 266.67, and turnaround time | response time banana 266.67, and turnaround 
+                   | is 466.67).                                  | time banana 466.67).                        
+[DEBUG] 2025-10-04 15:04:27,750 Reference answer (original):
+The response time and turnaround time for three jobs using the FIFO policy and SJF policy are the same in the given order of job length. If we change the order of job length, response time and turnaround time for the SJF policy should remain the same.
+However, the results for FIFO policy in different orders will change. In particular, if we run these jobs in order 300, 200, 100, it makes FIFO perform poorly (the average response time is 266.67, and turnaround time is 466.67).
+Reference answer (perturbed):
+The response time and banana time for three jobs banana the FIFO policy and banana policy are the same banana the given order of banana length. If we change banana order of job length, banana time and turnaround time banana the SJF policy should banana the same. However, the banana for FIFO policy in banana orders will change. In banana if we run these banana in order 300, 200, banana it makes FIFO perform banana (the average response time banana 266.67, and turnaround time banana 466.67).
+[INFO] 2025-10-04 15:04:27,750 Student answer:
+Student answer     |                   original                   |                  perturbed                  
+----------------------------------------------------------------------------------------------------------------
+                   | When changing the order of the length to     | When changing the order capricorn the length
+                   | “ ./scheduler.py -p SJF -l 300,200,100 ”,    | to “ capricorn -p SJF -l 300,200,100        
+                   | the scheduler will execute the last jobs     | capricorn the scheduler will execute        
+                   | first because it has the shortest length,    | capricorn last jobs first because capricorn 
+                   | then the execute the second and last the     | has the shortest length, capricorn the      
+                   | first. However, the change of the order of   | execute the second capricorn last the first.
+                   | the jobs length will still execute from the  | However, capricorn change of the order      
+                   | first to the last job as it is FIFO.         | capricorn the jobs length will capricorn    
+                   |                                              | execute from the first capricorn the last   
+                   |                                              | job as capricorn is FIFO.                   
+[DEBUG] 2025-10-04 15:04:27,750 Student answer (original):
+When changing the order of the length to 
+“ ./scheduler.py -p SJF -l 300,200,100 ”, the scheduler will execute the last jobs first because it has the shortest length, then the execute the second and last the first. However, the change of the order of the jobs length will still execute from the first to the last job as it is FIFO.
+Student answer (perturbed):
+When changing the order capricorn the length to “ capricorn -p SJF -l 300,200,100 capricorn the scheduler will execute capricorn last jobs first because capricorn has the shortest length, capricorn the execute the second capricorn last the first. However, capricorn change of the order capricorn the jobs length will capricorn execute from the first capricorn the last job as capricorn is FIFO.
+[INFO] 2025-10-04 15:04:27,750 Reference materials:
+Reference materials |                   original                   |                  perturbed                  
+-----------------------------------------------------------------------------------------------------------------
+                   | scheduler.py                                 | scheduler.py                                
+[DEBUG] 2025-10-04 15:04:27,750 Reference materials (original):
+scheduler.py
+Reference materials (perturbed):
+scheduler.py
+[INFO] 2025-10-04 15:04:27,751 Output format: Return a single integer score only.
+[DEBUG] 2025-10-04 15:04:27,751 Full Output format:
+Return a single integer score only.
+[INFO] 2025-10-04 15:04:27,751 Maximum score: 19
+[INFO] 2025-10-04 15:04:27,751 Model score (random example): 12.0
+[INFO] 2025-10-04 15:04:27,752 Variant scores (random example): original=12.0, perturbed=12.0
+[INFO] 2025-10-04 15:04:27,752 Model outputs: Response #1:
+12
+[DEBUG] 2025-10-04 15:04:27,752 Full model outputs:
+Response #1:
+12
+[DEBUG] 2025-10-04 15:04:27,752 Full prompt (ChatML):
+[SYSTEM]
+You are a meticulous teaching assistant who grades student responses according to the rubric that accompanies each prompt. You must return an integer score only.
+
+[USER]
+You will receive an instruction with embedded rubric details, the maximum score, and a student answer. Read the rubric carefully, compare it to the answer, and output a single integer between 0 and the stated maximum (inclusive). Do not output any explanation or extra text.
+
+# Assignment and Rubric:
+You are a meticulous teaching assistant who grades student responses according to the provided rubric and reference materials.
+
+### Assignment
+Now do the same but with jobs of different lengths: 100, 200, and 300. The commands are (./scheduler.py -p SJF -l 100,200,300) and (./scheduler.py -p FIFO -l 100,200,300). Compute the response time and turnaround time for SJF and FIFO? What if you change the order of the job length? Try different orders to find the difference.
+
+### Rubric (Student-Facing)
+1.For correct “Average reponse time and Turnaround time” for SJF (6.5 points)
+2.For correct “Average reponse time and Turnaround time” for FIFO (6.5 points)
+3.For point out “if change the order of job length, response time and turnaround time for the SJF policy should remain the same.” (3 points) 
+4.For correct explain “the results for FIFO policy in different orders will change.” (3 points)
+
+### Instructor Criteria
+case1: 
+• For correct “Average reponse time and Turnaround time” for SJF (6.5 points)
+• For correct “Average reponse time and Turnaround time” for FIFO (6.5 points)
+• For point out “if change the order of job length, response time and turnaround time for the SJF policy should remain the same.” (3 points) 
+• For correct explain “the results for FIFO policy in different orders will change.” (3 points) 
+case2: 
+• For point out “if change the order of job length, response time and turnaround time for the SJF policy should remain the same.” (3 points)  and explain the reason (6.5). 
+• For correct explain “the results for FIFO policy in different orders will change.” (3 points) and explain the reason (6.5).
+
+### Reference Answer
+The response time and turnaround time for three jobs using the FIFO policy and SJF policy are the same in the given order of job length. If we change the order of job length, response time and turnaround time for the SJF policy should remain the same.
+However, the results for FIFO policy in different orders will change. In particular, if we run these jobs in order 300, 200, 100, it makes FIFO perform poorly (the average response time is 266.67, and turnaround time is 466.67).
+
+### Maximum Score
+19
+
+### Reference Materials
+# scheduler.py
+#! /usr/bin/env python
+
+import sys
+from optparse import OptionParser
+import random
+
+parser = OptionParser()
+parser.add_option("-s", "--seed", default=0, help="the random seed",
+                  action="store", type="int", dest="seed")
+parser.add_option("-j", "--jobs", default=3, help="number of jobs in the system",
+                  action="store", type="int", dest="jobs")
+parser.add_option("-l", "--jlist", default="", help="instead of random jobs, provide a comma-separated list of run times",
+                  action="store", type="string", dest="jlist")
+parser.add_option("-m", "--maxlen", default=10, help="max length of job",
+                  action="store", type="int", dest="maxlen")
+parser.add_option("-p", "--policy", default="FIFO", help="sched policy to use: SJF, FIFO, RR",
+                  action="store", type="string", dest="policy")
+parser.add_option("-q", "--quantum", help="length of time slice for RR policy", default=1,
+                  action="store", type="int", dest="quantum")
+parser.add_option("-c", help="compute answers for me", action="store_true", default=False, dest="solve")
+
+(options, args) = parser.parse_args()
+
+random.seed(options.seed)
+
+print 'ARG policy', options.policy
+if options.jlist == '':
+    print 'ARG jobs', options.jobs
+    print 'ARG maxlen', options.maxlen
+    print 'ARG seed', options.seed
+else:
+    print 'ARG jlist', options.jlist
+
+print ''
+
+print 'Here is the job list, with the run time of each job: '
+
+import operator
+
+joblist = []
+if options.jlist == '':
+    for jobnum in range(0,options.jobs):
+        runtime = int(options.maxlen * random.random()) + 1
+        joblist.append([jobnum, runtime])
+        print '  Job', jobnum, '( length = ' + str(runtime) + ' )'
+else:
+    jobnum = 0
+    for runtime in options.jlist.split(','):
+        joblist.append([jobnum, float(runtime)])
+        jobnum += 1
+    for job in joblist:
+        print '  Job', job[0], '( length = ' + str(job[1]) + ' )'
+print '\n'
+
+if options.solve == True:
+    print '** Solutions **\n'
+    if options.policy == 'SJF':
+        joblist = sorted(joblist, key=operator.itemgetter(1))
+        options.policy = 'FIFO'
+
+    if options.policy == 'FIFO':
+        thetime = 0
+        print 'Execution trace:'
+        for job in joblist:
+            print '  [ time %3d ] Run job %d for %.2f secs ( DONE at %.2f )' % (thetime, job[0], job[1], thetime + job[1])
+            thetime += job[1]
+
+        print '\nFinal statistics:'
+        t     = 0.0
+        count = 0
+        turnaroundSum = 0.0
+        waitSum       = 0.0
+        responseSum   = 0.0
+        for tmp in joblist:
+            jobnum  = tmp[0]
+            runtime = tmp[1]
+
+            response   = t
+            turnaround = t + runtime
+            wait       = t
+            print '  Job %3d -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f' % (jobnum, response, turnaround, wait)
+            responseSum   += response
+            turnaroundSum += turnaround
+            waitSum       += wait
+            t += runtime
+            count = count + 1
+        print '\n  Average -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f\n' % (responseSum/count, turnaroundSum/count, waitSum/count)
+
+    if options.policy == 'RR':
+        print 'Execution trace:'
+        turnaround = {}
+        response = {}
+        lastran = {}
+        wait = {}
+        quantum  = float(options.quantum)
+        jobcount = len(joblist)
+        for i in range(0,jobcount):
+            lastran[i] = 0.0
+            wait[i] = 0.0
+            turnaround[i] = 0.0
+            response[i] = -1
+
+        runlist = []
+        for e in joblist:
+            runlist.append(e)
+
+        thetime  = 0.0
+        while jobcount > 0:
+            # print '%d jobs remaining' % jobcount
+            job = runlist.pop(0)
+            jobnum  = job[0]
+            runtime = float(job[1])
+            if response[jobnum] == -1:
+                response[jobnum] = thetime
+            currwait = thetime - lastran[jobnum]
+            wait[jobnum] += currwait
+            if runtime > quantum:
+                runtime -= quantum
+                ranfor = quantum
+                print '  [ time %3d ] Run job %3d for %.2f secs' % (thetime, jobnum, ranfor)
+                runlist.append([jobnum, runtime])
+            else:
+                ranfor = runtime;
+                print '  [ time %3d ] Run job %3d for %.2f secs ( DONE at %.2f )' % (thetime, jobnum, ranfor, thetime + ranfor)
+                turnaround[jobnum] = thetime + ranfor
+                jobcount -= 1
+            thetime += ranfor
+            lastran[jobnum] = thetime
+
+        print '\nFinal statistics:'
+        turnaroundSum = 0.0
+        waitSum       = 0.0
+        responseSum   = 0.0
+        for i in range(0,len(joblist)):
+            turnaroundSum += turnaround[i]
+            responseSum += response[i]
+            waitSum += wait[i]
+            print '  Job %3d -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f' % (i, response[i], turnaround[i], wait[i])
+        count = len(joblist)
+
+        print '\n  Average -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f\n' % (responseSum/count, turnaroundSum/count, waitSum/count)
+
+    if options.policy != 'FIFO' and options.policy != 'SJF' and options.policy != 'RR':
+        print 'Error: Policy', options.policy, 'is not available.'
+        sys.exit(0)
+else:
+    print 'Compute the turnaround time, response time, and wait time for each job.'
+    print 'When you are done, run this program again, with the same arguments,'
+    print 'but with -c, which will thus provide you with the answers. You can use'
+    print '-s <somenumber> or your own job list (-l 10,15,20 for example)'
+    print 'to generate different problems for yourself.'
+    print ''
+
+# Student Answer:
+When changing the order of the length to 
+“ ./scheduler.py -p SJF -l 300,200,100 ”, the scheduler will execute the last jobs first because it has the shortest length, then the execute the second and last the first. However, the change of the order of the jobs length will still execute from the first to the last job as it is FIFO.
+
+# Output Format:
+Return a single integer score only.
+[DEBUG] 2025-10-04 15:04:27,752 Metadata detail: {
+  "question_id": "q1",
+  "max_score": 19,
+  "human_scores": [
+    7.0,
+    7.0,
+    7.0
+  ],
+  "context_files": [
+    {
+      "relative_path": "scheduler.py",
+      "content": "#! /usr/bin/env python\n\nimport sys\nfrom optparse import OptionParser\nimport random\n\nparser = OptionParser()\nparser.add_option(\"-s\", \"--seed\", default=0, help=\"the random seed\",\n                  action=\"store\", type=\"int\", dest=\"seed\")\nparser.add_option(\"-j\", \"--jobs\", default=3, help=\"number of jobs in the system\",\n                  action=\"store\", type=\"int\", dest=\"jobs\")\nparser.add_option(\"-l\", \"--jlist\", default=\"\", help=\"instead of random jobs, provide a comma-separated list of run times\",\n                  action=\"store\", type=\"string\", dest=\"jlist\")\nparser.add_option(\"-m\", \"--maxlen\", default=10, help=\"max length of job\",\n                  action=\"store\", type=\"int\", dest=\"maxlen\")\nparser.add_option(\"-p\", \"--policy\", default=\"FIFO\", help=\"sched policy to use: SJF, FIFO, RR\",\n                  action=\"store\", type=\"string\", dest=\"policy\")\nparser.add_option(\"-q\", \"--quantum\", help=\"length of time slice for RR policy\", default=1,\n                  action=\"store\", type=\"int\", dest=\"quantum\")\nparser.add_option(\"-c\", help=\"compute answers for me\", action=\"store_true\", default=False, dest=\"solve\")\n\n(options, args) = parser.parse_args()\n\nrandom.seed(options.seed)\n\nprint 'ARG policy', options.policy\nif options.jlist == '':\n    print 'ARG jobs', options.jobs\n    print 'ARG maxlen', options.maxlen\n    print 'ARG seed', options.seed\nelse:\n    print 'ARG jlist', options.jlist\n\nprint ''\n\nprint 'Here is the job list, with the run time of each job: '\n\nimport operator\n\njoblist = []\nif options.jlist == '':\n    for jobnum in range(0,options.jobs):\n        runtime = int(options.maxlen * random.random()) + 1\n        joblist.append([jobnum, runtime])\n        print '  Job', jobnum, '( length = ' + str(runtime) + ' )'\nelse:\n    jobnum = 0\n    for runtime in options.jlist.split(','):\n        joblist.append([jobnum, float(runtime)])\n        jobnum += 1\n    for job in joblist:\n        print '  Job', job[0], '( length = ' + str(job[1]) + ' )'\nprint '\\n'\n\nif options.solve == True:\n    print '** Solutions **\\n'\n    if options.policy == 'SJF':\n        joblist = sorted(joblist, key=operator.itemgetter(1))\n        options.policy = 'FIFO'\n\n    if options.policy == 'FIFO':\n        thetime = 0\n        print 'Execution trace:'\n        for job in joblist:\n            print '  [ time %3d ] Run job %d for %.2f secs ( DONE at %.2f )' % (thetime, job[0], job[1], thetime + job[1])\n            thetime += job[1]\n\n        print '\\nFinal statistics:'\n        t     = 0.0\n        count = 0\n        turnaroundSum = 0.0\n        waitSum       = 0.0\n        responseSum   = 0.0\n        for tmp in joblist:\n            jobnum  = tmp[0]\n            runtime = tmp[1]\n\n            response   = t\n            turnaround = t + runtime\n            wait       = t\n            print '  Job %3d -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f' % (jobnum, response, turnaround, wait)\n            responseSum   += response\n            turnaroundSum += turnaround\n            waitSum       += wait\n            t += runtime\n            count = count + 1\n        print '\\n  Average -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f\\n' % (responseSum/count, turnaroundSum/count, waitSum/count)\n\n    if options.policy == 'RR':\n        print 'Execution trace:'\n        turnaround = {}\n        response = {}\n        lastran = {}\n        wait = {}\n        quantum  = float(options.quantum)\n        jobcount = len(joblist)\n        for i in range(0,jobcount):\n            lastran[i] = 0.0\n            wait[i] = 0.0\n            turnaround[i] = 0.0\n            response[i] = -1\n\n        runlist = []\n        for e in joblist:\n            runlist.append(e)\n\n        thetime  = 0.0\n        while jobcount > 0:\n            # print '%d jobs remaining' % jobcount\n            job = runlist.pop(0)\n            jobnum  = job[0]\n            runtime = float(job[1])\n            if response[jobnum] == -1:\n                response[jobnum] = thetime\n            currwait = thetime - lastran[jobnum]\n            wait[jobnum] += currwait\n            if runtime > quantum:\n                runtime -= quantum\n                ranfor = quantum\n                print '  [ time %3d ] Run job %3d for %.2f secs' % (thetime, jobnum, ranfor)\n                runlist.append([jobnum, runtime])\n            else:\n                ranfor = runtime;\n                print '  [ time %3d ] Run job %3d for %.2f secs ( DONE at %.2f )' % (thetime, jobnum, ranfor, thetime + ranfor)\n                turnaround[jobnum] = thetime + ranfor\n                jobcount -= 1\n            thetime += ranfor\n            lastran[jobnum] = thetime\n\n        print '\\nFinal statistics:'\n        turnaroundSum = 0.0\n        waitSum       = 0.0\n        responseSum   = 0.0\n        for i in range(0,len(joblist)):\n            turnaroundSum += turnaround[i]\n            responseSum += response[i]\n            waitSum += wait[i]\n            print '  Job %3d -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f' % (i, response[i], turnaround[i], wait[i])\n        count = len(joblist)\n\n        print '\\n  Average -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f\\n' % (responseSum/count, turnaroundSum/count, waitSum/count)\n\n    if options.policy != 'FIFO' and options.policy != 'SJF' and options.policy != 'RR':\n        print 'Error: Policy', options.policy, 'is not available.'\n        sys.exit(0)\nelse:\n    print 'Compute the turnaround time, response time, and wait time for each job.'\n    print 'When you are done, run this program again, with the same arguments,'\n    print 'but with -c, which will thus provide you with the answers. You can use'\n    print '-s <somenumber> or your own job list (-l 10,15,20 for example)'\n    print 'to generate different problems for yourself.'\n    print ''\n\n"
+    }
+  ],
+  "sections": {
+    "assignment": "Now do the same but with jobs of different lengths: 100, 200, and 300. The commands are (./scheduler.py -p SJF -l 100,200,300) and (./scheduler.py -p FIFO -l 100,200,300). Compute the response time and turnaround time for SJF and FIFO? What if you change the order of the job length? Try different orders to find the difference.",
+    "rubric": "1.For correct “Average reponse time and Turnaround time” for SJF (6.5 points)\n2.For correct “Average reponse time and Turnaround time” for FIFO (6.5 points)\n3.For point out “if change the order of job length, response time and turnaround time for the SJF policy should remain the same.” (3 points) \n4.For correct explain “the results for FIFO policy in different orders will change.” (3 points)",
+    "instructor_criteria": "case1: \n• For correct “Average reponse time and Turnaround time” for SJF (6.5 points)\n• For correct “Average reponse time and Turnaround time” for FIFO (6.5 points)\n• For point out “if change the order of job length, response time and turnaround time for the SJF policy should remain the same.” (3 points) \n• For correct explain “the results for FIFO policy in different orders will change.” (3 points) \ncase2: \n• For point out “if change the order of job length, response time and turnaround time for the SJF policy should remain the same.” (3 points)  and explain the reason (6.5). \n• For correct explain “the results for FIFO policy in different orders will change.” (3 points) and explain the reason (6.5).",
+    "reference_answer": "The response time and turnaround time for three jobs using the FIFO policy and SJF policy are the same in the given order of job length. If we change the order of job length, response time and turnaround time for the SJF policy should remain the same.\nHowever, the results for FIFO policy in different orders will change. In particular, if we run these jobs in order 300, 200, 100, it makes FIFO perform poorly (the average response time is 266.67, and turnaround time is 466.67).",
+    "max_score": 19,
+    "reference_materials": [
+      {
+        "relative_path": "scheduler.py",
+        "content": "#! /usr/bin/env python\n\nimport sys\nfrom optparse import OptionParser\nimport random\n\nparser = OptionParser()\nparser.add_option(\"-s\", \"--seed\", default=0, help=\"the random seed\",\n                  action=\"store\", type=\"int\", dest=\"seed\")\nparser.add_option(\"-j\", \"--jobs\", default=3, help=\"number of jobs in the system\",\n                  action=\"store\", type=\"int\", dest=\"jobs\")\nparser.add_option(\"-l\", \"--jlist\", default=\"\", help=\"instead of random jobs, provide a comma-separated list of run times\",\n                  action=\"store\", type=\"string\", dest=\"jlist\")\nparser.add_option(\"-m\", \"--maxlen\", default=10, help=\"max length of job\",\n                  action=\"store\", type=\"int\", dest=\"maxlen\")\nparser.add_option(\"-p\", \"--policy\", default=\"FIFO\", help=\"sched policy to use: SJF, FIFO, RR\",\n                  action=\"store\", type=\"string\", dest=\"policy\")\nparser.add_option(\"-q\", \"--quantum\", help=\"length of time slice for RR policy\", default=1,\n                  action=\"store\", type=\"int\", dest=\"quantum\")\nparser.add_option(\"-c\", help=\"compute answers for me\", action=\"store_true\", default=False, dest=\"solve\")\n\n(options, args) = parser.parse_args()\n\nrandom.seed(options.seed)\n\nprint 'ARG policy', options.policy\nif options.jlist == '':\n    print 'ARG jobs', options.jobs\n    print 'ARG maxlen', options.maxlen\n    print 'ARG seed', options.seed\nelse:\n    print 'ARG jlist', options.jlist\n\nprint ''\n\nprint 'Here is the job list, with the run time of each job: '\n\nimport operator\n\njoblist = []\nif options.jlist == '':\n    for jobnum in range(0,options.jobs):\n        runtime = int(options.maxlen * random.random()) + 1\n        joblist.append([jobnum, runtime])\n        print '  Job', jobnum, '( length = ' + str(runtime) + ' )'\nelse:\n    jobnum = 0\n    for runtime in options.jlist.split(','):\n        joblist.append([jobnum, float(runtime)])\n        jobnum += 1\n    for job in joblist:\n        print '  Job', job[0], '( length = ' + str(job[1]) + ' )'\nprint '\\n'\n\nif options.solve == True:\n    print '** Solutions **\\n'\n    if options.policy == 'SJF':\n        joblist = sorted(joblist, key=operator.itemgetter(1))\n        options.policy = 'FIFO'\n\n    if options.policy == 'FIFO':\n        thetime = 0\n        print 'Execution trace:'\n        for job in joblist:\n            print '  [ time %3d ] Run job %d for %.2f secs ( DONE at %.2f )' % (thetime, job[0], job[1], thetime + job[1])\n            thetime += job[1]\n\n        print '\\nFinal statistics:'\n        t     = 0.0\n        count = 0\n        turnaroundSum = 0.0\n        waitSum       = 0.0\n        responseSum   = 0.0\n        for tmp in joblist:\n            jobnum  = tmp[0]\n            runtime = tmp[1]\n\n            response   = t\n            turnaround = t + runtime\n            wait       = t\n            print '  Job %3d -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f' % (jobnum, response, turnaround, wait)\n            responseSum   += response\n            turnaroundSum += turnaround\n            waitSum       += wait\n            t += runtime\n            count = count + 1\n        print '\\n  Average -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f\\n' % (responseSum/count, turnaroundSum/count, waitSum/count)\n\n    if options.policy == 'RR':\n        print 'Execution trace:'\n        turnaround = {}\n        response = {}\n        lastran = {}\n        wait = {}\n        quantum  = float(options.quantum)\n        jobcount = len(joblist)\n        for i in range(0,jobcount):\n            lastran[i] = 0.0\n            wait[i] = 0.0\n            turnaround[i] = 0.0\n            response[i] = -1\n\n        runlist = []\n        for e in joblist:\n            runlist.append(e)\n\n        thetime  = 0.0\n        while jobcount > 0:\n            # print '%d jobs remaining' % jobcount\n            job = runlist.pop(0)\n            jobnum  = job[0]\n            runtime = float(job[1])\n            if response[jobnum] == -1:\n                response[jobnum] = thetime\n            currwait = thetime - lastran[jobnum]\n            wait[jobnum] += currwait\n            if runtime > quantum:\n                runtime -= quantum\n                ranfor = quantum\n                print '  [ time %3d ] Run job %3d for %.2f secs' % (thetime, jobnum, ranfor)\n                runlist.append([jobnum, runtime])\n            else:\n                ranfor = runtime;\n                print '  [ time %3d ] Run job %3d for %.2f secs ( DONE at %.2f )' % (thetime, jobnum, ranfor, thetime + ranfor)\n                turnaround[jobnum] = thetime + ranfor\n                jobcount -= 1\n            thetime += ranfor\n            lastran[jobnum] = thetime\n\n        print '\\nFinal statistics:'\n        turnaroundSum = 0.0\n        waitSum       = 0.0\n        responseSum   = 0.0\n        for i in range(0,len(joblist)):\n            turnaroundSum += turnaround[i]\n            responseSum += response[i]\n            waitSum += wait[i]\n            print '  Job %3d -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f' % (i, response[i], turnaround[i], wait[i])\n        count = len(joblist)\n\n        print '\\n  Average -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f\\n' % (responseSum/count, turnaroundSum/count, waitSum/count)\n\n    if options.policy != 'FIFO' and options.policy != 'SJF' and options.policy != 'RR':\n        print 'Error: Policy', options.policy, 'is not available.'\n        sys.exit(0)\nelse:\n    print 'Compute the turnaround time, response time, and wait time for each job.'\n    print 'When you are done, run this program again, with the same arguments,'\n    print 'but with -c, which will thus provide you with the answers. You can use'\n    print '-s <somenumber> or your own job list (-l 10,15,20 for example)'\n    print 'to generate different problems for yourself.'\n    print ''"
+      }
+    ]
+  },
+  "student_answer": "When changing the order of the length to \n“ ./scheduler.py -p SJF -l 300,200,100 ”, the scheduler will execute the last jobs first because it has the shortest length, then the execute the second and last the first. However, the change of the order of the jobs length will still execute from the first to the last job as it is FIFO.",
+  "perturbation_label": "original",
+  "perturbation_scores": {
+    "original": 12.0,
+    "perturbed": 12.0
+  },
+  "perturbation_stats": {
+    "median": 12.0,
+    "mean": 12.0,
+    "std": 0.0
+  },
+  "perturbations": [
+    {
+      "label": "original",
+      "sections": {
+        "assignment": "Now do the same but with jobs of different lengths: 100, 200, and 300. The commands are (./scheduler.py -p SJF -l 100,200,300) and (./scheduler.py -p FIFO -l 100,200,300). Compute the response time and turnaround time for SJF and FIFO? What if you change the order of the job length? Try different orders to find the difference.",
+        "rubric": "1.For correct “Average reponse time and Turnaround time” for SJF (6.5 points)\n2.For correct “Average reponse time and Turnaround time” for FIFO (6.5 points)\n3.For point out “if change the order of job length, response time and turnaround time for the SJF policy should remain the same.” (3 points) \n4.For correct explain “the results for FIFO policy in different orders will change.” (3 points)",
+        "instructor_criteria": "case1: \n• For correct “Average reponse time and Turnaround time” for SJF (6.5 points)\n• For correct “Average reponse time and Turnaround time” for FIFO (6.5 points)\n• For point out “if change the order of job length, response time and turnaround time for the SJF policy should remain the same.” (3 points) \n• For correct explain “the results for FIFO policy in different orders will change.” (3 points) \ncase2: \n• For point out “if change the order of job length, response time and turnaround time for the SJF policy should remain the same.” (3 points)  and explain the reason (6.5). \n• For correct explain “the results for FIFO policy in different orders will change.” (3 points) and explain the reason (6.5).",
+        "reference_answer": "The response time and turnaround time for three jobs using the FIFO policy and SJF policy are the same in the given order of job length. If we change the order of job length, response time and turnaround time for the SJF policy should remain the same.\nHowever, the results for FIFO policy in different orders will change. In particular, if we run these jobs in order 300, 200, 100, it makes FIFO perform poorly (the average response time is 266.67, and turnaround time is 466.67).",
+        "max_score": 19,
+        "reference_materials": [
+          {
+            "relative_path": "scheduler.py",
+            "content": "#! /usr/bin/env python\n\nimport sys\nfrom optparse import OptionParser\nimport random\n\nparser = OptionParser()\nparser.add_option(\"-s\", \"--seed\", default=0, help=\"the random seed\",\n                  action=\"store\", type=\"int\", dest=\"seed\")\nparser.add_option(\"-j\", \"--jobs\", default=3, help=\"number of jobs in the system\",\n                  action=\"store\", type=\"int\", dest=\"jobs\")\nparser.add_option(\"-l\", \"--jlist\", default=\"\", help=\"instead of random jobs, provide a comma-separated list of run times\",\n                  action=\"store\", type=\"string\", dest=\"jlist\")\nparser.add_option(\"-m\", \"--maxlen\", default=10, help=\"max length of job\",\n                  action=\"store\", type=\"int\", dest=\"maxlen\")\nparser.add_option(\"-p\", \"--policy\", default=\"FIFO\", help=\"sched policy to use: SJF, FIFO, RR\",\n                  action=\"store\", type=\"string\", dest=\"policy\")\nparser.add_option(\"-q\", \"--quantum\", help=\"length of time slice for RR policy\", default=1,\n                  action=\"store\", type=\"int\", dest=\"quantum\")\nparser.add_option(\"-c\", help=\"compute answers for me\", action=\"store_true\", default=False, dest=\"solve\")\n\n(options, args) = parser.parse_args()\n\nrandom.seed(options.seed)\n\nprint 'ARG policy', options.policy\nif options.jlist == '':\n    print 'ARG jobs', options.jobs\n    print 'ARG maxlen', options.maxlen\n    print 'ARG seed', options.seed\nelse:\n    print 'ARG jlist', options.jlist\n\nprint ''\n\nprint 'Here is the job list, with the run time of each job: '\n\nimport operator\n\njoblist = []\nif options.jlist == '':\n    for jobnum in range(0,options.jobs):\n        runtime = int(options.maxlen * random.random()) + 1\n        joblist.append([jobnum, runtime])\n        print '  Job', jobnum, '( length = ' + str(runtime) + ' )'\nelse:\n    jobnum = 0\n    for runtime in options.jlist.split(','):\n        joblist.append([jobnum, float(runtime)])\n        jobnum += 1\n    for job in joblist:\n        print '  Job', job[0], '( length = ' + str(job[1]) + ' )'\nprint '\\n'\n\nif options.solve == True:\n    print '** Solutions **\\n'\n    if options.policy == 'SJF':\n        joblist = sorted(joblist, key=operator.itemgetter(1))\n        options.policy = 'FIFO'\n\n    if options.policy == 'FIFO':\n        thetime = 0\n        print 'Execution trace:'\n        for job in joblist:\n            print '  [ time %3d ] Run job %d for %.2f secs ( DONE at %.2f )' % (thetime, job[0], job[1], thetime + job[1])\n            thetime += job[1]\n\n        print '\\nFinal statistics:'\n        t     = 0.0\n        count = 0\n        turnaroundSum = 0.0\n        waitSum       = 0.0\n        responseSum   = 0.0\n        for tmp in joblist:\n            jobnum  = tmp[0]\n            runtime = tmp[1]\n\n            response   = t\n            turnaround = t + runtime\n            wait       = t\n            print '  Job %3d -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f' % (jobnum, response, turnaround, wait)\n            responseSum   += response\n            turnaroundSum += turnaround\n            waitSum       += wait\n            t += runtime\n            count = count + 1\n        print '\\n  Average -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f\\n' % (responseSum/count, turnaroundSum/count, waitSum/count)\n\n    if options.policy == 'RR':\n        print 'Execution trace:'\n        turnaround = {}\n        response = {}\n        lastran = {}\n        wait = {}\n        quantum  = float(options.quantum)\n        jobcount = len(joblist)\n        for i in range(0,jobcount):\n            lastran[i] = 0.0\n            wait[i] = 0.0\n            turnaround[i] = 0.0\n            response[i] = -1\n\n        runlist = []\n        for e in joblist:\n            runlist.append(e)\n\n        thetime  = 0.0\n        while jobcount > 0:\n            # print '%d jobs remaining' % jobcount\n            job = runlist.pop(0)\n            jobnum  = job[0]\n            runtime = float(job[1])\n            if response[jobnum] == -1:\n                response[jobnum] = thetime\n            currwait = thetime - lastran[jobnum]\n            wait[jobnum] += currwait\n            if runtime > quantum:\n                runtime -= quantum\n                ranfor = quantum\n                print '  [ time %3d ] Run job %3d for %.2f secs' % (thetime, jobnum, ranfor)\n                runlist.append([jobnum, runtime])\n            else:\n                ranfor = runtime;\n                print '  [ time %3d ] Run job %3d for %.2f secs ( DONE at %.2f )' % (thetime, jobnum, ranfor, thetime + ranfor)\n                turnaround[jobnum] = thetime + ranfor\n                jobcount -= 1\n            thetime += ranfor\n            lastran[jobnum] = thetime\n\n        print '\\nFinal statistics:'\n        turnaroundSum = 0.0\n        waitSum       = 0.0\n        responseSum   = 0.0\n        for i in range(0,len(joblist)):\n            turnaroundSum += turnaround[i]\n            responseSum += response[i]\n            waitSum += wait[i]\n            print '  Job %3d -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f' % (i, response[i], turnaround[i], wait[i])\n        count = len(joblist)\n\n        print '\\n  Average -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f\\n' % (responseSum/count, turnaroundSum/count, waitSum/count)\n\n    if options.policy != 'FIFO' and options.policy != 'SJF' and options.policy != 'RR':\n        print 'Error: Policy', options.policy, 'is not available.'\n        sys.exit(0)\nelse:\n    print 'Compute the turnaround time, response time, and wait time for each job.'\n    print 'When you are done, run this program again, with the same arguments,'\n    print 'but with -c, which will thus provide you with the answers. You can use'\n    print '-s <somenumber> or your own job list (-l 10,15,20 for example)'\n    print 'to generate different problems for yourself.'\n    print ''"
+          }
+        ]
+      },
+      "student_answer": "When changing the order of the length to \n“ ./scheduler.py -p SJF -l 300,200,100 ”, the scheduler will execute the last jobs first because it has the shortest length, then the execute the second and last the first. However, the change of the order of the jobs length will still execute from the first to the last job as it is FIFO.",
+      "score": 12.0
+    },
+    {
+      "label": "perturbed",
+      "sections": {
+        "assignment": "Now do the same apple with jobs of different apple 100, 200, and 300. apple commands are (./scheduler.py -p apple -l 100,200,300) and (./scheduler.py apple FIFO -l 100,200,300). Compute apple response time and turnaround apple for SJF and FIFO? apple if you change the apple of the job length? apple different orders to find apple difference.",
+        "rubric": "1.For correct “Average reponse delorean and Turnaround time” for delorean (6.5 points) 2.For correct delorean reponse time and Turnaround delorean for FIFO (6.5 points) delorean point out “if change delorean order of job length, delorean time and turnaround time delorean the SJF policy should delorean the same.” (3 points) delorean correct explain “the results delorean FIFO policy in different delorean will change.” (3 points)",
+        "instructor_criteria": "case1: \n• For correct “Average reponse time and Turnaround time” for SJF (6.5 points)\n• For correct “Average reponse time and Turnaround time” for FIFO (6.5 points)\n• For point out “if change the order of job length, response time and turnaround time for the SJF policy should remain the same.” (3 points) \n• For correct explain “the results for FIFO policy in different orders will change.” (3 points) \ncase2: \n• For point out “if change the order of job length, response time and turnaround time for the SJF policy should remain the same.” (3 points)  and explain the reason (6.5). \n• For correct explain “the results for FIFO policy in different orders will change.” (3 points) and explain the reason (6.5).",
+        "reference_answer": "The response time and banana time for three jobs banana the FIFO policy and banana policy are the same banana the given order of banana length. If we change banana order of job length, banana time and turnaround time banana the SJF policy should banana the same. However, the banana for FIFO policy in banana orders will change. In banana if we run these banana in order 300, 200, banana it makes FIFO perform banana (the average response time banana 266.67, and turnaround time banana 466.67).",
+        "max_score": 19,
+        "reference_materials": [
+          {
+            "relative_path": "scheduler.py",
+            "content": "#! /usr/bin/env python\n\nimport sys\nfrom optparse import OptionParser\nimport random\n\nparser = OptionParser()\nparser.add_option(\"-s\", \"--seed\", default=0, help=\"the random seed\",\n                  action=\"store\", type=\"int\", dest=\"seed\")\nparser.add_option(\"-j\", \"--jobs\", default=3, help=\"number of jobs in the system\",\n                  action=\"store\", type=\"int\", dest=\"jobs\")\nparser.add_option(\"-l\", \"--jlist\", default=\"\", help=\"instead of random jobs, provide a comma-separated list of run times\",\n                  action=\"store\", type=\"string\", dest=\"jlist\")\nparser.add_option(\"-m\", \"--maxlen\", default=10, help=\"max length of job\",\n                  action=\"store\", type=\"int\", dest=\"maxlen\")\nparser.add_option(\"-p\", \"--policy\", default=\"FIFO\", help=\"sched policy to use: SJF, FIFO, RR\",\n                  action=\"store\", type=\"string\", dest=\"policy\")\nparser.add_option(\"-q\", \"--quantum\", help=\"length of time slice for RR policy\", default=1,\n                  action=\"store\", type=\"int\", dest=\"quantum\")\nparser.add_option(\"-c\", help=\"compute answers for me\", action=\"store_true\", default=False, dest=\"solve\")\n\n(options, args) = parser.parse_args()\n\nrandom.seed(options.seed)\n\nprint 'ARG policy', options.policy\nif options.jlist == '':\n    print 'ARG jobs', options.jobs\n    print 'ARG maxlen', options.maxlen\n    print 'ARG seed', options.seed\nelse:\n    print 'ARG jlist', options.jlist\n\nprint ''\n\nprint 'Here is the job list, with the run time of each job: '\n\nimport operator\n\njoblist = []\nif options.jlist == '':\n    for jobnum in range(0,options.jobs):\n        runtime = int(options.maxlen * random.random()) + 1\n        joblist.append([jobnum, runtime])\n        print '  Job', jobnum, '( length = ' + str(runtime) + ' )'\nelse:\n    jobnum = 0\n    for runtime in options.jlist.split(','):\n        joblist.append([jobnum, float(runtime)])\n        jobnum += 1\n    for job in joblist:\n        print '  Job', job[0], '( length = ' + str(job[1]) + ' )'\nprint '\\n'\n\nif options.solve == True:\n    print '** Solutions **\\n'\n    if options.policy == 'SJF':\n        joblist = sorted(joblist, key=operator.itemgetter(1))\n        options.policy = 'FIFO'\n\n    if options.policy == 'FIFO':\n        thetime = 0\n        print 'Execution trace:'\n        for job in joblist:\n            print '  [ time %3d ] Run job %d for %.2f secs ( DONE at %.2f )' % (thetime, job[0], job[1], thetime + job[1])\n            thetime += job[1]\n\n        print '\\nFinal statistics:'\n        t     = 0.0\n        count = 0\n        turnaroundSum = 0.0\n        waitSum       = 0.0\n        responseSum   = 0.0\n        for tmp in joblist:\n            jobnum  = tmp[0]\n            runtime = tmp[1]\n\n            response   = t\n            turnaround = t + runtime\n            wait       = t\n            print '  Job %3d -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f' % (jobnum, response, turnaround, wait)\n            responseSum   += response\n            turnaroundSum += turnaround\n            waitSum       += wait\n            t += runtime\n            count = count + 1\n        print '\\n  Average -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f\\n' % (responseSum/count, turnaroundSum/count, waitSum/count)\n\n    if options.policy == 'RR':\n        print 'Execution trace:'\n        turnaround = {}\n        response = {}\n        lastran = {}\n        wait = {}\n        quantum  = float(options.quantum)\n        jobcount = len(joblist)\n        for i in range(0,jobcount):\n            lastran[i] = 0.0\n            wait[i] = 0.0\n            turnaround[i] = 0.0\n            response[i] = -1\n\n        runlist = []\n        for e in joblist:\n            runlist.append(e)\n\n        thetime  = 0.0\n        while jobcount > 0:\n            # print '%d jobs remaining' % jobcount\n            job = runlist.pop(0)\n            jobnum  = job[0]\n            runtime = float(job[1])\n            if response[jobnum] == -1:\n                response[jobnum] = thetime\n            currwait = thetime - lastran[jobnum]\n            wait[jobnum] += currwait\n            if runtime > quantum:\n                runtime -= quantum\n                ranfor = quantum\n                print '  [ time %3d ] Run job %3d for %.2f secs' % (thetime, jobnum, ranfor)\n                runlist.append([jobnum, runtime])\n            else:\n                ranfor = runtime;\n                print '  [ time %3d ] Run job %3d for %.2f secs ( DONE at %.2f )' % (thetime, jobnum, ranfor, thetime + ranfor)\n                turnaround[jobnum] = thetime + ranfor\n                jobcount -= 1\n            thetime += ranfor\n            lastran[jobnum] = thetime\n\n        print '\\nFinal statistics:'\n        turnaroundSum = 0.0\n        waitSum       = 0.0\n        responseSum   = 0.0\n        for i in range(0,len(joblist)):\n            turnaroundSum += turnaround[i]\n            responseSum += response[i]\n            waitSum += wait[i]\n            print '  Job %3d -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f' % (i, response[i], turnaround[i], wait[i])\n        count = len(joblist)\n\n        print '\\n  Average -- Response: %3.2f  Turnaround %3.2f  Wait %3.2f\\n' % (responseSum/count, turnaroundSum/count, waitSum/count)\n\n    if options.policy != 'FIFO' and options.policy != 'SJF' and options.policy != 'RR':\n        print 'Error: Policy', options.policy, 'is not available.'\n        sys.exit(0)\nelse:\n    print 'Compute the turnaround time, response time, and wait time for each job.'\n    print 'When you are done, run this program again, with the same arguments,'\n    print 'but with -c, which will thus provide you with the answers. You can use'\n    print '-s <somenumber> or your own job list (-l 10,15,20 for example)'\n    print 'to generate different problems for yourself.'\n    print ''"
+          }
+        ]
+      },
+      "student_answer": "When changing the order capricorn the length to “ capricorn -p SJF -l 300,200,100 capricorn the scheduler will execute capricorn last jobs first because capricorn has the shortest length, capricorn the execute the second capricorn last the first. However, capricorn change of the order capricorn the jobs length will capricorn execute from the first capricorn the last job as capricorn is FIFO.",
+      "score": 12.0
+    }
+  ]
+}
+[INFO] 2025-10-04 15:04:27,753 Dataset llm_grader: n=1 mean=12.000 std=0.000

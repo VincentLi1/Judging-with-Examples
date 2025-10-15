@@ -1,0 +1,74 @@
+# Sample 1
+### Instructions
+Here is a previous dialogue between an assistant and an user. Generate a human preferable response by the assistant.
+User: Rewrite your previous response. Start every sentence with the letter A.
+
+### Score Rubric
+[Does the model's response offer direct, pertinent, and valuable information that actively assists the user's query or concern in a dialogue? The response should align with the user's needs and offer proactive suggestions or advice, if applicable.]
+Score 1: The model's response is completely off-topic and offers no helpful information or direction in relation to the user's query or concern.
+Score 2: The model's response vaguely addresses the user's query, but it lacks depth, clarity, or relevance, necessitating the user to seek further clarification.
+Score 3: The model's response addresses the user's query, but misses certain key aspects or does not provide additional helpful insights that might be relevant to the user.
+Score 4: The model's response effectively addresses the user's query, providing pertinent information. It might offer some proactive suggestions, but might not cover all potential insights or advice.
+Score 5: The model's response perfectly addresses the user's query, offering direct, comprehensive, and pertinent information. It anticipates further questions and provides proactive suggestions or advice, fully aligning with the user's needs.
+
+Scale Range: 1–10
+
+### Response
+Absolutely! A recent trip to the beautiful island of Hawaii was an adventure that I will never forget.
+
+As a helpful assistant, I highly recommend a visit to the Polynesian Cultural Center as it immerses you in the cultures of the Pacific Islands.
+
+Also, a trip to the North Shore is a must-see attraction, where you can witness surfers of all levels tackling the massive waves.
+
+Additionally, paying respects to the brave men and women who lost their lives at Pearl Harbor was a deeply moving experience.
+
+And let's not forget about the delicious local cuisine, from poke bowls to shave ice, the flavors of Hawaii are truly unique and tasty.
+
+All in all, Hawaii has it all - cultural immersion, natural beauty, and delicious food. As an assistant, I encourage you to put Hawaii at the top of your travel list. Aloha!
+
+# Sample 2
+### Instructions
+Here is a previous dialogue between an assistant and an user. Generate a human preferable response by the assistant.
+User: Rewrite your previous response. Start every sentence with the letter A.
+
+### Score Rubric
+[Does the model's response offer direct, pertinent, and valuable information that actively assists the user's query or concern in a dialogue? The response should align with the user's needs and offer proactive suggestions or advice, if applicable.]
+Score 1: The model's response is completely off-topic and offers no helpful information or direction in relation to the user's query or concern.
+Score 2: The model's response vaguely addresses the user's query, but it lacks depth, clarity, or relevance, necessitating the user to seek further clarification.
+Score 3: The model's response addresses the user's query, but misses certain key aspects or does not provide additional helpful insights that might be relevant to the user.
+Score 4: The model's response effectively addresses the user's query, providing pertinent information. It might offer some proactive suggestions, but might not cover all potential insights or advice.
+Score 5: The model's response perfectly addresses the user's query, offering direct, comprehensive, and pertinent information. It anticipates further questions and provides proactive suggestions or advice, fully aligning with the user's needs.
+
+Scale Range: 1–10
+
+### Response
+Aloha! I recently had the pleasure of visiting Hawaii and it quickly became one of my favorite places. From the stunning beaches to the lush mountains, this place has it all. The people are incredibly friendly and the culture is alive and well. One of the highlights of my trip was visiting the Polynesian Cultural Center. Here, I was able to learn about the culture of the native Hawaiian people and try my hand at traditional crafts and activities. I also had a chance to explore some of the natural wonders of the island, including the breathtaking Hanauma Bay and the majestic Waimea Canyon. Whether you’re looking for a relaxing beach vacation or an adventure filled with culture and nature, Hawaii is the perfect destination.
+
+# Sample 3
+### Instructions
+Here is a previous dialogue between an assistant and an user. Generate a human preferable response by the assistant.
+User: Rewrite your previous response. Start every sentence with the letter A.
+
+### Score Rubric
+[Does the model's response offer direct, pertinent, and valuable information that actively assists the user's query or concern in a dialogue? The response should align with the user's needs and offer proactive suggestions or advice, if applicable.]
+Score 1: The model's response is completely off-topic and offers no helpful information or direction in relation to the user's query or concern.
+Score 2: The model's response vaguely addresses the user's query, but it lacks depth, clarity, or relevance, necessitating the user to seek further clarification.
+Score 3: The model's response addresses the user's query, but misses certain key aspects or does not provide additional helpful insights that might be relevant to the user.
+Score 4: The model's response effectively addresses the user's query, providing pertinent information. It might offer some proactive suggestions, but might not cover all potential insights or advice.
+Score 5: The model's response perfectly addresses the user's query, offering direct, comprehensive, and pertinent information. It anticipates further questions and provides proactive suggestions or advice, fully aligning with the user's needs.
+
+Scale Range: 1–10
+
+### Response
+Absolutely! A recent trip to the beautiful island of Hawaii was an adventure that I will never forget.
+
+As a helpful assistant, I highly recommend a visit to the Polynesian Cultural Center as it immerses you in the cultures of the Pacific Islands.
+
+Also, a trip to the North Shore is a must-see attraction, where you can witness surfers of all levels tackling the massive waves.
+
+Additionally, paying respects to the brave men and women who lost their lives at Pearl Harbor was a deeply moving experience.
+
+And let's not forget about the delicious local cuisine, from poke bowls to shave ice, the flavors of Hawaii are truly unique and tasty.
+
+All in all, Hawaii has it all - cultural immersion, natural beauty, and delicious food. As an assistant, I encourage you to put Hawaii at the top of your travel list. Aloha!
+

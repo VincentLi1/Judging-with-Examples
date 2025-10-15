@@ -1,0 +1,105 @@
+{
+  "pearson_corr": NaN,
+  "model_scores": [
+    0.0,
+    0.0
+  ],
+  "human_means": [
+    4.666666666666667,
+    5.0
+  ],
+  "per_example_stats": [
+    {
+      "id": "flask-1",
+      "question_id": null,
+      "human_scores": [
+        4.0,
+        5.0,
+        5.0
+      ],
+      "mean": 4.666666666666667,
+      "std": 0.5773502691896257,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "flask-2",
+      "question_id": null,
+      "human_scores": [
+        5.0,
+        5.0,
+        5.0
+      ],
+      "mean": 5.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    }
+  ],
+  "dataset_key": "flask",
+  "num_predictions": 2,
+  "result_path": "/nfs/roberts/project/pi_ac3458/vl298/Prompt-Perturbation/results/flask/pointwise_results.jsonl",
+  "pointwise_basic_stats": {
+    "n": 2,
+    "mean": 0.0,
+    "std": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "max_possible_score": 5.0
+  },
+  "top_examples": [
+    {
+      "id": "flask-1",
+      "score": 0.0,
+      "question_id": null,
+      "response_excerpt": "Please reach out if you have any questions about my rate. Additionally, if you need to adjust the project scope, I'm available to discuss.",
+      "human_mean": 4.666666666666667
+    },
+    {
+      "id": "flask-2",
+      "score": 0.0,
+      "question_id": null,
+      "response_excerpt": "The writer of this email could sound Encouraging, Appreciative, Informal, and Confident to the reader. \n\nThe writer uses an Informal tone in addressing the recipient with \"Hi Jen\" and offers somewh...",
+      "human_mean": 5.0
+    }
+  ],
+  "lowest_examples": [
+    {
+      "id": "flask-1",
+      "score": 0.0,
+      "question_id": null,
+      "response_excerpt": "Please reach out if you have any questions about my rate. Additionally, if you need to adjust the project scope, I'm available to discuss.",
+      "human_mean": 4.666666666666667
+    },
+    {
+      "id": "flask-2",
+      "score": 0.0,
+      "question_id": null,
+      "response_excerpt": "The writer of this email could sound Encouraging, Appreciative, Informal, and Confident to the reader. \n\nThe writer uses an Informal tone in addressing the recipient with \"Hi Jen\" and offers somewh...",
+      "human_mean": 5.0
+    }
+  ],
+  "human_alignment": {
+    "pearson_r": NaN,
+    "pearson_p": NaN,
+    "spearman_rho": NaN,
+    "spearman_p": NaN,
+    "cohen_kappa": 0.0
+  }
+}
