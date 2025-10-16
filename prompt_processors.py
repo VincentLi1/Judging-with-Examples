@@ -448,6 +448,7 @@ class PairwiseComparisonPromptProcessor(PromptProcessor):
     """Prompt processor that compares two responses and requests a discrete ranking."""
 
     def __init__(self, *, system_instructions: str, scoring_scale: int) -> None:
+        self.SYSTEM_INSTRUCTIONS = system_instructions
         self.system_instructions = system_instructions
         self.scoring_scale = scoring_scale
 
