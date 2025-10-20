@@ -14,10 +14,36 @@ from typing import Any, Callable, Dict, Iterable, List, Mapping, Optional, Seque
 
 import json
 import logging
+import re
 
 
 def _normalize_text(value: Optional[str]) -> str:
     return value.strip() if isinstance(value, str) else ""
+
+def _strip_named_sections(text: str, headings: Sequence[str]) -> str:
+    """Remove entire markdown sections whose headings match ``headings``."""
+
+    if not text:
+        return text
+
+    drop = {f"### {heading}".lower() for heading in headings}
+    lines = text.splitlines()
+    result: List[str] = []
+    skip = False
+    for line in lines:
+        if skip and not line.startswith("### "):
+            continue
+        if skip and line.startswith("### "):
+            skip = False
+        normalized = line.strip().lower()
+        if normalized in drop:
+            skip = True
+            continue
+        result.append(line)
+
+    cleaned = "\n".join(result)
+    cleaned = re.sub(r"\n{3,}", "\n\n", cleaned)
+    return cleaned.strip()
 
 
 def format_score_rubric_text(rubric: Any) -> str:
@@ -422,6 +448,11 @@ class FLASKPromptProcessor(PromptProcessor):
                 instructions_heading="Instructions",
             )
 
+            instruction_text = _strip_named_sections(
+                instruction_text,
+                headings=("Target Skills", "Domains", "Difficulty"),
+            )
+
             metadata = {
                 "dataset": "flask",
                 "score_rubric": entry.get("score_rubric"),
@@ -429,6 +460,9 @@ class FLASKPromptProcessor(PromptProcessor):
                 "reference_answer": reference_answer,
                 "max_score": entry.get("max_score", 5),
                 "human_scores": entry.get("human_scores", []),
+                "skills": entry.get("skills", []),
+                "domain": entry.get("domain"),
+                "difficulty": entry.get("difficulty"),
                 "sections": section_map,
                 "student_answer": response,
             }
@@ -476,6 +510,7 @@ class PairwiseComparisonPromptProcessor(PromptProcessor):
                 parts.append(f"### Scoring Guidance\n{rubric_text}")
 
             conversation_a = entry.get("conversation_a") or []
+            conversation_a_text = ""
             if isinstance(conversation_a, Sequence) and conversation_a:
                 formatted = []
                 for turn in conversation_a:
@@ -484,9 +519,11 @@ class PairwiseComparisonPromptProcessor(PromptProcessor):
                         content = str(turn.get("content") or turn.get("text") or "").strip()
                         formatted.append(f"{role}: {content}")
                 if formatted:
-                    parts.append("### Conversation A\n" + "\n".join(formatted))
+                    conversation_a_text = "\n".join(formatted)
+                    parts.append("### Conversation A\n" + conversation_a_text)
 
             conversation_b = entry.get("conversation_b") or []
+            conversation_b_text = ""
             if isinstance(conversation_b, Sequence) and conversation_b:
                 formatted = []
                 for turn in conversation_b:
@@ -495,7 +532,8 @@ class PairwiseComparisonPromptProcessor(PromptProcessor):
                         content = str(turn.get("content") or turn.get("text") or "").strip()
                         formatted.append(f"{role}: {content}")
                 if formatted:
-                    parts.append("### Conversation B\n" + "\n".join(formatted))
+                    conversation_b_text = "\n".join(formatted)
+                    parts.append("### Conversation B\n" + conversation_b_text)
 
             parts.append(
                 "### Output Instructions\n"
@@ -504,6 +542,18 @@ class PairwiseComparisonPromptProcessor(PromptProcessor):
             )
 
             instruction_text = "\n\n".join(parts)
+
+            section_map = {
+                "question": question,
+                "response_a": response_a,
+                "response_b": response_b,
+            }
+            if rubric_text:
+                section_map["scoring_guidance"] = rubric_text
+            if conversation_a_text:
+                section_map["conversation_a"] = conversation_a_text
+            if conversation_b_text:
+                section_map["conversation_b"] = conversation_b_text
 
             metadata = {
                 "dataset": entry.get("source_dataset"),
@@ -514,13 +564,15 @@ class PairwiseComparisonPromptProcessor(PromptProcessor):
                 "human_winner": entry.get("human_winner"),
                 "score_rubric": entry.get("score_rubric"),
                 "max_score": self.scoring_scale,
+                "sections": section_map,
+                "student_answer": None,
             }
 
             processed.append(
                 PromptExample(
                     id=str(entry.get("id")),
                     instruction=instruction_text,
-                    output="Not Applicable",
+                    output="",
                     metadata=metadata,
                 )
             )

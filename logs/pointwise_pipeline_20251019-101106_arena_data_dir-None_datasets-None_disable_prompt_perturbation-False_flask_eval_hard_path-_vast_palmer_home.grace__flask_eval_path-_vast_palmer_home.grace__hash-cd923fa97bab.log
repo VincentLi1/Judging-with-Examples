@@ -1,0 +1,67 @@
+[INFO] 2025-10-19 10:11:06,245 Logging to /vast/palmer/home.grace/vl298/Prompt-Perturbation/logs/pointwise_pipeline_20251019-101106_arena_data_dir-None_datasets-None_disable_prompt_perturbation-False_flask_eval_hard_path-_vast_palmer_home.grace__flask_eval_path-_vast_palmer_home.grace__hash-cd923fa97bab.log
+[INFO] 2025-10-19 10:11:06,245 Prompt perturbation enabled: True
+[DEBUG] 2025-10-19 10:11:06,325 Starting new HTTPS connection (1): huggingface.co:443
+[DEBUG] 2025-10-19 10:11:06,361 https://huggingface.co:443 "HEAD /Qwen/Qwen2.5-0.5B-Instruct/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+[DEBUG] 2025-10-19 10:11:06,368 https://huggingface.co:443 "HEAD /api/resolve-cache/models/Qwen/Qwen2.5-0.5B-Instruct/7ae557604adf67be50417f59c2c2f167def9a775/tokenizer_config.json HTTP/1.1" 200 0
+[DEBUG] 2025-10-19 10:11:06,403 https://huggingface.co:443 "GET /api/models/Qwen/Qwen2.5-0.5B-Instruct/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+[DEBUG] 2025-10-19 10:11:06,667 https://huggingface.co:443 "HEAD /Qwen/Qwen2.5-0.5B-Instruct/resolve/main/config.json HTTP/1.1" 307 0
+[DEBUG] 2025-10-19 10:11:06,673 https://huggingface.co:443 "HEAD /api/resolve-cache/models/Qwen/Qwen2.5-0.5B-Instruct/7ae557604adf67be50417f59c2c2f167def9a775/config.json HTTP/1.1" 200 0
+[DEBUG] 2025-10-19 10:11:06,696 https://huggingface.co:443 "HEAD /Qwen/Qwen2.5-0.5B-Instruct/resolve/main/config.json HTTP/1.1" 307 0
+[DEBUG] 2025-10-19 10:11:06,703 https://huggingface.co:443 "HEAD /api/resolve-cache/models/Qwen/Qwen2.5-0.5B-Instruct/7ae557604adf67be50417f59c2c2f167def9a775/config.json HTTP/1.1" 200 0
+[DEBUG] 2025-10-19 10:11:06,726 https://huggingface.co:443 "HEAD /Qwen/Qwen2.5-0.5B-Instruct/resolve/main/config.json HTTP/1.1" 307 0
+[DEBUG] 2025-10-19 10:11:06,732 https://huggingface.co:443 "HEAD /api/resolve-cache/models/Qwen/Qwen2.5-0.5B-Instruct/7ae557604adf67be50417f59c2c2f167def9a775/config.json HTTP/1.1" 200 0
+[DEBUG] 2025-10-19 10:11:06,759 https://huggingface.co:443 "GET /api/models/Qwen/Qwen2.5-0.5B-Instruct/tree/main?recursive=True&expand=False HTTP/1.1" 200 1212
+[DEBUG] 2025-10-19 10:11:06,787 https://huggingface.co:443 "GET /api/models/Qwen/Qwen2.5-0.5B-Instruct/tree/main?recursive=True&expand=False HTTP/1.1" 200 1212
+[DEBUG] 2025-10-19 10:11:06,808 https://huggingface.co:443 "HEAD /Qwen/Qwen2.5-0.5B-Instruct/resolve/main/preprocessor_config.json HTTP/1.1" 404 0
+[DEBUG] 2025-10-19 10:11:07,087 https://huggingface.co:443 "HEAD /Qwen/Qwen2.5-0.5B-Instruct/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+[DEBUG] 2025-10-19 10:11:07,094 https://huggingface.co:443 "HEAD /api/resolve-cache/models/Qwen/Qwen2.5-0.5B-Instruct/7ae557604adf67be50417f59c2c2f167def9a775/tokenizer_config.json HTTP/1.1" 200 0
+[DEBUG] 2025-10-19 10:11:07,207 https://huggingface.co:443 "GET /api/models/Qwen/Qwen2.5-0.5B-Instruct/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+[DEBUG] 2025-10-19 10:11:07,437 https://huggingface.co:443 "HEAD /Qwen/Qwen2.5-0.5B-Instruct/resolve/main/generation_config.json HTTP/1.1" 307 0
+[DEBUG] 2025-10-19 10:11:07,448 https://huggingface.co:443 "HEAD /api/resolve-cache/models/Qwen/Qwen2.5-0.5B-Instruct/7ae557604adf67be50417f59c2c2f167def9a775/generation_config.json HTTP/1.1" 200 0
+[DEBUG] 2025-10-19 10:11:10,378 Starting new HTTPS connection (1): stats.vllm.ai:443
+[DEBUG] 2025-10-19 10:11:10,473 https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+[DEBUG] 2025-10-19 10:11:10,514 Starting new HTTPS connection (1): huggingface.co:443
+[DEBUG] 2025-10-19 10:11:10,557 https://huggingface.co:443 "GET /api/models/Qwen/Qwen2.5-0.5B-Instruct HTTP/1.1" 200 7373
+[DEBUG] 2025-10-19 10:11:10,582 https://huggingface.co:443 "GET /api/models/Qwen/Qwen2.5-0.5B-Instruct/tree/main?recursive=False&expand=False HTTP/1.1" 200 1212
+[DEBUG] 2025-10-19 10:11:10,583 Attempting to acquire lock 22682928806800 on /home/vl298/.cache/huggingface/hub/e448f406a92f411e1f0880376562e2228dda13128dc55008a474abf470c85068Qwen-Qwen2.5-0.5B-Instruct.lock
+[DEBUG] 2025-10-19 10:11:10,586 Lock 22682928806800 acquired on /home/vl298/.cache/huggingface/hub/e448f406a92f411e1f0880376562e2228dda13128dc55008a474abf470c85068Qwen-Qwen2.5-0.5B-Instruct.lock
+[DEBUG] 2025-10-19 10:11:10,643 https://huggingface.co:443 "GET /api/models/Qwen/Qwen2.5-0.5B-Instruct/revision/main HTTP/1.1" 200 7373
+[DEBUG] 2025-10-19 10:11:10,649 Attempting to release lock 22682928806800 on /home/vl298/.cache/huggingface/hub/e448f406a92f411e1f0880376562e2228dda13128dc55008a474abf470c85068Qwen-Qwen2.5-0.5B-Instruct.lock
+[DEBUG] 2025-10-19 10:11:10,650 Lock 22682928806800 released on /home/vl298/.cache/huggingface/hub/e448f406a92f411e1f0880376562e2228dda13128dc55008a474abf470c85068Qwen-Qwen2.5-0.5B-Instruct.lock
+[DEBUG] 2025-10-19 10:11:10,650 Attempting to acquire lock 22682930878592 on /home/vl298/.cache/huggingface/hub/e448f406a92f411e1f0880376562e2228dda13128dc55008a474abf470c85068Qwen-Qwen2.5-0.5B-Instruct.lock
+[DEBUG] 2025-10-19 10:11:10,653 Lock 22682930878592 acquired on /home/vl298/.cache/huggingface/hub/e448f406a92f411e1f0880376562e2228dda13128dc55008a474abf470c85068Qwen-Qwen2.5-0.5B-Instruct.lock
+[DEBUG] 2025-10-19 10:11:10,676 https://huggingface.co:443 "HEAD /Qwen/Qwen2.5-0.5B-Instruct/resolve/main/model.safetensors.index.json HTTP/1.1" 404 0
+[DEBUG] 2025-10-19 10:11:10,678 Attempting to release lock 22682930878592 on /home/vl298/.cache/huggingface/hub/e448f406a92f411e1f0880376562e2228dda13128dc55008a474abf470c85068Qwen-Qwen2.5-0.5B-Instruct.lock
+[DEBUG] 2025-10-19 10:11:10,678 Lock 22682930878592 released on /home/vl298/.cache/huggingface/hub/e448f406a92f411e1f0880376562e2228dda13128dc55008a474abf470c85068Qwen-Qwen2.5-0.5B-Instruct.lock
+[DEBUG] 2025-10-19 10:11:23,072 https://huggingface.co:443 "HEAD /Qwen/Qwen2.5-0.5B-Instruct/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+[DEBUG] 2025-10-19 10:11:23,079 https://huggingface.co:443 "HEAD /api/resolve-cache/models/Qwen/Qwen2.5-0.5B-Instruct/7ae557604adf67be50417f59c2c2f167def9a775/tokenizer_config.json HTTP/1.1" 200 0
+[DEBUG] 2025-10-19 10:11:23,106 https://huggingface.co:443 "GET /api/models/Qwen/Qwen2.5-0.5B-Instruct/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+[INFO] 2025-10-19 10:11:23,674 Using model: qwen2.5-0.5b
+[DEBUG] 2025-10-19 10:11:23,674 Evaluator target: <function pointwise_eval at 0x14a1d0d560c0>
+[DEBUG] 2025-10-19 10:11:23,675 Signature: (model: object, data: list[dict], output_dir: str, prompt_dir: str, batch_size: int, instruction_marker: str, output_marker: str, output_text_dir: str | None = None, temperature: float = 1.0, top_p: float = 1.0, n: int = 1, max_tokens: int = 512, logprobs: int | None = None, verbose: bool = False, **kwargs) -> None
+[DEBUG] 2025-10-19 10:11:23,675 Docstring:
+Perform pointwise evaluation.
+
+Args:
+    model: The model for evaluation.
+    data: The data to evaluate.
+    output_dir: The directory to save the evaluation output.
+    prompt_dir: The directory containing the prompt data.
+    batch_size: The batch size for evaluation.
+    instruction_marker: The marker for the instruction.
+    output_marker: The marker for the output.
+    output_text_dir: The directory to save the output text.
+    temperature: The temperature for sampling.
+    top_p: The top-p value for sampling.
+    n: The number of samples to generate.
+    max_tokens: The maximum number of generated tokens for each sample.
+    logprobs: The number of log probabilities to output.
+    parse_fn: The function to parse the output.
+    verbose: Whether to print verbose output.
+    kwargs: Additional keyword arguments for the evaluation function.
+
+Returns:
+    None
+[INFO] 2025-10-19 10:11:23,703 Loaded 240 llm_grader submissions across 6 questions
+[DEBUG] 2025-10-19 10:11:23,718 Running perturbation workflow for dataset llm_grader
+[DEBUG] 2025-10-19 10:11:23,753 Invoking pointwise evaluator on 240 examples

@@ -261,18 +261,32 @@ class BaseVLLM(ABC):
             for prompt in tqdm(prompts, desc="preparing prompts", disable=not use_tqdm)
         ]
 
-        outputs = self.model.generate(
-            prompt_token_ids=prompts,
-            sampling_params=SamplingParams(
-                n=n,
-                temperature=temperature,
-                max_tokens=max_tokens,
-                top_p=top_p,
-                logprobs=logprobs,
-                stop_token_ids=self.STOP_TOKEN_IDS,
-            ),
-            use_tqdm=use_tqdm,
+        sampling_params = SamplingParams(
+            n=n,
+            temperature=temperature,
+            max_tokens=max_tokens,
+            top_p=top_p,
+            logprobs=logprobs,
+            stop_token_ids=self.STOP_TOKEN_IDS,
         )
+
+        try:
+            outputs = self.model.generate(
+                prompt_token_ids=prompts,
+                sampling_params=sampling_params,
+                use_tqdm=use_tqdm,
+            )
+        except TypeError as exc:
+            if "prompt_token_ids" not in str(exc):
+                raise
+            prompt_texts = self.tokenizer.batch_decode(
+                prompts, skip_special_tokens=False, clean_up_tokenization_spaces=False
+            )
+            outputs = self.model.generate(
+                prompts=prompt_texts,
+                sampling_params=sampling_params,
+                use_tqdm=use_tqdm,
+            )
         _outputs = []
         for output in outputs:
             output = output.outputs

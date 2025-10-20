@@ -682,7 +682,7 @@ class MTBenchHumanJudgmentsLoader(PairwiseJudgmentDatasetLoader):
         *,
         data_dir: Optional[str] = None,
         max_examples: Optional[int] = None,
-        scoring_scale: int = 10,
+        scoring_scale: int = 5,
         local_path: Optional[Path] = None,
         hf_chunk_pct: float = 10.0,
     ) -> None:

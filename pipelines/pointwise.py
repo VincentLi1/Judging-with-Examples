@@ -60,7 +60,9 @@ class SimplePromptPerturbationMixin:
 
     variant_order = ("original", "perturbed")
 
-    def _perturb_text(self, text: str, token: str) -> str:
+    def _perturb_text(self, text: str | None, token: str) -> str:
+        if not text:
+            return text or ""
         words = text.split()
         for idx in range(4, len(words), 5):
             words[idx] = token
@@ -101,6 +103,7 @@ class SimplePromptPerturbationMixin:
         for example in processed_examples:
             original_meta = copy.deepcopy(example.metadata)
             original_meta["perturbation_label"] = "original"
+            original_student_answer = original_meta.get("student_answer") or example.output
             variants["original"].append(
                 PromptExample(
                     id=example.id,
@@ -115,26 +118,32 @@ class SimplePromptPerturbationMixin:
                 {
                     "label": "original",
                     "sections": sections,
-                    "student_answer": original_meta.get("student_answer", example.output),
+                    "student_answer": original_student_answer,
                 }
             ]
 
             pert_sections = copy.deepcopy(sections)
             if "assignment" in pert_sections:
-                pert_sections["assignment"] = self._perturb_text(
-                    pert_sections["assignment"], self.replacement_tokens["instructions"]
-                )
+                assignment_text = pert_sections["assignment"]
+                if isinstance(assignment_text, str) and assignment_text.strip():
+                    pert_sections["assignment"] = self._perturb_text(
+                        assignment_text, self.replacement_tokens["instructions"]
+                    )
             if "rubric" in pert_sections:
-                pert_sections["rubric"] = self._perturb_text(
-                    pert_sections["rubric"], self.replacement_tokens["rubric"]
-                )
+                rubric_text = pert_sections["rubric"]
+                if isinstance(rubric_text, str) and rubric_text.strip():
+                    pert_sections["rubric"] = self._perturb_text(
+                        rubric_text, self.replacement_tokens["rubric"]
+                    )
             if "reference_answer" in pert_sections:
-                pert_sections["reference_answer"] = self._perturb_text(
-                    pert_sections["reference_answer"], self.replacement_tokens["reference_answer"]
-                )
+                reference_text = pert_sections["reference_answer"]
+                if isinstance(reference_text, str) and reference_text.strip():
+                    pert_sections["reference_answer"] = self._perturb_text(
+                        reference_text, self.replacement_tokens["reference_answer"]
+                    )
 
             pert_student_answer = self._perturb_text(
-                original_meta.get("student_answer", example.output),
+                original_student_answer,
                 self.replacement_tokens["student_answer"],
             )
 
@@ -470,11 +479,13 @@ class PointwisePipeline(SimplePromptPerturbationMixin):
         definitions["flask"] = (flask_loader, FLASKPromptProcessor(), prompt_template)
 
         mt_loader = overrides.get("mt_bench") or create_dataset_loader("mt_bench", project_root)
-        mt_scale = getattr(mt_loader, "scoring_scale", 10)
+        if hasattr(mt_loader, "scoring_scale"):
+            mt_loader.scoring_scale = 5
+        mt_scale = getattr(mt_loader, "scoring_scale", 5)
         mt_processor = PairwisePointwisePromptProcessor(
             dataset_key="mt_bench",
             system_instructions=(
-                "You are an MT-Bench adjudicator. Score the assistant response on a {scale}-point scale "
+                "You are an MT-Bench adjudicator. Score the assistant response on a {scale}-point scale (1 = lowest, {scale} = highest) "
                 "considering helpfulness, accuracy, and clarity."
             ).format(scale=mt_scale),
             scoring_scale=mt_scale,
