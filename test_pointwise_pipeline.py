@@ -9,8 +9,13 @@ from pathlib import Path
 import types
 import tempfile
 from unittest import mock
+import argparse
 
-import numpy as np
+try:
+    import numpy as np
+except ModuleNotFoundError:  # pragma: no cover - optional dependency
+    np = types.SimpleNamespace()
+
 import logging
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
@@ -54,6 +59,12 @@ class DummyModelTests(unittest.TestCase):
             self.model, _ = pointwise_pipeline.create_model(True)
         except Exception as exc:
             self.skipTest(f"Dummy model unavailable: {exc}")
+
+    def test_create_model_namespace_dummy(self) -> None:
+        namespace = argparse.Namespace(use_dummy_model=True)
+        model, name = pointwise_pipeline.create_model(namespace)
+        self.assertEqual(name, "dummy_api")
+        self.assertTrue(hasattr(model, "generate"))
 
     def test_keyword_point_allocation(self) -> None:
         score_none = self.model.debug_score("irrelevant text")
@@ -365,6 +376,11 @@ class HelperFunctionTests(unittest.TestCase):
         result, fail = simple_pointwise_parse(record)
         self.assertIsInstance(result, PointwiseScore)
         self.assertEqual(result.score, 17)
+        self.assertFalse(fail)
+
+        tagged_record = {"response": [{"text": "\n<score> 3 </score>\n"}]}
+        result, fail = simple_pointwise_parse(tagged_record)
+        self.assertEqual(result.score, 3)
         self.assertFalse(fail)
 
         bad_record = {"response": [{"text": "invalid"}]}

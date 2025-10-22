@@ -42,7 +42,7 @@ top halt  # x86
 top halt  # x86
 top halt  # x86
 $1,%dx test $0
-# see if we're still looping
+# see if we're not looping
 top halt  # x86
 top halt  # x86
 top halt  # x86
@@ -142,7 +142,7 @@ track of the current state of the process
 that the process can do         self
 _id]['code'] = DO_COMPUTE
 each process         self.instructions = {}
-each process         self.instructions = {}
+this process         self.instructions = set
 process         self.instructions = {}
 self.process_switch_behavior = process_switch_behavior
 self.process_switch_behavior = process_switch_behavior
@@ -198,43 +198,43 @@ the processes         self.instructions = {
 .h SRC = $(BINARIES
 .h SRC = $(BINARIES
 1. [Producer-Consumer Model
-• Virtual Address 8999
+• Virtual Address 8988
 3685e # Rub
-x12 [decimal 12
+x12 [decimal 14
 988: --> pde index
 368f • Virtual
 345 • Virtual Address 3
-• Virtual Address 8999
+• Virtual Address 8988
 890  ### Rubric
 :0x9c (valid
 :0x9c (valid
-8988  ### Rubric
+8988
 Fault (page directory entry not valid)
-• Virtual Address 8999
-• Virtual Address 8999
+• Virtual Address 8988
+• Virtual Address 8988
 8 ● Virtual Address 14ab
 9] pde contents:0x
-• Virtual Address 8999
+• Virtual Address 8988
 Fault (page directory entry not valid)
-• Virtual Address 8999
+• Virtual Address 8988
 decimal 15]) --> Fault (
-2021-20
-8988  ### Rubric
+2020-20
+8988
 890  ### Rubric
 29  ### Rubric Details
 3]) --> Fault (page directory entry
-Virtual Address 3103
+Virtual Address 3685
 7 CS3103 -
-• Virtual Address 8999
+• Virtual Address 8988
 ● Virtual Address 8999
 :0x9c (valid
-• Virtual Address 8999
-• Virtual Address 8999
+• Virtual Address 8988
+• Virtual Address 8988
 index:0x1f [decimal
 988: --> pde index
 890  ### Rubric
 368f • Virtual
-• Virtual Address 8999
+• Virtual Address 8988
 ● Virtual Address 8999
-• Virtual Address 8999
+• Virtual Address 8988
 0x9d [decimal 1

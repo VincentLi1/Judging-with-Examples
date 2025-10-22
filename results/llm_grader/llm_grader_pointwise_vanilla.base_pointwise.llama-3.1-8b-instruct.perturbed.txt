@@ -1,0 +1,240 @@
+<score>3</score>
+<score>6</score>
+<score>0</score>
+<score>16</score>
+<score>10</score>
+<score>12</score>
+<score>10</score>
+<score>6</score>
+<score>0</score>
+<score>10</score>
+<score>0</score>
+<score>16</score>
+<score>16</score>
+<score>6</score>
+<score>0</score>
+<score>3</score>
+<score>0</score>
+<score>16</score>
+<score>6</score>
+<score>16</score>
+<score>6</score>
+<score>0</score>
+<score>6</score>
+<score>6</score>
+<score>16</score>
+<score>0</score>
+<score>16</score>
+<score>0</score>
+<score>16</score>
+<score>6</score>
+<score>16</score>
+<score>16</score>
+<score>16</score>
+<score>3</score>
+<score>0</score>
+<score>3</score>
+<score>0</score>
+<score>16</score>
+<score>6</score>
+<score>10</score>
+= tmp         return 0
+= tmp         return 0
+= tmp         return 0
+self.memory[self.registers[self.REG_SP
+assert(False, 'register %s not
+= tmp         return 0
+= tmp         return 0
+= tmp         return 0
+= tmp         return 0
+= tmp         return 0
+, 'register %s not found'
+= tmp         return 0
+= tmp         return 0
+= tmp         return 0
+= tmp         return 0
+= tmp         return 0
+[self.registers[self.REG_SP]] =
+= tmp         return 0
+= tmp         return 0
+= tmp         return 0
+[self.registers[self.REG_SP]] =
+= tmp         return 0
+, 'register %s not found'
+= tmp         return 0
+, 'register %s not found'
+= tmp         return 0
+return 0      def
+= tmp         return 0
+= tmp         return 0
+= tmp         return 0
+= tmp         return 0
+= tmp         return 0
+= tmp         return 0
+[dst] = self.memory[self.reg
+self.memory[self.registers[self.REG_SP
+self.memory[self.registers[self
+= tmp         return 0
+= tmp         return 0
+= tmp         return 0
+= tmp         return 0
+<score>0</score>
+<score>10</score>
+<score>0</score>
+<score>0</score>
+<score>0</score>
+0.14 capricorn `
+<score>0</score>
+<score>0</score>
+<score>0</score>
+<score>5</score>
+<score>0</score>
+<score>0</score>
+<score>0</score>
+<score>0</score>
+<score>0</score>
+<score>0</score>
+<score>5</score>
+<score>0</score>
+<score>0</score>
+<score>0</score>
+<score>0</score>
+<score>0</score>
+<score>0</score>
+<score>0</score>
+<score>5</score>
+<score>0</score>
+<score>15</score>
+<score>0</score>
+<score>0</score>
+<score>5</score>
+<score>0</score>
+<score>0</score>
+<score>0</score>
+<score>0</score>
+<score>0</score>
+<score>0</score>
+<score>0</score>
+<score>5</score>
+<score>0</score>
+<score>0</score>
+<score>0</score>
+<score>8</score>
+<score>0</score>
+<score>0</score>
+<score>2</score>
+<score>0</score>
+<score>8</score>
+<score>0</score>
+<score>8</score>
+<score>8</score>
+<score>0</score>
+<score>8</score>
+<score>0</score>
+<score>0</score>
+<score>0</score>
+<score>0</score>
+<score>0</score>
+<score>0</score>
+<score>8</score>
+<score>0</score>
+<score>8</score>
+<score>8</score>
+<score>0</score>
+<score>0</score>
+<score>0</score>
+<score>8</score>
+<score>8</score>
+<score>0</score>
+<score>0</score>
+<score>8</score>
+<score>8</score>
+<score>0</score>
+<score>8</score>
+<score>8</score>
+<score>0</score>
+<score>0</score>
+<score>0</score>
+<score>8</score>
+<score>8</score>
+<score>0</score>
+pthread_cond_t cv = PTHREAD_COND
+pthread_cond_t cv = PTHREAD_COND
+++; }  int do_get() {
+pthread_cond_t cv = PTHREAD_COND
+pthread_cond_t cv = PTHREAD_COND
+pthread_cond_t cv = PTHREAD_COND
+pthread_cond_t cv = PTHREAD_COND
+pthread_cond_t cv = PTHREAD_COND
+pthread_cond_t cv = PTHREAD_COND
+pthread_cond_t cv = PTHREAD_COND
+pthread_cond_t cv = PTHREAD_COND
+pthread_cond_t cv = PTHREAD_COND
+pthread_cond_t cv = PTHREAD_COND
+pthread_cond_t cv = PTHREAD_COND
+pthread_cond_t cv = PTHREAD_COND
+pthread_cond_t cv = PTHREAD_COND
+pthread_cond_t cv = PTHREAD_COND
+pthread_cond_t cv = PTHREAD_COND
+pthread_cond_t cv = PTHREAD_COND
+pthread_cond_t cv = PTHREAD_COND
+"  pthread_cond_t cv = PTHREAD
+pthread_cond_t cv = PTHREAD_COND
+pthread_cond_t cv = PTHREAD_COND
+pthread_cond_t cv = PTHREAD_COND
+pthread_cond_t cv = PTHREAD_COND
+pthread_cond_t cv = PTHREAD_COND
+pthread_cond_t cv = PTHREAD_COND
+pthread_cond_t cv = PTHREAD_COND
+pthread_cond_t cv = PTHREAD_COND
+pthread_cond_t cv = PTHREAD_COND
+pthread_cond_t cv = PTHREAD_COND
+-header.h"  pthread_cond_t cv =
+pthread_cond_t cv = PTHREAD_COND
+pthread_cond_t cv = PTHREAD_COND
+pthread_cond_t cv = PTHREAD_COND
+pthread_cond_t cv = PTHREAD_COND
+pthread_cond_t cv = PTHREAD_COND
+pthread_cond_t cv = PTHREAD_COND
+pthread_cond_t cv = PTHREAD_COND
+#include <stdio.h> #include <stdlib
+)         for i in range(0
+# initialize page table         self.page
+(random.random() * self.maxPageCount
+for i in range(0, self
+)         for i in range(0
+need to initialize page table         #
+)         for i in range(0
+# initialize page table         self.page
+, self.physMem):             self
+, self.physMem):             self
+in range(0, self.maxPage
+return look      def findPage(self
+)         for i in range(0
+)         for i in range(0
+self.pageTable      = []
+pde = 0         for
+)         for i in range(0
+return look      def findPage(self
+)         for i in range(0
+.usedPages[look] = 1
+# initialize page table         self
+in range(0, self.maxPage
+# initialize page table         self.page
+findPage(self, vpn):         assert
+1         self.usedPages[
+in range(0, self.maxPage
+need to initialize page table         #
+)         for i in range(0
+)         for i in range(0
+, self.physMem):             self
+)         for i in range(0
+)         for i in range(0
+self.PDE_SHIFT         self.p
+for i in range(0, self
+# initialize page table         self.page
+)         for i in range(0
+)         for i in range(0
+)         for i in range(0
+)         for i in range(0
+= 1         return look

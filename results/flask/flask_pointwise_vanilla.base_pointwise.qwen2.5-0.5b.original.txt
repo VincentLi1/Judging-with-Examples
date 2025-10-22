@@ -1,6 +1,6 @@
 be easily readable and understandable by the reader
 is only partially correct.   3
-.   6: The response is
+.  Skill: Clarity Criteria:
 credible sources? Scale:   1
 1: The response is completely un
 Criteria: Is the response written in a
@@ -12,13 +12,13 @@ to reconcile with existing knowledge.
 response is completely uninformative or lacks
 is therefore inaccurate.   2:
 5: The logic of the response
-? Is it free of unnecessary words and
-iseness, requiring a significant amount of
+, avoiding unnecessary details and using clear and
+iseness, requiring a significant reorganization
 or reliable.   4: The
-The response is supported by reliable evidence or
+The response is not entirely accurate and relies
 given instruction? This includes the use of
 : The response is mostly redundant or contains
-the response contain accurate information? This includes
+the response provide factual information about the source
 originality and novel ideas, and is
 Clarity Criteria: Is the model
 .   5: The response is
@@ -32,7 +32,7 @@ depth of understanding. Scale:
 , 24 Color, 2
 , but contains some errors, omissions
 is required? Scale:   1
-reliable sources and credible information? Scale:
+facts and evidence? Scale:
 ? Scale:   1: The
 be easily understood and free of grammatical
 background knowledge, with no inaccuracies or
@@ -45,14 +45,14 @@ clear and efficient, but can be improved
 citations, with some questionable reliability.
 instruction.   5: The response
 model extracted some background knowledge, but it
-unsupported claims. There is some support for
+unsupported claims. The response is not supported
 the response. Accuracy: Accuracy Criteria
 matter what, we are all in this
 : The response contains some relevant information,
 relevant background knowledge but included inaccuracies or
 grammar, punctuation, and spelling? Scale
 response clear, concise, and to the
-, with clear and logical flow? Scale
+, with a logical flow of ideas and
 optimal clarity and efficiency.   3
 debug complex data processing pipelines and data analysis
 enough to be considered harmful.
@@ -60,7 +60,7 @@ pired.   4: The response
 or repetitive.   3: The
 clarity and is overly wordy, requiring
 3: The response provides sufficient details
-not be as extensive as the reference answer
+not be as comprehensive as the reference answer
 ity.   3: The response
 2: The response is mostly concise
 a few original ideas or perspectives, but
@@ -71,7 +71,7 @@ are covered, but the response is not
 The response is mostly relevant to the instruction
 reliable evidence or source citations.
 find it overly simplistic or lacking in original
-response includes harmful expressions but does not lead
+response does not include harmful expressions, but
 .  ### Student's Response Dear [
 edits.  Skill: Clarity Criteria
 completely unoriginal and lacks creativity.
@@ -84,20 +84,20 @@ the instruction requires a simulation of the expected
 provide a sufficient explanation? Comprehens
 provide any factual information.   2
 information. The response is not entirely accurate
-instruction faithfully? Scale:   1
+instruction? Is the response clear, concise
 3: The model extracted some
-model extracted and supported relevant background knowledge,
+model extracted and supported all the background knowledge
 includes examples to support the response.  ###
 is detailed, thorough, and covers all
 examples are not sufficient to support the statements
 : Execution Criteria: Does the response
-the instruction.   6: The
+the instruction.  ### Instruction Provide a
 background knowledge, with minor inaccuracies or
 they've given you.
 are present, but it is not entirely
 are not extensive enough to support the statements
 the Islamic calligraphy of the Quran.
-the statements are not sufficient.
+the statements are not sufficient to support the
 instruction.   3: The response
 1: The response contains factual
 concise and to the point? Does it
@@ -122,7 +122,7 @@ irrelevant to the instruction.   2
 The response contains only minor points that are
 ? Scale:   1: The
 The response is mostly relevant to the instruction
-any factual information or does not provide any
+any relevant background knowledge or cite reliable evidence
 response is well-organized and easy to
 Scale:   1: The response
 some inaccuracies.   3:
@@ -155,9 +155,9 @@ much detail as possible and supporting examples to
 and ease of understanding? Scale:
 clear, concise, and easy to understand
 contains some relevant information, but it is
-3: The response provides sufficient details
-information that could potentially harm the user.
-requirements of the instruction.  Skill: Cl
+3: The response provides a reasonable
+information that could be harmful to the user
+requirements of the instruction.  Skill: Execution
 optimal clarity and efficiency.   3
 making it easy to read and understand.
 complete rewrite for optimal clarity and efficiency.
@@ -173,17 +173,17 @@ reliable.   4: The model
 model extracted accurate and relevant background knowledge,
 .   5: The response is
 some minor inaccuracies.   3
-response includes specific examples but doesn't provide
+response includes some specifics but lacks examples or
 are not sufficient to support the statements made
 Is the response clear, concise, and
 reasoning? Scale:   1:
 a failure of commonsense reasoning.
 response concise and to the point? Does
-0 - Not at all meets the
-or it does not fulfill the requirements of
+0 - Not at all;
+or is not at all relevant to the
 sources and credible information? Scale:
-harm or injury to the user? Scale
-accurately capture the essence of the instruction?
+harm or injury? Scale:
+provide factual information? The response should be
 yet they are also original and novel.
 and lacks coherence.   2:
 complete rewrite for optimal efficiency.
@@ -193,14 +193,14 @@ the required information, with no room for
 instruction.   5: The response
 intuitive or paradoxical results. Scale
 original, or innovative? Does the response
-'s response contains minor logical errors that do
+'s response contains minor logical inconsistencies or errors
 3: The response is somewhat unclear
 fills all requirements of the instruction.  Skill
 : Clarity Criteria: Is the
 but the overall structure is understandable.
-5: The model extracted all the
-### Student Answer Tuna & Av
-for improved clarity and efficiency.
+5: The model extracted accurate and
+### Student's Response Tuna &
+for better clarity and efficiency.
 citations. The response is partially supported by
 minor errors in organization, but these are
 instruction.   5: The response
@@ -222,7 +222,7 @@ Is the response written in a clear and
 is more comprehensive than the minimum required.
 the response is unrelated to the instruction,
 Clarity Criteria: Does the response
-that make it difficult to understand.
+that make it hard to understand.
 : The response is mostly relevant to the
 support the response. The response is partially
 .   2: The logic behind
@@ -233,14 +233,14 @@ examples to support the response.  Skill:
 harmful expressions but does not include critical harmful
 contain any unnecessary information.  Skill: Cl
 : The response is relevant to the instruction
-response contains only minor points that are relevant
+response contains some key points that are relevant
 response flow naturally and clearly? Scale:
 it comes to the recipe? The response
 any relevant background knowledge.   2
 2: The response is partially unrelated
 the response written in a clear and easy
 the model's response clear, concise,
-is efficient but not concise, requiring a
+is efficient but not clear or concise,
 its information.  Skill: Clarity
 information.   2: The model
 1: The response provides a logical
@@ -252,8 +252,8 @@ The model partially misinterprets world concepts
 outcome? Scale:   1:
 \ncompute AB + ABC: ADD R
 's final answer is correct and logically sound
-: The response contains some key points that
-2: The model extracted relevant background
+: The response is mostly relevant to the
+2: The model extracted some background
 3: The response is mostly irrelevant
 : Is the model's final answer logically
 sources? Scale:   1:
@@ -284,13 +284,13 @@ logic.   2: The model
 the model's response free from any errors
 instruction and meets all the requirements of the
 4: The model extracted accurate and
-.   6: The response is
+.  Skill: Clarity Criteria:
 2: The model extracted relevant background
 response is not comprehensive enough.
 relevant background knowledge and included accurate information.
 response free from any errors in facts?
 model's final answer is correct and logically
-information.  ### Student's Response 1
+information.  ### Output 10
 the response are relevant to the instruction,
 ts world concepts and does not show any
 sources. The response is partially supported by
@@ -303,24 +303,24 @@ relevant background knowledge, but the response lacks
 .   3: The response is
 The response is completely lacking in detail or
 : Execution Criteria: Does the response
-in understanding world concepts is present.
-need "]", "(", "(" one by
+in understanding world concepts is made, but
+need ")", "(" one by one.
 errors, but the errors are not significant
 64.00,3
 model is completely unaware of the purpose of
 is correct but contains errors that are not
 minor errors that do not significantly undermine its
-instructions and the rubric. Scale:
+instruction's requirements, including the instruction's
 The model partially misinterprets world concepts
 consistent with the given instructions? Scale:
 The response contains only minor details that are
 the instruction.   5: The
 according to the given instruction? This includes
 or confusion.   3: The
-the error is of the Named Entity type
-but it lacks creativity or insightfulness.
+the error is of the type "Named
+but it lacks creativity or originality.
 answer to the given question? This includes
-Does the response provide a clear and concise
+Is the response clear and concise? Scale
 does not fulfill the requirements of the instruction
 or it does not fulfill the requirements of
 a small error that is not immediately obvious
@@ -329,20 +329,20 @@ The response is entirely appropriate to the instruction
 and ensure that you are consistently managing your
 manageable, consider seeking professional help from
 currency: Python has built-in support for
-- 1: The response includes all
+- Did you include all the recommended tips
 However, it also poses significant challenges,
 ins and phytates. However,
 0: The response does not address the
--being can help students develop resilience and adapt
-prehension: Accuracy Does the response
+-being and resilience is crucial for their long
+prehensiveness? Is the response well
 number of effective strategies for conflict resolution in
 health, including increased risk of cancer,
 bicycles, walking, and public transit,
 guidance: Central banks can issue forward guidance
 as individuals may feel excluded from social interactions
 owers her to make informed decisions about her
-.  7. Analysis: The resulting cells
-ful evaluation of the FLASK rubric
+.  7. Editing: If the repair
+ful application of the rubric to the
 trust in traditional media: The rise of
 , how can we effectively promote healthier diets
 be visible in the form of new species
@@ -371,21 +371,21 @@ to use Avogadro's number (
 judgment? (1-5) Explanation
 house * Number of balloons Total lifting
 number of text messages sent per minute,
-general understanding of the topic? (1
+high level of understanding? (1-
 g/cm³ for our estimation.  5
 estimate of around 32.5
 times since the beginning of life.  ###
 ense Accuracy: 90
-politics, and social issues might have been
+politics, and social issues would have been
 balance that could have influenced the course of
 the Black Death had a profound impact on
 field, it is unlikely that he would
 and counterculture movements.  6.
 and his contributions to computing might have been
 would have been significantly altered, potentially leading
-speculative outcomes and not necessarily the only ones
+hypothetical scenarios and the actual outcome would depend
 or it does not fulfill the requirements of
-more than his own work.  ### Rub
+more than his own work.
 .  ### Student Response ```cpp
 the longest common subsequence of two strings
 relevant to the instruction.  ### Student's
@@ -403,9 +403,9 @@ access to our [Software Name] product
 instruction.  Output: 8  ###
 various cultural and social factors. From the
 Park. The breathtaking views and the soothing
-machinery, and a stunning array of alien
+machinery, and a stunning array of visual
 , or song at any time, anywhere
-orchestra's virtuosic playing, combined
+orchestra's performance was a testament to their
 ability and correctness of the answer to the
 So, x = z / 2
 model's final answer is correct but lacks
@@ -432,9 +432,9 @@ items from `stack1` until `
 pivot = array[high];  //
 endl;     std::cout << "
 1] + 1;                 }
-1 - The response does not fulfill
-instruction.  ### Score: 10
-steps that can be simplified.
+0 - The response does not fulfill the
+instruction.  ### Instruction How to read
+steps that can be removed for better clarity
 == nums[left+1]:                     left
 been provided? (1 point)  ###
 are not extensive enough to support the statement
@@ -445,13 +445,13 @@ directory.  7. Implement the user authentication
 to information that aligns with their existing
 Listen to educational podcasts and watch educational videos
 . Use Continuous Integration and Continuous Deployment (
-Conclude with a personal touch: End
+Conclude with a strong recommendation: End
 and end with a call to action if
 [Your Name]
 Changes in weather patterns   b.
-reality.  "Whispers Across Realms
-, feeling a surge of joy and wonder
-The gentle rustling of leaves and the
+reality.
+, feeling a surge of pure joy and
+The gentle hum of a stream, a
 individuals. Social media platforms have also been
 .  Others, however, view the met
 with vaccine-preventable diseases are far
@@ -465,13 +465,13 @@ control the flow of execution.  ### Rub
 if empty_stack else false  enqueue(element
 instruction.  ### Student's Response This
 a queue where elements are added and removed
-or citations, but lacks substantial support.
+or citations, but it lacks substantial support
 be translated multiple times. - More complex
 3: The model's final answer
-sequence, with each step being executed one
+sequence, with each step being executed in
 }         arr[j + 1
 1: The response does not provide
-the statements are minimal.   4
+the statements are not extensive enough.
 For example, I could be asked to
 VMs, it is less scalable than
 Continue fine-tuning the model and using
@@ -480,7 +480,7 @@ problem-solving, decision-making, and communication
 ts world concepts but understands commonsense knowledge
 2: The response is mostly unrelated
 of 140 = 4
-answer is partially correct but not entirely accurate
+answer is mostly correct, but not entirely
 by the model a valid, logical conclusion
 6, 68, 7
 10x + 50 +
@@ -493,10 +493,10 @@ return {"fruit": fruit, "
 quicksort(nums, low, pi -
 and free of errors? Scale:
 AAA"></td>     <td x
-### Analysis 1. **CPU Architecture
+1. **CPU Architecture**: The Ryzen
 and print a message indicating that the Excel
 Random rand = new Random();
-instructions.  ### Complexity Criteria: Is
+instruction.  ### Complexity Criteria: Is
 with the provided test case:  ```python
 .Collections.Generic; using System.Linq;  class
 0: The solution does not meet the
@@ -507,8 +507,8 @@ more complex solution.   2:
 the destructor is called before the next node
 Not at all   2:
 <td>Third row, second
-: Did the model follow the logical flow
-clear, concise, and free of unnecessary
+: Did the model follow the logical structure
+clear, concise, and to the point
 the response logically sound and free of errors
 examples or supporting details.   5
 but it does cover the main points.
@@ -531,18 +531,18 @@ reliable evidence or citation.   2
 The response is quite concise and contains only
 accurate information from the instruction? Scale:
 some minor inaccuracies.   3
-response is mostly redundant or contains a lot
+response is mostly concise but contains some unnecessary
 . Incorporate multilingual resources: Use
 . Promote sustainable living practices, such
 in unnecessary fights or engaging in combat with
 hacker: This individual is known for their
 foothold and conducting scientific experiments.
-strategies, I believe that I can out
+strategies, I would be able to out
 and unforgettable moments of the entire tournament.
 and pertinent background knowledge, with minor inaccur
 NADPH, which are essential for
 of membrane-bound organelles and rib
-, which uses them to pump protons
+, which uses them to reduce a molecule
 reliable.   4: The model
 The response is mostly relevant to the instruction
 feedback, personalized learning paths, and real
@@ -567,12 +567,12 @@ model does not accurately interpret the concept.
 . Output: 10  ###
 to score points. In rugby, the
 of the instruction.  Skill: Execution
-country.  The judiciary is composed of judges
+country.  Judges are appointed by the
 argue that David's negligence was a result
 may argue that he acted with actual mal
-civil law and criminal law are governed by
+civil law and criminal law are based on
 influence: Undue influence is a legal
-online resources and research tools to find and
+online resources and research tools, you can
 . In severe cases, medications or insulin
 you or someone else experiences any of these
 at least 150 minutes of
@@ -580,7 +580,7 @@ back) can help reduce the frequency and
 The green light is a powerful symbol in
 than black people, and the moral and
 citations, with some questionable reliability.
-on my face."  Second, the ghost
+on my face, To hide my true
 This novel is a satirical exploration of
 by reliable evidence or citations.
 knowledge, with minor inaccuracies or o
@@ -604,7 +604,7 @@ background knowledge, with minor inaccuracies or
 Economy:  Advantages: 1. Efficiency
 time.  Factor affecting cyclical unemployment:
 . This is because the nominal value is
-of foreign residents, including expatriates
+of expatriates who work in other
 job losses and economic decline.  4.
 . Scale:   1: The
 the instruction.   3: The
@@ -616,12 +616,12 @@ heavily indebted. The French economy was also
 . This process allowed for the mass production
 Serbia refused to comply, Austria-Hung
 baselines: The proposed method is compared
-and how they are computed.    b
+the types of losses (e.g.,
 Use `\tabcolsep` to set
 warm up the Earth's surface. Carbon
 provide a thorough explanation of the difference between
 and pertinent background knowledge, with minor inaccur
-believe that free will is possible within a
+believe that free will is possible if the
 the Roof (1933)
 like he did.  (Chorus)
 contain any unnecessary information.   6
@@ -631,12 +631,12 @@ In the pilot study, we recruited participants
 , a story of science and of life
 requirements of the instruction.   5
 . They traversed the treacherous
-conferences. This will not only demonstrate your
+conferences. This will help you gain recognition
 seen a significant increase in the number of
 Take a train to Montreux (
 .   2: The model partially
 end of the novella, Ivan's
-solution.  3. Real-time interactions:
+process.  3. Real-time interactions:
 they do not contribute to the energy production
 : The response is completely concise and lacks
 correct.   5: The model
@@ -648,9 +648,9 @@ passion, dedication, and the relentless pursuit
 's work to review textbooks and teacher-created
 world concepts, but it is still able
 as water quality testing, water quality monitoring
-2 points)  Business Model Type -
+2 points)  Business Model - Business
 a complete rewrite for optimal clarity and efficiency
-information. There is some support for the
+information. The response is not supported by
 to improve performance and reduce the risk of
 on the specific needs and resources available in
 and channels are being used for digital marketing
@@ -664,17 +664,17 @@ a creative response?  1. Yes
 , with some questionable reliability.
 ebriated patrons, including a young
 5: The response is completely relevant
-mitigate the impact of this incident. We
+mitigate the impact of this incident, and
 or the model misunderstands the instruction.
 the response free from any inaccuracies or
 iveness? Is the response clear and concise
 effective insurance coverage plan to protect the family
-partially or completely unrelated to the instruction.
+correct, but the response is not entirely
 by the plaintiff, Baker, against the
-Criteria: Does the response follow logical steps
+Criteria: Does the model follow logical steps
 does not fulfill the requirements of the instruction
-rubric is used to assess the student
-Erevan's true identity, a
+rubric is used to evaluate the level
+Erevan's existence, fearing the
 of the logo and how many points it
 but contains too many minor requirements that are
 and includes examples to support the statements made
@@ -690,16 +690,16 @@ s the question.   2:
 ♀️ #Cravings #Diet
 your service, my young friend," the
 communication topics, leading to a lack of
-includes specific examples but doesn't provide a
+includes some specifics but lacks examples or examples
 Accuracy: Accuracy Clarity:
 The DeFi space is currently experiencing a
 stock market. When you buy shares of
 ly increased signal in the white matter:
-to the instruction fully, including all the
+to the instruction in a way that demonstrates
 are high, and dietary changes to reduce
 10 Accuracy: 8
 1: The response is completely un
-credible sources? Scale:   1
+credible sources? Is the model's response
 complete.   3: The response
 Conclusion  We are excited to share with
 methods. The solution is then used to
@@ -707,7 +707,7 @@ Execution Criteria: Does the response follow
 10
 compared to the given reference answer? Scale
 reliable evidence or source citations.
-: The model's final answer is logically
+: The model's final answer is correct
 of the game.  ### Rubric Details
 ? Is the response well-structured and
 A call-to-action button with a link
@@ -721,17 +721,17 @@ contains some inaccuracies or omissions.
 that have a high number of backlinks
 of the rubric? (1/
 , with minor inaccuracies or omissions
-information was provided? Scale:
+information is required? Scale:
 . 27. Unseen friend.
 reliable evidence or citation.   2
 0 nights before you buy it, and
 , the presale contract should be updated
 can use inheritance to create a base class
-original and novel, and the model successfully
+original and novel, and the ideas are
 grains, fruits, vegetables, and leg
 the end of the quiz. This quiz
 10 Creativity:
-assessed. Scale:   1:
+evaluated. Scale:   1:
 10 products/services for us to
 The response is a comprehensive and detailed explanation
 them. Accurat's solution is a
@@ -750,15 +750,15 @@ each focusing on a specific parenting skill or
 erving history is also essential for the preservation
 .   4: The response is
 (1 point) Does the response provide
-mostly relevant to the instruction, but contains
+mostly correct, but with some key points
 the model provide accurate information according to the
 relevant information.   2: The
-It is a very good response.  ###
+It is a very good response, but
 the Drake Equation is a highly complex and
 success is not about money it's about
 international organizations to improve safety and security standards
-before it consumes the entire island.  The
-the requirements of the rubric? The
+before it consumes the entire island.
+the requirements of the instruction? The response
 you have received the invoice, you can
 increase your brand's visibility and credibility.
 and hobbies that are not yet widely known
@@ -784,19 +784,19 @@ partially misinterprets world concepts or partially
 the idea of belonging to a community or
 to understand.   3: The
 model's understanding of world concepts.
-and political spin. These narratives, while
+and political spin. These allegations are not
 irrelevant to the instruction.   2
 4: The response contains some key
 responsibility and corporate governance.  9. September
-understand.   3: The response
-(ABM) 48. Mobile
+understand the topic.   3:
+48. Virtual Reality (VR
 relevant to the instruction, but the response
 by reliable sources and credible information? Scale
 and all requirements of the instruction are met
 ,880 * (1 -
 children, such as a Shabbat
 secure communication network, such as a blockchain
-0: The response is completely irrelevant or
+0: The response is completely incorrect and
 the topic and includes examples to support the
 any errors? Scale:   1
 2: The response is creative,
@@ -807,20 +807,20 @@ could be harmful.   4:
 2: The response is concise but
 acies or incomplete information. The response has
 included some inaccuracies or omissions.
-logically sound and avoids significant logical contradictions.
+logically sound and considers all edge cases.
 .   4: The response is
 knowledge, with minor inaccuracies or o
 irrelevant to the instruction.   2
-some logical errors but is still logically correct
+some logical errors but is still correct.
 extracted some background knowledge but provided inaccurate or
 Criteria: Is the response logically robust
-9.97 km/h | M
+9.87 km/h | M
 itating a simulation of the expected outcome?
 are minor but still incorrect.
-2: The model's response
+2: The model's logic
 Logical Reasoning Criteria: Is the
 ? Scale:   1: The
-examples to support the explanation.  Skill:
+examples to support the response.  Skill:
 requires a simulation of the expected result or
 instruction.   5: The response
 /Disclosing Party's written consent.\
@@ -831,7 +831,7 @@ or the model misunderstands the instruction.
 3: The response is mostly relevant
 points of the response are relevant to the
 problems. Scale:   1:
-The response is completely free from biased content
+The response is completely free from harmful expressions
 [Your name] - [Your
 incorrect or not at all related to the
 model acknowledges the uncertainty in ambiguous or uncertain
@@ -839,7 +839,7 @@ partially complete, but the response is still
 : The response is partially unrelated to the
 1 - Not at all 2 -
 the response is unrelated to the instruction,
-model partially misinterprets world concepts,
+model misinterprets world concepts, but
 : Did the model provide insightful and meaningful
 : The response is relevant to the instruction
 a simulation of the expected result? Scale
@@ -848,7 +848,7 @@ final answer is correct but contains errors that
 examples to support the statements made.
 facts and evidence from reliable sources? Is
 are listed as "near threatened" by
-errors.   6: The model
+errors.  Output: 2
 or not provided.   3:
 is only a partial response.
 the instruction.   2: The
@@ -866,7 +866,7 @@ kept there. He was also a member
 ? Scale:   1: The
 to provide more examples and support.
 . The response is partially supported by evidence
-3: The model acknowledges its uncertainty
+3: The model acknowledges the uncertainty
 response is not sufficiently detailed or comprehensive.
 is supported by reliable evidence or source citations
 any inaccuracies or omissions. The
@@ -885,7 +885,7 @@ ance costs . results of operations for
 Criteria: Is the model demonstrating a high
 4: The model extracted accurate and
 correctness.   5: The model
-acies or unsupported claims. The response has
+acies or incomplete information. The response has
 contains minor logical inconsistencies or errors.
 entirely supported by reliable evidence and citation.
 background knowledge but provided inaccurate or misleading information
@@ -905,7 +905,7 @@ single correct answer? Is the response free
 insightfulness.  Skill: Clarity
 original or novel, but it lacks depth
 in understanding a world concept is made,
-relevant to the instruction, but the response
+correct, but the response is not entirely
 .   2: The response is
 harmful content, and the model explicitly addresses
 response concise and to the point? Does
@@ -918,7 +918,7 @@ unnecessary details? Scale:   1
 for better clarity and efficiency.
 completely irrelevant to the instruction.
 .......\nj::::j...j::::
-final answer is correct and follows the instructions
+final answer is correct and follows the instruction
 : The response is well-organized,
 in the response logically correct in relation to
 : The response is somewhat redundant or contains
@@ -941,9 +941,9 @@ as they were in the 18
 by the French and their Indian allies,
 Reasoning Criteria: Is the model
 the requirements of the instruction.  Skill:
-? The response should be free of errors
+? The final answer should be a clear
 , but the reader can still understand the
-including examples and supporting details.  Skill:
+using examples and details to support the statements
 Criteria: Is the response logically correct and
 too much information.   2:
 Did the model respond with awareness of its
@@ -956,7 +956,7 @@ Criteria: Does the response use clear and
 leading to a complex and time-consuming solution
 .  Skill: Depth Criteria: Does
 understand.   3: The response
-of the swap transaction . the company will
+of the swap and is based on the
 Criteria: Does the response contain accurate information
 accurate background knowledge, with no inaccuracies
 The response is not supported by reliable evidence
@@ -972,19 +972,19 @@ response is a good example of a comprehensive
 and relevant.  Skill: Clarity
 more comprehensive and detailed.   5
 answer is correct but lacks sound reasoning.
-accurate information from the instruction? Did it
+accurate information from the given pair of words
 response is completely incorrect or does not follow
 to improve clarity and conciseness.
 loser or its representatives to the Recipient
 a lack of examples or supporting details to
-are original and novel.   5
+are not common or ordinary.
 insightfulness.  Skill: Clarity
-some editing for improved clarity and efficiency.
+some editing to improve clarity and efficiency.
 : Is the model following logical steps to
 errors.   4: The model
 could be improved for better clarity and efficiency
 are not relevant to the instruction.
-5: The response is completely relevant
+5: The response is completely appropriate
 the model's response logically sound? The
 : The model's final answer is correct
 contains only minor details that are not relevant
@@ -994,12 +994,12 @@ particular, the Panel has considered the Com
 Rubric Details 1. **Check
 the response are relevant to the instruction,
 ddd:::::d.....eeeeeeeeeeee
-response is completely efficient and straightforward.
+response is completely efficient and clear, with
 : The response is somewhat unclear but still
 or errors? Scale:   1
 or details.   2: The
 the model's understanding of world concepts.
-correct, but the response is incomplete or
+correct, but the response is word-for
 1995).\n----Sex
 of the instruction.   5:
 poorly structured and lacks coherence, requiring a
@@ -1015,18 +1015,18 @@ efe, John C. Wells, John
 5: The model completely understands the
 understand the topic.   3:
 2017 Sundance Film
-response is neutral and does not include any
-is relevant to the instruction and meets all
+response is entirely neutral and free from harmful
+is relevant to the instruction and fulfills
 by evidence or citations, but it lacks
 responses that could potentially lead to harm.
 did not provide accurate or reliable information.
 any inaccuracies or omissions. The
-query is executed in a clear, concise
+query is executed in a way that is
 up the response.  Skill: Clarity
 4: The response is mostly
 response is somewhat redundant or contains a lot
 Criteria: Is the response written in a
-of ambiguity that make comprehension difficult.
+of confusion, making comprehension difficult.
 5: The model does not
 4: The response is well
 2: The model's final answer
@@ -1034,7 +1034,7 @@ the model logically correct? The model's
 0. The answer does not follow
 the company's portfolio of financial services .
 are relevant to the instruction, but the
-extracted relevant background knowledge and included accurate and
+extracted relevant background knowledge and included accurate information
 2: The model partially misinterpre
 model correctly understands world concepts but makes a
 4: The response is efficient
@@ -1051,7 +1051,7 @@ loser or its representatives to the Recipient
 2: The model extracted some background
 does not make any errors.  Skill:
 the instruction, but contains some errors in
-or the model shows a few errors in
+or the model misunderstands the instruction.
 or requires a detailed response? Scale:
 partially complete, but the response is still
 4$.\nAnd $5=
@@ -1064,7 +1064,7 @@ Skill: Execution Criteria: Does the
 1 - 5
 concepts or makes a significant error in commons
 few errors in the model's understanding of
-points are addressed, but the response is
+points are covered, but the response is
 of all possible scenarios and the ability to
 repetitive.   4: The response
 be the one that would rule the world
@@ -1079,12 +1079,12 @@ Did it recognize that it was not fully
 repetitive.   2: The response
 understanding? Scale:   1:
 the instruction.   2: The
-The response is still understandable.
+The response is still not optimal.
 Lefevre, John O'Brien
 instruction.  Output: 10
 covered. Score: Accuracy Criteria:
 1, 2016,
-/or does not support its factual claims.
+is therefore inaccurate.   2:
 instruction.   5: The response
 a clear and logical flow of ideas?
 elaborated on to provide a more comprehensive
@@ -1156,17 +1156,17 @@ instruction, but it is incomplete or contains
 of the response is unrelated to the instruction
 .   3: The response is
 0 - Not at all complete
-response does not fulfill the requirements of the
+response is completely irrelevant to the instruction.
 multiple steps? Scale:   1
-recognize its limitations and how they affect its
-could cause harm to users? Scale:
+recognize that it was not able to provide
+could be harmful to users? Scale:
 Does the response follow a logical flow and
 them? Scale:   1:
 of harmful or offensive content? Scale:
 or unnecessary complexity? Scale:
-This includes checking the accuracy of information provided
+This includes the model's ability to identify
 of the response are relevant to the instruction
-ension of the question is not sufficient.
+ensiveness? Does the response provide a
 billion. The book was written in
 : Is the model's response logically consistent
 the use of metaphor, analogy, or
@@ -1178,7 +1178,7 @@ Did the model demonstrate a clear understanding of
 , and the response misses major requirements of
 2: The model's logic is
 number of significant figures in the measurement with
-correct and logically sound. Skill: Cl
+correct and logically sound.   6
 a response? Scale:   1
 providing instructions that could potentially lead to harm
 but the overall structure is understandable.
@@ -1193,12 +1193,12 @@ did not fulfill the purpose of the instruction
 to major edits.   5:
 Skill: Clarity Criteria: Is
 the model's response logically correct and free
-to major edits.   5:
+to major edits for better optimization.
 prehension Criteria: Is the model
 background knowledge but did not provide accurate or
 and is not logically correct.
 unrelated to the instruction or the instruction is
-0 barrels of crude oil were produced.
+0 barrels of oil were produced. The
 4: The response contains only minor
 accurate background knowledge, with no inaccuracies
 and meets all the requirements of the instruction
@@ -1211,11 +1211,11 @@ instruction.   3: The response
 4: The model correctly interpre
 are relevant to the instruction, but the
 of real-world situations? (1 point
-religion, or other social groups? Does
+age, or other social factors? Does
 , race, sexual orientation, disability,
 answer is completely incorrect or not at all
 : The model's final answer is correct
-as possible and supporting examples to substantiate
+as possible and supporting the response with examples
 ognition Criteria: Does the model demonstrate
 3: The model correctly interprets
 or fails to understand commonsense knowledge.
@@ -1223,7 +1223,7 @@ or fails to understand commonsense knowledge.
 : The response does not fulfill the requirements
 4: The response contains only minor
 and clear. Scale:   1
-is somewhat unclear but still readable, requiring
+is somewhat unclear, with some areas of
 the model's response free from any errors
 response are present, but it is not
 ension Criteria: Does the response provide
@@ -1239,7 +1239,7 @@ that could cause harm to the user?
 have a lot of friends and family and
 which can be fixed with a few minutes
 Harkness, John Joseph Hickey
-solution should be clear and concise. Scale
+solution should be clear and direct. Scale
 : The model partially misinterprets world
 but was not released in Japan until
 Criteria: Is the model's response logically
@@ -1247,7 +1247,7 @@ Criteria: Is the model's response logically
 or irrelevant information.   2:
 about the random number generator and the facility
 provide any factual information.   2
-is entirely supported by reliable evidence and citation
+is supported by reliable evidence and citation of
 not logically correct or is incorrect.
 topic and includes examples to support the statements
 2: The model's logic is
@@ -1268,7 +1268,7 @@ or negative language that could harm the reader
 ensuring that the model can handle unexpected inputs
 response is unrelated to the instruction, but
 reasoning.   2: The model
-no steps beyond the instruction.
+no further action.   6:
 information provided in the table, select the
 points are included, but the response is
 reliable evidence or source citations.
@@ -1283,31 +1283,31 @@ or the model misunderstands the instruction.
 the instruction.  Skill: Execution Criteria
 to the instruction and meets all the requirements
 edits for improved clarity and efficiency.
-response fails to meet the requirements of the
+response is completely unrelated to the instruction.
 : The response is partially correct, but
 mostly relevant to the instruction, but contains
-its own biases and limitations? Did it
+its own biases and limitations? Is it
 , psychological harm, or other negative consequences
 or not at all related to the instruction
-some logical errors but is still correct.
-: The response is mostly relevant to the
+some logical errors but is still logically correct
+: The response is relevant to the instruction
 Depth Criteria: Does the model provide
 model completely understands world concepts and is not
 fresh or original ideas that are unexpected and
 ### Rubric Details 1. **
-details are not extensive enough to support the
+details are not sufficient to support the statements
 is supported by reliable evidence or source citations
 reasoning? Scale:   1:
-ambiguity or disorganization, but it is
+minor ambiguities or disorganization, but
 5: The model accurately extracted and
 the green laser pointer is a 5
 points.   3: The response
 : Is the model faithfully reproducing the
 model correctly interprets world concepts, but
 complete rewrite for optimal clarity and efficiency.
-are not extensive enough to support the statements
+are not sufficient to support the statements made
 Evaluator **Output:**  1
-: The model does not acknowledge its limitations
+: The model does not acknowledge its own
 source? Scale:   1:
 the information? Scale:   1
 fulfill the instruction? Scale:
@@ -1320,22 +1320,22 @@ sister, Karen Gillan. The character
 Reasoning Criteria: Is the model
 , ideas, or approaches to the instruction
 the task requirements? The response should be
-can be improved for clarity and efficiency.
-into the topic and includes examples to support
+can be improved for clarity and concisen
+into the topic, using examples and details
 supported by reliable evidence and citations.
 4: The model shows a few
 errors or omissions? Scale:
 requiring a significant reorganization of the response
 ts world concepts but understands commonsense knowledge
 completely flawed and lacks logical consistency.
-Does the response follow the guidelines provided in
-ambiguity that make it difficult to understand.
-clear and well-organized, but may
+Does the response follow the guidelines of the
+confusion, making comprehension difficult.
+clear and well-organized, but some
 creativity.   2: The response
 2: The response is mostly
 errors.  ### Output 5
 00 $ 6500
-3: The model extracted relevant background
+3: The model extracted some relevant
 accurate background knowledge, with no inaccuracies
 .   5: The response is
 inaccuracies or is not logically correct.
@@ -1348,17 +1348,17 @@ clear and concise? Is the answer appropriate
 inaccuracies or misrepresentations. The
 is not strong.   4:
 completely unrelated to the instruction or the instruction
-response are not sufficient to support the claim
+information provided is not sufficient to support the
 cases.   5: The model
 potentially harmful.   4: The
-explains the topic, with a detailed and
+and comprehensively explains the topic, with
 .   4: The model's
 Party's employees; (d) disclosed
 Text 1. The word that may
 requirements of the instruction.  Skill: Execution
-mostly relevant to the instruction, but contains
-but still covers the topic.
-of the conversation? Is the response coherent
+mostly relevant to the instruction, but some
+but it does cover the topic adequately.
+of the instruction faithfully? Scale:
 response are relevant to the instruction, but
 examples to support the response.  ### Instruction
 the instruction and avoid being overly negative or
@@ -1384,21 +1384,21 @@ the response.  ### Student's Response
 ![danish](https://i.imgur
 given task? This includes the use of
 and privacy? The model should not include
-mislead.   3: The
-the task by providing a clear and concise
+mislead the reader.   3
+the task by providing a clear and accurate
 or injury to the user? Scale:
 reasoning. The response does not provide a
 sources? Scale:   1:
 is unclear or redundant. The response is
-But you're not bothered that it's
-Neymar.  ### Student Answer The
+But it is what it is, and
+Neymar.  ### Instruction Output the
 Criteria: Was the model's response
-the statements are minimal.   4
+the statements are not extensive enough.
 are original and novel.   3
 Criteria: Does the model demonstrate an
 is given? Is the response free from
 inaccuracies or omissions. The response
-*) desc limit 1
+* ) desc limit 1
 .   5: The response is
 .   3: The model's
 ts world concepts but understands commonsense knowledge
@@ -1409,7 +1409,7 @@ some unnecessary information.   4:
 1: The response is completely
 The response is mostly unclear, but understandable
 to a misunderstanding of commonsense knowledge.
-, we acquired the remaining assets of blue
+, we acquired the remaining assets of the
 game on January 10,
 , with minor inaccuracies or omissions
 and meets all the requirements of the instruction
@@ -1419,37 +1419,37 @@ reorganization of the response for clarity and
 may have included minor controversial statements.
 not provide any factual information.
 is clear and efficient, but the response
-. Poor: Response does not fulfill the
+. 0 - The response does not
 to the instruction.   2:
-correct based on the given instruction and the
+correct based on the information provided in the
 final answer is logically correct but contains errors
-the response provide accurate information according to the
+the response provide factual information that is accurate
 .   2: The response is
 response is mostly unclear, but understandable.
 ness Criteria: Does the response follow
 acies that are minor but still problematic.
-Information confidential and not to disclose or use
+Information confidential and not to disclose it to
 details.   3: The response
 instructions? Did the model recognize its own
 .  Skill: Clarity Criteria:
-may find it overly simplistic or lacking in
+may find it too simplistic or lacking in
 response is related to the instruction, but
 4: The response is somewhat
 response is clear and efficient, but contains
-biases in the instruction and respond accordingly?
+biases in the instruction and provide a fair
 mostly relevant to the instruction, but contains
 or not at all related to the instruction
-some logical errors but is still correct.
-Does it use appropriate punctuation, capitalization
+some logical errors but is still logically correct
+Does the response use appropriate punctuation, capital
 The model's response is logically sound and
 any errors.  ### Maximum Score 1
 reasonable understanding of world concepts, but fails
-3: The model partially misinterpre
+3: The model misinterprets
 3: The response is mostly relevant
 ..d88888b
 correct and follows the instructions precisely. Skill
-2: The response is understandable,
-required? Scale:   1:
+2: The response is somewhat unclear
+required? This includes the model's ability
 Vermont used to be 85%
 are not extensive enough to support the statements
 mathematician\nQuestion: what is the
@@ -1464,16 +1464,16 @@ to fulfill the instruction? Scale:
 ing the safety of others? Scale:
 2: The response is logically efficient
 , Andy Jones, Andy Jones, Andy
-logic of the response is clear and concise
-or examples to support the statements made.
+logic of the response is clear and efficient
+and supporting examples.   5:
 the crows are not as cruel as
 irrelevant or inaccurate information.   2
 for improvement in the breadth and depth of
 the instruction is not clear? The response
 : The response is poorly structured and lacks
-knowledge, but included some inaccuracies or
-response is entirely supported by reliable evidence and
-Criteria: Does the response use appropriate and
+knowledge, but the response contains some inaccur
+response is supported by reliable evidence and is
+Criteria: Does the response follow the logical
 requirements of the instruction.  Skill: Execution
 mislead.   3: The
 .   2: The model extracted
@@ -1494,16 +1494,16 @@ concise but still requires some editing for further
 . The response is partially supported by evidence
 take appropriate action to improve its understanding of
 the response is related to the instruction,
-: The response is clear and well-
+: The response is understandable, but may
 its limitations.   3: The
 Skill: Clarity Criteria: Does
-supported by reliable evidence and citation.
+supported by reliable evidence and citations.
 ? Is the language used appropriate for the
 the model's response logically correct and free
 supported by reliable evidence and citations.
 citation.   2: The model
 in a clear and logical manner, with
-or does not support its information with reliable
+or cite reliable evidence.   2
 5: The response is completely relevant
 ? Scale:   1: The
 : The model extracted mostly accurate and relevant
@@ -1529,10 +1529,10 @@ supported by reliable evidence or citation of the
 was unable to make a decision? Scale
 from harmful content, and the model explicitly
 entirely neutral and does not contain any harmful
-and privacy? Does the model avoid making
+and privacy? The model should not include
 5: The model does not attempt
 clarity and efficiency.   5:
-2: The model acknowledges the
+2: The model responds with
 potentially harmful.   4: The
 harm.   6: The response
 model's intention to avoid providing responses that
@@ -1541,21 +1541,21 @@ model's intention to avoid providing responses that
 -Checking Criteria: Does the response
 could result in physical harm or endangerment
 response as original, but it fails to
-it avoid making jokes about physical conditions,
+it avoid making jokes about physical appearance,
 : The response is completely free from harmful
 not attempt to respond to ambiguous or uncertain
 Scale:   1: The response
 response is completely free from harmful content,
-you're planning to train your dog,
+you're new to dog training, consider
 ? Did the model acknowledge the need for
 risks to user safety.   5
 to physical harm or endangerment.
-it use appropriate language and sentence structure to
+the response use appropriate language and sentence structure
 2: The response includes harmful
 consider potential risks to user safety.
 The response is relevant to the instruction and
 is mostly unclear, but understandable.
-information.   2: The response
+information or is completely free of harmful information
 completely free from harmful expressions and does not
 or lacks originality, lacking creativity.
 .   3: The response is
@@ -1576,7 +1576,7 @@ no evidence to support the model's response
 ? The response should be free from any
 harmful expressions that could potentially lead to physical
 ideas or interpretations of existing information, but
-unexpected and engaging.  Skill: Creativity
+both original and surprising.  Skill: Cl
 3: The response is clear and
 be self-contained and clear. Scale:
 that can be corrected with minor effort.
@@ -1593,12 +1593,12 @@ major edits for better optimization.
 the question.  Skill: Clarity
 no evidence to support the model's response
 its information.  Skill: Clarity
-: The response is mostly logical but can
+: The response is mostly efficient, but
 3: The model's final
 The response contains mostly irrelevant information, and
 multiple steps, should the model be able
 reasoning? The model should be able to
-the response is correct but inefficient, requiring
+the response is efficient but can be improved
 : The model's final answer is completely
 +y)%2 == 0):
 some minor inaccuracies.   3
@@ -1607,7 +1607,7 @@ while interval < len(lists
 answer is mostly correct, but can be
 to the instruction.   6:
 if target >= nums[left] and
-correct? (1-5) 5
+correct? (1-10)
 [".",".",".",".","8","
 The model completely understands the world concepts and
 does not fulfill the requirements of the instruction
@@ -1615,7 +1615,7 @@ the response should be clear and concise.
 _j-1]                         else:
 some support through evidence or citations. The
 _len+1)):                             return True
-solution is clear and the solution is easy
+solution is clear and the code is well
 ] += dp[index-2]
 [len(s1)][len(s2)]
 Skill: Execution Criteria: Does the
@@ -1628,10 +1628,10 @@ ity or creativity.   3:
 and free of unnecessary information.  Skill:
 poorly structured or lacks coherence, requiring a
 ability Criteria: Is the response written
-or repetitive.   3: The
+and not original.   3:
 information is required? Scale:
 task by providing a clear and concise explanation
-response are original and novel.
+response are original and novel, but the
 the instructions? Scale:   1
 any errors? Scale:   1
 2: The response is original and
@@ -1640,9 +1640,9 @@ or it does not provide any relevant information
 of topics covered is insufficient.
 , but it lacks depth or complexity.
 Mike had been doing his job for so
-morning , repeating itself in an odd clock
+morning . <newline> `` I did
 > The girl had been a bit nervous
-and Jay would tell me how he '
+and Jay would always say he 'd
 .   2: The response is
 :   1: The response is
 Criteria: Does the response provide insight
@@ -1653,7 +1653,7 @@ free from any errors in factual information?
 3: The response is original and
 the given rubric. Scale:
 4: The response is original and
-a comprehensive explanation, with no room for
+a detailed explanation, with no room for
 .   5: The response is
 So she had to go to the bathroom
 chin. “I’m sorry, I
@@ -1663,7 +1663,7 @@ star. The Professor was a hunter.
 making assumptions that are not supported by the
 all requirements of the instruction.  Skill:
 does not acknowledge the uncertainty in ambiguous or
-and complete.   6: The
+and complete.  Skill: Clarity
 5: The model extracted mostly accurate
 The model's final answer is mostly correct
 The response is clear and well-organized
@@ -1685,14 +1685,14 @@ points.   3: The response
 the given context and constraints. Scale:
 The response is mostly relevant to the instruction
 depth of understanding. Scale:
-compared to the target? Scale:
+the instruction is not clear? Scale:
 world concepts, but it is still able
 1: The response is completely
-Does the response provide a balanced and honest
+Does the response provide a clear and concise
 10 Accuracy: 8
 response contains only minor points that are not
 could be improved for completeness and depth.
-a complete rewrite for optimal clarity.
+a complete rewrite for optimal clarity and efficiency
 prehension: Accuracy Criteria: Does
 points are included, but the response is
 is completely uninformative or lacks any
@@ -1710,20 +1710,20 @@ Output: 1  Ethics:
 , and does not include any harmful expressions
 uncertain instructions with confidence, but does not
 4: The response is entirely
-an accurate and complete response? Is the
+an accurate and complete response? Does the
 assistant. You must not use any AI
 harmful expressions potentially leading to physical harm or
 not relevant to the instruction at all.
-of the nature of intelligence to want to
-You will not provide any information that could
+of the nature of intelligence. Thus,
+You will not provide any information that is
 or endangerment.   2:
 its response? Did the model acknowledge the
 response is logically efficient but can be improved
 5: The model's final answer
 the response logically sound and free of errors
-without acknowledging its limitations.   2
-model is completely flawed and cannot be applied
-model's final answer is mathematically
+to the instruction.   2:
+model is sound but lacks a clear understanding
+model's final answer is correct, but
 correctness.   5: The model
 : The response is relevant to the instruction
 not significantly undermine its correctness.

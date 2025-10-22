@@ -1,0 +1,44 @@
+{
+  "pearson_corr": NaN,
+  "model_scores": [
+    0.5,
+    0.5
+  ],
+  "human_means": [],
+  "per_example_stats": [
+    {
+      "id": "chatbot_arena-local-0",
+      "question_id": null,
+      "human_scores": [],
+      "mean": NaN,
+      "std": NaN,
+      "model_score": 0.5,
+      "perturbation_scores": {
+        "original": 1.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
+      }
+    },
+    {
+      "id": "chatbot_arena-local-1",
+      "question_id": null,
+      "human_scores": [],
+      "mean": NaN,
+      "std": NaN,
+      "model_score": 0.5,
+      "perturbation_scores": {
+        "original": 1.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
+      }
+    }
+  ]
+}

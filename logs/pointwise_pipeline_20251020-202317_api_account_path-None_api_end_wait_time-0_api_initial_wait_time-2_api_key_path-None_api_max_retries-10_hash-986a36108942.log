@@ -1,0 +1,141 @@
+[INFO] 2025-10-20 20:23:17,445 Logging to /vast/palmer/home.grace/vl298/Prompt-Perturbation/logs/pointwise_pipeline_20251020-202317_api_account_path-None_api_end_wait_time-0_api_initial_wait_time-2_api_key_path-None_api_max_retries-10_hash-986a36108942.log
+[INFO] 2025-10-20 20:23:17,445 Prompt perturbation enabled: True
+[DEBUG] 2025-10-20 20:23:17,553 Starting new HTTPS connection (1): huggingface.co:443
+[DEBUG] 2025-10-20 20:23:17,625 https://huggingface.co:443 "HEAD /Qwen/Qwen2.5-7B-Instruct/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+[DEBUG] 2025-10-20 20:23:17,633 https://huggingface.co:443 "HEAD /api/resolve-cache/models/Qwen/Qwen2.5-7B-Instruct/a09a35458c702b33eeacc393d103063234e8bc28/tokenizer_config.json HTTP/1.1" 200 0
+[DEBUG] 2025-10-20 20:23:17,765 Attempting to acquire lock 22953958182832 on /home/vl298/.cache/huggingface/hub/.locks/models--Qwen--Qwen2.5-7B-Instruct/07bfe0640cb5a0037f9322287fbfc682806cf672.lock
+[DEBUG] 2025-10-20 20:23:17,802 Lock 22953958182832 acquired on /home/vl298/.cache/huggingface/hub/.locks/models--Qwen--Qwen2.5-7B-Instruct/07bfe0640cb5a0037f9322287fbfc682806cf672.lock
+[DEBUG] 2025-10-20 20:23:17,833 https://huggingface.co:443 "GET /api/resolve-cache/models/Qwen/Qwen2.5-7B-Instruct/a09a35458c702b33eeacc393d103063234e8bc28/tokenizer_config.json HTTP/1.1" 200 None
+[DEBUG] 2025-10-20 20:23:17,921 Attempting to release lock 22953958182832 on /home/vl298/.cache/huggingface/hub/.locks/models--Qwen--Qwen2.5-7B-Instruct/07bfe0640cb5a0037f9322287fbfc682806cf672.lock
+[DEBUG] 2025-10-20 20:23:17,922 Lock 22953958182832 released on /home/vl298/.cache/huggingface/hub/.locks/models--Qwen--Qwen2.5-7B-Instruct/07bfe0640cb5a0037f9322287fbfc682806cf672.lock
+[DEBUG] 2025-10-20 20:23:17,994 https://huggingface.co:443 "GET /api/models/Qwen/Qwen2.5-7B-Instruct/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+[DEBUG] 2025-10-20 20:23:18,046 https://huggingface.co:443 "HEAD /Qwen/Qwen2.5-7B-Instruct/resolve/main/vocab.json HTTP/1.1" 307 0
+[DEBUG] 2025-10-20 20:23:18,054 https://huggingface.co:443 "HEAD /api/resolve-cache/models/Qwen/Qwen2.5-7B-Instruct/a09a35458c702b33eeacc393d103063234e8bc28/vocab.json HTTP/1.1" 200 0
+[DEBUG] 2025-10-20 20:23:18,059 Attempting to acquire lock 22953952393600 on /home/vl298/.cache/huggingface/hub/.locks/models--Qwen--Qwen2.5-7B-Instruct/4783fe10ac3adce15ac8f358ef5462739852c569.lock
+[DEBUG] 2025-10-20 20:23:18,072 Lock 22953952393600 acquired on /home/vl298/.cache/huggingface/hub/.locks/models--Qwen--Qwen2.5-7B-Instruct/4783fe10ac3adce15ac8f358ef5462739852c569.lock
+[DEBUG] 2025-10-20 20:23:18,091 https://huggingface.co:443 "GET /api/resolve-cache/models/Qwen/Qwen2.5-7B-Instruct/a09a35458c702b33eeacc393d103063234e8bc28/vocab.json HTTP/1.1" 200 None
+[DEBUG] 2025-10-20 20:23:18,169 Attempting to release lock 22953952393600 on /home/vl298/.cache/huggingface/hub/.locks/models--Qwen--Qwen2.5-7B-Instruct/4783fe10ac3adce15ac8f358ef5462739852c569.lock
+[DEBUG] 2025-10-20 20:23:18,170 Lock 22953952393600 released on /home/vl298/.cache/huggingface/hub/.locks/models--Qwen--Qwen2.5-7B-Instruct/4783fe10ac3adce15ac8f358ef5462739852c569.lock
+[DEBUG] 2025-10-20 20:23:18,196 https://huggingface.co:443 "HEAD /Qwen/Qwen2.5-7B-Instruct/resolve/main/merges.txt HTTP/1.1" 307 0
+[DEBUG] 2025-10-20 20:23:18,204 https://huggingface.co:443 "HEAD /api/resolve-cache/models/Qwen/Qwen2.5-7B-Instruct/a09a35458c702b33eeacc393d103063234e8bc28/merges.txt HTTP/1.1" 200 0
+[DEBUG] 2025-10-20 20:23:18,213 Attempting to acquire lock 22954139608624 on /home/vl298/.cache/huggingface/hub/.locks/models--Qwen--Qwen2.5-7B-Instruct/20024bfe7c83998e9aeaf98a0cd6a2ce6306c2f0.lock
+[DEBUG] 2025-10-20 20:23:18,235 Lock 22954139608624 acquired on /home/vl298/.cache/huggingface/hub/.locks/models--Qwen--Qwen2.5-7B-Instruct/20024bfe7c83998e9aeaf98a0cd6a2ce6306c2f0.lock
+[DEBUG] 2025-10-20 20:23:18,265 https://huggingface.co:443 "GET /api/resolve-cache/models/Qwen/Qwen2.5-7B-Instruct/a09a35458c702b33eeacc393d103063234e8bc28/merges.txt HTTP/1.1" 200 None
+[DEBUG] 2025-10-20 20:23:18,342 Attempting to release lock 22954139608624 on /home/vl298/.cache/huggingface/hub/.locks/models--Qwen--Qwen2.5-7B-Instruct/20024bfe7c83998e9aeaf98a0cd6a2ce6306c2f0.lock
+[DEBUG] 2025-10-20 20:23:18,343 Lock 22954139608624 released on /home/vl298/.cache/huggingface/hub/.locks/models--Qwen--Qwen2.5-7B-Instruct/20024bfe7c83998e9aeaf98a0cd6a2ce6306c2f0.lock
+[DEBUG] 2025-10-20 20:23:18,371 https://huggingface.co:443 "HEAD /Qwen/Qwen2.5-7B-Instruct/resolve/main/added_tokens.json HTTP/1.1" 404 0
+[DEBUG] 2025-10-20 20:23:18,447 https://huggingface.co:443 "HEAD /Qwen/Qwen2.5-7B-Instruct/resolve/main/special_tokens_map.json HTTP/1.1" 404 0
+[DEBUG] 2025-10-20 20:23:18,510 https://huggingface.co:443 "HEAD /Qwen/Qwen2.5-7B-Instruct/resolve/main/tokenizer.json HTTP/1.1" 307 0
+[DEBUG] 2025-10-20 20:23:18,517 https://huggingface.co:443 "HEAD /api/resolve-cache/models/Qwen/Qwen2.5-7B-Instruct/a09a35458c702b33eeacc393d103063234e8bc28/tokenizer.json HTTP/1.1" 200 0
+[DEBUG] 2025-10-20 20:23:18,520 Attempting to acquire lock 22953959764096 on /home/vl298/.cache/huggingface/hub/.locks/models--Qwen--Qwen2.5-7B-Instruct/443909a61d429dff23010e5bddd28ff530edda00.lock
+[DEBUG] 2025-10-20 20:23:18,537 Lock 22953959764096 acquired on /home/vl298/.cache/huggingface/hub/.locks/models--Qwen--Qwen2.5-7B-Instruct/443909a61d429dff23010e5bddd28ff530edda00.lock
+[DEBUG] 2025-10-20 20:23:18,556 https://huggingface.co:443 "GET /api/resolve-cache/models/Qwen/Qwen2.5-7B-Instruct/a09a35458c702b33eeacc393d103063234e8bc28/tokenizer.json HTTP/1.1" 200 None
+[DEBUG] 2025-10-20 20:23:18,721 Attempting to release lock 22953959764096 on /home/vl298/.cache/huggingface/hub/.locks/models--Qwen--Qwen2.5-7B-Instruct/443909a61d429dff23010e5bddd28ff530edda00.lock
+[DEBUG] 2025-10-20 20:23:18,729 Lock 22953959764096 released on /home/vl298/.cache/huggingface/hub/.locks/models--Qwen--Qwen2.5-7B-Instruct/443909a61d429dff23010e5bddd28ff530edda00.lock
+[DEBUG] 2025-10-20 20:23:18,763 https://huggingface.co:443 "HEAD /Qwen/Qwen2.5-7B-Instruct/resolve/main/chat_template.jinja HTTP/1.1" 404 0
+[DEBUG] 2025-10-20 20:23:19,080 https://huggingface.co:443 "HEAD /Qwen/Qwen2.5-7B-Instruct/resolve/main/config.json HTTP/1.1" 307 0
+[DEBUG] 2025-10-20 20:23:19,087 https://huggingface.co:443 "HEAD /api/resolve-cache/models/Qwen/Qwen2.5-7B-Instruct/a09a35458c702b33eeacc393d103063234e8bc28/config.json HTTP/1.1" 200 0
+[DEBUG] 2025-10-20 20:23:19,094 Attempting to acquire lock 22953965759296 on /home/vl298/.cache/huggingface/hub/.locks/models--Qwen--Qwen2.5-7B-Instruct/0178295f88afc3c7f279ed284f961f8c1be00654.lock
+[DEBUG] 2025-10-20 20:23:19,110 Lock 22953965759296 acquired on /home/vl298/.cache/huggingface/hub/.locks/models--Qwen--Qwen2.5-7B-Instruct/0178295f88afc3c7f279ed284f961f8c1be00654.lock
+[DEBUG] 2025-10-20 20:23:19,137 https://huggingface.co:443 "GET /api/resolve-cache/models/Qwen/Qwen2.5-7B-Instruct/a09a35458c702b33eeacc393d103063234e8bc28/config.json HTTP/1.1" 200 663
+[DEBUG] 2025-10-20 20:23:19,208 Attempting to release lock 22953965759296 on /home/vl298/.cache/huggingface/hub/.locks/models--Qwen--Qwen2.5-7B-Instruct/0178295f88afc3c7f279ed284f961f8c1be00654.lock
+[DEBUG] 2025-10-20 20:23:19,208 Lock 22953965759296 released on /home/vl298/.cache/huggingface/hub/.locks/models--Qwen--Qwen2.5-7B-Instruct/0178295f88afc3c7f279ed284f961f8c1be00654.lock
+[DEBUG] 2025-10-20 20:23:19,251 https://huggingface.co:443 "HEAD /Qwen/Qwen2.5-7B-Instruct/resolve/main/config.json HTTP/1.1" 307 0
+[DEBUG] 2025-10-20 20:23:19,257 https://huggingface.co:443 "HEAD /api/resolve-cache/models/Qwen/Qwen2.5-7B-Instruct/a09a35458c702b33eeacc393d103063234e8bc28/config.json HTTP/1.1" 200 0
+[DEBUG] 2025-10-20 20:23:19,303 https://huggingface.co:443 "HEAD /Qwen/Qwen2.5-7B-Instruct/resolve/main/config.json HTTP/1.1" 307 0
+[DEBUG] 2025-10-20 20:23:19,309 https://huggingface.co:443 "HEAD /api/resolve-cache/models/Qwen/Qwen2.5-7B-Instruct/a09a35458c702b33eeacc393d103063234e8bc28/config.json HTTP/1.1" 200 0
+[DEBUG] 2025-10-20 20:23:19,341 https://huggingface.co:443 "GET /api/models/Qwen/Qwen2.5-7B-Instruct/tree/main?recursive=True&expand=False HTTP/1.1" 200 2302
+[DEBUG] 2025-10-20 20:23:19,383 https://huggingface.co:443 "GET /api/models/Qwen/Qwen2.5-7B-Instruct/tree/main?recursive=True&expand=False HTTP/1.1" 200 2302
+[DEBUG] 2025-10-20 20:23:19,424 https://huggingface.co:443 "HEAD /Qwen/Qwen2.5-7B-Instruct/resolve/main/preprocessor_config.json HTTP/1.1" 404 0
+[DEBUG] 2025-10-20 20:23:20,028 https://huggingface.co:443 "HEAD /Qwen/Qwen2.5-7B-Instruct/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+[DEBUG] 2025-10-20 20:23:20,035 https://huggingface.co:443 "HEAD /api/resolve-cache/models/Qwen/Qwen2.5-7B-Instruct/a09a35458c702b33eeacc393d103063234e8bc28/tokenizer_config.json HTTP/1.1" 200 0
+[DEBUG] 2025-10-20 20:23:20,063 https://huggingface.co:443 "GET /api/models/Qwen/Qwen2.5-7B-Instruct/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+[DEBUG] 2025-10-20 20:23:20,304 https://huggingface.co:443 "HEAD /Qwen/Qwen2.5-7B-Instruct/resolve/main/generation_config.json HTTP/1.1" 307 0
+[DEBUG] 2025-10-20 20:23:20,316 https://huggingface.co:443 "HEAD /api/resolve-cache/models/Qwen/Qwen2.5-7B-Instruct/a09a35458c702b33eeacc393d103063234e8bc28/generation_config.json HTTP/1.1" 200 0
+[DEBUG] 2025-10-20 20:23:20,322 Attempting to acquire lock 22953794671808 on /home/vl298/.cache/huggingface/hub/.locks/models--Qwen--Qwen2.5-7B-Instruct/0eb3c536657dcd12626e09eca4b6198c0cbcde1e.lock
+[DEBUG] 2025-10-20 20:23:20,347 Lock 22953794671808 acquired on /home/vl298/.cache/huggingface/hub/.locks/models--Qwen--Qwen2.5-7B-Instruct/0eb3c536657dcd12626e09eca4b6198c0cbcde1e.lock
+[DEBUG] 2025-10-20 20:23:20,372 https://huggingface.co:443 "GET /api/resolve-cache/models/Qwen/Qwen2.5-7B-Instruct/a09a35458c702b33eeacc393d103063234e8bc28/generation_config.json HTTP/1.1" 200 243
+[DEBUG] 2025-10-20 20:23:20,466 Attempting to release lock 22953794671808 on /home/vl298/.cache/huggingface/hub/.locks/models--Qwen--Qwen2.5-7B-Instruct/0eb3c536657dcd12626e09eca4b6198c0cbcde1e.lock
+[DEBUG] 2025-10-20 20:23:20,468 Lock 22953794671808 released on /home/vl298/.cache/huggingface/hub/.locks/models--Qwen--Qwen2.5-7B-Instruct/0eb3c536657dcd12626e09eca4b6198c0cbcde1e.lock
+[DEBUG] 2025-10-20 20:23:25,072 Starting new HTTPS connection (1): huggingface.co:443
+[DEBUG] 2025-10-20 20:23:25,151 https://huggingface.co:443 "GET /api/models/Qwen/Qwen2.5-7B-Instruct HTTP/1.1" 200 7685
+[DEBUG] 2025-10-20 20:23:25,181 https://huggingface.co:443 "GET /api/models/Qwen/Qwen2.5-7B-Instruct/tree/main?recursive=False&expand=False HTTP/1.1" 200 2302
+[DEBUG] 2025-10-20 20:23:25,183 Attempting to acquire lock 22953718811008 on /home/vl298/.cache/huggingface/cace8ea5405860a2bd2805f13e57951dc44976c6f59b277286c7fbfecfd1891bQwen-Qwen2.5-7B-Instruct.lock
+[DEBUG] 2025-10-20 20:23:25,200 Lock 22953718811008 acquired on /home/vl298/.cache/huggingface/cace8ea5405860a2bd2805f13e57951dc44976c6f59b277286c7fbfecfd1891bQwen-Qwen2.5-7B-Instruct.lock
+[DEBUG] 2025-10-20 20:23:25,230 https://huggingface.co:443 "GET /api/models/Qwen/Qwen2.5-7B-Instruct/revision/main HTTP/1.1" 200 7685
+[DEBUG] 2025-10-20 20:23:25,286 Starting new HTTPS connection (1): huggingface.co:443
+[DEBUG] 2025-10-20 20:23:25,287 Starting new HTTPS connection (1): huggingface.co:443
+[DEBUG] 2025-10-20 20:23:25,288 Starting new HTTPS connection (1): huggingface.co:443
+[DEBUG] 2025-10-20 20:23:25,289 Starting new HTTPS connection (1): stats.vllm.ai:443
+[DEBUG] 2025-10-20 20:23:25,290 Starting new HTTPS connection (1): huggingface.co:443
+[DEBUG] 2025-10-20 20:23:25,364 https://huggingface.co:443 "HEAD /Qwen/Qwen2.5-7B-Instruct/resolve/a09a35458c702b33eeacc393d103063234e8bc28/model-00003-of-00004.safetensors HTTP/1.1" 302 0
+[DEBUG] 2025-10-20 20:23:25,365 https://huggingface.co:443 "HEAD /Qwen/Qwen2.5-7B-Instruct/resolve/a09a35458c702b33eeacc393d103063234e8bc28/model-00002-of-00004.safetensors HTTP/1.1" 302 0
+[DEBUG] 2025-10-20 20:23:25,367 https://huggingface.co:443 "HEAD /Qwen/Qwen2.5-7B-Instruct/resolve/a09a35458c702b33eeacc393d103063234e8bc28/model-00001-of-00004.safetensors HTTP/1.1" 302 0
+[DEBUG] 2025-10-20 20:23:25,412 https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+[DEBUG] 2025-10-20 20:23:25,421 Attempting to acquire lock 22951640511072 on /home/vl298/.cache/huggingface/.locks/models--Qwen--Qwen2.5-7B-Instruct/8efdec4c1bc12317ae1a38dc42b595ce777738a64deea3fcb8a0a91381bcdfd5.lock
+[DEBUG] 2025-10-20 20:23:25,421 Attempting to acquire lock 22951640509728 on /home/vl298/.cache/huggingface/.locks/models--Qwen--Qwen2.5-7B-Instruct/a1333e6293854747c481288ea83b348226af178dd565c49b6f9495ba1966aba7.lock
+[DEBUG] 2025-10-20 20:23:25,421 Attempting to acquire lock 22951640512608 on /home/vl298/.cache/huggingface/.locks/models--Qwen--Qwen2.5-7B-Instruct/f5d25a2772cb825164a2a2c0fb6d51a87e282abf21e4dd75bc5cfb3cd0ea6185.lock
+[DEBUG] 2025-10-20 20:23:25,428 https://huggingface.co:443 "HEAD /Qwen/Qwen2.5-7B-Instruct/resolve/a09a35458c702b33eeacc393d103063234e8bc28/model-00004-of-00004.safetensors HTTP/1.1" 302 0
+[DEBUG] 2025-10-20 20:23:25,432 Attempting to acquire lock 22951640507760 on /home/vl298/.cache/huggingface/.locks/models--Qwen--Qwen2.5-7B-Instruct/1a72d403cdf0c1ec3cb7f289f17b394a01e64394c2e9b3c0f94dbce3faf879bd.lock
+[DEBUG] 2025-10-20 20:23:25,434 Lock 22951640511072 acquired on /home/vl298/.cache/huggingface/.locks/models--Qwen--Qwen2.5-7B-Instruct/8efdec4c1bc12317ae1a38dc42b595ce777738a64deea3fcb8a0a91381bcdfd5.lock
+[DEBUG] 2025-10-20 20:23:25,443 Lock 22951640507760 acquired on /home/vl298/.cache/huggingface/.locks/models--Qwen--Qwen2.5-7B-Instruct/1a72d403cdf0c1ec3cb7f289f17b394a01e64394c2e9b3c0f94dbce3faf879bd.lock
+[DEBUG] 2025-10-20 20:23:25,455 Lock 22951640512608 acquired on /home/vl298/.cache/huggingface/.locks/models--Qwen--Qwen2.5-7B-Instruct/f5d25a2772cb825164a2a2c0fb6d51a87e282abf21e4dd75bc5cfb3cd0ea6185.lock
+[DEBUG] 2025-10-20 20:23:25,472 Lock 22951640509728 acquired on /home/vl298/.cache/huggingface/.locks/models--Qwen--Qwen2.5-7B-Instruct/a1333e6293854747c481288ea83b348226af178dd565c49b6f9495ba1966aba7.lock
+[DEBUG] 2025-10-20 20:23:25,487 https://huggingface.co:443 "GET /api/models/Qwen/Qwen2.5-7B-Instruct/xet-read-token/a09a35458c702b33eeacc393d103063234e8bc28 HTTP/1.1" 200 325
+[DEBUG] 2025-10-20 20:23:25,493 https://huggingface.co:443 "GET /api/models/Qwen/Qwen2.5-7B-Instruct/xet-read-token/a09a35458c702b33eeacc393d103063234e8bc28 HTTP/1.1" 200 325
+[DEBUG] 2025-10-20 20:23:25,500 https://huggingface.co:443 "GET /api/models/Qwen/Qwen2.5-7B-Instruct/xet-read-token/a09a35458c702b33eeacc393d103063234e8bc28 HTTP/1.1" 200 325
+[DEBUG] 2025-10-20 20:23:25,513 https://huggingface.co:443 "GET /api/models/Qwen/Qwen2.5-7B-Instruct/xet-read-token/a09a35458c702b33eeacc393d103063234e8bc28 HTTP/1.1" 200 325
+[DEBUG] 2025-10-20 20:24:53,524 Attempting to release lock 22951640512608 on /home/vl298/.cache/huggingface/.locks/models--Qwen--Qwen2.5-7B-Instruct/f5d25a2772cb825164a2a2c0fb6d51a87e282abf21e4dd75bc5cfb3cd0ea6185.lock
+[DEBUG] 2025-10-20 20:24:53,526 Lock 22951640512608 released on /home/vl298/.cache/huggingface/.locks/models--Qwen--Qwen2.5-7B-Instruct/f5d25a2772cb825164a2a2c0fb6d51a87e282abf21e4dd75bc5cfb3cd0ea6185.lock
+[DEBUG] 2025-10-20 20:24:58,359 Attempting to release lock 22951640507760 on /home/vl298/.cache/huggingface/.locks/models--Qwen--Qwen2.5-7B-Instruct/1a72d403cdf0c1ec3cb7f289f17b394a01e64394c2e9b3c0f94dbce3faf879bd.lock
+[DEBUG] 2025-10-20 20:24:58,360 Lock 22951640507760 released on /home/vl298/.cache/huggingface/.locks/models--Qwen--Qwen2.5-7B-Instruct/1a72d403cdf0c1ec3cb7f289f17b394a01e64394c2e9b3c0f94dbce3faf879bd.lock
+[DEBUG] 2025-10-20 20:25:03,657 Attempting to release lock 22951640511072 on /home/vl298/.cache/huggingface/.locks/models--Qwen--Qwen2.5-7B-Instruct/8efdec4c1bc12317ae1a38dc42b595ce777738a64deea3fcb8a0a91381bcdfd5.lock
+[DEBUG] 2025-10-20 20:25:03,660 Lock 22951640511072 released on /home/vl298/.cache/huggingface/.locks/models--Qwen--Qwen2.5-7B-Instruct/8efdec4c1bc12317ae1a38dc42b595ce777738a64deea3fcb8a0a91381bcdfd5.lock
+[DEBUG] 2025-10-20 20:25:43,583 Attempting to release lock 22951640509728 on /home/vl298/.cache/huggingface/.locks/models--Qwen--Qwen2.5-7B-Instruct/a1333e6293854747c481288ea83b348226af178dd565c49b6f9495ba1966aba7.lock
+[DEBUG] 2025-10-20 20:25:43,584 Lock 22951640509728 released on /home/vl298/.cache/huggingface/.locks/models--Qwen--Qwen2.5-7B-Instruct/a1333e6293854747c481288ea83b348226af178dd565c49b6f9495ba1966aba7.lock
+[DEBUG] 2025-10-20 20:25:43,589 Attempting to release lock 22953718811008 on /home/vl298/.cache/huggingface/cace8ea5405860a2bd2805f13e57951dc44976c6f59b277286c7fbfecfd1891bQwen-Qwen2.5-7B-Instruct.lock
+[DEBUG] 2025-10-20 20:25:43,594 Lock 22953718811008 released on /home/vl298/.cache/huggingface/cace8ea5405860a2bd2805f13e57951dc44976c6f59b277286c7fbfecfd1891bQwen-Qwen2.5-7B-Instruct.lock
+[DEBUG] 2025-10-20 20:25:43,595 Attempting to acquire lock 22953718811008 on /home/vl298/.cache/huggingface/cace8ea5405860a2bd2805f13e57951dc44976c6f59b277286c7fbfecfd1891bQwen-Qwen2.5-7B-Instruct.lock
+[DEBUG] 2025-10-20 20:25:43,607 Lock 22953718811008 acquired on /home/vl298/.cache/huggingface/cace8ea5405860a2bd2805f13e57951dc44976c6f59b277286c7fbfecfd1891bQwen-Qwen2.5-7B-Instruct.lock
+[DEBUG] 2025-10-20 20:25:43,635 https://huggingface.co:443 "HEAD /Qwen/Qwen2.5-7B-Instruct/resolve/main/model.safetensors.index.json HTTP/1.1" 307 0
+[DEBUG] 2025-10-20 20:25:43,643 https://huggingface.co:443 "HEAD /api/resolve-cache/models/Qwen/Qwen2.5-7B-Instruct/a09a35458c702b33eeacc393d103063234e8bc28/model.safetensors.index.json HTTP/1.1" 200 0
+[DEBUG] 2025-10-20 20:25:43,649 Attempting to acquire lock 22953624679824 on /home/vl298/.cache/huggingface/.locks/models--Qwen--Qwen2.5-7B-Instruct/14d037fdda5a1311dcc0275003a7a370d84114e6.lock
+[DEBUG] 2025-10-20 20:25:43,696 Lock 22953624679824 acquired on /home/vl298/.cache/huggingface/.locks/models--Qwen--Qwen2.5-7B-Instruct/14d037fdda5a1311dcc0275003a7a370d84114e6.lock
+[DEBUG] 2025-10-20 20:25:43,718 https://huggingface.co:443 "GET /api/resolve-cache/models/Qwen/Qwen2.5-7B-Instruct/a09a35458c702b33eeacc393d103063234e8bc28/model.safetensors.index.json HTTP/1.1" 200 None
+[DEBUG] 2025-10-20 20:25:43,755 Attempting to release lock 22953624679824 on /home/vl298/.cache/huggingface/.locks/models--Qwen--Qwen2.5-7B-Instruct/14d037fdda5a1311dcc0275003a7a370d84114e6.lock
+[DEBUG] 2025-10-20 20:25:43,764 Lock 22953624679824 released on /home/vl298/.cache/huggingface/.locks/models--Qwen--Qwen2.5-7B-Instruct/14d037fdda5a1311dcc0275003a7a370d84114e6.lock
+[DEBUG] 2025-10-20 20:25:43,764 Attempting to release lock 22953718811008 on /home/vl298/.cache/huggingface/cace8ea5405860a2bd2805f13e57951dc44976c6f59b277286c7fbfecfd1891bQwen-Qwen2.5-7B-Instruct.lock
+[DEBUG] 2025-10-20 20:25:43,765 Lock 22953718811008 released on /home/vl298/.cache/huggingface/cace8ea5405860a2bd2805f13e57951dc44976c6f59b277286c7fbfecfd1891bQwen-Qwen2.5-7B-Instruct.lock
+[DEBUG] 2025-10-20 20:26:59,934 https://huggingface.co:443 "HEAD /Qwen/Qwen2.5-7B-Instruct/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+[DEBUG] 2025-10-20 20:26:59,942 https://huggingface.co:443 "HEAD /api/resolve-cache/models/Qwen/Qwen2.5-7B-Instruct/a09a35458c702b33eeacc393d103063234e8bc28/tokenizer_config.json HTTP/1.1" 200 0
+[DEBUG] 2025-10-20 20:26:59,983 https://huggingface.co:443 "GET /api/models/Qwen/Qwen2.5-7B-Instruct/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+[INFO] 2025-10-20 20:27:00,575 Using model: qwen2.5-7b-instruct
+[DEBUG] 2025-10-20 20:27:00,575 Evaluator target: <function pointwise_eval at 0x14e09b9a2160>
+[DEBUG] 2025-10-20 20:27:00,576 Signature: (model: object, data: list[dict], output_dir: str, prompt_dir: str, batch_size: int, instruction_marker: str, output_marker: str, output_text_dir: str | None = None, temperature: float = 1.0, top_p: float = 1.0, n: int = 1, max_tokens: int = 512, logprobs: int | None = None, verbose: bool = False, **kwargs) -> None
+[DEBUG] 2025-10-20 20:27:00,577 Docstring:
+Perform pointwise evaluation.
+
+Args:
+    model: The model for evaluation.
+    data: The data to evaluate.
+    output_dir: The directory to save the evaluation output.
+    prompt_dir: The directory containing the prompt data.
+    batch_size: The batch size for evaluation.
+    instruction_marker: The marker for the instruction.
+    output_marker: The marker for the output.
+    output_text_dir: The directory to save the output text.
+    temperature: The temperature for sampling.
+    top_p: The top-p value for sampling.
+    n: The number of samples to generate.
+    max_tokens: The maximum number of generated tokens for each sample.
+    logprobs: The number of log probabilities to output.
+    parse_fn: The function to parse the output.
+    verbose: Whether to print verbose output.
+    kwargs: Additional keyword arguments for the evaluation function.
+
+Returns:
+    None
+[INFO] 2025-10-20 20:27:00,577 Limiting each dataset to the first 2 examples
+[INFO] 2025-10-20 20:27:00,614 Loaded 2 llm_grader submissions across 6 questions
+[DEBUG] 2025-10-20 20:27:00,630 Running perturbation workflow for dataset llm_grader
+[DEBUG] 2025-10-20 20:27:00,634 Invoking pointwise evaluator on 2 examples

@@ -1,30 +1,9 @@
 {
-  "pearson_corr": -0.11397986856015836,
+  "pearson_corr": -0.10707060211859352,
   "model_scores": [
-    0.0,
-    1.5,
-    0.0,
-    2.5,
-    2.0,
+    0.5,
     0.0,
     0.0,
-    0.0,
-    0.0,
-    0.0,
-    2.0,
-    2.5,
-    0.0,
-    0.0,
-    2.5,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    2.0,
-    2.0,
-    1.5,
-    2.0,
     3.0,
     1.0,
     0.0,
@@ -32,125 +11,146 @@
     0.0,
     0.0,
     0.0,
+    2.0,
+    2.0,
+    0.0,
+    0.0,
+    2.5,
     0.0,
     0.0,
     0.0,
     0.0,
     0.0,
+    3.0,
+    2.5,
+    0.0,
+    2.5,
+    2.5,
+    1.0,
+    0.0,
+    2.5,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.365,
+    0.0,
+    202204.0,
+    2.5,
     0.0,
     950.0,
+    2.0,
+    5.0,
+    0.5,
+    1.0,
+    0.0,
+    2.5,
     0.0,
     0.0,
-    0.0,
+    1.0,
+    1.0,
+    0.5,
+    1.5,
+    2.0,
+    1.0,
+    1.0,
+    1.0,
     0.0,
     0.0,
     0.0,
     2.0,
+    0.0,
+    2.0,
+    3.0,
+    1.0,
+    0.5,
+    6.0,
+    0.0,
+    0.0,
     0.0,
     0.0,
     0.0,
     0.0,
     0.5,
-    2.0,
+    0.0,
+    2.5,
     1.5,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
     2.0,
-    1.5,
+    0.0,
+    0.0,
     2.0,
     0.0,
+    1.0,
+    3.5,
+    29.0,
     0.0,
     0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    9.5,
+    2.5,
     0.0,
     0.0,
     2.5,
+    0.0,
+    0.0,
+    0.0,
+    7.5,
+    0.0,
+    0.0,
+    0.0,
     1.0,
     1.0,
-    2.5,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
     2.0,
-    0.0,
-    2.5,
-    1.5,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
     0.0,
     1.5,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    2.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    2.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    2.0,
-    1.5,
-    2.5,
-    0.0,
-    2.0,
     1.0,
     0.0,
     0.0,
     0.0,
     0.0,
     0.0,
+    1.0,
+    2.5,
+    1.5,
+    1.5,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
     0.0,
     0.0,
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
+    0.5,
+    0.5,
+    0.5,
     1.5,
     0.0,
     0.0,
-    0.0,
-    0.0,
+    0.5,
     0.0,
     2.5,
+    2.5,
     0.0,
+    2.5,
+    0.5,
     0.0,
-    0.0,
-    0.0,
-    0.0,
+    2.5,
     0.0,
     0.0,
     2.5,
@@ -159,42 +159,7 @@
     0.0,
     2.0,
     0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    2.0,
-    2.0,
-    0.0,
-    0.0,
-    0.0,
     2.5,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
     0.0,
     0.0,
     0.0,
@@ -204,29 +169,64 @@
     0.5,
     0.0,
     0.0,
+    0.5,
     0.0,
+    2.5,
+    1.0,
+    1.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    4.5,
+    0.0,
+    0.0,
+    2.5,
+    0.0,
+    1.5,
+    0.0,
+    0.0,
+    0.0,
+    1.5,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    8.5,
+    0.0,
+    1.0,
+    1.0,
+    0.0,
+    5.0,
+    0.0,
+    0.5,
+    15.5,
     2.0,
     0.0,
+    1.5,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    1.5,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    72.0,
+    0.0,
+    0.0,
     0.0,
     2.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    2.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    2.0,
-    0.0,
+    4.5,
     1.5,
     0.0,
     750000.0,
@@ -234,42 +234,21 @@
     2.0,
     0.0,
     0.0,
+    0.5,
     1.5,
-    2.0,
     1.5,
+    1.0,
+    1.0,
+    0.0,
     2.0,
-    2.0,
+    0.0,
     0.0,
     2.5,
-    0.0,
-    0.0,
-    1.5,
-    2.5,
+    12.0,
     1.0,
     30.0,
-    0.0,
-    2.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    1.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    2.0,
-    0.5,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    2.0,
-    2.0,
-    1.0,
-    0.0,
-    2.0,
+    4.0,
+    3.0,
     2.5,
     0.0,
     0.0,
@@ -280,111 +259,88 @@
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    15.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.5,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
     1.0,
-    450.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    319.5,
-    0.0,
+    117.0,
     0.0,
     0.0,
     1.0,
     0.0,
     0.0,
+    1.0,
+    0.5,
+    2.5,
+    2.0,
+    1.5,
+    0.0,
+    0.0,
+    1.5,
+    0.0,
+    1.0,
+    1.0,
+    2.5,
+    0.0,
+    2.0,
+    0.0,
+    1.5,
+    0.0,
+    2.5,
+    0.0,
+    0.0,
+    0.5,
+    1.0,
+    1.0,
+    1.0,
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
+    11.0,
+    4.0,
     0.0,
     1.0,
     0.0,
     0.0,
     0.0,
+    1.0,
+    2.0,
+    4.0,
+    0.0,
+    2.5,
+    0.0,
+    7.5,
+    0.5,
+    0.5,
+    3.0,
+    0.0,
+    0.0,
+    1.5,
+    1.5,
+    0.0,
+    0.5,
+    0.0,
+    0.5,
+    0.5,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    2.0,
+    0.0,
+    0.0,
+    0.0,
+    2.5,
+    0.5,
+    0.5,
+    0.0,
+    0.0,
+    0.0,
+    3.5,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.5,
+    2.5,
     0.0,
     0.0,
     0.0,
@@ -392,20 +348,27 @@
     0.0,
     0.0,
     0.0,
+    2.0,
+    2.0,
     0.0,
+    70.0,
+    3.5,
+    452.0,
+    2.0,
+    3.0,
     0.0,
+    4.0,
     0.0,
+    1.0,
+    322.0,
     0.0,
+    0.5,
     0.0,
+    2.0,
     0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
+    2.0,
+    1.0,
+    1.0,
     0.0,
     0.0,
     0.0,
@@ -415,75 +378,193 @@
     0.0,
     0.0,
     0.0,
+    2.5,
+    2.0,
     0.0,
+    2.5,
+    4.0,
+    63.5,
+    0.0,
+    9.0,
+    0.0,
+    0.0,
+    1.5,
+    3.5,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.5,
+    0.0,
+    0.5,
+    1.0,
+    0.0,
+    0.5,
+    0.0,
+    1.0,
+    1.5,
+    0.0,
+    0.0,
+    2.5,
     0.0,
     0.0,
     0.5,
     0.0,
     0.0,
     0.0,
+    1.5,
+    0.0,
+    2.5,
     0.0,
     0.0,
     0.5,
     0.0,
     0.0,
     0.0,
+    1.5,
+    0.0,
+    3.0,
+    0.5,
     0.0,
     0.0,
     0.0,
+    -0.5,
+    2.0,
+    3.5,
+    5.0,
+    6.0,
+    105.0,
+    0.0,
+    2.0,
+    3.0,
+    5.5,
+    0.0,
+    0.0,
+    0.0,
+    3.0,
+    0.0,
+    0.0,
+    0.5,
+    1.5,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    9.5,
+    925.0,
+    1008.5,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.5,
+    0.5,
+    3.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.5,
+    2.5,
+    10.0,
+    12.5,
+    0.0,
+    1.0,
+    3.5,
     0.0,
     0.0,
     0.0,
     5.0,
     0.0,
+    0.0,
+    3.5,
+    0.0,
+    0.0,
     0.5,
     0.0,
     0.0,
     0.0,
     0.0,
-    0.0,
+    0.5,
     0.5,
     0.0,
     0.0,
+    2.0,
+    0.0,
+    0.0,
+    0.0,
+    2.5,
+    59.0,
+    0.0,
+    0.0,
+    0.5,
+    7.0,
+    15.0,
+    251.5,
+    4.5,
     0.0,
     0.0,
     0.0,
     0.0,
+    4.0,
+    1.0,
+    1.0,
+    0.0,
+    1.0,
+    0.5,
+    1.0,
+    1.5,
+    0.0,
+    1000.0,
+    0.0,
+    2.0,
+    0.0,
+    2.5,
+    1.5,
+    0.0,
+    0.5,
+    4.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    2.5,
+    3.5,
+    2.0,
+    0.5,
+    2.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    2.5,
     0.0,
     0.0,
     0.0,
     0.0,
+    1.0,
     0.0,
     0.0,
     0.0,
+    0.5,
     0.0,
     0.0,
     1.5,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    10.0,
-    12.5,
-    0.0,
     0.0,
     2.5,
     0.0,
@@ -494,102 +575,46 @@
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    15.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    2.0,
-    2.0,
-    0.0,
-    0.0,
-    0.0,
-    2.0,
-    0.0,
-    0.0,
+    0.5,
     1.5,
-    0.0,
-    2.0,
     3.0,
-    1.0,
-    1.5,
-    1.0,
-    1.0,
-    1.5,
     2.0,
-    1.0,
     1.5,
-    1.0,
-    1.0,
     0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    2.0,
-    0.0,
+    0.5,
+    1.5,
     0.0,
     0.0,
     0.5,
+    2.5,
+    2.5,
+    1.5,
+    2.0,
+    1.0,
+    2.5,
+    2.5,
+    2.5,
     0.0,
+    0.0,
+    0.0,
+    2.5,
     0.0,
     1.5,
     0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.5,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
     2.0,
-    2.0,
-    2.0,
+    2.5,
+    0.0,
+    0.0,
+    4.5,
+    1.5,
+    1.0,
+    2.5,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
     1.0,
     0.0,
     0.0,
@@ -597,50 +622,9 @@
     0.0,
     0.0,
     0.0,
+    1.5,
     0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
+    1.5,
     0.0,
     0.0,
     0.0,
@@ -661,25 +645,41 @@
     0.0,
     0.0,
     1.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.5,
+    0.0,
+    0.5,
+    0.5,
+    2.5,
+    3.0,
     0.0,
     0.0,
     0.0,
     0.0,
     0.0,
     0.0,
+    2.5,
+    0.0,
+    2.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.5,
+    2.0,
     0.0,
     0.0,
     0.0,
     0.0,
     0.0,
+    0.5,
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
+    9.5,
     19.0,
     0.0,
     0.0,
@@ -688,24 +688,17 @@
     0.0,
     0.0,
     0.0,
+    1.5,
+    0.0,
+    2.0,
+    2.5,
+    0.0,
+    2.0,
     0.0,
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
+    2.0,
     0.0,
     0.0,
     0.0,
@@ -715,6 +708,14 @@
     0.0,
     0.0,
     0.0,
+    1.0,
+    0.5,
+    0.0,
+    0.0,
+    72.5,
+    0.0,
+    2.75,
+    55.0,
     0.0,
     0.0,
     0.0,
@@ -744,24 +745,23 @@
     0.0,
     0.0,
     0.0,
+    2.0,
+    2.5,
+    2.5,
+    1.0,
+    1.5,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
     0.0,
     0.0,
     0.0,
     0.0,
     0.0,
     0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
+    25.0,
+    0.5,
     0.0,
     0.0,
     0.0,
@@ -1543,15 +1543,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 1.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -1562,15 +1562,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 1.5,
+      "model_score": 0.0,
       "perturbation_scores": {
-        "original": 2.0,
-        "perturbed": 1.0
+        "original": 0.0,
+        "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 1.5,
-        "mean": 1.5,
-        "std": 0.7071067811865476
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
       }
     },
     {
@@ -1600,15 +1600,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 2.5,
+      "model_score": 3.0,
       "perturbation_scores": {
-        "original": 2.0,
+        "original": 3.0,
         "perturbed": 3.0
       },
       "perturbation_stats": {
-        "median": 2.5,
-        "mean": 2.5,
-        "std": 0.7071067811865476
+        "median": 3.0,
+        "mean": 3.0,
+        "std": 0.0
       }
     },
     {
@@ -1619,15 +1619,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 2.0,
+      "model_score": 1.0,
       "perturbation_scores": {
         "original": 2.0,
-        "perturbed": 2.0
+        "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 2.0,
-        "mean": 2.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -1752,15 +1752,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 2.5,
+      "model_score": 2.0,
       "perturbation_scores": {
-        "original": 2.0,
+        "original": 1.0,
         "perturbed": 3.0
       },
       "perturbation_stats": {
-        "median": 2.5,
-        "mean": 2.5,
-        "std": 0.7071067811865476
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -1923,14 +1923,14 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 2.0,
+      "model_score": 3.0,
       "perturbation_scores": {
-        "original": 2.0,
-        "perturbed": 2.0
+        "original": 3.0,
+        "perturbed": 3.0
       },
       "perturbation_stats": {
-        "median": 2.0,
-        "mean": 2.0,
+        "median": 3.0,
+        "mean": 3.0,
         "std": 0.0
       }
     },
@@ -1942,15 +1942,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 2.0,
+      "model_score": 2.5,
       "perturbation_scores": {
-        "original": 2.0,
+        "original": 3.0,
         "perturbed": 2.0
       },
       "perturbation_stats": {
-        "median": 2.0,
-        "mean": 2.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -1961,15 +1961,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 1.5,
+      "model_score": 0.0,
       "perturbation_scores": {
-        "original": 1.0,
-        "perturbed": 2.0
+        "original": 0.0,
+        "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 1.5,
-        "mean": 1.5,
-        "std": 0.7071067811865476
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
       }
     },
     {
@@ -1980,15 +1980,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 2.0,
+      "model_score": 2.5,
       "perturbation_scores": {
-        "original": 2.0,
+        "original": 3.0,
         "perturbed": 2.0
       },
       "perturbation_stats": {
-        "median": 2.0,
-        "mean": 2.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -1999,15 +1999,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 3.0,
+      "model_score": 2.5,
       "perturbation_scores": {
-        "original": 2.0,
+        "original": 1.0,
         "perturbed": 4.0
       },
       "perturbation_stats": {
-        "median": 3.0,
-        "mean": 3.0,
-        "std": 1.4142135623730951
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 2.1213203435596424
       }
     },
     {
@@ -2056,15 +2056,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 5.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -2151,15 +2151,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.365,
       "perturbation_scores": {
-        "original": 0.0,
-        "perturbed": 0.0
+        "original": 1.7,
+        "perturbed": 1.03
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.365,
+        "mean": 1.365,
+        "std": 0.4737615433949868
       }
     },
     {
@@ -2189,15 +2189,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 202204.0,
       "perturbation_scores": {
-        "original": 0.0,
-        "perturbed": 0.0
+        "original": 4.0,
+        "perturbed": 404404.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 202204.0,
+        "mean": 202204.0,
+        "std": 285953.9823118398
       }
     },
     {
@@ -2208,15 +2208,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 5.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -2265,15 +2265,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.0,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 4.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 2.8284271247461903
       }
     },
     {
@@ -2284,15 +2284,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 5.0,
       "perturbation_scores": {
-        "original": 0.0,
-        "perturbed": 0.0
+        "original": 3.0,
+        "perturbed": 7.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 5.0,
+        "mean": 5.0,
+        "std": 2.8284271247461903
       }
     },
     {
@@ -2303,15 +2303,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 1.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -2322,15 +2322,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -2360,15 +2360,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 5.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -2379,14 +2379,14 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 2.0,
+      "model_score": 0.0,
       "perturbation_scores": {
-        "original": 2.0,
-        "perturbed": 2.0
+        "original": 0.0,
+        "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 2.0,
-        "mean": 2.0,
+        "median": 0.0,
+        "mean": 0.0,
         "std": 0.0
       }
     },
@@ -2417,15 +2417,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -2436,15 +2436,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -2455,15 +2455,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 1.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -2474,14 +2474,14 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.5,
+      "model_score": 1.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2.0,
         "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 0.5,
-        "mean": 0.5,
+        "median": 1.5,
+        "mean": 1.5,
         "std": 0.7071067811865476
       }
     },
@@ -2495,13 +2495,13 @@
       "std": 0.0,
       "model_score": 2.0,
       "perturbation_scores": {
-        "original": 2.0,
-        "perturbed": 2.0
+        "original": 1.0,
+        "perturbed": 3.0
       },
       "perturbation_stats": {
         "median": 2.0,
         "mean": 2.0,
-        "std": 0.0
+        "std": 1.4142135623730951
       }
     },
     {
@@ -2512,15 +2512,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 1.5,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 2.0,
+        "original": 1.0,
         "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 1.5,
-        "mean": 1.5,
-        "std": 0.7071067811865476
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 0.0
       }
     },
     {
@@ -2531,14 +2531,14 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 2.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 2.0,
-        "perturbed": 2.0
+        "original": 1.0,
+        "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 2.0,
-        "mean": 2.0,
+        "median": 1.0,
+        "mean": 1.0,
         "std": 0.0
       }
     },
@@ -2550,15 +2550,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 1.5,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 2.0,
+        "original": 1.0,
         "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 1.5,
-        "mean": 1.5,
-        "std": 0.7071067811865476
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 0.0
       }
     },
     {
@@ -2569,14 +2569,14 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 2.0,
+      "model_score": 0.0,
       "perturbation_scores": {
-        "original": 2.0,
-        "perturbed": 2.0
+        "original": 0.0,
+        "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 2.0,
-        "mean": 2.0,
+        "median": 0.0,
+        "mean": 0.0,
         "std": 0.0
       }
     },
@@ -2626,15 +2626,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 4.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 2.8284271247461903
       }
     },
     {
@@ -2664,15 +2664,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 4.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 2.8284271247461903
       }
     },
     {
@@ -2683,15 +2683,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 2.5,
+      "model_score": 3.0,
       "perturbation_scores": {
-        "original": 2.0,
+        "original": 3.0,
         "perturbed": 3.0
       },
       "perturbation_stats": {
-        "median": 2.5,
-        "mean": 2.5,
-        "std": 0.7071067811865476
+        "median": 3.0,
+        "mean": 3.0,
+        "std": 0.0
       }
     },
     {
@@ -2721,15 +2721,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 1.0,
+      "model_score": 0.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 2.0
+        "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 1.0,
-        "mean": 1.0,
-        "std": 1.4142135623730951
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -2740,15 +2740,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 2.5,
+      "model_score": 6.0,
       "perturbation_scores": {
-        "original": 2.0,
-        "perturbed": 3.0
+        "original": 0.0,
+        "perturbed": 12.0
       },
       "perturbation_stats": {
-        "median": 2.5,
-        "mean": 2.5,
-        "std": 0.7071067811865476
+        "median": 6.0,
+        "mean": 6.0,
+        "std": 8.48528137423857
       }
     },
     {
@@ -2873,15 +2873,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 2.0,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 2.0,
-        "perturbed": 2.0
+        "original": 0.0,
+        "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 2.0,
-        "mean": 2.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -2913,13 +2913,13 @@
       "std": 0.0,
       "model_score": 2.5,
       "perturbation_scores": {
-        "original": 2.0,
-        "perturbed": 3.0
+        "original": 5.0,
+        "perturbed": 0.0
       },
       "perturbation_stats": {
         "median": 2.5,
         "mean": 2.5,
-        "std": 0.7071067811865476
+        "std": 3.5355339059327378
       }
     },
     {
@@ -3139,15 +3139,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 1.5,
+      "model_score": 2.0,
       "perturbation_scores": {
-        "original": 2.0,
+        "original": 3.0,
         "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 1.5,
-        "mean": 1.5,
-        "std": 0.7071067811865476
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -3196,15 +3196,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 4.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 2.8284271247461903
       }
     },
     {
@@ -3234,15 +3234,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -3253,15 +3253,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 3.5,
       "perturbation_scores": {
-        "original": 0.0,
-        "perturbed": 0.0
+        "original": 2.0,
+        "perturbed": 5.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 3.5,
+        "mean": 3.5,
+        "std": 2.1213203435596424
       }
     },
     {
@@ -3272,15 +3272,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 29.0,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 58.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 29.0,
+        "mean": 29.0,
+        "std": 41.012193308819754
       }
     },
     {
@@ -3310,14 +3310,14 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 2.0,
+      "model_score": 0.0,
       "perturbation_scores": {
-        "original": 2.0,
-        "perturbed": 2.0
+        "original": 0.0,
+        "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 2.0,
-        "mean": 2.0,
+        "median": 0.0,
+        "mean": 0.0,
         "std": 0.0
       }
     },
@@ -3386,14 +3386,14 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 0.0,
-        "perturbed": 0.0
+        "original": 1.0,
+        "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
+        "median": 1.0,
+        "mean": 1.0,
         "std": 0.0
       }
     },
@@ -3405,15 +3405,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 9.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 19.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 9.5,
+        "mean": 9.5,
+        "std": 13.435028842544403
       }
     },
     {
@@ -3424,15 +3424,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 5.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -3481,15 +3481,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 5.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -3519,14 +3519,14 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 2.0,
+      "model_score": 0.0,
       "perturbation_scores": {
-        "original": 2.0,
-        "perturbed": 2.0
+        "original": 0.0,
+        "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 2.0,
-        "mean": 2.0,
+        "median": 0.0,
+        "mean": 0.0,
         "std": 0.0
       }
     },
@@ -3557,15 +3557,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 7.5,
       "perturbation_scores": {
-        "original": 0.0,
-        "perturbed": 0.0
+        "original": 10.0,
+        "perturbed": 5.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 7.5,
+        "mean": 7.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -3633,14 +3633,14 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 2.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 2.0,
-        "perturbed": 2.0
+        "original": 1.0,
+        "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 2.0,
-        "mean": 2.0,
+        "median": 1.0,
+        "mean": 1.0,
         "std": 0.0
       }
     },
@@ -3652,15 +3652,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 1.5,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 2.0,
+        "original": 1.0,
         "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 1.5,
-        "mean": 1.5,
-        "std": 0.7071067811865476
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 0.0
       }
     },
     {
@@ -3671,15 +3671,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 2.5,
+      "model_score": 2.0,
       "perturbation_scores": {
-        "original": 2.0,
+        "original": 1.0,
         "perturbed": 3.0
       },
       "perturbation_stats": {
-        "median": 2.5,
-        "mean": 2.5,
-        "std": 0.7071067811865476
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -3709,15 +3709,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 2.0,
+      "model_score": 1.5,
       "perturbation_scores": {
-        "original": 2.0,
+        "original": 1.0,
         "perturbed": 2.0
       },
       "perturbation_stats": {
-        "median": 2.0,
-        "mean": 2.0,
-        "std": 0.0
+        "median": 1.5,
+        "mean": 1.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -3842,15 +3842,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 2.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -3861,15 +3861,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 5.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -3880,15 +3880,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 3.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.5,
+        "mean": 1.5,
+        "std": 2.1213203435596424
       }
     },
     {
@@ -3899,15 +3899,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 3.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.5,
+        "mean": 1.5,
+        "std": 2.1213203435596424
       }
     },
     {
@@ -3918,15 +3918,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -3994,15 +3994,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -4108,15 +4108,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 1.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -4127,15 +4127,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 1.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -4146,15 +4146,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 1.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -4222,15 +4222,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 1.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -4260,15 +4260,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 5.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -4317,15 +4317,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 5.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -4336,15 +4336,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 1.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -4374,15 +4374,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 5.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -4545,15 +4545,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 5.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -4678,15 +4678,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -4735,15 +4735,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -4773,15 +4773,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 2.0,
+      "model_score": 2.5,
       "perturbation_scores": {
-        "original": 2.0,
+        "original": 3.0,
         "perturbed": 2.0
       },
       "perturbation_stats": {
-        "median": 2.0,
-        "mean": 2.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -4792,14 +4792,14 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 2.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 2.0,
-        "perturbed": 2.0
+        "original": 1.0,
+        "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 2.0,
-        "mean": 2.0,
+        "median": 1.0,
+        "mean": 1.0,
         "std": 0.0
       }
     },
@@ -4811,14 +4811,14 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 0.0,
-        "perturbed": 0.0
+        "original": 1.0,
+        "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
+        "median": 1.0,
+        "mean": 1.0,
         "std": 0.0
       }
     },
@@ -4868,15 +4868,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 2.5,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 3.0,
-        "perturbed": 2.0
+        "original": 2.0,
+        "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 2.5,
-        "mean": 2.5,
-        "std": 0.7071067811865476
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -4963,15 +4963,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 4.5,
       "perturbation_scores": {
-        "original": 0.0,
-        "perturbed": 0.0
+        "original": 4.0,
+        "perturbed": 5.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 4.5,
+        "mean": 4.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -5020,15 +5020,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 5.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -5058,15 +5058,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 3.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.5,
+        "mean": 1.5,
+        "std": 2.1213203435596424
       }
     },
     {
@@ -5134,15 +5134,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 3.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.5,
+        "mean": 1.5,
+        "std": 2.1213203435596424
       }
     },
     {
@@ -5248,15 +5248,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 8.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 17.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 8.5,
+        "mean": 8.5,
+        "std": 12.020815280171307
       }
     },
     {
@@ -5286,15 +5286,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -5305,15 +5305,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -5341,15 +5341,15 @@
       "human_scores": [],
       "mean": NaN,
       "std": NaN,
-      "model_score": 0.5,
+      "model_score": 5.0,
       "perturbation_scores": {
         "original": 1.0,
-        "perturbed": 0.0
+        "perturbed": 9.0
       },
       "perturbation_stats": {
-        "median": 0.5,
-        "mean": 0.5,
-        "std": 0.7071067811865476
+        "median": 5.0,
+        "mean": 5.0,
+        "std": 5.656854249492381
       }
     },
     {
@@ -5375,15 +5375,15 @@
       "human_scores": [],
       "mean": NaN,
       "std": NaN,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 1.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -5392,15 +5392,15 @@
       "human_scores": [],
       "mean": NaN,
       "std": NaN,
-      "model_score": 0.0,
+      "model_score": 15.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 31.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 15.5,
+        "mean": 15.5,
+        "std": 21.920310216782973
       }
     },
     {
@@ -5411,13 +5411,13 @@
       "std": NaN,
       "model_score": 2.0,
       "perturbation_scores": {
-        "original": 2.0,
-        "perturbed": 2.0
+        "original": 3.0,
+        "perturbed": 1.0
       },
       "perturbation_stats": {
         "median": 2.0,
         "mean": 2.0,
-        "std": 0.0
+        "std": 1.4142135623730951
       }
     },
     {
@@ -5443,15 +5443,15 @@
       "human_scores": [],
       "mean": NaN,
       "std": NaN,
-      "model_score": 0.0,
+      "model_score": 1.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 3.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.5,
+        "mean": 1.5,
+        "std": 2.1213203435596424
       }
     },
     {
@@ -5460,14 +5460,14 @@
       "human_scores": [],
       "mean": NaN,
       "std": NaN,
-      "model_score": 2.0,
+      "model_score": 0.0,
       "perturbation_scores": {
-        "original": 2.0,
-        "perturbed": 2.0
+        "original": 0.0,
+        "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 2.0,
-        "mean": 2.0,
+        "median": 0.0,
+        "mean": 0.0,
         "std": 0.0
       }
     },
@@ -5511,15 +5511,15 @@
       "human_scores": [],
       "mean": NaN,
       "std": NaN,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 2.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -5579,15 +5579,15 @@
       "human_scores": [],
       "mean": NaN,
       "std": NaN,
-      "model_score": 0.0,
+      "model_score": 1.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 3.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.5,
+        "mean": 1.5,
+        "std": 2.1213203435596424
       }
     },
     {
@@ -5630,14 +5630,14 @@
       "human_scores": [],
       "mean": NaN,
       "std": NaN,
-      "model_score": 2.0,
+      "model_score": 0.0,
       "perturbation_scores": {
-        "original": 2.0,
-        "perturbed": 2.0
+        "original": 0.0,
+        "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 2.0,
-        "mean": 2.0,
+        "median": 0.0,
+        "mean": 0.0,
         "std": 0.0
       }
     },
@@ -5681,15 +5681,15 @@
       "human_scores": [],
       "mean": NaN,
       "std": NaN,
-      "model_score": 0.0,
+      "model_score": 72.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 144.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 72.0,
+        "mean": 72.0,
+        "std": 101.82337649086284
       }
     },
     {
@@ -5766,15 +5766,15 @@
       "human_scores": [],
       "mean": NaN,
       "std": NaN,
-      "model_score": 0.0,
+      "model_score": 4.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 9.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 4.5,
+        "mean": 4.5,
+        "std": 6.363961030678928
       }
     },
     {
@@ -5902,14 +5902,14 @@
       "human_scores": [],
       "mean": NaN,
       "std": NaN,
-      "model_score": 1.5,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 2.0,
+        "original": 0.0,
         "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 1.5,
-        "mean": 1.5,
+        "median": 0.5,
+        "mean": 0.5,
         "std": 0.7071067811865476
       }
     },
@@ -5919,15 +5919,15 @@
       "human_scores": [],
       "mean": NaN,
       "std": NaN,
-      "model_score": 2.0,
+      "model_score": 1.5,
       "perturbation_scores": {
         "original": 2.0,
-        "perturbed": 2.0
+        "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 2.0,
-        "mean": 2.0,
-        "std": 0.0
+        "median": 1.5,
+        "mean": 1.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -5953,14 +5953,14 @@
       "human_scores": [],
       "mean": NaN,
       "std": NaN,
-      "model_score": 2.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 2.0,
-        "perturbed": 2.0
+        "original": 1.0,
+        "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 2.0,
-        "mean": 2.0,
+        "median": 1.0,
+        "mean": 1.0,
         "std": 0.0
       }
     },
@@ -5970,14 +5970,14 @@
       "human_scores": [],
       "mean": NaN,
       "std": NaN,
-      "model_score": 2.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 2.0,
-        "perturbed": 2.0
+        "original": 1.0,
+        "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 2.0,
-        "mean": 2.0,
+        "median": 1.0,
+        "mean": 1.0,
         "std": 0.0
       }
     },
@@ -6004,15 +6004,15 @@
       "human_scores": [],
       "mean": NaN,
       "std": NaN,
-      "model_score": 2.5,
+      "model_score": 2.0,
       "perturbation_scores": {
-        "original": 2.0,
+        "original": 1.0,
         "perturbed": 3.0
       },
       "perturbation_stats": {
-        "median": 2.5,
-        "mean": 2.5,
-        "std": 0.7071067811865476
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -6055,15 +6055,15 @@
       "human_scores": [],
       "mean": NaN,
       "std": NaN,
-      "model_score": 1.5,
+      "model_score": 2.5,
       "perturbation_scores": {
         "original": 3.0,
-        "perturbed": 0.0
+        "perturbed": 2.0
       },
       "perturbation_stats": {
-        "median": 1.5,
-        "mean": 1.5,
-        "std": 2.1213203435596424
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -6072,15 +6072,15 @@
       "human_scores": [],
       "mean": NaN,
       "std": NaN,
-      "model_score": 2.5,
+      "model_score": 12.0,
       "perturbation_scores": {
-        "original": 2.0,
-        "perturbed": 3.0
+        "original": 23.0,
+        "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 2.5,
-        "mean": 2.5,
-        "std": 0.7071067811865476
+        "median": 12.0,
+        "mean": 12.0,
+        "std": 15.556349186104045
       }
     },
     {
@@ -6123,15 +6123,15 @@
       "human_scores": [],
       "mean": NaN,
       "std": NaN,
-      "model_score": 0.0,
+      "model_score": 4.0,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 8.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 4.0,
+        "mean": 4.0,
+        "std": 5.656854249492381
       }
     },
     {
@@ -6140,14 +6140,14 @@
       "human_scores": [],
       "mean": NaN,
       "std": NaN,
-      "model_score": 2.0,
+      "model_score": 3.0,
       "perturbation_scores": {
-        "original": 2.0,
-        "perturbed": 2.0
+        "original": 3.0,
+        "perturbed": 3.0
       },
       "perturbation_stats": {
-        "median": 2.0,
-        "mean": 2.0,
+        "median": 3.0,
+        "mean": 3.0,
         "std": 0.0
       }
     },
@@ -6157,15 +6157,15 @@
       "human_scores": [],
       "mean": NaN,
       "std": NaN,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 5.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -6242,15 +6242,15 @@
       "human_scores": [],
       "mean": NaN,
       "std": NaN,
-      "model_score": 1.0,
+      "model_score": 0.0,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 2.0
+        "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 1.0,
-        "mean": 1.0,
-        "std": 1.4142135623730951
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
       }
     },
     {
@@ -6327,15 +6327,15 @@
       "human_scores": [],
       "mean": NaN,
       "std": NaN,
-      "model_score": 2.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 2.0,
+        "original": 0.0,
         "perturbed": 2.0
       },
       "perturbation_stats": {
-        "median": 2.0,
-        "mean": 2.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -6344,15 +6344,15 @@
       "human_scores": [],
       "mean": NaN,
       "std": NaN,
-      "model_score": 0.5,
+      "model_score": 117.0,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 1.0
+        "perturbed": 234.0
       },
       "perturbation_stats": {
-        "median": 0.5,
-        "mean": 0.5,
-        "std": 0.7071067811865476
+        "median": 117.0,
+        "mean": 117.0,
+        "std": 165.46298679765212
       }
     },
     {
@@ -6395,15 +6395,15 @@
       "human_scores": [],
       "mean": NaN,
       "std": NaN,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -6429,36 +6429,19 @@
       "human_scores": [],
       "mean": NaN,
       "std": NaN,
-      "model_score": 2.0,
+      "model_score": 0.0,
       "perturbation_scores": {
-        "original": 2.0,
-        "perturbed": 2.0
+        "original": 0.0,
+        "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 2.0,
-        "mean": 2.0,
+        "median": 0.0,
+        "mean": 0.0,
         "std": 0.0
       }
     },
     {
       "id": "multilingual_robust_translation_5",
-      "question_id": null,
-      "human_scores": [],
-      "mean": NaN,
-      "std": NaN,
-      "model_score": 2.0,
-      "perturbation_scores": {
-        "original": 2.0,
-        "perturbed": 2.0
-      },
-      "perturbation_stats": {
-        "median": 2.0,
-        "mean": 2.0,
-        "std": 0.0
-      }
-    },
-    {
-      "id": "multilingual_robust_translation_6",
       "question_id": null,
       "human_scores": [],
       "mean": NaN,
@@ -6475,20 +6458,37 @@
       }
     },
     {
+      "id": "multilingual_robust_translation_6",
+      "question_id": null,
+      "human_scores": [],
+      "mean": NaN,
+      "std": NaN,
+      "model_score": 0.5,
+      "perturbation_scores": {
+        "original": 1.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
+      }
+    },
+    {
       "id": "multilingual_robust_translation_7",
       "question_id": null,
       "human_scores": [],
       "mean": NaN,
       "std": NaN,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 5.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -6499,13 +6499,13 @@
       "std": NaN,
       "model_score": 2.0,
       "perturbation_scores": {
-        "original": 2.0,
-        "perturbed": 2.0
+        "original": 3.0,
+        "perturbed": 1.0
       },
       "perturbation_stats": {
         "median": 2.0,
         "mean": 2.0,
-        "std": 0.0
+        "std": 1.4142135623730951
       }
     },
     {
@@ -6514,15 +6514,15 @@
       "human_scores": [],
       "mean": NaN,
       "std": NaN,
-      "model_score": 2.5,
+      "model_score": 1.5,
       "perturbation_scores": {
         "original": 3.0,
-        "perturbed": 2.0
+        "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 2.5,
-        "mean": 2.5,
-        "std": 0.7071067811865476
+        "median": 1.5,
+        "mean": 1.5,
+        "std": 2.1213203435596424
       }
     },
     {
@@ -6571,15 +6571,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 3.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.5,
+        "mean": 1.5,
+        "std": 2.1213203435596424
       }
     },
     {
@@ -6609,15 +6609,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -6628,15 +6628,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -6647,15 +6647,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 5.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -6685,15 +6685,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.0,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 4.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 2.8284271247461903
       }
     },
     {
@@ -6723,15 +6723,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 3.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.5,
+        "mean": 1.5,
+        "std": 2.1213203435596424
       }
     },
     {
@@ -6761,15 +6761,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 5.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -6818,15 +6818,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -6837,15 +6837,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -6856,15 +6856,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -6875,15 +6875,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -6951,15 +6951,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 11.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 22.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 11.0,
+        "mean": 11.0,
+        "std": 15.556349186104045
       }
     },
     {
@@ -6970,15 +6970,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 4.0,
       "perturbation_scores": {
-        "original": 0.0,
-        "perturbed": 0.0
+        "original": 3.0,
+        "perturbed": 5.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 4.0,
+        "mean": 4.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -7008,15 +7008,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -7084,15 +7084,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -7103,15 +7103,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 4.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 2.8284271247461903
       }
     },
     {
@@ -7122,15 +7122,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 4.0,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 8.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 4.0,
+        "mean": 4.0,
+        "std": 5.656854249492381
       }
     },
     {
@@ -7160,15 +7160,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 5.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -7198,15 +7198,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 15.0,
+      "model_score": 7.5,
       "perturbation_scores": {
-        "original": 30.0,
+        "original": 15.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 15.0,
-        "mean": 15.0,
-        "std": 21.213203435596427
+        "median": 7.5,
+        "mean": 7.5,
+        "std": 10.606601717798213
       }
     },
     {
@@ -7217,15 +7217,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 1.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -7236,15 +7236,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 1.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -7255,15 +7255,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 3.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 6.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 3.0,
+        "mean": 3.0,
+        "std": 4.242640687119285
       }
     },
     {
@@ -7312,15 +7312,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 3.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.5,
+        "mean": 1.5,
+        "std": 2.1213203435596424
       }
     },
     {
@@ -7331,15 +7331,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 3.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.5,
+        "mean": 1.5,
+        "std": 2.1213203435596424
       }
     },
     {
@@ -7407,15 +7407,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 1.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -7426,15 +7426,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -7502,15 +7502,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -7540,15 +7540,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 4.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 2.8284271247461903
       }
     },
     {
@@ -7616,15 +7616,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 5.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -7635,15 +7635,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 1.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -7654,15 +7654,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 1.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -7730,15 +7730,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 3.5,
       "perturbation_scores": {
-        "original": 0.0,
-        "perturbed": 0.0
+        "original": 2.0,
+        "perturbed": 5.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 3.5,
+        "mean": 3.5,
+        "std": 2.1213203435596424
       }
     },
     {
@@ -7806,15 +7806,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -7825,15 +7825,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 1.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -7844,15 +7844,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 5.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -7996,15 +7996,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 4.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 2.8284271247461903
       }
     },
     {
@@ -8015,15 +8015,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 4.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 2.8284271247461903
       }
     },
     {
@@ -8053,15 +8053,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 70.0,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 140.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 70.0,
+        "mean": 70.0,
+        "std": 98.99494936611666
       }
     },
     {
@@ -8072,15 +8072,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 1.0,
+      "model_score": 3.5,
       "perturbation_scores": {
         "original": 2.0,
-        "perturbed": 0.0
+        "perturbed": 5.0
       },
       "perturbation_stats": {
-        "median": 1.0,
-        "mean": 1.0,
-        "std": 1.4142135623730951
+        "median": 3.5,
+        "mean": 3.5,
+        "std": 2.1213203435596424
       }
     },
     {
@@ -8091,15 +8091,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 450.0,
+      "model_score": 452.0,
       "perturbation_scores": {
         "original": 900.0,
-        "perturbed": 0.0
+        "perturbed": 4.0
       },
       "perturbation_stats": {
-        "median": 450.0,
-        "mean": 450.0,
-        "std": 636.3961030678928
+        "median": 452.0,
+        "mean": 452.0,
+        "std": 633.5676759431466
       }
     },
     {
@@ -8110,15 +8110,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.0,
       "perturbation_scores": {
-        "original": 0.0,
-        "perturbed": 0.0
+        "original": 3.0,
+        "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -8129,14 +8129,14 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 3.0,
       "perturbation_scores": {
-        "original": 0.0,
-        "perturbed": 0.0
+        "original": 3.0,
+        "perturbed": 3.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
+        "median": 3.0,
+        "mean": 3.0,
         "std": 0.0
       }
     },
@@ -8167,15 +8167,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 4.0,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 8.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 4.0,
+        "mean": 4.0,
+        "std": 5.656854249492381
       }
     },
     {
@@ -8205,15 +8205,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -8224,15 +8224,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 319.5,
+      "model_score": 322.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 5.0,
         "perturbed": 639.0
       },
       "perturbation_stats": {
-        "median": 319.5,
-        "mean": 319.5,
-        "std": 451.8412331782039
+        "median": 322.0,
+        "mean": 322.0,
+        "std": 448.3056992722711
       }
     },
     {
@@ -8262,15 +8262,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 1.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -8300,15 +8300,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 1.0,
+      "model_score": 2.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2.0,
         "perturbed": 2.0
       },
       "perturbation_stats": {
-        "median": 1.0,
-        "mean": 1.0,
-        "std": 1.4142135623730951
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 0.0
       }
     },
     {
@@ -8338,14 +8338,14 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.0,
       "perturbation_scores": {
-        "original": 0.0,
-        "perturbed": 0.0
+        "original": 2.0,
+        "perturbed": 2.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
+        "median": 2.0,
+        "mean": 2.0,
         "std": 0.0
       }
     },
@@ -8357,15 +8357,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -8376,15 +8376,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -8452,15 +8452,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 1.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -8566,15 +8566,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 5.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -8585,15 +8585,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 4.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 2.8284271247461903
       }
     },
     {
@@ -8623,15 +8623,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 1.0,
+      "model_score": 2.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 3.0,
         "perturbed": 2.0
       },
       "perturbation_stats": {
-        "median": 1.0,
-        "mean": 1.0,
-        "std": 1.4142135623730951
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -8642,15 +8642,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 4.0,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 8.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 4.0,
+        "mean": 4.0,
+        "std": 5.656854249492381
       }
     },
     {
@@ -8661,15 +8661,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 63.5,
       "perturbation_scores": {
-        "original": 0.0,
-        "perturbed": 0.0
+        "original": 120.0,
+        "perturbed": 7.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 63.5,
+        "mean": 63.5,
+        "std": 79.90306627407988
       }
     },
     {
@@ -8699,15 +8699,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 9.0,
       "perturbation_scores": {
-        "original": 0.0,
-        "perturbed": 0.0
+        "original": 11.0,
+        "perturbed": 7.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 9.0,
+        "mean": 9.0,
+        "std": 2.8284271247461903
       }
     },
     {
@@ -8756,15 +8756,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 3.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.5,
+        "mean": 1.5,
+        "std": 2.1213203435596424
       }
     },
     {
@@ -8775,15 +8775,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 3.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 7.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 3.5,
+        "mean": 3.5,
+        "std": 4.949747468305833
       }
     },
     {
@@ -8889,15 +8889,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 1.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -8927,15 +8927,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 1.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -8946,15 +8946,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -8984,15 +8984,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 1.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -9022,14 +9022,14 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 0.0,
-        "perturbed": 0.0
+        "original": 1.0,
+        "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
+        "median": 1.0,
+        "mean": 1.0,
         "std": 0.0
       }
     },
@@ -9041,15 +9041,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 3.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.5,
+        "mean": 1.5,
+        "std": 2.1213203435596424
       }
     },
     {
@@ -9098,15 +9098,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 5.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -9231,15 +9231,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.5,
       "perturbation_scores": {
-        "original": 0.0,
-        "perturbed": 0.0
+        "original": 1.0,
+        "perturbed": 2.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.5,
+        "mean": 1.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -9269,15 +9269,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 5.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -9402,15 +9402,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.5,
       "perturbation_scores": {
-        "original": 0.0,
-        "perturbed": 0.0
+        "original": 1.0,
+        "perturbed": 2.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.5,
+        "mean": 1.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -9440,15 +9440,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.5,
+      "model_score": 3.0,
       "perturbation_scores": {
         "original": 1.0,
-        "perturbed": 0.0
+        "perturbed": 5.0
       },
       "perturbation_stats": {
-        "median": 0.5,
-        "mean": 0.5,
-        "std": 0.7071067811865476
+        "median": 3.0,
+        "mean": 3.0,
+        "std": 2.8284271247461903
       }
     },
     {
@@ -9459,15 +9459,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 1.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -9535,15 +9535,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": -0.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": -1.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": -0.5,
+        "mean": -0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -9554,15 +9554,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 4.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 2.8284271247461903
       }
     },
     {
@@ -9573,15 +9573,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 3.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 7.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 3.5,
+        "mean": 3.5,
+        "std": 4.949747468305833
       }
     },
     {
@@ -9592,15 +9592,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 5.0,
       "perturbation_scores": {
-        "original": 0.0,
-        "perturbed": 0.0
+        "original": 7.0,
+        "perturbed": 3.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 5.0,
+        "mean": 5.0,
+        "std": 2.8284271247461903
       }
     },
     {
@@ -9611,15 +9611,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 6.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 12.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 6.0,
+        "mean": 6.0,
+        "std": 8.48528137423857
       }
     },
     {
@@ -9630,15 +9630,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 5.0,
+      "model_score": 105.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 200.0,
         "perturbed": 10.0
       },
       "perturbation_stats": {
-        "median": 5.0,
-        "mean": 5.0,
-        "std": 7.0710678118654755
+        "median": 105.0,
+        "mean": 105.0,
+        "std": 134.35028842544403
       }
     },
     {
@@ -9668,15 +9668,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.5,
+      "model_score": 2.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 3.0,
         "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 0.5,
-        "mean": 0.5,
-        "std": 0.7071067811865476
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -9687,15 +9687,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 3.0,
       "perturbation_scores": {
-        "original": 0.0,
-        "perturbed": 0.0
+        "original": 1.0,
+        "perturbed": 5.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 3.0,
+        "mean": 3.0,
+        "std": 2.8284271247461903
       }
     },
     {
@@ -9706,15 +9706,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 5.5,
       "perturbation_scores": {
-        "original": 0.0,
-        "perturbed": 0.0
+        "original": 7.0,
+        "perturbed": 4.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 5.5,
+        "mean": 5.5,
+        "std": 2.1213203435596424
       }
     },
     {
@@ -9782,15 +9782,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.5,
+      "model_score": 3.0,
       "perturbation_scores": {
         "original": 1.0,
-        "perturbed": 0.0
+        "perturbed": 5.0
       },
       "perturbation_stats": {
-        "median": 0.5,
-        "mean": 0.5,
-        "std": 0.7071067811865476
+        "median": 3.0,
+        "mean": 3.0,
+        "std": 2.8284271247461903
       }
     },
     {
@@ -9839,15 +9839,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 1.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -9858,15 +9858,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 3.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.5,
+        "mean": 1.5,
+        "std": 2.1213203435596424
       }
     },
     {
@@ -9934,15 +9934,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -9953,15 +9953,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 9.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 19.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 9.5,
+        "mean": 9.5,
+        "std": 13.435028842544403
       }
     },
     {
@@ -9972,15 +9972,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 925.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 1850.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 925.0,
+        "mean": 925.0,
+        "std": 1308.147545195113
       }
     },
     {
@@ -9991,15 +9991,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1008.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2017.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1008.5,
+        "mean": 1008.5,
+        "std": 1426.2343776532664
       }
     },
     {
@@ -10105,15 +10105,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 1.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -10124,15 +10124,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 3.0,
       "perturbation_scores": {
-        "original": 0.0,
-        "perturbed": 0.0
+        "original": 1.0,
+        "perturbed": 5.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 3.0,
+        "mean": 3.0,
+        "std": 2.8284271247461903
       }
     },
     {
@@ -10485,15 +10485,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 3.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.5,
+        "mean": 1.5,
+        "std": 2.1213203435596424
       }
     },
     {
@@ -10504,15 +10504,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
-        "original": 0.0,
-        "perturbed": 0.0
+        "original": 2.0,
+        "perturbed": 3.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -10580,15 +10580,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 2.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -10599,15 +10599,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 2.5,
+      "model_score": 3.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2.0,
         "perturbed": 5.0
       },
       "perturbation_stats": {
-        "median": 2.5,
-        "mean": 2.5,
-        "std": 3.5355339059327378
+        "median": 3.5,
+        "mean": 3.5,
+        "std": 2.1213203435596424
       }
     },
     {
@@ -10675,15 +10675,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 5.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 10.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 5.0,
+        "mean": 5.0,
+        "std": 7.0710678118654755
       }
     },
     {
@@ -10732,15 +10732,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 3.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 7.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 3.5,
+        "mean": 3.5,
+        "std": 4.949747468305833
       }
     },
     {
@@ -10789,15 +10789,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 1.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -10884,15 +10884,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 1.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -10903,15 +10903,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -10960,15 +10960,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.0,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 4.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 2.8284271247461903
       }
     },
     {
@@ -11036,15 +11036,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 5.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -11055,15 +11055,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 59.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 118.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 59.0,
+        "mean": 59.0,
+        "std": 83.43860018001261
       }
     },
     {
@@ -11112,15 +11112,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 1.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -11131,15 +11131,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 7.0,
       "perturbation_scores": {
-        "original": 0.0,
-        "perturbed": 0.0
+        "original": 10.0,
+        "perturbed": 4.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 7.0,
+        "mean": 7.0,
+        "std": 4.242640687119285
       }
     },
     {
@@ -11169,15 +11169,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 251.5,
       "perturbation_scores": {
-        "original": 0.0,
-        "perturbed": 0.0
+        "original": 500.0,
+        "perturbed": 3.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 251.5,
+        "mean": 251.5,
+        "std": 351.4320702497141
       }
     },
     {
@@ -11188,15 +11188,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 4.5,
       "perturbation_scores": {
-        "original": 0.0,
-        "perturbed": 0.0
+        "original": 4.0,
+        "perturbed": 5.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 4.5,
+        "mean": 4.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -11283,15 +11283,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 4.0,
       "perturbation_scores": {
-        "original": 0.0,
-        "perturbed": 0.0
+        "original": 6.0,
+        "perturbed": 2.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 4.0,
+        "mean": 4.0,
+        "std": 2.8284271247461903
       }
     },
     {
@@ -11302,15 +11302,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -11321,15 +11321,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -11359,15 +11359,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -11378,15 +11378,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 1.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -11397,14 +11397,14 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 2.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 2.0,
-        "perturbed": 2.0
+        "original": 1.0,
+        "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 2.0,
-        "mean": 2.0,
+        "median": 1.0,
+        "mean": 1.0,
         "std": 0.0
       }
     },
@@ -11416,15 +11416,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 2.0,
+      "model_score": 1.5,
       "perturbation_scores": {
-        "original": 2.0,
+        "original": 1.0,
         "perturbed": 2.0
       },
       "perturbation_stats": {
-        "median": 2.0,
-        "mean": 2.0,
-        "std": 0.0
+        "median": 1.5,
+        "mean": 1.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -11454,15 +11454,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1000.0,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 2000.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1000.0,
+        "mean": 1000.0,
+        "std": 1414.213562373095
       }
     },
     {
@@ -11530,15 +11530,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 5.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -11587,15 +11587,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 2.0,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 2.0,
-        "perturbed": 2.0
+        "original": 1.0,
+        "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 2.0,
-        "mean": 2.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -11606,15 +11606,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 3.0,
+      "model_score": 4.0,
       "perturbation_scores": {
-        "original": 1.0,
+        "original": 3.0,
         "perturbed": 5.0
       },
       "perturbation_stats": {
-        "median": 3.0,
-        "mean": 3.0,
-        "std": 2.8284271247461903
+        "median": 4.0,
+        "mean": 4.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -11644,15 +11644,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 1.5,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 1.0,
+        "original": 0.0,
         "perturbed": 2.0
       },
       "perturbation_stats": {
-        "median": 1.5,
-        "mean": 1.5,
-        "std": 0.7071067811865476
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -11684,13 +11684,13 @@
       "std": 0.0,
       "model_score": 1.0,
       "perturbation_scores": {
-        "original": 1.0,
-        "perturbed": 1.0
+        "original": 0.0,
+        "perturbed": 2.0
       },
       "perturbation_stats": {
         "median": 1.0,
         "mean": 1.0,
-        "std": 0.0
+        "std": 1.4142135623730951
       }
     },
     {
@@ -11701,19 +11701,38 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 1.5,
+      "model_score": 2.5,
       "perturbation_scores": {
-        "original": 1.0,
-        "perturbed": 2.0
+        "original": 0.0,
+        "perturbed": 5.0
       },
       "perturbation_stats": {
-        "median": 1.5,
-        "mean": 1.5,
-        "std": 0.7071067811865476
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
       "id": "safety_if_else_statements_7",
+      "question_id": null,
+      "human_scores": [
+        5.0
+      ],
+      "mean": 5.0,
+      "std": 0.0,
+      "model_score": 3.5,
+      "perturbation_scores": {
+        "original": 2.0,
+        "perturbed": 5.0
+      },
+      "perturbation_stats": {
+        "median": 3.5,
+        "mean": 3.5,
+        "std": 2.1213203435596424
+      }
+    },
+    {
+      "id": "safety_if_else_statements_8",
       "question_id": null,
       "human_scores": [
         5.0
@@ -11732,25 +11751,6 @@
       }
     },
     {
-      "id": "safety_if_else_statements_8",
-      "question_id": null,
-      "human_scores": [
-        5.0
-      ],
-      "mean": 5.0,
-      "std": 0.0,
-      "model_score": 1.0,
-      "perturbation_scores": {
-        "original": 1.0,
-        "perturbed": 1.0
-      },
-      "perturbation_stats": {
-        "median": 1.0,
-        "mean": 1.0,
-        "std": 0.0
-      }
-    },
-    {
       "id": "safety_if_else_statements_9",
       "question_id": null,
       "human_scores": [
@@ -11758,14 +11758,14 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 1.5,
+      "model_score": 0.5,
       "perturbation_scores": {
         "original": 1.0,
-        "perturbed": 2.0
+        "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 1.5,
-        "mean": 1.5,
+        "median": 0.5,
+        "mean": 0.5,
         "std": 0.7071067811865476
       }
     },
@@ -11777,15 +11777,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 1.0,
+      "model_score": 2.0,
       "perturbation_scores": {
-        "original": 1.0,
+        "original": 3.0,
         "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 1.0,
-        "mean": 1.0,
-        "std": 0.0
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -11798,13 +11798,13 @@
       "std": 0.0,
       "model_score": 1.0,
       "perturbation_scores": {
-        "original": 0.0,
-        "perturbed": 2.0
+        "original": 1.0,
+        "perturbed": 1.0
       },
       "perturbation_stats": {
         "median": 1.0,
         "mean": 1.0,
-        "std": 1.4142135623730951
+        "std": 0.0
       }
     },
     {
@@ -11872,15 +11872,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 5.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -11967,15 +11967,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 2.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 2.0,
+        "original": 0.0,
         "perturbed": 2.0
       },
       "perturbation_stats": {
-        "median": 2.0,
-        "mean": 2.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -12138,15 +12138,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 5.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -12309,15 +12309,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 1.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -12328,14 +12328,14 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.5,
+      "model_score": 1.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2.0,
         "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 0.5,
-        "mean": 0.5,
+        "median": 1.5,
+        "mean": 1.5,
         "std": 0.7071067811865476
       }
     },
@@ -12347,15 +12347,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 3.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 6.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 3.0,
+        "mean": 3.0,
+        "std": 4.242640687119285
       }
     },
     {
@@ -12366,15 +12366,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 4.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 2.8284271247461903
       }
     },
     {
@@ -12385,15 +12385,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.5,
       "perturbation_scores": {
-        "original": 0.0,
-        "perturbed": 0.0
+        "original": 1.0,
+        "perturbed": 2.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.5,
+        "mean": 1.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -12423,15 +12423,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 1.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -12442,15 +12442,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 3.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.5,
+        "mean": 1.5,
+        "std": 2.1213203435596424
       }
     },
     {
@@ -12499,15 +12499,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 1.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -12518,15 +12518,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 5.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -12537,15 +12537,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 2.0,
+      "model_score": 2.5,
       "perturbation_scores": {
-        "original": 1.0,
-        "perturbed": 3.0
+        "original": 5.0,
+        "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 2.0,
-        "mean": 2.0,
-        "std": 1.4142135623730951
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -12556,15 +12556,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 2.0,
+      "model_score": 1.5,
       "perturbation_scores": {
-        "original": 2.0,
-        "perturbed": 2.0
+        "original": 3.0,
+        "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 2.0,
-        "mean": 2.0,
-        "std": 0.0
+        "median": 1.5,
+        "mean": 1.5,
+        "std": 2.1213203435596424
       }
     },
     {
@@ -12613,15 +12613,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 5.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -12632,15 +12632,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 5.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -12651,15 +12651,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 5.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -12727,15 +12727,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 5.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -12765,15 +12765,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 3.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.5,
+        "mean": 1.5,
+        "std": 2.1213203435596424
       }
     },
     {
@@ -12803,15 +12803,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.0,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 4.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 2.8284271247461903
       }
     },
     {
@@ -12822,15 +12822,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 5.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -12879,15 +12879,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 4.5,
       "perturbation_scores": {
-        "original": 0.0,
-        "perturbed": 0.0
+        "original": 6.0,
+        "perturbed": 3.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 4.5,
+        "mean": 4.5,
+        "std": 2.1213203435596424
       }
     },
     {
@@ -12898,15 +12898,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 3.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.5,
+        "mean": 1.5,
+        "std": 2.1213203435596424
       }
     },
     {
@@ -12917,15 +12917,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -12936,15 +12936,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 5.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -13050,15 +13050,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -13069,15 +13069,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -13202,15 +13202,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 3.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.5,
+        "mean": 1.5,
+        "std": 2.1213203435596424
       }
     },
     {
@@ -13240,15 +13240,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 3.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.5,
+        "mean": 1.5,
+        "std": 2.1213203435596424
       }
     },
     {
@@ -13468,15 +13468,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -13620,15 +13620,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 2.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -13639,15 +13639,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 2.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -13715,15 +13715,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 1.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -13753,15 +13753,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 1.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -13791,15 +13791,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 5.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -13810,15 +13810,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 3.0,
       "perturbation_scores": {
-        "original": 0.0,
-        "perturbed": 0.0
+        "original": 1.0,
+        "perturbed": 5.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 3.0,
+        "mean": 3.0,
+        "std": 2.8284271247461903
       }
     },
     {
@@ -13924,15 +13924,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 1.0,
+      "model_score": 0.0,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 2.0
+        "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 1.0,
-        "mean": 1.0,
-        "std": 1.4142135623730951
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
       }
     },
     {
@@ -13943,15 +13943,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 5.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -13981,15 +13981,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 4.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 2.8284271247461903
       }
     },
     {
@@ -14076,15 +14076,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 3.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.5,
+        "mean": 1.5,
+        "std": 2.1213203435596424
       }
     },
     {
@@ -14095,15 +14095,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 4.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 2.8284271247461903
       }
     },
     {
@@ -14209,15 +14209,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -14285,15 +14285,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 9.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 19.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 9.5,
+        "mean": 9.5,
+        "std": 13.435028842544403
       }
     },
     {
@@ -14456,15 +14456,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 3.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.5,
+        "mean": 1.5,
+        "std": 2.1213203435596424
       }
     },
     {
@@ -14494,15 +14494,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.0,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 4.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 2.8284271247461903
       }
     },
     {
@@ -14513,15 +14513,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 5.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -14551,15 +14551,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.0,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 4.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 2.8284271247461903
       }
     },
     {
@@ -14646,15 +14646,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.0,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 4.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 2.8284271247461903
       }
     },
     {
@@ -14722,15 +14722,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -14836,15 +14836,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -14912,15 +14912,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 72.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 145.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 72.5,
+        "mean": 72.5,
+        "std": 102.5304832720494
       }
     },
     {
@@ -14950,15 +14950,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.75,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 5.5,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.75,
+        "mean": 2.75,
+        "std": 3.8890872965260113
       }
     },
     {
@@ -14969,15 +14969,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 55.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 110.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 55.0,
+        "mean": 55.0,
+        "std": 77.78174593052023
       }
     },
     {
@@ -15539,15 +15539,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.0,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 4.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 2.8284271247461903
       }
     },
     {
@@ -15558,15 +15558,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 5.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -15577,15 +15577,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 2.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 5.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
       }
     },
     {
@@ -15596,15 +15596,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -15615,15 +15615,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 3.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.5,
+        "mean": 1.5,
+        "std": 2.1213203435596424
       }
     },
     {
@@ -15691,15 +15691,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 1.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
       }
     },
     {
@@ -15824,15 +15824,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 25.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 50.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 25.0,
+        "mean": 25.0,
+        "std": 35.35533905932738
       }
     },
     {
@@ -15843,15 +15843,15 @@
       ],
       "mean": 5.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 1.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {

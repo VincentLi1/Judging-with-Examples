@@ -1,0 +1,55 @@
+{
+  "pearson_corr": 1.0,
+  "model_scores": [
+    4.0,
+    4.5
+  ],
+  "human_means": [
+    4.666666666666667,
+    5.0
+  ],
+  "per_example_stats": [
+    {
+      "id": "flask-1",
+      "question_id": null,
+      "human_scores": [
+        4.0,
+        5.0,
+        5.0
+      ],
+      "mean": 4.666666666666667,
+      "std": 0.5773502691896257,
+      "model_score": 4.0,
+      "perturbation_scores": {
+        "original": 5.0,
+        "perturbed": 3.0
+      },
+      "perturbation_stats": {
+        "median": 4.0,
+        "mean": 4.0,
+        "std": 1.4142135623730951
+      }
+    },
+    {
+      "id": "flask-2",
+      "question_id": null,
+      "human_scores": [
+        5.0,
+        5.0,
+        5.0
+      ],
+      "mean": 5.0,
+      "std": 0.0,
+      "model_score": 4.5,
+      "perturbation_scores": {
+        "original": 5.0,
+        "perturbed": 4.0
+      },
+      "perturbation_stats": {
+        "median": 4.5,
+        "mean": 4.5,
+        "std": 0.7071067811865476
+      }
+    }
+  ]
+}

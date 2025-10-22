@@ -1,0 +1,95 @@
+[INFO] 2025-10-20 20:56:07,581 Logging to /vast/palmer/home.grace/vl298/Prompt-Perturbation/logs/pointwise_pipeline_20251020-205607_api_account_path-None_api_end_wait_time-0_api_initial_wait_time-2_api_key_path-None_api_max_retries-10_hash-497d75f5c78f.log
+[INFO] 2025-10-20 20:56:07,581 Prompt perturbation enabled: True
+[DEBUG] 2025-10-20 20:56:07,697 Starting new HTTPS connection (1): huggingface.co:443
+[DEBUG] 2025-10-20 20:56:07,785 https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3.1-8B-Instruct/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+[DEBUG] 2025-10-20 20:56:07,810 https://huggingface.co:443 "HEAD /meta-llama/Llama-3.1-8B-Instruct/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+[DEBUG] 2025-10-20 20:56:07,887 Attempting to acquire lock 23258030951984 on /home/vl298/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/db88166e2bc4c799fd5d1ae643b75e84d03ee70e.lock
+[DEBUG] 2025-10-20 20:56:07,925 Lock 23258030951984 acquired on /home/vl298/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/db88166e2bc4c799fd5d1ae643b75e84d03ee70e.lock
+[DEBUG] 2025-10-20 20:56:07,973 https://huggingface.co:443 "GET /meta-llama/Llama-3.1-8B-Instruct/resolve/main/tokenizer_config.json HTTP/1.1" 200 55351
+[DEBUG] 2025-10-20 20:56:08,057 Attempting to release lock 23258030951984 on /home/vl298/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/db88166e2bc4c799fd5d1ae643b75e84d03ee70e.lock
+[DEBUG] 2025-10-20 20:56:08,060 Lock 23258030951984 released on /home/vl298/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/db88166e2bc4c799fd5d1ae643b75e84d03ee70e.lock
+[DEBUG] 2025-10-20 20:56:08,115 https://huggingface.co:443 "GET /api/models/meta-llama/Meta-Llama-3.1-8B-Instruct/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 307 144
+[DEBUG] 2025-10-20 20:56:08,142 https://huggingface.co:443 "GET /api/models/meta-llama/Llama-3.1-8B-Instruct/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+[DEBUG] 2025-10-20 20:56:08,170 https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3.1-8B-Instruct/resolve/main/tokenizer.json HTTP/1.1" 307 0
+[DEBUG] 2025-10-20 20:56:08,198 https://huggingface.co:443 "HEAD /meta-llama/Llama-3.1-8B-Instruct/resolve/main/tokenizer.json HTTP/1.1" 200 0
+[DEBUG] 2025-10-20 20:56:08,203 Attempting to acquire lock 23258193621504 on /home/vl298/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/5cc5f00a5b203e90a27a3bd60d1ec393b07971e8.lock
+[DEBUG] 2025-10-20 20:56:08,322 Lock 23258193621504 acquired on /home/vl298/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/5cc5f00a5b203e90a27a3bd60d1ec393b07971e8.lock
+[DEBUG] 2025-10-20 20:56:08,362 https://huggingface.co:443 "GET /meta-llama/Llama-3.1-8B-Instruct/resolve/main/tokenizer.json HTTP/1.1" 200 9085657
+[DEBUG] 2025-10-20 20:56:08,665 Attempting to release lock 23258193621504 on /home/vl298/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/5cc5f00a5b203e90a27a3bd60d1ec393b07971e8.lock
+[DEBUG] 2025-10-20 20:56:08,676 Lock 23258193621504 released on /home/vl298/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/5cc5f00a5b203e90a27a3bd60d1ec393b07971e8.lock
+[DEBUG] 2025-10-20 20:56:08,721 https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3.1-8B-Instruct/resolve/main/tokenizer.model HTTP/1.1" 307 0
+[DEBUG] 2025-10-20 20:56:08,748 https://huggingface.co:443 "HEAD /meta-llama/Llama-3.1-8B-Instruct/resolve/main/tokenizer.model HTTP/1.1" 404 0
+[DEBUG] 2025-10-20 20:56:08,804 https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3.1-8B-Instruct/resolve/main/added_tokens.json HTTP/1.1" 307 0
+[DEBUG] 2025-10-20 20:56:08,914 https://huggingface.co:443 "HEAD /meta-llama/Llama-3.1-8B-Instruct/resolve/main/added_tokens.json HTTP/1.1" 404 0
+[DEBUG] 2025-10-20 20:56:08,959 https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3.1-8B-Instruct/resolve/main/special_tokens_map.json HTTP/1.1" 307 0
+[DEBUG] 2025-10-20 20:56:08,990 https://huggingface.co:443 "HEAD /meta-llama/Llama-3.1-8B-Instruct/resolve/main/special_tokens_map.json HTTP/1.1" 200 0
+[DEBUG] 2025-10-20 20:56:08,996 Attempting to acquire lock 23258193621504 on /home/vl298/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/02ee80b6196926a5ad790a004d9efd6ab1ba6542.lock
+[DEBUG] 2025-10-20 20:56:09,017 Lock 23258193621504 acquired on /home/vl298/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/02ee80b6196926a5ad790a004d9efd6ab1ba6542.lock
+[DEBUG] 2025-10-20 20:56:09,100 https://huggingface.co:443 "GET /meta-llama/Llama-3.1-8B-Instruct/resolve/main/special_tokens_map.json HTTP/1.1" 200 296
+[DEBUG] 2025-10-20 20:56:09,138 Attempting to release lock 23258193621504 on /home/vl298/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/02ee80b6196926a5ad790a004d9efd6ab1ba6542.lock
+[DEBUG] 2025-10-20 20:56:09,139 Lock 23258193621504 released on /home/vl298/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/02ee80b6196926a5ad790a004d9efd6ab1ba6542.lock
+[DEBUG] 2025-10-20 20:56:09,172 https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3.1-8B-Instruct/resolve/main/chat_template.jinja HTTP/1.1" 307 0
+[DEBUG] 2025-10-20 20:56:09,212 https://huggingface.co:443 "HEAD /meta-llama/Llama-3.1-8B-Instruct/resolve/main/chat_template.jinja HTTP/1.1" 404 0
+[DEBUG] 2025-10-20 20:56:09,676 https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3.1-8B-Instruct/resolve/main/config.json HTTP/1.1" 307 0
+[DEBUG] 2025-10-20 20:56:09,708 https://huggingface.co:443 "HEAD /meta-llama/Llama-3.1-8B-Instruct/resolve/main/config.json HTTP/1.1" 200 0
+[DEBUG] 2025-10-20 20:56:09,713 Attempting to acquire lock 23258009610928 on /home/vl298/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/0bb6fd75b3ad2fe988565929f329945262c2814e.lock
+[DEBUG] 2025-10-20 20:56:09,776 Lock 23258009610928 acquired on /home/vl298/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/0bb6fd75b3ad2fe988565929f329945262c2814e.lock
+[DEBUG] 2025-10-20 20:56:09,827 https://huggingface.co:443 "GET /meta-llama/Llama-3.1-8B-Instruct/resolve/main/config.json HTTP/1.1" 200 855
+[DEBUG] 2025-10-20 20:56:09,880 Attempting to release lock 23258009610928 on /home/vl298/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/0bb6fd75b3ad2fe988565929f329945262c2814e.lock
+[DEBUG] 2025-10-20 20:56:09,888 Lock 23258009610928 released on /home/vl298/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/0bb6fd75b3ad2fe988565929f329945262c2814e.lock
+[DEBUG] 2025-10-20 20:56:09,960 https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3.1-8B-Instruct/resolve/main/config.json HTTP/1.1" 307 0
+[DEBUG] 2025-10-20 20:56:09,996 https://huggingface.co:443 "HEAD /meta-llama/Llama-3.1-8B-Instruct/resolve/main/config.json HTTP/1.1" 200 0
+[DEBUG] 2025-10-20 20:56:10,031 https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3.1-8B-Instruct/resolve/main/config.json HTTP/1.1" 307 0
+[DEBUG] 2025-10-20 20:56:10,064 https://huggingface.co:443 "HEAD /meta-llama/Llama-3.1-8B-Instruct/resolve/main/config.json HTTP/1.1" 200 0
+[DEBUG] 2025-10-20 20:56:10,105 https://huggingface.co:443 "GET /api/models/meta-llama/Meta-Llama-3.1-8B-Instruct/tree/main?recursive=True&expand=False HTTP/1.1" 307 117
+[DEBUG] 2025-10-20 20:56:10,140 https://huggingface.co:443 "GET /api/models/meta-llama/Llama-3.1-8B-Instruct/tree/main?recursive=True&expand=False HTTP/1.1" 200 3137
+[DEBUG] 2025-10-20 20:56:10,264 https://huggingface.co:443 "GET /api/models/meta-llama/Meta-Llama-3.1-8B-Instruct/tree/main?recursive=True&expand=False HTTP/1.1" 307 117
+[DEBUG] 2025-10-20 20:56:10,292 https://huggingface.co:443 "GET /api/models/meta-llama/Llama-3.1-8B-Instruct/tree/main?recursive=True&expand=False HTTP/1.1" 200 3137
+[DEBUG] 2025-10-20 20:56:10,323 https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3.1-8B-Instruct/resolve/main/preprocessor_config.json HTTP/1.1" 307 0
+[DEBUG] 2025-10-20 20:56:10,351 https://huggingface.co:443 "HEAD /meta-llama/Llama-3.1-8B-Instruct/resolve/main/preprocessor_config.json HTTP/1.1" 404 0
+[DEBUG] 2025-10-20 20:56:27,239 https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3.1-8B-Instruct/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+[DEBUG] 2025-10-20 20:56:27,273 https://huggingface.co:443 "HEAD /meta-llama/Llama-3.1-8B-Instruct/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+[DEBUG] 2025-10-20 20:56:27,308 https://huggingface.co:443 "GET /api/models/meta-llama/Meta-Llama-3.1-8B-Instruct/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 307 144
+[DEBUG] 2025-10-20 20:56:27,356 https://huggingface.co:443 "GET /api/models/meta-llama/Llama-3.1-8B-Instruct/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+[DEBUG] 2025-10-20 20:56:27,852 https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3.1-8B-Instruct/resolve/main/generation_config.json HTTP/1.1" 307 0
+[DEBUG] 2025-10-20 20:56:27,884 https://huggingface.co:443 "HEAD /meta-llama/Llama-3.1-8B-Instruct/resolve/main/generation_config.json HTTP/1.1" 200 0
+[DEBUG] 2025-10-20 20:56:27,897 Attempting to acquire lock 23257859730096 on /home/vl298/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/cc7276afd599de091142c6ed3005faf8a74aa257.lock
+[DEBUG] 2025-10-20 20:56:27,907 Lock 23257859730096 acquired on /home/vl298/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/cc7276afd599de091142c6ed3005faf8a74aa257.lock
+[DEBUG] 2025-10-20 20:56:27,944 https://huggingface.co:443 "GET /meta-llama/Llama-3.1-8B-Instruct/resolve/main/generation_config.json HTTP/1.1" 200 184
+[DEBUG] 2025-10-20 20:56:28,085 Attempting to release lock 23257859730096 on /home/vl298/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/cc7276afd599de091142c6ed3005faf8a74aa257.lock
+[DEBUG] 2025-10-20 20:56:28,086 Lock 23257859730096 released on /home/vl298/.cache/huggingface/hub/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/cc7276afd599de091142c6ed3005faf8a74aa257.lock
+[DEBUG] 2025-10-20 20:56:30,580 Starting new HTTPS connection (1): huggingface.co:443
+[DEBUG] 2025-10-20 20:56:30,633 https://huggingface.co:443 "GET /api/models/meta-llama/Meta-Llama-3.1-8B-Instruct HTTP/1.1" 307 79
+[DEBUG] 2025-10-20 20:56:30,674 https://huggingface.co:443 "GET /api/models/meta-llama/Llama-3.1-8B-Instruct HTTP/1.1" 200 23097
+[DEBUG] 2025-10-20 20:56:30,677 Starting new HTTPS connection (1): stats.vllm.ai:443
+[DEBUG] 2025-10-20 20:56:30,707 https://huggingface.co:443 "GET /api/models/meta-llama/Meta-Llama-3.1-8B-Instruct/tree/main?recursive=False&expand=False HTTP/1.1" 307 118
+[DEBUG] 2025-10-20 20:56:30,736 https://huggingface.co:443 "GET /api/models/meta-llama/Llama-3.1-8B-Instruct/tree/main?recursive=False&expand=False HTTP/1.1" 200 2409
+[DEBUG] 2025-10-20 20:56:30,737 Attempting to acquire lock 23257818200592 on /home/vl298/.cache/huggingface/1e06ffef4faccfa02542c605236a96ba8ec984243111d7be1d4b1409c032448emeta-llama-Meta-Llama-3.1-8B-Instruct.lock
+[DEBUG] 2025-10-20 20:56:30,752 Lock 23257818200592 acquired on /home/vl298/.cache/huggingface/1e06ffef4faccfa02542c605236a96ba8ec984243111d7be1d4b1409c032448emeta-llama-Meta-Llama-3.1-8B-Instruct.lock
+[DEBUG] 2025-10-20 20:56:30,773 https://stats.vllm.ai:443 "POST / HTTP/1.1" 200 None
+[DEBUG] 2025-10-20 20:56:30,778 https://huggingface.co:443 "GET /api/models/meta-llama/Meta-Llama-3.1-8B-Instruct/revision/main HTTP/1.1" 307 93
+[DEBUG] 2025-10-20 20:56:30,807 https://huggingface.co:443 "GET /api/models/meta-llama/Llama-3.1-8B-Instruct/revision/main HTTP/1.1" 200 23097
+[DEBUG] 2025-10-20 20:56:30,843 Starting new HTTPS connection (1): huggingface.co:443
+[DEBUG] 2025-10-20 20:56:30,844 Starting new HTTPS connection (1): huggingface.co:443
+[DEBUG] 2025-10-20 20:56:30,845 Starting new HTTPS connection (1): huggingface.co:443
+[DEBUG] 2025-10-20 20:56:30,846 Starting new HTTPS connection (1): huggingface.co:443
+[DEBUG] 2025-10-20 20:56:30,913 https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3.1-8B-Instruct/resolve/0e9e39f249a16976918f6564b8830bc894c89659/model-00004-of-00004.safetensors HTTP/1.1" 307 0
+[DEBUG] 2025-10-20 20:56:30,916 https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3.1-8B-Instruct/resolve/0e9e39f249a16976918f6564b8830bc894c89659/model-00002-of-00004.safetensors HTTP/1.1" 307 0
+[DEBUG] 2025-10-20 20:56:30,921 https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3.1-8B-Instruct/resolve/0e9e39f249a16976918f6564b8830bc894c89659/model-00003-of-00004.safetensors HTTP/1.1" 307 0
+[DEBUG] 2025-10-20 20:56:30,929 https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3.1-8B-Instruct/resolve/0e9e39f249a16976918f6564b8830bc894c89659/model-00001-of-00004.safetensors HTTP/1.1" 307 0
+[DEBUG] 2025-10-20 20:56:30,942 https://huggingface.co:443 "HEAD /meta-llama/Llama-3.1-8B-Instruct/resolve/0e9e39f249a16976918f6564b8830bc894c89659/model-00004-of-00004.safetensors HTTP/1.1" 302 0
+[DEBUG] 2025-10-20 20:56:30,943 https://huggingface.co:443 "HEAD /meta-llama/Llama-3.1-8B-Instruct/resolve/0e9e39f249a16976918f6564b8830bc894c89659/model-00002-of-00004.safetensors HTTP/1.1" 302 0
+[DEBUG] 2025-10-20 20:56:30,960 https://huggingface.co:443 "HEAD /meta-llama/Llama-3.1-8B-Instruct/resolve/0e9e39f249a16976918f6564b8830bc894c89659/model-00003-of-00004.safetensors HTTP/1.1" 302 0
+[DEBUG] 2025-10-20 20:56:30,961 https://huggingface.co:443 "HEAD /meta-llama/Llama-3.1-8B-Instruct/resolve/0e9e39f249a16976918f6564b8830bc894c89659/model-00001-of-00004.safetensors HTTP/1.1" 302 0
+[DEBUG] 2025-10-20 20:56:30,971 Attempting to acquire lock 23255753670000 on /home/vl298/.cache/huggingface/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/fc1cdddd6bfa91128d6e94ee73d0ce62bfcdb7af29e978ddcab30c66ae9ea7fa.lock
+[DEBUG] 2025-10-20 20:56:30,972 Attempting to acquire lock 23255753670384 on /home/vl298/.cache/huggingface/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/2b1879f356aed350030bb40eb45ad362c89d9891096f79a3ab323d3ba5607668.lock
+[DEBUG] 2025-10-20 20:56:30,972 Attempting to acquire lock 23255753669952 on /home/vl298/.cache/huggingface/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/92ecfe1a2414458b4821ac8c13cf8cb70aed66b5eea8dc5ad9eeb4ff309d6d7b.lock
+[DEBUG] 2025-10-20 20:56:30,972 Attempting to acquire lock 23255753668848 on /home/vl298/.cache/huggingface/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/09d433f650646834a83c580877bd60c6d1f88f7755305c12576b5c7058f9af15.lock
+[DEBUG] 2025-10-20 20:56:30,983 Lock 23255753670000 acquired on /home/vl298/.cache/huggingface/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/fc1cdddd6bfa91128d6e94ee73d0ce62bfcdb7af29e978ddcab30c66ae9ea7fa.lock
+[DEBUG] 2025-10-20 20:56:30,986 Lock 23255753669952 acquired on /home/vl298/.cache/huggingface/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/92ecfe1a2414458b4821ac8c13cf8cb70aed66b5eea8dc5ad9eeb4ff309d6d7b.lock
+[DEBUG] 2025-10-20 20:56:30,998 Lock 23255753670384 acquired on /home/vl298/.cache/huggingface/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/2b1879f356aed350030bb40eb45ad362c89d9891096f79a3ab323d3ba5607668.lock
+[DEBUG] 2025-10-20 20:56:31,017 Lock 23255753668848 acquired on /home/vl298/.cache/huggingface/.locks/models--meta-llama--Meta-Llama-3.1-8B-Instruct/09d433f650646834a83c580877bd60c6d1f88f7755305c12576b5c7058f9af15.lock
+[DEBUG] 2025-10-20 20:56:31,024 https://huggingface.co:443 "GET /api/models/meta-llama/Llama-3.1-8B-Instruct/xet-read-token/0e9e39f249a16976918f6564b8830bc894c89659 HTTP/1.1" 200 379
+[DEBUG] 2025-10-20 20:56:31,025 https://huggingface.co:443 "GET /api/models/meta-llama/Llama-3.1-8B-Instruct/xet-read-token/0e9e39f249a16976918f6564b8830bc894c89659 HTTP/1.1" 200 379
+[DEBUG] 2025-10-20 20:56:31,042 https://huggingface.co:443 "GET /api/models/meta-llama/Llama-3.1-8B-Instruct/xet-read-token/0e9e39f249a16976918f6564b8830bc894c89659 HTTP/1.1" 200 379
+[DEBUG] 2025-10-20 20:56:31,071 https://huggingface.co:443 "GET /api/models/meta-llama/Llama-3.1-8B-Instruct/xet-read-token/0e9e39f249a16976918f6564b8830bc894c89659 HTTP/1.1" 200 379

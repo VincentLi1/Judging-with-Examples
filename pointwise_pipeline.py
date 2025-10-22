@@ -136,10 +136,92 @@ def load_real_model() -> Tuple[object, str]:
     return model, "qwen2.5-0.5b"
 
 
-def create_model(use_dummy: bool) -> Tuple[object, str]:
-    if use_dummy:
+
+def _prepare_download_dir(path: str | None) -> str:
+    if not path:
+        home_dir = Path(os.getenv("HOME", "") or ".").expanduser()
+        download_dir = home_dir / ".cache" / "huggingface" / "hub"
+    else:
+        download_dir = Path(path).expanduser()
+    download_dir.mkdir(parents=True, exist_ok=True)
+    return str(download_dir)
+
+
+def _resolve_required_path(path: str | None, flag: str) -> str:
+    if not path:
+        raise ValueError(f"{flag} is required for the selected model backend")
+    resolved = Path(path).expanduser()
+    if not resolved.exists():
+        raise FileNotFoundError(f"{flag} does not exist: {resolved}")
+    return str(resolved)
+
+
+def load_model_from_args(args: argparse.Namespace) -> Tuple[object, str]:
+    from ReIFE.models import get_model
+
+    backend = args.model_backend
+    model_name_override = getattr(args, "model_name", None)
+
+    vllm_backends = {"hfvllm", "hfnosysvllm", "prometheusvllm"}
+    api_backends = {"gpt", "gpt-proxy", "o1"}
+
+    if backend in vllm_backends:
+        if not torch.cuda.is_available():
+            raise RuntimeError(
+                f"CUDA GPU not available. Backend '{backend}' requires GPU access."
+            )
+        model_cls = get_model(backend)
+        download_dir = _prepare_download_dir(args.model_download_dir)
+        quantization = args.model_quantization or None
+        dtype = getattr(args, "model_dtype", "auto")
+        tensor_parallel_size = args.tensor_parallel_size
+        swap_space = getattr(args, "swap_space", 2)
+        model = model_cls(
+            model_pt=args.model_pt,
+            tensor_parallel_size=tensor_parallel_size,
+            download_dir=download_dir,
+            gpu_memory_utilization=args.gpu_memory_utilization,
+            quantization=quantization,
+            swap_space=swap_space,
+            max_input_len=args.max_input_len,
+            max_model_len=args.max_model_len,
+            dtype=dtype,
+        )
+        model_name = model_name_override or args.model_pt.rsplit('/', 1)[-1]
+        return model, model_name
+
+    if backend in api_backends:
+        model_cls = get_model(backend)
+        key_path = _resolve_required_path(args.api_key_path, "--api_key_path")
+        account_path = args.api_account_path
+        if backend != "gpt-proxy":
+            account_path = _resolve_required_path(account_path, "--api_account_path")
+        elif account_path:
+            account_path = str(Path(account_path).expanduser())
+        model = model_cls(
+            model_pt=args.model_pt,
+            key_path=key_path,
+            account_path=account_path,
+            parallel_size=args.api_parallel_size,
+            max_retries=args.api_max_retries,
+            initial_wait_time=args.api_initial_wait_time,
+            end_wait_time=args.api_end_wait_time,
+        )
+        model_name = model_name_override or args.model_pt
+        return model, model_name
+
+    raise ValueError(f"Unsupported model backend: {backend}")
+
+
+def create_model(config: bool | argparse.Namespace) -> Tuple[object, str]:
+    if isinstance(config, bool):
+        if config:
+            return load_dummy_model()
+        return load_real_model()
+    args = config
+    if getattr(args, "use_dummy_model", False):
         return load_dummy_model()
-    return load_real_model()
+    return load_model_from_args(args)
 
 
 def log_callable_metadata(model_name: str, eval_callable: Callable[..., None]) -> None:
@@ -339,6 +421,115 @@ def main() -> None:
         choices=[5, 10],
         help="Target scoring scale for pairwise datasets when normalizing scores.",
     )
+    parser.add_argument(
+        "--model_backend",
+        type=str,
+        default="hfvllm",
+        choices=["hfvllm", "hfnosysvllm", "prometheusvllm", "gpt", "gpt-proxy", "o1"],
+        help="Backend registered in ReIFE.models to instantiate when not using the dummy model.",
+    )
+    parser.add_argument(
+        "--model_pt",
+        type=str,
+        default="Qwen/Qwen2.5-0.5B-Instruct",
+        help="Model identifier passed to the selected backend (e.g., Hugging Face repo or API model name).",
+    )
+    parser.add_argument(
+        "--model_name",
+        type=str,
+        default=None,
+        help="Optional descriptive name to log; defaults to the tail of --model_pt.",
+    )
+    parser.add_argument(
+        "--tensor_parallel_size",
+        type=int,
+        default=1,
+        help="Tensor parallel degree for VLLM backends.",
+    )
+    parser.add_argument(
+        "--max_input_len",
+        type=int,
+        default=512,
+        help="Maximum prompt length passed to the model (VLLM backends).",
+    )
+    parser.add_argument(
+        "--max_model_len",
+        type=int,
+        default=768,
+        help="Maximum combined prompt + generation length (VLLM backends).",
+    )
+    parser.add_argument(
+        "--gpu_memory_utilization",
+        type=float,
+        default=0.5,
+        help="Target GPU memory utilization ratio for VLLM backends.",
+    )
+    parser.add_argument(
+        "--model_quantization",
+        type=str,
+        default=None,
+        help="Optional quantization setting passed to the VLLM backend.",
+    )
+    parser.add_argument(
+        "--model_download_dir",
+        type=str,
+        default=None,
+        help="Optional cache directory for model weights; defaults to $HOME/.cache/huggingface/hub.",
+    )
+    parser.add_argument(
+        "--model_dtype",
+        type=str,
+        default="auto",
+        help="Desired dtype for VLLM backends (e.g., auto, float16, bfloat16).",
+    )
+    parser.add_argument(
+        "--swap_space",
+        type=int,
+        default=2,
+        help="Temporary CPU swap space in GB reserved by VLLM when spilling to host memory.",
+    )
+    parser.add_argument(
+        "--api_key_path",
+        type=str,
+        default=None,
+        help="Path to the API key file when using GPT-style backends.",
+    )
+    parser.add_argument(
+        "--api_account_path",
+        type=str,
+        default=None,
+        help="Path to the API account/organization file when required by the backend.",
+    )
+    parser.add_argument(
+        "--api_parallel_size",
+        type=int,
+        default=1,
+        help="Parallel request pool size for API backends.",
+    )
+    parser.add_argument(
+        "--api_max_retries",
+        type=int,
+        default=10,
+        help="Maximum retry attempts for API backends.",
+    )
+    parser.add_argument(
+        "--api_initial_wait_time",
+        type=int,
+        default=2,
+        help="Initial backoff wait time (seconds) for API retries.",
+    )
+    parser.add_argument(
+        "--api_end_wait_time",
+        type=int,
+        default=0,
+        help="Post-request sleep duration (seconds) for API backends.",
+    )
+    parser.add_argument(
+        "--parse_retries",
+        type=int,
+        default=5,
+        help="Maximum attempts per variant when recovering from parse failures.",
+    )
     args = parser.parse_args()
 
     log_path = configure_logging(args)
@@ -347,7 +538,7 @@ def main() -> None:
         "Prompt perturbation enabled: %s", not args.disable_prompt_perturbation
     )
 
-    model, model_name = create_model(args.use_dummy_model)
+    model, model_name = create_model(args)
     eval_callable = pointwise_eval
     log_callable_metadata(model_name, eval_callable)
 
@@ -379,6 +570,8 @@ def main() -> None:
         results_root=PROJECT_ROOT / "results",
         logs_root=PROJECT_ROOT / "logs",
     )
+    pipeline.max_parse_retries = max(1, args.parse_retries)
+
     if dataset_names:
         logging.info("Restricting evaluation to datasets: %s", ", ".join(dataset_names))
     pipeline.run(overwrite_ok=args.overwrite_ok)

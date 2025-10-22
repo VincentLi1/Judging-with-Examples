@@ -1,245 +1,245 @@
 {
-  "pearson_corr": 0.11528257378846692,
+  "pearson_corr": 0.1223738940804265,
   "model_scores": [
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.25,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.5,
-    0.5,
-    0.0,
-    0.0,
-    0.0,
-    0.5,
-    172.5,
-    0.5,
-    445.0,
-    0.0,
-    0.0,
-    504494.0,
-    0.0,
-    0.5,
-    0.5,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    5.75,
+    43.0,
+    43.0,
+    43.0,
+    0.0,
+    0.0,
+    43.0,
+    43.0,
+    43.0,
     4.0,
+    43.0,
     0.0,
+    43.0,
+    43.0,
+    43.0,
+    43.0,
+    43.0,
+    0.0,
+    43.0,
+    43.0,
+    43.0,
+    0.5,
+    43.0,
+    0.0,
+    43.0,
+    0.0,
+    43.0,
+    43.0,
+    43.0,
+    43.0,
+    4.0,
+    4.0,
+    43.0,
+    43.0,
     0.5,
     0.0,
-    0.5,
+    -0.5,
+    4.0,
+    4.0,
+    4.0,
+    43.0,
     0.0,
-    5.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -0.5,
+    4494.5,
+    1842.5,
+    6.0,
+    494.0,
+    184.5,
+    177.5,
+    4494.5,
+    445.0,
+    0.0,
+    0.0,
+    504494.0,
+    0.0,
+    4494.5,
+    4494.5,
+    4.5,
+    4.5,
+    4494.5,
+    0.0,
+    4494.5,
+    7.5,
+    1015.0,
     504494.0,
     445.0,
-    14.5,
-    0.0,
-    500000.0,
+    526.5,
+    1.5,
+    501842.5,
     3.5,
-    0.5,
-    0.5,
+    4494.5,
+    4500.0,
     0.0,
-    0.5,
-    0.5,
+    4494.5,
+    4494.5,
     0.0,
-    0.0,
+    494.0,
     445.0,
-    0.5,
-    0.5,
-    0.5,
-    0.5,
+    184.5,
+    4494.5,
+    4500.0,
+    4494.5,
     0.0
   ],
   "human_means": [
@@ -495,15 +495,15 @@
       ],
       "mean": 7.0,
       "std": 0.0,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -516,15 +516,15 @@
       ],
       "mean": 19.0,
       "std": 0.0,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -537,15 +537,15 @@
       ],
       "mean": 15.0,
       "std": 3.4641016151377544,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -558,15 +558,15 @@
       ],
       "mean": 13.0,
       "std": 0.0,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -579,15 +579,15 @@
       ],
       "mean": 13.0,
       "std": 2.0,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -600,15 +600,15 @@
       ],
       "mean": 19.0,
       "std": 0.0,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -621,15 +621,15 @@
       ],
       "mean": 6.0,
       "std": 2.0,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -642,15 +642,15 @@
       ],
       "mean": 19.0,
       "std": 0.0,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -663,15 +663,15 @@
       ],
       "mean": 13.0,
       "std": 0.0,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -684,15 +684,15 @@
       ],
       "mean": 19.0,
       "std": 0.0,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -705,15 +705,15 @@
       ],
       "mean": 3.0,
       "std": 0.0,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -726,15 +726,15 @@
       ],
       "mean": 13.0,
       "std": 0.0,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -747,15 +747,15 @@
       ],
       "mean": 19.0,
       "std": 0.0,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -768,15 +768,15 @@
       ],
       "mean": 19.0,
       "std": 0.0,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -789,15 +789,15 @@
       ],
       "mean": 0.0,
       "std": 0.0,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -810,15 +810,15 @@
       ],
       "mean": 6.666666666666667,
       "std": 0.5773502691896257,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -831,15 +831,15 @@
       ],
       "mean": 0.3333333333333333,
       "std": 0.5773502691896257,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -852,15 +852,15 @@
       ],
       "mean": 19.0,
       "std": 0.0,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -873,15 +873,15 @@
       ],
       "mean": 6.333333333333333,
       "std": 0.28867513459481287,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -894,15 +894,15 @@
       ],
       "mean": 19.0,
       "std": 0.0,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -915,15 +915,15 @@
       ],
       "mean": 6.0,
       "std": 0.0,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -936,15 +936,15 @@
       ],
       "mean": 7.333333333333333,
       "std": 0.5773502691896257,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -957,15 +957,15 @@
       ],
       "mean": 6.666666666666667,
       "std": 1.1547005383792515,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -978,15 +978,15 @@
       ],
       "mean": 19.0,
       "std": 0.0,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -999,15 +999,15 @@
       ],
       "mean": 13.0,
       "std": 0.0,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -1020,15 +1020,15 @@
       ],
       "mean": 0.0,
       "std": 0.0,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -1041,15 +1041,15 @@
       ],
       "mean": 19.0,
       "std": 0.0,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -1062,15 +1062,15 @@
       ],
       "mean": 6.666666666666667,
       "std": 1.1547005383792515,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -1083,15 +1083,15 @@
       ],
       "mean": 19.0,
       "std": 0.0,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -1104,15 +1104,15 @@
       ],
       "mean": 6.666666666666667,
       "std": 0.5773502691896257,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -1125,15 +1125,15 @@
       ],
       "mean": 13.0,
       "std": 0.0,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -1146,15 +1146,15 @@
       ],
       "mean": 19.0,
       "std": 0.0,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -1167,15 +1167,15 @@
       ],
       "mean": 19.0,
       "std": 0.0,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -1188,15 +1188,15 @@
       ],
       "mean": 6.0,
       "std": 0.0,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -1209,15 +1209,15 @@
       ],
       "mean": 0.0,
       "std": 0.0,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -1230,15 +1230,15 @@
       ],
       "mean": 5.0,
       "std": 1.7320508075688772,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -1251,15 +1251,15 @@
       ],
       "mean": 6.0,
       "std": 0.0,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -1272,15 +1272,15 @@
       ],
       "mean": 17.0,
       "std": 3.4641016151377544,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -1293,15 +1293,15 @@
       ],
       "mean": 19.0,
       "std": 0.0,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -1314,15 +1314,15 @@
       ],
       "mean": 19.0,
       "std": 0.0,
-      "model_score": 0.25,
+      "model_score": 5.75,
       "perturbation_scores": {
-        "original": 0.5,
-        "perturbed": 0.0
+        "original": 5.0,
+        "perturbed": 6.5
       },
       "perturbation_stats": {
-        "median": 0.25,
-        "mean": 0.25,
-        "std": 0.3535533905932738
+        "median": 5.75,
+        "mean": 5.75,
+        "std": 1.0606601717798212
       }
     },
     {
@@ -1335,15 +1335,15 @@
       ],
       "mean": 16.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 43.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 86.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 43.0,
+        "mean": 43.0,
+        "std": 60.81118318204309
       }
     },
     {
@@ -1356,15 +1356,15 @@
       ],
       "mean": 5.333333333333333,
       "std": 2.309401076758503,
-      "model_score": 0.0,
+      "model_score": 43.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 86.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 43.0,
+        "mean": 43.0,
+        "std": 60.81118318204309
       }
     },
     {
@@ -1377,15 +1377,15 @@
       ],
       "mean": 8.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 43.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 86.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 43.0,
+        "mean": 43.0,
+        "std": 60.81118318204309
       }
     },
     {
@@ -1400,13 +1400,13 @@
       "std": 0.0,
       "model_score": 0.0,
       "perturbation_scores": {
-        "original": 0.0,
-        "perturbed": 0.0
+        "original": 1.0,
+        "perturbed": -1.0
       },
       "perturbation_stats": {
         "median": 0.0,
         "mean": 0.0,
-        "std": 0.0
+        "std": 1.4142135623730951
       }
     },
     {
@@ -1440,15 +1440,15 @@
       ],
       "mean": 4.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 43.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 86.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 43.0,
+        "mean": 43.0,
+        "std": 60.81118318204309
       }
     },
     {
@@ -1461,15 +1461,15 @@
       ],
       "mean": 16.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 43.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 86.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 43.0,
+        "mean": 43.0,
+        "std": 60.81118318204309
       }
     },
     {
@@ -1482,15 +1482,15 @@
       ],
       "mean": 8.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 43.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 86.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 43.0,
+        "mean": 43.0,
+        "std": 60.81118318204309
       }
     },
     {
@@ -1503,15 +1503,15 @@
       ],
       "mean": 16.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 4.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 8.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 4.0,
+        "mean": 4.0,
+        "std": 5.656854249492381
       }
     },
     {
@@ -1524,15 +1524,15 @@
       ],
       "mean": 16.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 43.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 86.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 43.0,
+        "mean": 43.0,
+        "std": 60.81118318204309
       }
     },
     {
@@ -1566,15 +1566,15 @@
       ],
       "mean": 14.666666666666666,
       "std": 2.309401076758503,
-      "model_score": 0.0,
+      "model_score": 43.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 86.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 43.0,
+        "mean": 43.0,
+        "std": 60.81118318204309
       }
     },
     {
@@ -1587,15 +1587,15 @@
       ],
       "mean": 13.333333333333334,
       "std": 4.618802153517006,
-      "model_score": 0.0,
+      "model_score": 43.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 86.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 43.0,
+        "mean": 43.0,
+        "std": 60.81118318204309
       }
     },
     {
@@ -1608,15 +1608,15 @@
       ],
       "mean": 4.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 43.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 86.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 43.0,
+        "mean": 43.0,
+        "std": 60.81118318204309
       }
     },
     {
@@ -1629,15 +1629,15 @@
       ],
       "mean": 4.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 43.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 86.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 43.0,
+        "mean": 43.0,
+        "std": 60.81118318204309
       }
     },
     {
@@ -1650,15 +1650,15 @@
       ],
       "mean": 4.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 43.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 86.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 43.0,
+        "mean": 43.0,
+        "std": 60.81118318204309
       }
     },
     {
@@ -1692,15 +1692,15 @@
       ],
       "mean": 4.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 43.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 86.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 43.0,
+        "mean": 43.0,
+        "std": 60.81118318204309
       }
     },
     {
@@ -1713,15 +1713,15 @@
       ],
       "mean": 16.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 43.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 86.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 43.0,
+        "mean": 43.0,
+        "std": 60.81118318204309
       }
     },
     {
@@ -1734,15 +1734,15 @@
       ],
       "mean": 9.333333333333334,
       "std": 2.309401076758503,
-      "model_score": 0.0,
+      "model_score": 43.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 86.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 43.0,
+        "mean": 43.0,
+        "std": 60.81118318204309
       }
     },
     {
@@ -1755,15 +1755,15 @@
       ],
       "mean": 16.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -1776,15 +1776,15 @@
       ],
       "mean": 0.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 43.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 86.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 43.0,
+        "mean": 43.0,
+        "std": 60.81118318204309
       }
     },
     {
@@ -1818,15 +1818,15 @@
       ],
       "mean": 4.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 43.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 86.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 43.0,
+        "mean": 43.0,
+        "std": 60.81118318204309
       }
     },
     {
@@ -1860,15 +1860,15 @@
       ],
       "mean": 16.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 43.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 86.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 43.0,
+        "mean": 43.0,
+        "std": 60.81118318204309
       }
     },
     {
@@ -1881,15 +1881,15 @@
       ],
       "mean": 16.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 43.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 86.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 43.0,
+        "mean": 43.0,
+        "std": 60.81118318204309
       }
     },
     {
@@ -1902,15 +1902,15 @@
       ],
       "mean": 4.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 43.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 86.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 43.0,
+        "mean": 43.0,
+        "std": 60.81118318204309
       }
     },
     {
@@ -1923,15 +1923,15 @@
       ],
       "mean": 16.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 43.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 86.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 43.0,
+        "mean": 43.0,
+        "std": 60.81118318204309
       }
     },
     {
@@ -1944,15 +1944,15 @@
       ],
       "mean": 8.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 4.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 8.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 4.0,
+        "mean": 4.0,
+        "std": 5.656854249492381
       }
     },
     {
@@ -1965,15 +1965,15 @@
       ],
       "mean": 14.666666666666666,
       "std": 2.309401076758503,
-      "model_score": 0.0,
+      "model_score": 4.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 8.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 4.0,
+        "mean": 4.0,
+        "std": 5.656854249492381
       }
     },
     {
@@ -1986,15 +1986,15 @@
       ],
       "mean": 16.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 43.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 86.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 43.0,
+        "mean": 43.0,
+        "std": 60.81118318204309
       }
     },
     {
@@ -2007,15 +2007,15 @@
       ],
       "mean": 0.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 43.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 86.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 43.0,
+        "mean": 43.0,
+        "std": 60.81118318204309
       }
     },
     {
@@ -2028,15 +2028,15 @@
       ],
       "mean": 16.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 0.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 1.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -2051,13 +2051,13 @@
       "std": 2.309401076758503,
       "model_score": 0.0,
       "perturbation_scores": {
-        "original": 0.0,
-        "perturbed": 0.0
+        "original": 1.0,
+        "perturbed": -1.0
       },
       "perturbation_stats": {
         "median": 0.0,
         "mean": 0.0,
-        "std": 0.0
+        "std": 1.4142135623730951
       }
     },
     {
@@ -2070,15 +2070,15 @@
       ],
       "mean": 0.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": -0.5,
       "perturbation_scores": {
         "original": 0.0,
-        "perturbed": 0.0
+        "perturbed": -1.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": -0.5,
+        "mean": -0.5,
+        "std": 0.7071067811865476
       }
     },
     {
@@ -2091,15 +2091,15 @@
       ],
       "mean": 8.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 4.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 8.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 4.0,
+        "mean": 4.0,
+        "std": 5.656854249492381
       }
     },
     {
@@ -2112,15 +2112,15 @@
       ],
       "mean": 4.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 4.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 8.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 4.0,
+        "mean": 4.0,
+        "std": 5.656854249492381
       }
     },
     {
@@ -2133,15 +2133,15 @@
       ],
       "mean": 4.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 4.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 8.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 4.0,
+        "mean": 4.0,
+        "std": 5.656854249492381
       }
     },
     {
@@ -2154,15 +2154,15 @@
       ],
       "mean": 16.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 43.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 86.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 43.0,
+        "mean": 43.0,
+        "std": 60.81118318204309
       }
     },
     {
@@ -4674,15 +4674,15 @@
       ],
       "mean": 4.0,
       "std": 1.0,
-      "model_score": 0.5,
+      "model_score": -0.5,
       "perturbation_scores": {
         "original": 1.0,
-        "perturbed": 0.0
+        "perturbed": -2.0
       },
       "perturbation_stats": {
-        "median": 0.5,
-        "mean": 0.5,
-        "std": 0.7071067811865476
+        "median": -0.5,
+        "mean": -0.5,
+        "std": 2.1213203435596424
       }
     },
     {
@@ -4694,15 +4694,15 @@
       ],
       "mean": 30.0,
       "std": 0.0,
-      "model_score": 0.5,
+      "model_score": 4494.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 8988.0,
         "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 0.5,
-        "mean": 0.5,
-        "std": 0.7071067811865476
+        "median": 4494.5,
+        "mean": 4494.5,
+        "std": 6354.768642523502
       }
     },
     {
@@ -4714,15 +4714,15 @@
       ],
       "mean": 4.0,
       "std": 5.656854249492381,
-      "model_score": 0.0,
+      "model_score": 1842.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 3685.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1842.5,
+        "mean": 1842.5,
+        "std": 2605.6884886724274
       }
     },
     {
@@ -4734,15 +4734,15 @@
       ],
       "mean": 22.5,
       "std": 3.5355339059327378,
-      "model_score": 0.0,
+      "model_score": 6.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 12.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 6.0,
+        "mean": 6.0,
+        "std": 8.48528137423857
       }
     },
     {
@@ -4754,15 +4754,15 @@
       ],
       "mean": 33.0,
       "std": 0.0,
-      "model_score": 0.0,
+      "model_score": 494.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 988.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 494.0,
+        "mean": 494.0,
+        "std": 698.6214998123089
       }
     },
     {
@@ -4774,15 +4774,15 @@
       ],
       "mean": 33.0,
       "std": 0.0,
-      "model_score": 0.5,
+      "model_score": 184.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 368.0,
         "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 0.5,
-        "mean": 0.5,
-        "std": 0.7071067811865476
+        "median": 184.5,
+        "mean": 184.5,
+        "std": 259.50818869546293
       }
     },
     {
@@ -4794,15 +4794,15 @@
       ],
       "mean": 24.5,
       "std": 0.7071067811865476,
-      "model_score": 172.5,
+      "model_score": 177.5,
       "perturbation_scores": {
         "original": 345.0,
-        "perturbed": 0.0
+        "perturbed": 10.0
       },
       "perturbation_stats": {
-        "median": 172.5,
-        "mean": 172.5,
-        "std": 243.9518395093589
+        "median": 177.5,
+        "mean": 177.5,
+        "std": 236.88077169749343
       }
     },
     {
@@ -4814,15 +4814,15 @@
       ],
       "mean": 30.0,
       "std": 0.0,
-      "model_score": 0.5,
+      "model_score": 4494.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 8988.0,
         "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 0.5,
-        "mean": 0.5,
-        "std": 0.7071067811865476
+        "median": 4494.5,
+        "mean": 4494.5,
+        "std": 6354.768642523502
       }
     },
     {
@@ -4934,15 +4934,15 @@
       ],
       "mean": 35.5,
       "std": 3.5355339059327378,
-      "model_score": 0.5,
+      "model_score": 4494.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 8988.0,
         "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 0.5,
-        "mean": 0.5,
-        "std": 0.7071067811865476
+        "median": 4494.5,
+        "mean": 4494.5,
+        "std": 6354.768642523502
       }
     },
     {
@@ -4954,15 +4954,15 @@
       ],
       "mean": 21.0,
       "std": 5.656854249492381,
-      "model_score": 0.5,
+      "model_score": 4494.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 8988.0,
         "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 0.5,
-        "mean": 0.5,
-        "std": 0.7071067811865476
+        "median": 4494.5,
+        "mean": 4494.5,
+        "std": 6354.768642523502
       }
     },
     {
@@ -4974,15 +4974,15 @@
       ],
       "mean": 21.0,
       "std": 5.656854249492381,
-      "model_score": 4.0,
+      "model_score": 4.5,
       "perturbation_scores": {
         "original": 8.0,
-        "perturbed": 0.0
+        "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 4.0,
-        "mean": 4.0,
-        "std": 5.656854249492381
+        "median": 4.5,
+        "mean": 4.5,
+        "std": 4.949747468305833
       }
     },
     {
@@ -4994,15 +4994,15 @@
       ],
       "mean": 37.5,
       "std": 3.5355339059327378,
-      "model_score": 0.0,
+      "model_score": 4.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 9.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 4.5,
+        "mean": 4.5,
+        "std": 6.363961030678928
       }
     },
     {
@@ -5014,15 +5014,15 @@
       ],
       "mean": 17.5,
       "std": 3.5355339059327378,
-      "model_score": 0.5,
+      "model_score": 4494.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 8988.0,
         "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 0.5,
-        "mean": 0.5,
-        "std": 0.7071067811865476
+        "median": 4494.5,
+        "mean": 4494.5,
+        "std": 6354.768642523502
       }
     },
     {
@@ -5054,15 +5054,15 @@
       ],
       "mean": 25.5,
       "std": 3.5355339059327378,
-      "model_score": 0.5,
+      "model_score": 4494.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 8988.0,
         "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 0.5,
-        "mean": 0.5,
-        "std": 0.7071067811865476
+        "median": 4494.5,
+        "mean": 4494.5,
+        "std": 6354.768642523502
       }
     },
     {
@@ -5074,15 +5074,15 @@
       ],
       "mean": 37.5,
       "std": 3.5355339059327378,
-      "model_score": 0.0,
+      "model_score": 7.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 15.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 7.5,
+        "mean": 7.5,
+        "std": 10.606601717798213
       }
     },
     {
@@ -5094,15 +5094,15 @@
       ],
       "mean": 37.5,
       "std": 3.5355339059327378,
-      "model_score": 5.0,
+      "model_score": 1015.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 2020.0,
         "perturbed": 10.0
       },
       "perturbation_stats": {
-        "median": 5.0,
-        "mean": 5.0,
-        "std": 7.0710678118654755
+        "median": 1015.0,
+        "mean": 1015.0,
+        "std": 1421.2846301849606
       }
     },
     {
@@ -5154,15 +5154,15 @@
       ],
       "mean": 37.5,
       "std": 3.5355339059327378,
-      "model_score": 14.5,
+      "model_score": 526.5,
       "perturbation_scores": {
         "original": 29.0,
-        "perturbed": 0.0
+        "perturbed": 1024.0
       },
       "perturbation_stats": {
-        "median": 14.5,
-        "mean": 14.5,
-        "std": 20.506096654409877
+        "median": 526.5,
+        "mean": 526.5,
+        "std": 703.5712472806148
       }
     },
     {
@@ -5174,15 +5174,15 @@
       ],
       "mean": 37.5,
       "std": 3.5355339059327378,
-      "model_score": 0.0,
+      "model_score": 1.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 3.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 1.5,
+        "mean": 1.5,
+        "std": 2.1213203435596424
       }
     },
     {
@@ -5194,15 +5194,15 @@
       ],
       "mean": 32.5,
       "std": 3.5355339059327378,
-      "model_score": 500000.0,
+      "model_score": 501842.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 3685.0,
         "perturbed": 1000000.0
       },
       "perturbation_stats": {
-        "median": 500000.0,
-        "mean": 500000.0,
-        "std": 707106.7811865475
+        "median": 501842.5,
+        "mean": 501842.5,
+        "std": 704501.0926978751
       }
     },
     {
@@ -5234,15 +5234,15 @@
       ],
       "mean": 32.5,
       "std": 3.5355339059327378,
-      "model_score": 0.5,
+      "model_score": 4494.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 8988.0,
         "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 0.5,
-        "mean": 0.5,
-        "std": 0.7071067811865476
+        "median": 4494.5,
+        "mean": 4494.5,
+        "std": 6354.768642523502
       }
     },
     {
@@ -5254,15 +5254,15 @@
       ],
       "mean": 26.0,
       "std": 1.4142135623730951,
-      "model_score": 0.5,
+      "model_score": 4500.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 8999.0,
         "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 0.5,
-        "mean": 0.5,
-        "std": 0.7071067811865476
+        "median": 4500.0,
+        "mean": 4500.0,
+        "std": 6362.546817116555
       }
     },
     {
@@ -5294,15 +5294,15 @@
       ],
       "mean": 37.5,
       "std": 3.5355339059327378,
-      "model_score": 0.5,
+      "model_score": 4494.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 8988.0,
         "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 0.5,
-        "mean": 0.5,
-        "std": 0.7071067811865476
+        "median": 4494.5,
+        "mean": 4494.5,
+        "std": 6354.768642523502
       }
     },
     {
@@ -5314,15 +5314,15 @@
       ],
       "mean": 37.5,
       "std": 3.5355339059327378,
-      "model_score": 0.5,
+      "model_score": 4494.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 8988.0,
         "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 0.5,
-        "mean": 0.5,
-        "std": 0.7071067811865476
+        "median": 4494.5,
+        "mean": 4494.5,
+        "std": 6354.768642523502
       }
     },
     {
@@ -5354,15 +5354,15 @@
       ],
       "mean": 24.5,
       "std": 0.7071067811865476,
-      "model_score": 0.0,
+      "model_score": 494.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 988.0,
         "perturbed": 0.0
       },
       "perturbation_stats": {
-        "median": 0.0,
-        "mean": 0.0,
-        "std": 0.0
+        "median": 494.0,
+        "mean": 494.0,
+        "std": 698.6214998123089
       }
     },
     {
@@ -5394,15 +5394,15 @@
       ],
       "mean": 0.0,
       "std": 0.0,
-      "model_score": 0.5,
+      "model_score": 184.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 368.0,
         "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 0.5,
-        "mean": 0.5,
-        "std": 0.7071067811865476
+        "median": 184.5,
+        "mean": 184.5,
+        "std": 259.50818869546293
       }
     },
     {
@@ -5414,15 +5414,15 @@
       ],
       "mean": 37.5,
       "std": 3.5355339059327378,
-      "model_score": 0.5,
+      "model_score": 4494.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 8988.0,
         "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 0.5,
-        "mean": 0.5,
-        "std": 0.7071067811865476
+        "median": 4494.5,
+        "mean": 4494.5,
+        "std": 6354.768642523502
       }
     },
     {
@@ -5434,15 +5434,15 @@
       ],
       "mean": 17.5,
       "std": 3.5355339059327378,
-      "model_score": 0.5,
+      "model_score": 4500.0,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 8999.0,
         "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 0.5,
-        "mean": 0.5,
-        "std": 0.7071067811865476
+        "median": 4500.0,
+        "mean": 4500.0,
+        "std": 6362.546817116555
       }
     },
     {
@@ -5454,15 +5454,15 @@
       ],
       "mean": 17.5,
       "std": 3.5355339059327378,
-      "model_score": 0.5,
+      "model_score": 4494.5,
       "perturbation_scores": {
-        "original": 0.0,
+        "original": 8988.0,
         "perturbed": 1.0
       },
       "perturbation_stats": {
-        "median": 0.5,
-        "mean": 0.5,
-        "std": 0.7071067811865476
+        "median": 4494.5,
+        "mean": 4494.5,
+        "std": 6354.768642523502
       }
     },
     {

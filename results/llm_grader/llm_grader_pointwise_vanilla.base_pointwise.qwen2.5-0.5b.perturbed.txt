@@ -73,7 +73,7 @@ osync.s .loop .top
 osync.s .loop .top
 %ax # critical section mov
 ,%dx -1 halt
-.terminator # x8
+-1 halt  # x
 osync.s .loop .top
 osync.s .loop .top
 osync.s .loop .top
@@ -133,7 +133,7 @@ self.instructions = {}         #
 .io_info = {}         self.io_length
 _instructions = {}         # keep a list
 .io_info = {}         self.io_length
-# keep a list of the processes
+self.io_info = {}         self.io
 .io_info = {}         self.io_length
 .io_info = {}         self.io_length
 .io_info = {}         self.io_length
@@ -149,7 +149,7 @@ _instructions = {}         # keep a list
 _instructions = {}         # keep a list
 .io_info = {}         self.io_length
 .io_info = {}         self.io_length
-# keep a list of the processes
+self.io_info = {}         self
 .io_info = {}         self.io_length
 .io_info = {}         self.io_length
 .io_info = {}         self.io_length
@@ -199,15 +199,15 @@ IES) $(HEADERS)  $(BIN
 -two-cvs-while: $(HEAD
 -two-cvs-while-2
 1 fault, 100
-acilitated) - **Accuracy**:
-(page table entry banana invalid) Virtual
+acilitated) - **Correctness
+(page table entry banana invalid)
 index:0x16 [decimal
 1 fault, 100
 - **Translation Accuracy**: 10
 1 fault, 100
 acilitated) - **Accuracy**:
-virtual address to the physical address. The
-virtual address to the physical address. The
+address it translates to, and the address
+address it translates to, and the address
 1000000
 0x100000
 1 fault, 100
@@ -220,19 +220,19 @@ virtual address to the physical address. The
 contents:0x7f (valid
 10 points) - **Translation Accuracy
 1000000
-acilitated Grading) - **
+acilitated) - **Accuracy**:
 decimal 1024] -->
 ] pte contents:0x7
 1000000
-acilitated Grading) - **
+acilitated) - **Accuracy**:
 1 fault, 100
 1 fault, 100
-virtual address to the physical address. The
+address it translates to, and the address
 1 fault, 100
 1 fault, 100
-:0x7f (valid banana
+:0x7f (valid
 index:0x16 [decimal
-acilitated Grading) - **
+acilitated) - **Accuracy**:
 1 fault, 100
 1 fault, 100
 1 fault, 100

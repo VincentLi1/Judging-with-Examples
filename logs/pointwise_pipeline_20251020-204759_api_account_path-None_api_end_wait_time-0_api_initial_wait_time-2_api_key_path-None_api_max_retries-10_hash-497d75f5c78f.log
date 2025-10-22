@@ -1,0 +1,5 @@
+[INFO] 2025-10-20 20:48:00,002 Logging to /vast/palmer/home.grace/vl298/Prompt-Perturbation/logs/pointwise_pipeline_20251020-204759_api_account_path-None_api_end_wait_time-0_api_initial_wait_time-2_api_key_path-None_api_max_retries-10_hash-497d75f5c78f.log
+[INFO] 2025-10-20 20:48:00,002 Prompt perturbation enabled: True
+[DEBUG] 2025-10-20 20:48:00,119 Starting new HTTPS connection (1): huggingface.co:443
+[DEBUG] 2025-10-20 20:48:00,161 https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3.1-8B-Instruct/resolve/main/tokenizer_config.json HTTP/1.1" 401 0
+[DEBUG] 2025-10-20 20:48:00,185 https://huggingface.co:443 "HEAD /meta-llama/Meta-Llama-3.1-8B-Instruct/resolve/main/config.json HTTP/1.1" 401 0

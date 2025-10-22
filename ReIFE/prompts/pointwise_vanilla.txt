@@ -11,5 +11,5 @@ You will receive an instruction with embedded rubric details, the maximum score,
 {OUTPUT}
 
 # Output Format:
-Return a single integer score only.
+Return a single integer score only, enclosed within <score> and </score> tags (for example, <score>3</score>). Do not include any other text before or after the tags.
 <|im_end|>

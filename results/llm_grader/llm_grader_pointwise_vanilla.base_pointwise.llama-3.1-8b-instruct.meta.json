@@ -1,0 +1,5489 @@
+{
+  "pearson_corr": 0.4027415675252548,
+  "model_scores": [
+    4.5,
+    11.0,
+    9.5,
+    16.0,
+    13.0,
+    12.5,
+    12.0,
+    11.0,
+    8.0,
+    13.0,
+    0.0,
+    16.0,
+    16.0,
+    11.0,
+    3.0,
+    6.5,
+    0.0,
+    16.0,
+    9.5,
+    16.0,
+    11.0,
+    0.0,
+    11.0,
+    11.0,
+    16.0,
+    0.0,
+    16.0,
+    8.0,
+    16.0,
+    9.5,
+    16.0,
+    16.0,
+    16.0,
+    9.5,
+    0.0,
+    4.5,
+    5.0,
+    16.0,
+    11.0,
+    13.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    5.0,
+    10.0,
+    2.5,
+    0.0,
+    2.5,
+    0.07,
+    5.0,
+    5.0,
+    0.0,
+    7.5,
+    5.0,
+    1.0,
+    1.0,
+    5.0,
+    2.5,
+    2.5,
+    7.5,
+    2.5,
+    2.5,
+    0.0,
+    5.0,
+    5.0,
+    1.0,
+    5.0,
+    7.5,
+    5.0,
+    15.0,
+    5.0,
+    5.0,
+    7.5,
+    1.0,
+    5.0,
+    5.0,
+    5.0,
+    5.0,
+    5.0,
+    2.5,
+    10.0,
+    5.0,
+    0.0,
+    4.0,
+    8.0,
+    4.0,
+    4.0,
+    5.0,
+    4.0,
+    8.0,
+    4.0,
+    8.0,
+    8.0,
+    4.0,
+    8.0,
+    0.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    8.0,
+    4.0,
+    8.0,
+    8.0,
+    0.0,
+    4.0,
+    4.0,
+    8.0,
+    8.0,
+    0.0,
+    4.0,
+    8.0,
+    8.0,
+    4.0,
+    8.0,
+    8.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    8.0,
+    4.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    64.0,
+    2.0,
+    7.5,
+    0.0,
+    2.0,
+    2.0,
+    64.0,
+    2.0,
+    0.0,
+    0.0,
+    16.0,
+    0.0,
+    64.0,
+    64.0,
+    2.0,
+    0.5,
+    64.0,
+    0.0,
+    64.0,
+    1.0,
+    2.0,
+    16.0,
+    2.0,
+    0.0,
+    1.0,
+    2.0,
+    64.0,
+    64.0,
+    64.0,
+    0.0,
+    64.0,
+    64.0,
+    0.0,
+    0.0,
+    2.0,
+    2.0,
+    64.0,
+    64.0,
+    64.0,
+    0.5
+  ],
+  "human_means": [
+    7.0,
+    19.0,
+    15.0,
+    13.0,
+    13.0,
+    19.0,
+    6.0,
+    19.0,
+    13.0,
+    19.0,
+    3.0,
+    13.0,
+    19.0,
+    19.0,
+    0.0,
+    6.666666666666667,
+    0.3333333333333333,
+    19.0,
+    6.333333333333333,
+    19.0,
+    6.0,
+    7.333333333333333,
+    6.666666666666667,
+    19.0,
+    13.0,
+    0.0,
+    19.0,
+    6.666666666666667,
+    19.0,
+    6.666666666666667,
+    13.0,
+    19.0,
+    19.0,
+    6.0,
+    0.0,
+    5.0,
+    6.0,
+    17.0,
+    19.0,
+    19.0,
+    16.0,
+    5.333333333333333,
+    8.0,
+    8.0,
+    12.0,
+    4.0,
+    16.0,
+    8.0,
+    16.0,
+    16.0,
+    5.333333333333333,
+    14.666666666666666,
+    13.333333333333334,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    16.0,
+    9.333333333333334,
+    16.0,
+    0.0,
+    16.0,
+    4.0,
+    16.0,
+    16.0,
+    16.0,
+    4.0,
+    16.0,
+    8.0,
+    14.666666666666666,
+    16.0,
+    0.0,
+    16.0,
+    14.666666666666666,
+    0.0,
+    8.0,
+    4.0,
+    4.0,
+    16.0,
+    15.0,
+    13.333333333333334,
+    5.666666666666667,
+    10.0,
+    9.666666666666666,
+    15.0,
+    15.0,
+    15.0,
+    10.666666666666666,
+    5.0,
+    15.0,
+    10.666666666666666,
+    5.0,
+    15.0,
+    7.333333333333333,
+    7.666666666666667,
+    5.666666666666667,
+    4.666666666666667,
+    8.0,
+    5.0,
+    15.0,
+    10.666666666666666,
+    7.333333333333333,
+    11.0,
+    10.333333333333334,
+    7.0,
+    14.333333333333334,
+    6.666666666666667,
+    9.0,
+    10.666666666666666,
+    5.666666666666667,
+    13.666666666666666,
+    8.0,
+    10.666666666666666,
+    12.666666666666666,
+    15.0,
+    10.0,
+    14.333333333333334,
+    13.333333333333334,
+    0.3333333333333333,
+    8.0,
+    16.0,
+    8.0,
+    10.666666666666666,
+    8.0,
+    8.0,
+    16.0,
+    16.0,
+    8.0,
+    16.0,
+    8.0,
+    16.0,
+    8.0,
+    8.0,
+    8.0,
+    16.0,
+    8.0,
+    16.0,
+    16.0,
+    16.0,
+    16.0,
+    8.0,
+    0.6666666666666666,
+    16.0,
+    16.0,
+    0.0,
+    16.0,
+    0.6666666666666666,
+    16.0,
+    0.0,
+    8.0,
+    8.0,
+    16.0,
+    16.0,
+    10.666666666666666,
+    8.0,
+    8.0,
+    3.3333333333333335,
+    16.0,
+    8.0,
+    13.666666666666666,
+    27.0,
+    0.3333333333333333,
+    3.3333333333333335,
+    3.0,
+    3.0,
+    3.3333333333333335,
+    12.666666666666666,
+    12.0,
+    19.666666666666668,
+    27.0,
+    12.666666666666666,
+    13.333333333333334,
+    26.333333333333332,
+    27.0,
+    15.0,
+    6.0,
+    18.0,
+    9.666666666666666,
+    27.0,
+    12.333333333333334,
+    19.0,
+    5.0,
+    22.666666666666668,
+    5.666666666666667,
+    27.0,
+    0.3333333333333333,
+    27.0,
+    12.0,
+    9.333333333333334,
+    11.333333333333334,
+    2.3333333333333335,
+    13.666666666666666,
+    12.666666666666666,
+    4.0,
+    27.0,
+    10.0,
+    0.6666666666666666,
+    8.666666666666666,
+    4.0,
+    30.0,
+    4.0,
+    22.5,
+    33.0,
+    33.0,
+    24.5,
+    30.0,
+    40.0,
+    30.0,
+    5.0,
+    17.5,
+    12.5,
+    35.5,
+    21.0,
+    21.0,
+    37.5,
+    17.5,
+    37.5,
+    25.5,
+    37.5,
+    37.5,
+    20.0,
+    5.0,
+    37.5,
+    37.5,
+    32.5,
+    37.5,
+    32.5,
+    26.0,
+    32.5,
+    37.5,
+    37.5,
+    35.0,
+    24.5,
+    0.0,
+    0.0,
+    37.5,
+    17.5,
+    17.5,
+    37.5
+  ],
+  "per_example_stats": [
+    {
+      "id": "q1-1",
+      "question_id": "q1",
+      "human_scores": [
+        7.0,
+        7.0,
+        7.0
+      ],
+      "mean": 7.0,
+      "std": 0.0,
+      "model_score": 4.5,
+      "perturbation_scores": {
+        "original": 6.0,
+        "perturbed": 3.0
+      },
+      "perturbation_stats": {
+        "median": 4.5,
+        "mean": 4.5,
+        "std": 2.1213203435596424
+      }
+    },
+    {
+      "id": "q1-2",
+      "question_id": "q1",
+      "human_scores": [
+        19.0,
+        19.0,
+        19.0
+      ],
+      "mean": 19.0,
+      "std": 0.0,
+      "model_score": 11.0,
+      "perturbation_scores": {
+        "original": 16.0,
+        "perturbed": 6.0
+      },
+      "perturbation_stats": {
+        "median": 11.0,
+        "mean": 11.0,
+        "std": 7.0710678118654755
+      }
+    },
+    {
+      "id": "q1-3",
+      "question_id": "q1",
+      "human_scores": [
+        13.0,
+        13.0,
+        19.0
+      ],
+      "mean": 15.0,
+      "std": 3.4641016151377544,
+      "model_score": 9.5,
+      "perturbation_scores": {
+        "original": 19.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 9.5,
+        "mean": 9.5,
+        "std": 13.435028842544403
+      }
+    },
+    {
+      "id": "q1-4",
+      "question_id": "q1",
+      "human_scores": [
+        13.0,
+        13.0,
+        13.0
+      ],
+      "mean": 13.0,
+      "std": 0.0,
+      "model_score": 16.0,
+      "perturbation_scores": {
+        "original": 16.0,
+        "perturbed": 16.0
+      },
+      "perturbation_stats": {
+        "median": 16.0,
+        "mean": 16.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q1-5",
+      "question_id": "q1",
+      "human_scores": [
+        11.0,
+        15.0,
+        13.0
+      ],
+      "mean": 13.0,
+      "std": 2.0,
+      "model_score": 13.0,
+      "perturbation_scores": {
+        "original": 16.0,
+        "perturbed": 10.0
+      },
+      "perturbation_stats": {
+        "median": 13.0,
+        "mean": 13.0,
+        "std": 4.242640687119285
+      }
+    },
+    {
+      "id": "q1-6",
+      "question_id": "q1",
+      "human_scores": [
+        19.0,
+        19.0,
+        19.0
+      ],
+      "mean": 19.0,
+      "std": 0.0,
+      "model_score": 12.5,
+      "perturbation_scores": {
+        "original": 13.0,
+        "perturbed": 12.0
+      },
+      "perturbation_stats": {
+        "median": 12.5,
+        "mean": 12.5,
+        "std": 0.7071067811865476
+      }
+    },
+    {
+      "id": "q1-7",
+      "question_id": "q1",
+      "human_scores": [
+        8.0,
+        4.0,
+        6.0
+      ],
+      "mean": 6.0,
+      "std": 2.0,
+      "model_score": 12.0,
+      "perturbation_scores": {
+        "original": 14.0,
+        "perturbed": 10.0
+      },
+      "perturbation_stats": {
+        "median": 12.0,
+        "mean": 12.0,
+        "std": 2.8284271247461903
+      }
+    },
+    {
+      "id": "q1-8",
+      "question_id": "q1",
+      "human_scores": [
+        19.0,
+        19.0,
+        19.0
+      ],
+      "mean": 19.0,
+      "std": 0.0,
+      "model_score": 11.0,
+      "perturbation_scores": {
+        "original": 16.0,
+        "perturbed": 6.0
+      },
+      "perturbation_stats": {
+        "median": 11.0,
+        "mean": 11.0,
+        "std": 7.0710678118654755
+      }
+    },
+    {
+      "id": "q1-9",
+      "question_id": "q1",
+      "human_scores": [
+        13.0,
+        13.0,
+        13.0
+      ],
+      "mean": 13.0,
+      "std": 0.0,
+      "model_score": 8.0,
+      "perturbation_scores": {
+        "original": 16.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 8.0,
+        "mean": 8.0,
+        "std": 11.313708498984761
+      }
+    },
+    {
+      "id": "q1-10",
+      "question_id": "q1",
+      "human_scores": [
+        19.0,
+        19.0,
+        19.0
+      ],
+      "mean": 19.0,
+      "std": 0.0,
+      "model_score": 13.0,
+      "perturbation_scores": {
+        "original": 16.0,
+        "perturbed": 10.0
+      },
+      "perturbation_stats": {
+        "median": 13.0,
+        "mean": 13.0,
+        "std": 4.242640687119285
+      }
+    },
+    {
+      "id": "q1-11",
+      "question_id": "q1",
+      "human_scores": [
+        3.0,
+        3.0,
+        3.0
+      ],
+      "mean": 3.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q1-12",
+      "question_id": "q1",
+      "human_scores": [
+        13.0,
+        13.0,
+        13.0
+      ],
+      "mean": 13.0,
+      "std": 0.0,
+      "model_score": 16.0,
+      "perturbation_scores": {
+        "original": 16.0,
+        "perturbed": 16.0
+      },
+      "perturbation_stats": {
+        "median": 16.0,
+        "mean": 16.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q1-13",
+      "question_id": "q1",
+      "human_scores": [
+        19.0,
+        19.0,
+        19.0
+      ],
+      "mean": 19.0,
+      "std": 0.0,
+      "model_score": 16.0,
+      "perturbation_scores": {
+        "original": 16.0,
+        "perturbed": 16.0
+      },
+      "perturbation_stats": {
+        "median": 16.0,
+        "mean": 16.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q1-14",
+      "question_id": "q1",
+      "human_scores": [
+        19.0,
+        19.0,
+        19.0
+      ],
+      "mean": 19.0,
+      "std": 0.0,
+      "model_score": 11.0,
+      "perturbation_scores": {
+        "original": 16.0,
+        "perturbed": 6.0
+      },
+      "perturbation_stats": {
+        "median": 11.0,
+        "mean": 11.0,
+        "std": 7.0710678118654755
+      }
+    },
+    {
+      "id": "q1-15",
+      "question_id": "q1",
+      "human_scores": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "std": 0.0,
+      "model_score": 3.0,
+      "perturbation_scores": {
+        "original": 6.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 3.0,
+        "mean": 3.0,
+        "std": 4.242640687119285
+      }
+    },
+    {
+      "id": "q1-16",
+      "question_id": "q1",
+      "human_scores": [
+        7.0,
+        7.0,
+        6.0
+      ],
+      "mean": 6.666666666666667,
+      "std": 0.5773502691896257,
+      "model_score": 6.5,
+      "perturbation_scores": {
+        "original": 10.0,
+        "perturbed": 3.0
+      },
+      "perturbation_stats": {
+        "median": 6.5,
+        "mean": 6.5,
+        "std": 4.949747468305833
+      }
+    },
+    {
+      "id": "q1-17",
+      "question_id": "q1",
+      "human_scores": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.3333333333333333,
+      "std": 0.5773502691896257,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q1-18",
+      "question_id": "q1",
+      "human_scores": [
+        19.0,
+        19.0,
+        19.0
+      ],
+      "mean": 19.0,
+      "std": 0.0,
+      "model_score": 16.0,
+      "perturbation_scores": {
+        "original": 16.0,
+        "perturbed": 16.0
+      },
+      "perturbation_stats": {
+        "median": 16.0,
+        "mean": 16.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q1-19",
+      "question_id": "q1",
+      "human_scores": [
+        6.5,
+        6.5,
+        6.0
+      ],
+      "mean": 6.333333333333333,
+      "std": 0.28867513459481287,
+      "model_score": 9.5,
+      "perturbation_scores": {
+        "original": 13.0,
+        "perturbed": 6.0
+      },
+      "perturbation_stats": {
+        "median": 9.5,
+        "mean": 9.5,
+        "std": 4.949747468305833
+      }
+    },
+    {
+      "id": "q1-20",
+      "question_id": "q1",
+      "human_scores": [
+        19.0,
+        19.0,
+        19.0
+      ],
+      "mean": 19.0,
+      "std": 0.0,
+      "model_score": 16.0,
+      "perturbation_scores": {
+        "original": 16.0,
+        "perturbed": 16.0
+      },
+      "perturbation_stats": {
+        "median": 16.0,
+        "mean": 16.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q1-21",
+      "question_id": "q1",
+      "human_scores": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "mean": 6.0,
+      "std": 0.0,
+      "model_score": 11.0,
+      "perturbation_scores": {
+        "original": 16.0,
+        "perturbed": 6.0
+      },
+      "perturbation_stats": {
+        "median": 11.0,
+        "mean": 11.0,
+        "std": 7.0710678118654755
+      }
+    },
+    {
+      "id": "q1-22",
+      "question_id": "q1",
+      "human_scores": [
+        7.0,
+        7.0,
+        8.0
+      ],
+      "mean": 7.333333333333333,
+      "std": 0.5773502691896257,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q1-23",
+      "question_id": "q1",
+      "human_scores": [
+        8.0,
+        6.0,
+        6.0
+      ],
+      "mean": 6.666666666666667,
+      "std": 1.1547005383792515,
+      "model_score": 11.0,
+      "perturbation_scores": {
+        "original": 16.0,
+        "perturbed": 6.0
+      },
+      "perturbation_stats": {
+        "median": 11.0,
+        "mean": 11.0,
+        "std": 7.0710678118654755
+      }
+    },
+    {
+      "id": "q1-24",
+      "question_id": "q1",
+      "human_scores": [
+        19.0,
+        19.0,
+        19.0
+      ],
+      "mean": 19.0,
+      "std": 0.0,
+      "model_score": 11.0,
+      "perturbation_scores": {
+        "original": 16.0,
+        "perturbed": 6.0
+      },
+      "perturbation_stats": {
+        "median": 11.0,
+        "mean": 11.0,
+        "std": 7.0710678118654755
+      }
+    },
+    {
+      "id": "q1-25",
+      "question_id": "q1",
+      "human_scores": [
+        13.0,
+        13.0,
+        13.0
+      ],
+      "mean": 13.0,
+      "std": 0.0,
+      "model_score": 16.0,
+      "perturbation_scores": {
+        "original": 16.0,
+        "perturbed": 16.0
+      },
+      "perturbation_stats": {
+        "median": 16.0,
+        "mean": 16.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q1-26",
+      "question_id": "q1",
+      "human_scores": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q1-27",
+      "question_id": "q1",
+      "human_scores": [
+        19.0,
+        19.0,
+        19.0
+      ],
+      "mean": 19.0,
+      "std": 0.0,
+      "model_score": 16.0,
+      "perturbation_scores": {
+        "original": 16.0,
+        "perturbed": 16.0
+      },
+      "perturbation_stats": {
+        "median": 16.0,
+        "mean": 16.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q1-28",
+      "question_id": "q1",
+      "human_scores": [
+        8.0,
+        6.0,
+        6.0
+      ],
+      "mean": 6.666666666666667,
+      "std": 1.1547005383792515,
+      "model_score": 8.0,
+      "perturbation_scores": {
+        "original": 16.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 8.0,
+        "mean": 8.0,
+        "std": 11.313708498984761
+      }
+    },
+    {
+      "id": "q1-29",
+      "question_id": "q1",
+      "human_scores": [
+        19.0,
+        19.0,
+        19.0
+      ],
+      "mean": 19.0,
+      "std": 0.0,
+      "model_score": 16.0,
+      "perturbation_scores": {
+        "original": 16.0,
+        "perturbed": 16.0
+      },
+      "perturbation_stats": {
+        "median": 16.0,
+        "mean": 16.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q1-30",
+      "question_id": "q1",
+      "human_scores": [
+        7.0,
+        7.0,
+        6.0
+      ],
+      "mean": 6.666666666666667,
+      "std": 0.5773502691896257,
+      "model_score": 9.5,
+      "perturbation_scores": {
+        "original": 13.0,
+        "perturbed": 6.0
+      },
+      "perturbation_stats": {
+        "median": 9.5,
+        "mean": 9.5,
+        "std": 4.949747468305833
+      }
+    },
+    {
+      "id": "q1-31",
+      "question_id": "q1",
+      "human_scores": [
+        13.0,
+        13.0,
+        13.0
+      ],
+      "mean": 13.0,
+      "std": 0.0,
+      "model_score": 16.0,
+      "perturbation_scores": {
+        "original": 16.0,
+        "perturbed": 16.0
+      },
+      "perturbation_stats": {
+        "median": 16.0,
+        "mean": 16.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q1-32",
+      "question_id": "q1",
+      "human_scores": [
+        19.0,
+        19.0,
+        19.0
+      ],
+      "mean": 19.0,
+      "std": 0.0,
+      "model_score": 16.0,
+      "perturbation_scores": {
+        "original": 16.0,
+        "perturbed": 16.0
+      },
+      "perturbation_stats": {
+        "median": 16.0,
+        "mean": 16.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q1-33",
+      "question_id": "q1",
+      "human_scores": [
+        19.0,
+        19.0,
+        19.0
+      ],
+      "mean": 19.0,
+      "std": 0.0,
+      "model_score": 16.0,
+      "perturbation_scores": {
+        "original": 16.0,
+        "perturbed": 16.0
+      },
+      "perturbation_stats": {
+        "median": 16.0,
+        "mean": 16.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q1-34",
+      "question_id": "q1",
+      "human_scores": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "mean": 6.0,
+      "std": 0.0,
+      "model_score": 9.5,
+      "perturbation_scores": {
+        "original": 16.0,
+        "perturbed": 3.0
+      },
+      "perturbation_stats": {
+        "median": 9.5,
+        "mean": 9.5,
+        "std": 9.192388155425117
+      }
+    },
+    {
+      "id": "q1-35",
+      "question_id": "q1",
+      "human_scores": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q1-36",
+      "question_id": "q1",
+      "human_scores": [
+        6.0,
+        6.0,
+        3.0
+      ],
+      "mean": 5.0,
+      "std": 1.7320508075688772,
+      "model_score": 4.5,
+      "perturbation_scores": {
+        "original": 6.0,
+        "perturbed": 3.0
+      },
+      "perturbation_stats": {
+        "median": 4.5,
+        "mean": 4.5,
+        "std": 2.1213203435596424
+      }
+    },
+    {
+      "id": "q1-37",
+      "question_id": "q1",
+      "human_scores": [
+        6.0,
+        6.0,
+        6.0
+      ],
+      "mean": 6.0,
+      "std": 0.0,
+      "model_score": 5.0,
+      "perturbation_scores": {
+        "original": 10.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 5.0,
+        "mean": 5.0,
+        "std": 7.0710678118654755
+      }
+    },
+    {
+      "id": "q1-38",
+      "question_id": "q1",
+      "human_scores": [
+        19.0,
+        19.0,
+        13.0
+      ],
+      "mean": 17.0,
+      "std": 3.4641016151377544,
+      "model_score": 16.0,
+      "perturbation_scores": {
+        "original": 16.0,
+        "perturbed": 16.0
+      },
+      "perturbation_stats": {
+        "median": 16.0,
+        "mean": 16.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q1-39",
+      "question_id": "q1",
+      "human_scores": [
+        19.0,
+        19.0,
+        19.0
+      ],
+      "mean": 19.0,
+      "std": 0.0,
+      "model_score": 11.0,
+      "perturbation_scores": {
+        "original": 16.0,
+        "perturbed": 6.0
+      },
+      "perturbation_stats": {
+        "median": 11.0,
+        "mean": 11.0,
+        "std": 7.0710678118654755
+      }
+    },
+    {
+      "id": "q1-40",
+      "question_id": "q1",
+      "human_scores": [
+        19.0,
+        19.0,
+        19.0
+      ],
+      "mean": 19.0,
+      "std": 0.0,
+      "model_score": 13.0,
+      "perturbation_scores": {
+        "original": 16.0,
+        "perturbed": 10.0
+      },
+      "perturbation_stats": {
+        "median": 13.0,
+        "mean": 13.0,
+        "std": 4.242640687119285
+      }
+    },
+    {
+      "id": "q2-1",
+      "question_id": "q2",
+      "human_scores": [
+        16.0,
+        16.0,
+        16.0
+      ],
+      "mean": 16.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-2",
+      "question_id": "q2",
+      "human_scores": [
+        8.0,
+        4.0,
+        4.0
+      ],
+      "mean": 5.333333333333333,
+      "std": 2.309401076758503,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-3",
+      "question_id": "q2",
+      "human_scores": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "mean": 8.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-4",
+      "question_id": "q2",
+      "human_scores": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "mean": 8.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-5",
+      "question_id": "q2",
+      "human_scores": [
+        12.0,
+        12.0,
+        12.0
+      ],
+      "mean": 12.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-6",
+      "question_id": "q2",
+      "human_scores": [
+        4.0,
+        4.0,
+        4.0
+      ],
+      "mean": 4.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-7",
+      "question_id": "q2",
+      "human_scores": [
+        16.0,
+        16.0,
+        16.0
+      ],
+      "mean": 16.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-8",
+      "question_id": "q2",
+      "human_scores": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "mean": 8.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-9",
+      "question_id": "q2",
+      "human_scores": [
+        16.0,
+        16.0,
+        16.0
+      ],
+      "mean": 16.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-10",
+      "question_id": "q2",
+      "human_scores": [
+        16.0,
+        16.0,
+        16.0
+      ],
+      "mean": 16.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-11",
+      "question_id": "q2",
+      "human_scores": [
+        8.0,
+        4.0,
+        4.0
+      ],
+      "mean": 5.333333333333333,
+      "std": 2.309401076758503,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-12",
+      "question_id": "q2",
+      "human_scores": [
+        16.0,
+        16.0,
+        12.0
+      ],
+      "mean": 14.666666666666666,
+      "std": 2.309401076758503,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-13",
+      "question_id": "q2",
+      "human_scores": [
+        16.0,
+        16.0,
+        8.0
+      ],
+      "mean": 13.333333333333334,
+      "std": 4.618802153517006,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-14",
+      "question_id": "q2",
+      "human_scores": [
+        4.0,
+        4.0,
+        4.0
+      ],
+      "mean": 4.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-15",
+      "question_id": "q2",
+      "human_scores": [
+        4.0,
+        4.0,
+        4.0
+      ],
+      "mean": 4.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-16",
+      "question_id": "q2",
+      "human_scores": [
+        4.0,
+        4.0,
+        4.0
+      ],
+      "mean": 4.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-17",
+      "question_id": "q2",
+      "human_scores": [
+        4.0,
+        4.0,
+        4.0
+      ],
+      "mean": 4.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-18",
+      "question_id": "q2",
+      "human_scores": [
+        4.0,
+        4.0,
+        4.0
+      ],
+      "mean": 4.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-19",
+      "question_id": "q2",
+      "human_scores": [
+        16.0,
+        16.0,
+        16.0
+      ],
+      "mean": 16.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-20",
+      "question_id": "q2",
+      "human_scores": [
+        12.0,
+        8.0,
+        8.0
+      ],
+      "mean": 9.333333333333334,
+      "std": 2.309401076758503,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-21",
+      "question_id": "q2",
+      "human_scores": [
+        16.0,
+        16.0,
+        16.0
+      ],
+      "mean": 16.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-22",
+      "question_id": "q2",
+      "human_scores": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-23",
+      "question_id": "q2",
+      "human_scores": [
+        16.0,
+        16.0,
+        16.0
+      ],
+      "mean": 16.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-24",
+      "question_id": "q2",
+      "human_scores": [
+        4.0,
+        4.0,
+        4.0
+      ],
+      "mean": 4.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-25",
+      "question_id": "q2",
+      "human_scores": [
+        16.0,
+        16.0,
+        16.0
+      ],
+      "mean": 16.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-26",
+      "question_id": "q2",
+      "human_scores": [
+        16.0,
+        16.0,
+        16.0
+      ],
+      "mean": 16.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-27",
+      "question_id": "q2",
+      "human_scores": [
+        16.0,
+        16.0,
+        16.0
+      ],
+      "mean": 16.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-28",
+      "question_id": "q2",
+      "human_scores": [
+        4.0,
+        4.0,
+        4.0
+      ],
+      "mean": 4.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-29",
+      "question_id": "q2",
+      "human_scores": [
+        16.0,
+        16.0,
+        16.0
+      ],
+      "mean": 16.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-30",
+      "question_id": "q2",
+      "human_scores": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "mean": 8.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-31",
+      "question_id": "q2",
+      "human_scores": [
+        12.0,
+        16.0,
+        16.0
+      ],
+      "mean": 14.666666666666666,
+      "std": 2.309401076758503,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-32",
+      "question_id": "q2",
+      "human_scores": [
+        16.0,
+        16.0,
+        16.0
+      ],
+      "mean": 16.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-33",
+      "question_id": "q2",
+      "human_scores": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-34",
+      "question_id": "q2",
+      "human_scores": [
+        16.0,
+        16.0,
+        16.0
+      ],
+      "mean": 16.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-35",
+      "question_id": "q2",
+      "human_scores": [
+        16.0,
+        16.0,
+        12.0
+      ],
+      "mean": 14.666666666666666,
+      "std": 2.309401076758503,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-36",
+      "question_id": "q2",
+      "human_scores": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-37",
+      "question_id": "q2",
+      "human_scores": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "mean": 8.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-38",
+      "question_id": "q2",
+      "human_scores": [
+        4.0,
+        4.0,
+        4.0
+      ],
+      "mean": 4.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-39",
+      "question_id": "q2",
+      "human_scores": [
+        4.0,
+        4.0,
+        4.0
+      ],
+      "mean": 4.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q2-40",
+      "question_id": "q2",
+      "human_scores": [
+        16.0,
+        16.0,
+        16.0
+      ],
+      "mean": 16.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q3-1",
+      "question_id": "q3",
+      "human_scores": [
+        15.0,
+        15.0,
+        15.0
+      ],
+      "mean": 15.0,
+      "std": 0.0,
+      "model_score": 5.0,
+      "perturbation_scores": {
+        "original": 10.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 5.0,
+        "mean": 5.0,
+        "std": 7.0710678118654755
+      }
+    },
+    {
+      "id": "q3-2",
+      "question_id": "q3",
+      "human_scores": [
+        10.0,
+        15.0,
+        15.0
+      ],
+      "mean": 13.333333333333334,
+      "std": 2.8867513459481287,
+      "model_score": 10.0,
+      "perturbation_scores": {
+        "original": 10.0,
+        "perturbed": 10.0
+      },
+      "perturbation_stats": {
+        "median": 10.0,
+        "mean": 10.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q3-3",
+      "question_id": "q3",
+      "human_scores": [
+        5.0,
+        7.0,
+        5.0
+      ],
+      "mean": 5.666666666666667,
+      "std": 1.1547005383792515,
+      "model_score": 2.5,
+      "perturbation_scores": {
+        "original": 5.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
+      }
+    },
+    {
+      "id": "q3-4",
+      "question_id": "q3",
+      "human_scores": [
+        10.0,
+        10.0,
+        10.0
+      ],
+      "mean": 10.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q3-5",
+      "question_id": "q3",
+      "human_scores": [
+        12.0,
+        8.0,
+        9.0
+      ],
+      "mean": 9.666666666666666,
+      "std": 2.0816659994661326,
+      "model_score": 2.5,
+      "perturbation_scores": {
+        "original": 5.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
+      }
+    },
+    {
+      "id": "q3-6",
+      "question_id": "q3",
+      "human_scores": [
+        15.0,
+        15.0,
+        15.0
+      ],
+      "mean": 15.0,
+      "std": 0.0,
+      "model_score": 0.07,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.14
+      },
+      "perturbation_stats": {
+        "median": 0.07,
+        "mean": 0.07,
+        "std": 0.09899494936611666
+      }
+    },
+    {
+      "id": "q3-7",
+      "question_id": "q3",
+      "human_scores": [
+        15.0,
+        15.0,
+        15.0
+      ],
+      "mean": 15.0,
+      "std": 0.0,
+      "model_score": 5.0,
+      "perturbation_scores": {
+        "original": 10.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 5.0,
+        "mean": 5.0,
+        "std": 7.0710678118654755
+      }
+    },
+    {
+      "id": "q3-8",
+      "question_id": "q3",
+      "human_scores": [
+        15.0,
+        15.0,
+        15.0
+      ],
+      "mean": 15.0,
+      "std": 0.0,
+      "model_score": 5.0,
+      "perturbation_scores": {
+        "original": 10.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 5.0,
+        "mean": 5.0,
+        "std": 7.0710678118654755
+      }
+    },
+    {
+      "id": "q3-9",
+      "question_id": "q3",
+      "human_scores": [
+        12.0,
+        10.0,
+        10.0
+      ],
+      "mean": 10.666666666666666,
+      "std": 1.1547005383792515,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q3-10",
+      "question_id": "q3",
+      "human_scores": [
+        5.0,
+        5.0,
+        5.0
+      ],
+      "mean": 5.0,
+      "std": 0.0,
+      "model_score": 7.5,
+      "perturbation_scores": {
+        "original": 10.0,
+        "perturbed": 5.0
+      },
+      "perturbation_stats": {
+        "median": 7.5,
+        "mean": 7.5,
+        "std": 3.5355339059327378
+      }
+    },
+    {
+      "id": "q3-11",
+      "question_id": "q3",
+      "human_scores": [
+        15.0,
+        15.0,
+        15.0
+      ],
+      "mean": 15.0,
+      "std": 0.0,
+      "model_score": 5.0,
+      "perturbation_scores": {
+        "original": 10.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 5.0,
+        "mean": 5.0,
+        "std": 7.0710678118654755
+      }
+    },
+    {
+      "id": "q3-12",
+      "question_id": "q3",
+      "human_scores": [
+        10.0,
+        12.0,
+        10.0
+      ],
+      "mean": 10.666666666666666,
+      "std": 1.1547005383792515,
+      "model_score": 1.0,
+      "perturbation_scores": {
+        "original": 2.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
+      }
+    },
+    {
+      "id": "q3-13",
+      "question_id": "q3",
+      "human_scores": [
+        7.0,
+        5.0,
+        3.0
+      ],
+      "mean": 5.0,
+      "std": 2.0,
+      "model_score": 1.0,
+      "perturbation_scores": {
+        "original": 2.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
+      }
+    },
+    {
+      "id": "q3-14",
+      "question_id": "q3",
+      "human_scores": [
+        15.0,
+        15.0,
+        15.0
+      ],
+      "mean": 15.0,
+      "std": 0.0,
+      "model_score": 5.0,
+      "perturbation_scores": {
+        "original": 10.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 5.0,
+        "mean": 5.0,
+        "std": 7.0710678118654755
+      }
+    },
+    {
+      "id": "q3-15",
+      "question_id": "q3",
+      "human_scores": [
+        10.0,
+        5.0,
+        7.0
+      ],
+      "mean": 7.333333333333333,
+      "std": 2.516611478423583,
+      "model_score": 2.5,
+      "perturbation_scores": {
+        "original": 5.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
+      }
+    },
+    {
+      "id": "q3-16",
+      "question_id": "q3",
+      "human_scores": [
+        10.0,
+        5.0,
+        8.0
+      ],
+      "mean": 7.666666666666667,
+      "std": 2.516611478423583,
+      "model_score": 2.5,
+      "perturbation_scores": {
+        "original": 5.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
+      }
+    },
+    {
+      "id": "q3-17",
+      "question_id": "q3",
+      "human_scores": [
+        7.0,
+        5.0,
+        5.0
+      ],
+      "mean": 5.666666666666667,
+      "std": 1.1547005383792515,
+      "model_score": 7.5,
+      "perturbation_scores": {
+        "original": 10.0,
+        "perturbed": 5.0
+      },
+      "perturbation_stats": {
+        "median": 7.5,
+        "mean": 7.5,
+        "std": 3.5355339059327378
+      }
+    },
+    {
+      "id": "q3-18",
+      "question_id": "q3",
+      "human_scores": [
+        5.0,
+        5.0,
+        4.0
+      ],
+      "mean": 4.666666666666667,
+      "std": 0.5773502691896257,
+      "model_score": 2.5,
+      "perturbation_scores": {
+        "original": 5.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
+      }
+    },
+    {
+      "id": "q3-19",
+      "question_id": "q3",
+      "human_scores": [
+        8.0,
+        9.0,
+        7.0
+      ],
+      "mean": 8.0,
+      "std": 1.0,
+      "model_score": 2.5,
+      "perturbation_scores": {
+        "original": 5.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
+      }
+    },
+    {
+      "id": "q3-20",
+      "question_id": "q3",
+      "human_scores": [
+        5.0,
+        5.0,
+        5.0
+      ],
+      "mean": 5.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q3-21",
+      "question_id": "q3",
+      "human_scores": [
+        15.0,
+        15.0,
+        15.0
+      ],
+      "mean": 15.0,
+      "std": 0.0,
+      "model_score": 5.0,
+      "perturbation_scores": {
+        "original": 10.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 5.0,
+        "mean": 5.0,
+        "std": 7.0710678118654755
+      }
+    },
+    {
+      "id": "q3-22",
+      "question_id": "q3",
+      "human_scores": [
+        10.0,
+        12.0,
+        10.0
+      ],
+      "mean": 10.666666666666666,
+      "std": 1.1547005383792515,
+      "model_score": 5.0,
+      "perturbation_scores": {
+        "original": 10.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 5.0,
+        "mean": 5.0,
+        "std": 7.0710678118654755
+      }
+    },
+    {
+      "id": "q3-23",
+      "question_id": "q3",
+      "human_scores": [
+        10.0,
+        5.0,
+        7.0
+      ],
+      "mean": 7.333333333333333,
+      "std": 2.516611478423583,
+      "model_score": 1.0,
+      "perturbation_scores": {
+        "original": 2.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
+      }
+    },
+    {
+      "id": "q3-24",
+      "question_id": "q3",
+      "human_scores": [
+        13.0,
+        10.0,
+        10.0
+      ],
+      "mean": 11.0,
+      "std": 1.7320508075688772,
+      "model_score": 5.0,
+      "perturbation_scores": {
+        "original": 10.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 5.0,
+        "mean": 5.0,
+        "std": 7.0710678118654755
+      }
+    },
+    {
+      "id": "q3-25",
+      "question_id": "q3",
+      "human_scores": [
+        11.0,
+        10.0,
+        10.0
+      ],
+      "mean": 10.333333333333334,
+      "std": 0.5773502691896257,
+      "model_score": 7.5,
+      "perturbation_scores": {
+        "original": 10.0,
+        "perturbed": 5.0
+      },
+      "perturbation_stats": {
+        "median": 7.5,
+        "mean": 7.5,
+        "std": 3.5355339059327378
+      }
+    },
+    {
+      "id": "q3-26",
+      "question_id": "q3",
+      "human_scores": [
+        5.0,
+        9.0,
+        7.0
+      ],
+      "mean": 7.0,
+      "std": 2.0,
+      "model_score": 5.0,
+      "perturbation_scores": {
+        "original": 10.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 5.0,
+        "mean": 5.0,
+        "std": 7.0710678118654755
+      }
+    },
+    {
+      "id": "q3-27",
+      "question_id": "q3",
+      "human_scores": [
+        15.0,
+        13.0,
+        15.0
+      ],
+      "mean": 14.333333333333334,
+      "std": 1.1547005383792515,
+      "model_score": 15.0,
+      "perturbation_scores": {
+        "original": 15.0,
+        "perturbed": 15.0
+      },
+      "perturbation_stats": {
+        "median": 15.0,
+        "mean": 15.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q3-28",
+      "question_id": "q3",
+      "human_scores": [
+        8.0,
+        7.0,
+        5.0
+      ],
+      "mean": 6.666666666666667,
+      "std": 1.5275252316519468,
+      "model_score": 5.0,
+      "perturbation_scores": {
+        "original": 10.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 5.0,
+        "mean": 5.0,
+        "std": 7.0710678118654755
+      }
+    },
+    {
+      "id": "q3-29",
+      "question_id": "q3",
+      "human_scores": [
+        8.0,
+        10.0,
+        9.0
+      ],
+      "mean": 9.0,
+      "std": 1.0,
+      "model_score": 5.0,
+      "perturbation_scores": {
+        "original": 10.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 5.0,
+        "mean": 5.0,
+        "std": 7.0710678118654755
+      }
+    },
+    {
+      "id": "q3-30",
+      "question_id": "q3",
+      "human_scores": [
+        10.0,
+        12.0,
+        10.0
+      ],
+      "mean": 10.666666666666666,
+      "std": 1.1547005383792515,
+      "model_score": 7.5,
+      "perturbation_scores": {
+        "original": 10.0,
+        "perturbed": 5.0
+      },
+      "perturbation_stats": {
+        "median": 7.5,
+        "mean": 7.5,
+        "std": 3.5355339059327378
+      }
+    },
+    {
+      "id": "q3-31",
+      "question_id": "q3",
+      "human_scores": [
+        5.0,
+        7.0,
+        5.0
+      ],
+      "mean": 5.666666666666667,
+      "std": 1.1547005383792515,
+      "model_score": 1.0,
+      "perturbation_scores": {
+        "original": 2.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 1.4142135623730951
+      }
+    },
+    {
+      "id": "q3-32",
+      "question_id": "q3",
+      "human_scores": [
+        13.0,
+        15.0,
+        13.0
+      ],
+      "mean": 13.666666666666666,
+      "std": 1.1547005383792515,
+      "model_score": 5.0,
+      "perturbation_scores": {
+        "original": 10.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 5.0,
+        "mean": 5.0,
+        "std": 7.0710678118654755
+      }
+    },
+    {
+      "id": "q3-33",
+      "question_id": "q3",
+      "human_scores": [
+        10.0,
+        7.0,
+        7.0
+      ],
+      "mean": 8.0,
+      "std": 1.7320508075688772,
+      "model_score": 5.0,
+      "perturbation_scores": {
+        "original": 10.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 5.0,
+        "mean": 5.0,
+        "std": 7.0710678118654755
+      }
+    },
+    {
+      "id": "q3-34",
+      "question_id": "q3",
+      "human_scores": [
+        10.0,
+        12.0,
+        10.0
+      ],
+      "mean": 10.666666666666666,
+      "std": 1.1547005383792515,
+      "model_score": 5.0,
+      "perturbation_scores": {
+        "original": 10.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 5.0,
+        "mean": 5.0,
+        "std": 7.0710678118654755
+      }
+    },
+    {
+      "id": "q3-35",
+      "question_id": "q3",
+      "human_scores": [
+        15.0,
+        10.0,
+        13.0
+      ],
+      "mean": 12.666666666666666,
+      "std": 2.516611478423583,
+      "model_score": 5.0,
+      "perturbation_scores": {
+        "original": 10.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 5.0,
+        "mean": 5.0,
+        "std": 7.0710678118654755
+      }
+    },
+    {
+      "id": "q3-36",
+      "question_id": "q3",
+      "human_scores": [
+        15.0,
+        15.0,
+        15.0
+      ],
+      "mean": 15.0,
+      "std": 0.0,
+      "model_score": 5.0,
+      "perturbation_scores": {
+        "original": 10.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 5.0,
+        "mean": 5.0,
+        "std": 7.0710678118654755
+      }
+    },
+    {
+      "id": "q3-37",
+      "question_id": "q3",
+      "human_scores": [
+        10.0,
+        10.0,
+        10.0
+      ],
+      "mean": 10.0,
+      "std": 0.0,
+      "model_score": 2.5,
+      "perturbation_scores": {
+        "original": 5.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 2.5,
+        "mean": 2.5,
+        "std": 3.5355339059327378
+      }
+    },
+    {
+      "id": "q3-38",
+      "question_id": "q3",
+      "human_scores": [
+        15.0,
+        13.0,
+        15.0
+      ],
+      "mean": 14.333333333333334,
+      "std": 1.1547005383792515,
+      "model_score": 10.0,
+      "perturbation_scores": {
+        "original": 15.0,
+        "perturbed": 5.0
+      },
+      "perturbation_stats": {
+        "median": 10.0,
+        "mean": 10.0,
+        "std": 7.0710678118654755
+      }
+    },
+    {
+      "id": "q3-39",
+      "question_id": "q3",
+      "human_scores": [
+        10.0,
+        15.0,
+        15.0
+      ],
+      "mean": 13.333333333333334,
+      "std": 2.8867513459481287,
+      "model_score": 5.0,
+      "perturbation_scores": {
+        "original": 10.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 5.0,
+        "mean": 5.0,
+        "std": 7.0710678118654755
+      }
+    },
+    {
+      "id": "q3-40",
+      "question_id": "q3",
+      "human_scores": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.3333333333333333,
+      "std": 0.5773502691896257,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q4-1",
+      "question_id": "q4",
+      "human_scores": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "mean": 8.0,
+      "std": 0.0,
+      "model_score": 4.0,
+      "perturbation_scores": {
+        "original": 8.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 4.0,
+        "mean": 4.0,
+        "std": 5.656854249492381
+      }
+    },
+    {
+      "id": "q4-2",
+      "question_id": "q4",
+      "human_scores": [
+        16.0,
+        16.0,
+        16.0
+      ],
+      "mean": 16.0,
+      "std": 0.0,
+      "model_score": 8.0,
+      "perturbation_scores": {
+        "original": 8.0,
+        "perturbed": 8.0
+      },
+      "perturbation_stats": {
+        "median": 8.0,
+        "mean": 8.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q4-3",
+      "question_id": "q4",
+      "human_scores": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "mean": 8.0,
+      "std": 0.0,
+      "model_score": 4.0,
+      "perturbation_scores": {
+        "original": 8.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 4.0,
+        "mean": 4.0,
+        "std": 5.656854249492381
+      }
+    },
+    {
+      "id": "q4-4",
+      "question_id": "q4",
+      "human_scores": [
+        16.0,
+        8.0,
+        8.0
+      ],
+      "mean": 10.666666666666666,
+      "std": 4.618802153517006,
+      "model_score": 4.0,
+      "perturbation_scores": {
+        "original": 8.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 4.0,
+        "mean": 4.0,
+        "std": 5.656854249492381
+      }
+    },
+    {
+      "id": "q4-5",
+      "question_id": "q4",
+      "human_scores": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "mean": 8.0,
+      "std": 0.0,
+      "model_score": 5.0,
+      "perturbation_scores": {
+        "original": 8.0,
+        "perturbed": 2.0
+      },
+      "perturbation_stats": {
+        "median": 5.0,
+        "mean": 5.0,
+        "std": 4.242640687119285
+      }
+    },
+    {
+      "id": "q4-6",
+      "question_id": "q4",
+      "human_scores": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "mean": 8.0,
+      "std": 0.0,
+      "model_score": 4.0,
+      "perturbation_scores": {
+        "original": 8.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 4.0,
+        "mean": 4.0,
+        "std": 5.656854249492381
+      }
+    },
+    {
+      "id": "q4-7",
+      "question_id": "q4",
+      "human_scores": [
+        16.0,
+        16.0,
+        16.0
+      ],
+      "mean": 16.0,
+      "std": 0.0,
+      "model_score": 8.0,
+      "perturbation_scores": {
+        "original": 8.0,
+        "perturbed": 8.0
+      },
+      "perturbation_stats": {
+        "median": 8.0,
+        "mean": 8.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q4-8",
+      "question_id": "q4",
+      "human_scores": [
+        16.0,
+        16.0,
+        16.0
+      ],
+      "mean": 16.0,
+      "std": 0.0,
+      "model_score": 4.0,
+      "perturbation_scores": {
+        "original": 8.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 4.0,
+        "mean": 4.0,
+        "std": 5.656854249492381
+      }
+    },
+    {
+      "id": "q4-9",
+      "question_id": "q4",
+      "human_scores": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "mean": 8.0,
+      "std": 0.0,
+      "model_score": 8.0,
+      "perturbation_scores": {
+        "original": 8.0,
+        "perturbed": 8.0
+      },
+      "perturbation_stats": {
+        "median": 8.0,
+        "mean": 8.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q4-10",
+      "question_id": "q4",
+      "human_scores": [
+        16.0,
+        16.0,
+        16.0
+      ],
+      "mean": 16.0,
+      "std": 0.0,
+      "model_score": 8.0,
+      "perturbation_scores": {
+        "original": 8.0,
+        "perturbed": 8.0
+      },
+      "perturbation_stats": {
+        "median": 8.0,
+        "mean": 8.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q4-11",
+      "question_id": "q4",
+      "human_scores": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "mean": 8.0,
+      "std": 0.0,
+      "model_score": 4.0,
+      "perturbation_scores": {
+        "original": 8.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 4.0,
+        "mean": 4.0,
+        "std": 5.656854249492381
+      }
+    },
+    {
+      "id": "q4-12",
+      "question_id": "q4",
+      "human_scores": [
+        16.0,
+        16.0,
+        16.0
+      ],
+      "mean": 16.0,
+      "std": 0.0,
+      "model_score": 8.0,
+      "perturbation_scores": {
+        "original": 8.0,
+        "perturbed": 8.0
+      },
+      "perturbation_stats": {
+        "median": 8.0,
+        "mean": 8.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q4-13",
+      "question_id": "q4",
+      "human_scores": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "mean": 8.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q4-14",
+      "question_id": "q4",
+      "human_scores": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "mean": 8.0,
+      "std": 0.0,
+      "model_score": 4.0,
+      "perturbation_scores": {
+        "original": 8.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 4.0,
+        "mean": 4.0,
+        "std": 5.656854249492381
+      }
+    },
+    {
+      "id": "q4-15",
+      "question_id": "q4",
+      "human_scores": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "mean": 8.0,
+      "std": 0.0,
+      "model_score": 4.0,
+      "perturbation_scores": {
+        "original": 8.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 4.0,
+        "mean": 4.0,
+        "std": 5.656854249492381
+      }
+    },
+    {
+      "id": "q4-16",
+      "question_id": "q4",
+      "human_scores": [
+        16.0,
+        16.0,
+        16.0
+      ],
+      "mean": 16.0,
+      "std": 0.0,
+      "model_score": 4.0,
+      "perturbation_scores": {
+        "original": 8.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 4.0,
+        "mean": 4.0,
+        "std": 5.656854249492381
+      }
+    },
+    {
+      "id": "q4-17",
+      "question_id": "q4",
+      "human_scores": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "mean": 8.0,
+      "std": 0.0,
+      "model_score": 4.0,
+      "perturbation_scores": {
+        "original": 8.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 4.0,
+        "mean": 4.0,
+        "std": 5.656854249492381
+      }
+    },
+    {
+      "id": "q4-18",
+      "question_id": "q4",
+      "human_scores": [
+        16.0,
+        16.0,
+        16.0
+      ],
+      "mean": 16.0,
+      "std": 0.0,
+      "model_score": 4.0,
+      "perturbation_scores": {
+        "original": 8.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 4.0,
+        "mean": 4.0,
+        "std": 5.656854249492381
+      }
+    },
+    {
+      "id": "q4-19",
+      "question_id": "q4",
+      "human_scores": [
+        16.0,
+        16.0,
+        16.0
+      ],
+      "mean": 16.0,
+      "std": 0.0,
+      "model_score": 8.0,
+      "perturbation_scores": {
+        "original": 8.0,
+        "perturbed": 8.0
+      },
+      "perturbation_stats": {
+        "median": 8.0,
+        "mean": 8.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q4-20",
+      "question_id": "q4",
+      "human_scores": [
+        16.0,
+        16.0,
+        16.0
+      ],
+      "mean": 16.0,
+      "std": 0.0,
+      "model_score": 4.0,
+      "perturbation_scores": {
+        "original": 8.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 4.0,
+        "mean": 4.0,
+        "std": 5.656854249492381
+      }
+    },
+    {
+      "id": "q4-21",
+      "question_id": "q4",
+      "human_scores": [
+        16.0,
+        16.0,
+        16.0
+      ],
+      "mean": 16.0,
+      "std": 0.0,
+      "model_score": 8.0,
+      "perturbation_scores": {
+        "original": 8.0,
+        "perturbed": 8.0
+      },
+      "perturbation_stats": {
+        "median": 8.0,
+        "mean": 8.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q4-22",
+      "question_id": "q4",
+      "human_scores": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "mean": 8.0,
+      "std": 0.0,
+      "model_score": 8.0,
+      "perturbation_scores": {
+        "original": 8.0,
+        "perturbed": 8.0
+      },
+      "perturbation_stats": {
+        "median": 8.0,
+        "mean": 8.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q4-23",
+      "question_id": "q4",
+      "human_scores": [
+        2.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.6666666666666666,
+      "std": 1.1547005383792515,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q4-24",
+      "question_id": "q4",
+      "human_scores": [
+        16.0,
+        16.0,
+        16.0
+      ],
+      "mean": 16.0,
+      "std": 0.0,
+      "model_score": 4.0,
+      "perturbation_scores": {
+        "original": 8.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 4.0,
+        "mean": 4.0,
+        "std": 5.656854249492381
+      }
+    },
+    {
+      "id": "q4-25",
+      "question_id": "q4",
+      "human_scores": [
+        16.0,
+        16.0,
+        16.0
+      ],
+      "mean": 16.0,
+      "std": 0.0,
+      "model_score": 4.0,
+      "perturbation_scores": {
+        "original": 8.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 4.0,
+        "mean": 4.0,
+        "std": 5.656854249492381
+      }
+    },
+    {
+      "id": "q4-26",
+      "question_id": "q4",
+      "human_scores": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "std": 0.0,
+      "model_score": 8.0,
+      "perturbation_scores": {
+        "original": 8.0,
+        "perturbed": 8.0
+      },
+      "perturbation_stats": {
+        "median": 8.0,
+        "mean": 8.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q4-27",
+      "question_id": "q4",
+      "human_scores": [
+        16.0,
+        16.0,
+        16.0
+      ],
+      "mean": 16.0,
+      "std": 0.0,
+      "model_score": 8.0,
+      "perturbation_scores": {
+        "original": 8.0,
+        "perturbed": 8.0
+      },
+      "perturbation_stats": {
+        "median": 8.0,
+        "mean": 8.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q4-28",
+      "question_id": "q4",
+      "human_scores": [
+        2.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.6666666666666666,
+      "std": 1.1547005383792515,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q4-29",
+      "question_id": "q4",
+      "human_scores": [
+        16.0,
+        16.0,
+        16.0
+      ],
+      "mean": 16.0,
+      "std": 0.0,
+      "model_score": 4.0,
+      "perturbation_scores": {
+        "original": 8.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 4.0,
+        "mean": 4.0,
+        "std": 5.656854249492381
+      }
+    },
+    {
+      "id": "q4-30",
+      "question_id": "q4",
+      "human_scores": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "std": 0.0,
+      "model_score": 8.0,
+      "perturbation_scores": {
+        "original": 8.0,
+        "perturbed": 8.0
+      },
+      "perturbation_stats": {
+        "median": 8.0,
+        "mean": 8.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q4-31",
+      "question_id": "q4",
+      "human_scores": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "mean": 8.0,
+      "std": 0.0,
+      "model_score": 8.0,
+      "perturbation_scores": {
+        "original": 8.0,
+        "perturbed": 8.0
+      },
+      "perturbation_stats": {
+        "median": 8.0,
+        "mean": 8.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q4-32",
+      "question_id": "q4",
+      "human_scores": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "mean": 8.0,
+      "std": 0.0,
+      "model_score": 4.0,
+      "perturbation_scores": {
+        "original": 8.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 4.0,
+        "mean": 4.0,
+        "std": 5.656854249492381
+      }
+    },
+    {
+      "id": "q4-33",
+      "question_id": "q4",
+      "human_scores": [
+        16.0,
+        16.0,
+        16.0
+      ],
+      "mean": 16.0,
+      "std": 0.0,
+      "model_score": 8.0,
+      "perturbation_scores": {
+        "original": 8.0,
+        "perturbed": 8.0
+      },
+      "perturbation_stats": {
+        "median": 8.0,
+        "mean": 8.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q4-34",
+      "question_id": "q4",
+      "human_scores": [
+        16.0,
+        16.0,
+        16.0
+      ],
+      "mean": 16.0,
+      "std": 0.0,
+      "model_score": 8.0,
+      "perturbation_scores": {
+        "original": 8.0,
+        "perturbed": 8.0
+      },
+      "perturbation_stats": {
+        "median": 8.0,
+        "mean": 8.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q4-35",
+      "question_id": "q4",
+      "human_scores": [
+        16.0,
+        8.0,
+        8.0
+      ],
+      "mean": 10.666666666666666,
+      "std": 4.618802153517006,
+      "model_score": 4.0,
+      "perturbation_scores": {
+        "original": 8.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 4.0,
+        "mean": 4.0,
+        "std": 5.656854249492381
+      }
+    },
+    {
+      "id": "q4-36",
+      "question_id": "q4",
+      "human_scores": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "mean": 8.0,
+      "std": 0.0,
+      "model_score": 4.0,
+      "perturbation_scores": {
+        "original": 8.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 4.0,
+        "mean": 4.0,
+        "std": 5.656854249492381
+      }
+    },
+    {
+      "id": "q4-37",
+      "question_id": "q4",
+      "human_scores": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "mean": 8.0,
+      "std": 0.0,
+      "model_score": 4.0,
+      "perturbation_scores": {
+        "original": 8.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 4.0,
+        "mean": 4.0,
+        "std": 5.656854249492381
+      }
+    },
+    {
+      "id": "q4-38",
+      "question_id": "q4",
+      "human_scores": [
+        10.0,
+        0.0,
+        0.0
+      ],
+      "mean": 3.3333333333333335,
+      "std": 5.773502691896257,
+      "model_score": 4.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 8.0
+      },
+      "perturbation_stats": {
+        "median": 4.0,
+        "mean": 4.0,
+        "std": 5.656854249492381
+      }
+    },
+    {
+      "id": "q4-39",
+      "question_id": "q4",
+      "human_scores": [
+        16.0,
+        16.0,
+        16.0
+      ],
+      "mean": 16.0,
+      "std": 0.0,
+      "model_score": 8.0,
+      "perturbation_scores": {
+        "original": 8.0,
+        "perturbed": 8.0
+      },
+      "perturbation_stats": {
+        "median": 8.0,
+        "mean": 8.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q4-40",
+      "question_id": "q4",
+      "human_scores": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "mean": 8.0,
+      "std": 0.0,
+      "model_score": 4.0,
+      "perturbation_scores": {
+        "original": 8.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 4.0,
+        "mean": 4.0,
+        "std": 5.656854249492381
+      }
+    },
+    {
+      "id": "q5-1",
+      "question_id": "q5",
+      "human_scores": [
+        13.0,
+        15.0,
+        13.0
+      ],
+      "mean": 13.666666666666666,
+      "std": 1.1547005383792515,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-2",
+      "question_id": "q5",
+      "human_scores": [
+        27.0,
+        27.0,
+        27.0
+      ],
+      "mean": 27.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-3",
+      "question_id": "q5",
+      "human_scores": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.3333333333333333,
+      "std": 0.5773502691896257,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-4",
+      "question_id": "q5",
+      "human_scores": [
+        2.0,
+        5.0,
+        3.0
+      ],
+      "mean": 3.3333333333333335,
+      "std": 1.5275252316519468,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-5",
+      "question_id": "q5",
+      "human_scores": [
+        2.0,
+        4.0,
+        3.0
+      ],
+      "mean": 3.0,
+      "std": 1.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-6",
+      "question_id": "q5",
+      "human_scores": [
+        3.0,
+        3.0,
+        3.0
+      ],
+      "mean": 3.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-7",
+      "question_id": "q5",
+      "human_scores": [
+        4.0,
+        3.0,
+        3.0
+      ],
+      "mean": 3.3333333333333335,
+      "std": 0.5773502691896257,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-8",
+      "question_id": "q5",
+      "human_scores": [
+        11.0,
+        15.0,
+        12.0
+      ],
+      "mean": 12.666666666666666,
+      "std": 2.0816659994661326,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-9",
+      "question_id": "q5",
+      "human_scores": [
+        8.0,
+        16.0,
+        12.0
+      ],
+      "mean": 12.0,
+      "std": 4.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-10",
+      "question_id": "q5",
+      "human_scores": [
+        18.0,
+        20.0,
+        21.0
+      ],
+      "mean": 19.666666666666668,
+      "std": 1.5275252316519468,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-11",
+      "question_id": "q5",
+      "human_scores": [
+        27.0,
+        27.0,
+        27.0
+      ],
+      "mean": 27.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-12",
+      "question_id": "q5",
+      "human_scores": [
+        11.0,
+        15.0,
+        12.0
+      ],
+      "mean": 12.666666666666666,
+      "std": 2.0816659994661326,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-13",
+      "question_id": "q5",
+      "human_scores": [
+        15.0,
+        13.0,
+        12.0
+      ],
+      "mean": 13.333333333333334,
+      "std": 1.5275252316519468,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-14",
+      "question_id": "q5",
+      "human_scores": [
+        27.0,
+        25.0,
+        27.0
+      ],
+      "mean": 26.333333333333332,
+      "std": 1.1547005383792515,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-15",
+      "question_id": "q5",
+      "human_scores": [
+        27.0,
+        27.0,
+        27.0
+      ],
+      "mean": 27.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-16",
+      "question_id": "q5",
+      "human_scores": [
+        12.0,
+        18.0,
+        15.0
+      ],
+      "mean": 15.0,
+      "std": 3.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-17",
+      "question_id": "q5",
+      "human_scores": [
+        7.0,
+        5.0,
+        6.0
+      ],
+      "mean": 6.0,
+      "std": 1.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-18",
+      "question_id": "q5",
+      "human_scores": [
+        20.0,
+        16.0,
+        18.0
+      ],
+      "mean": 18.0,
+      "std": 2.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-19",
+      "question_id": "q5",
+      "human_scores": [
+        9.0,
+        11.0,
+        9.0
+      ],
+      "mean": 9.666666666666666,
+      "std": 1.1547005383792515,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-20",
+      "question_id": "q5",
+      "human_scores": [
+        27.0,
+        27.0,
+        27.0
+      ],
+      "mean": 27.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-21",
+      "question_id": "q5",
+      "human_scores": [
+        15.0,
+        10.0,
+        12.0
+      ],
+      "mean": 12.333333333333334,
+      "std": 2.516611478423583,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-22",
+      "question_id": "q5",
+      "human_scores": [
+        23.0,
+        16.0,
+        18.0
+      ],
+      "mean": 19.0,
+      "std": 3.605551275463989,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-23",
+      "question_id": "q5",
+      "human_scores": [
+        6.0,
+        6.0,
+        3.0
+      ],
+      "mean": 5.0,
+      "std": 1.7320508075688772,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-24",
+      "question_id": "q5",
+      "human_scores": [
+        20.0,
+        27.0,
+        21.0
+      ],
+      "mean": 22.666666666666668,
+      "std": 3.7859388972001824,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-25",
+      "question_id": "q5",
+      "human_scores": [
+        5.0,
+        9.0,
+        3.0
+      ],
+      "mean": 5.666666666666667,
+      "std": 3.0550504633038935,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-26",
+      "question_id": "q5",
+      "human_scores": [
+        27.0,
+        27.0,
+        27.0
+      ],
+      "mean": 27.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-27",
+      "question_id": "q5",
+      "human_scores": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "mean": 0.3333333333333333,
+      "std": 0.5773502691896257,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-28",
+      "question_id": "q5",
+      "human_scores": [
+        27.0,
+        27.0,
+        27.0
+      ],
+      "mean": 27.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-29",
+      "question_id": "q5",
+      "human_scores": [
+        12.0,
+        12.0,
+        12.0
+      ],
+      "mean": 12.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-30",
+      "question_id": "q5",
+      "human_scores": [
+        9.0,
+        10.0,
+        9.0
+      ],
+      "mean": 9.333333333333334,
+      "std": 0.5773502691896257,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-31",
+      "question_id": "q5",
+      "human_scores": [
+        10.0,
+        12.0,
+        12.0
+      ],
+      "mean": 11.333333333333334,
+      "std": 1.1547005383792515,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-32",
+      "question_id": "q5",
+      "human_scores": [
+        4.0,
+        3.0,
+        0.0
+      ],
+      "mean": 2.3333333333333335,
+      "std": 2.0816659994661326,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-33",
+      "question_id": "q5",
+      "human_scores": [
+        13.0,
+        15.0,
+        13.0
+      ],
+      "mean": 13.666666666666666,
+      "std": 1.1547005383792515,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-34",
+      "question_id": "q5",
+      "human_scores": [
+        16.0,
+        10.0,
+        12.0
+      ],
+      "mean": 12.666666666666666,
+      "std": 3.0550504633038935,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-35",
+      "question_id": "q5",
+      "human_scores": [
+        5.0,
+        5.0,
+        2.0
+      ],
+      "mean": 4.0,
+      "std": 1.7320508075688772,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-36",
+      "question_id": "q5",
+      "human_scores": [
+        27.0,
+        27.0,
+        27.0
+      ],
+      "mean": 27.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-37",
+      "question_id": "q5",
+      "human_scores": [
+        9.0,
+        12.0,
+        9.0
+      ],
+      "mean": 10.0,
+      "std": 1.7320508075688772,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-38",
+      "question_id": "q5",
+      "human_scores": [
+        2.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.6666666666666666,
+      "std": 1.1547005383792515,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-39",
+      "question_id": "q5",
+      "human_scores": [
+        9.0,
+        8.0,
+        9.0
+      ],
+      "mean": 8.666666666666666,
+      "std": 0.5773502691896257,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q5-40",
+      "question_id": "q5",
+      "human_scores": [
+        5.0,
+        4.0,
+        3.0
+      ],
+      "mean": 4.0,
+      "std": 1.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q6-1",
+      "question_id": "q6",
+      "human_scores": [
+        30.0,
+        30.0
+      ],
+      "mean": 30.0,
+      "std": 0.0,
+      "model_score": 64.0,
+      "perturbation_scores": {
+        "original": 128.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 64.0,
+        "mean": 64.0,
+        "std": 90.50966799187809
+      }
+    },
+    {
+      "id": "q6-2",
+      "question_id": "q6",
+      "human_scores": [
+        0.0,
+        8.0
+      ],
+      "mean": 4.0,
+      "std": 5.656854249492381,
+      "model_score": 2.0,
+      "perturbation_scores": {
+        "original": 4.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 2.8284271247461903
+      }
+    },
+    {
+      "id": "q6-3",
+      "question_id": "q6",
+      "human_scores": [
+        25.0,
+        20.0
+      ],
+      "mean": 22.5,
+      "std": 3.5355339059327378,
+      "model_score": 7.5,
+      "perturbation_scores": {
+        "original": 15.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 7.5,
+        "mean": 7.5,
+        "std": 10.606601717798213
+      }
+    },
+    {
+      "id": "q6-4",
+      "question_id": "q6",
+      "human_scores": [
+        33.0,
+        33.0
+      ],
+      "mean": 33.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q6-5",
+      "question_id": "q6",
+      "human_scores": [
+        33.0,
+        33.0
+      ],
+      "mean": 33.0,
+      "std": 0.0,
+      "model_score": 2.0,
+      "perturbation_scores": {
+        "original": 4.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 2.8284271247461903
+      }
+    },
+    {
+      "id": "q6-6",
+      "question_id": "q6",
+      "human_scores": [
+        25.0,
+        24.0
+      ],
+      "mean": 24.5,
+      "std": 0.7071067811865476,
+      "model_score": 2.0,
+      "perturbation_scores": {
+        "original": 4.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 2.8284271247461903
+      }
+    },
+    {
+      "id": "q6-7",
+      "question_id": "q6",
+      "human_scores": [
+        30.0,
+        30.0
+      ],
+      "mean": 30.0,
+      "std": 0.0,
+      "model_score": 64.0,
+      "perturbation_scores": {
+        "original": 128.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 64.0,
+        "mean": 64.0,
+        "std": 90.50966799187809
+      }
+    },
+    {
+      "id": "q6-8",
+      "question_id": "q6",
+      "human_scores": [
+        40.0,
+        40.0
+      ],
+      "mean": 40.0,
+      "std": 0.0,
+      "model_score": 2.0,
+      "perturbation_scores": {
+        "original": 4.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 2.8284271247461903
+      }
+    },
+    {
+      "id": "q6-9",
+      "question_id": "q6",
+      "human_scores": [
+        30.0,
+        30.0
+      ],
+      "mean": 30.0,
+      "std": 0.0,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q6-10",
+      "question_id": "q6",
+      "human_scores": [
+        0.0,
+        10.0
+      ],
+      "mean": 5.0,
+      "std": 7.0710678118654755,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q6-11",
+      "question_id": "q6",
+      "human_scores": [
+        25.0,
+        10.0
+      ],
+      "mean": 17.5,
+      "std": 10.606601717798213,
+      "model_score": 16.0,
+      "perturbation_scores": {
+        "original": 32.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 16.0,
+        "mean": 16.0,
+        "std": 22.627416997969522
+      }
+    },
+    {
+      "id": "q6-12",
+      "question_id": "q6",
+      "human_scores": [
+        10.0,
+        15.0
+      ],
+      "mean": 12.5,
+      "std": 3.5355339059327378,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q6-13",
+      "question_id": "q6",
+      "human_scores": [
+        33.0,
+        38.0
+      ],
+      "mean": 35.5,
+      "std": 3.5355339059327378,
+      "model_score": 64.0,
+      "perturbation_scores": {
+        "original": 128.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 64.0,
+        "mean": 64.0,
+        "std": 90.50966799187809
+      }
+    },
+    {
+      "id": "q6-14",
+      "question_id": "q6",
+      "human_scores": [
+        25.0,
+        17.0
+      ],
+      "mean": 21.0,
+      "std": 5.656854249492381,
+      "model_score": 64.0,
+      "perturbation_scores": {
+        "original": 128.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 64.0,
+        "mean": 64.0,
+        "std": 90.50966799187809
+      }
+    },
+    {
+      "id": "q6-15",
+      "question_id": "q6",
+      "human_scores": [
+        25.0,
+        17.0
+      ],
+      "mean": 21.0,
+      "std": 5.656854249492381,
+      "model_score": 2.0,
+      "perturbation_scores": {
+        "original": 4.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 2.8284271247461903
+      }
+    },
+    {
+      "id": "q6-16",
+      "question_id": "q6",
+      "human_scores": [
+        35.0,
+        40.0
+      ],
+      "mean": 37.5,
+      "std": 3.5355339059327378,
+      "model_score": 0.5,
+      "perturbation_scores": {
+        "original": 1.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
+      }
+    },
+    {
+      "id": "q6-17",
+      "question_id": "q6",
+      "human_scores": [
+        15.0,
+        20.0
+      ],
+      "mean": 17.5,
+      "std": 3.5355339059327378,
+      "model_score": 64.0,
+      "perturbation_scores": {
+        "original": 128.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 64.0,
+        "mean": 64.0,
+        "std": 90.50966799187809
+      }
+    },
+    {
+      "id": "q6-18",
+      "question_id": "q6",
+      "human_scores": [
+        35.0,
+        40.0
+      ],
+      "mean": 37.5,
+      "std": 3.5355339059327378,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q6-19",
+      "question_id": "q6",
+      "human_scores": [
+        23.0,
+        28.0
+      ],
+      "mean": 25.5,
+      "std": 3.5355339059327378,
+      "model_score": 64.0,
+      "perturbation_scores": {
+        "original": 128.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 64.0,
+        "mean": 64.0,
+        "std": 90.50966799187809
+      }
+    },
+    {
+      "id": "q6-20",
+      "question_id": "q6",
+      "human_scores": [
+        35.0,
+        40.0
+      ],
+      "mean": 37.5,
+      "std": 3.5355339059327378,
+      "model_score": 1.0,
+      "perturbation_scores": {
+        "original": 1.0,
+        "perturbed": 1.0
+      },
+      "perturbation_stats": {
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q6-21",
+      "question_id": "q6",
+      "human_scores": [
+        35.0,
+        40.0
+      ],
+      "mean": 37.5,
+      "std": 3.5355339059327378,
+      "model_score": 2.0,
+      "perturbation_scores": {
+        "original": 4.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 2.8284271247461903
+      }
+    },
+    {
+      "id": "q6-22",
+      "question_id": "q6",
+      "human_scores": [
+        25.0,
+        15.0
+      ],
+      "mean": 20.0,
+      "std": 7.0710678118654755,
+      "model_score": 16.0,
+      "perturbation_scores": {
+        "original": 32.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 16.0,
+        "mean": 16.0,
+        "std": 22.627416997969522
+      }
+    },
+    {
+      "id": "q6-23",
+      "question_id": "q6",
+      "human_scores": [
+        5.0,
+        5.0
+      ],
+      "mean": 5.0,
+      "std": 0.0,
+      "model_score": 2.0,
+      "perturbation_scores": {
+        "original": 4.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 2.8284271247461903
+      }
+    },
+    {
+      "id": "q6-24",
+      "question_id": "q6",
+      "human_scores": [
+        35.0,
+        40.0
+      ],
+      "mean": 37.5,
+      "std": 3.5355339059327378,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q6-25",
+      "question_id": "q6",
+      "human_scores": [
+        35.0,
+        40.0
+      ],
+      "mean": 37.5,
+      "std": 3.5355339059327378,
+      "model_score": 1.0,
+      "perturbation_scores": {
+        "original": 1.0,
+        "perturbed": 1.0
+      },
+      "perturbation_stats": {
+        "median": 1.0,
+        "mean": 1.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q6-26",
+      "question_id": "q6",
+      "human_scores": [
+        30.0,
+        35.0
+      ],
+      "mean": 32.5,
+      "std": 3.5355339059327378,
+      "model_score": 2.0,
+      "perturbation_scores": {
+        "original": 4.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 2.8284271247461903
+      }
+    },
+    {
+      "id": "q6-27",
+      "question_id": "q6",
+      "human_scores": [
+        35.0,
+        40.0
+      ],
+      "mean": 37.5,
+      "std": 3.5355339059327378,
+      "model_score": 64.0,
+      "perturbation_scores": {
+        "original": 128.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 64.0,
+        "mean": 64.0,
+        "std": 90.50966799187809
+      }
+    },
+    {
+      "id": "q6-28",
+      "question_id": "q6",
+      "human_scores": [
+        30.0,
+        35.0
+      ],
+      "mean": 32.5,
+      "std": 3.5355339059327378,
+      "model_score": 64.0,
+      "perturbation_scores": {
+        "original": 128.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 64.0,
+        "mean": 64.0,
+        "std": 90.50966799187809
+      }
+    },
+    {
+      "id": "q6-29",
+      "question_id": "q6",
+      "human_scores": [
+        25.0,
+        27.0
+      ],
+      "mean": 26.0,
+      "std": 1.4142135623730951,
+      "model_score": 64.0,
+      "perturbation_scores": {
+        "original": 128.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 64.0,
+        "mean": 64.0,
+        "std": 90.50966799187809
+      }
+    },
+    {
+      "id": "q6-30",
+      "question_id": "q6",
+      "human_scores": [
+        30.0,
+        35.0
+      ],
+      "mean": 32.5,
+      "std": 3.5355339059327378,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q6-31",
+      "question_id": "q6",
+      "human_scores": [
+        35.0,
+        40.0
+      ],
+      "mean": 37.5,
+      "std": 3.5355339059327378,
+      "model_score": 64.0,
+      "perturbation_scores": {
+        "original": 128.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 64.0,
+        "mean": 64.0,
+        "std": 90.50966799187809
+      }
+    },
+    {
+      "id": "q6-32",
+      "question_id": "q6",
+      "human_scores": [
+        35.0,
+        40.0
+      ],
+      "mean": 37.5,
+      "std": 3.5355339059327378,
+      "model_score": 64.0,
+      "perturbation_scores": {
+        "original": 128.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 64.0,
+        "mean": 64.0,
+        "std": 90.50966799187809
+      }
+    },
+    {
+      "id": "q6-33",
+      "question_id": "q6",
+      "human_scores": [
+        30.0,
+        40.0
+      ],
+      "mean": 35.0,
+      "std": 7.0710678118654755,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q6-34",
+      "question_id": "q6",
+      "human_scores": [
+        25.0,
+        24.0
+      ],
+      "mean": 24.5,
+      "std": 0.7071067811865476,
+      "model_score": 0.0,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 0.0,
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    {
+      "id": "q6-35",
+      "question_id": "q6",
+      "human_scores": [
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "std": 0.0,
+      "model_score": 2.0,
+      "perturbation_scores": {
+        "original": 4.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 2.8284271247461903
+      }
+    },
+    {
+      "id": "q6-36",
+      "question_id": "q6",
+      "human_scores": [
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "std": 0.0,
+      "model_score": 2.0,
+      "perturbation_scores": {
+        "original": 4.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 2.0,
+        "mean": 2.0,
+        "std": 2.8284271247461903
+      }
+    },
+    {
+      "id": "q6-37",
+      "question_id": "q6",
+      "human_scores": [
+        35.0,
+        40.0
+      ],
+      "mean": 37.5,
+      "std": 3.5355339059327378,
+      "model_score": 64.0,
+      "perturbation_scores": {
+        "original": 128.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 64.0,
+        "mean": 64.0,
+        "std": 90.50966799187809
+      }
+    },
+    {
+      "id": "q6-38",
+      "question_id": "q6",
+      "human_scores": [
+        15.0,
+        20.0
+      ],
+      "mean": 17.5,
+      "std": 3.5355339059327378,
+      "model_score": 64.0,
+      "perturbation_scores": {
+        "original": 128.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 64.0,
+        "mean": 64.0,
+        "std": 90.50966799187809
+      }
+    },
+    {
+      "id": "q6-39",
+      "question_id": "q6",
+      "human_scores": [
+        15.0,
+        20.0
+      ],
+      "mean": 17.5,
+      "std": 3.5355339059327378,
+      "model_score": 64.0,
+      "perturbation_scores": {
+        "original": 128.0,
+        "perturbed": 0.0
+      },
+      "perturbation_stats": {
+        "median": 64.0,
+        "mean": 64.0,
+        "std": 90.50966799187809
+      }
+    },
+    {
+      "id": "q6-40",
+      "question_id": "q6",
+      "human_scores": [
+        35.0,
+        40.0
+      ],
+      "mean": 37.5,
+      "std": 3.5355339059327378,
+      "model_score": 0.5,
+      "perturbation_scores": {
+        "original": 0.0,
+        "perturbed": 1.0
+      },
+      "perturbation_stats": {
+        "median": 0.5,
+        "mean": 0.5,
+        "std": 0.7071067811865476
+      }
+    }
+  ]
+}

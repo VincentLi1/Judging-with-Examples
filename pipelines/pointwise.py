@@ -205,7 +205,7 @@ class SimplePromptPerturbationMixin:
             overwrite_ok=overwrite_ok,
         )
 
-        variant_predictions, variant_output_paths = self._evaluate_variants(
+        variant_predictions, variant_output_paths, variant_failures = self._evaluate_variants(
             variants=variants,
             variant_paths=variant_paths,
             prompt_template_path=prompt_template_path,
@@ -217,6 +217,13 @@ class SimplePromptPerturbationMixin:
             variant_predictions=variant_predictions,
             perturbation_info=perturbation_info,
         )
+
+        dataset_label = dataset_key or getattr(dataset, "key", "<unknown>")
+        total_failures = sum(variant_failures.values())
+        if total_failures:
+            logging.error("Dataset %s encountered %d parse failures after retries", dataset_label, total_failures)
+        else:
+            logging.info("Dataset %s parsed successfully without remaining failures", dataset_label)
 
         self._persist_perturbation_outputs(
             base_result_path=base_result_path,
@@ -269,30 +276,69 @@ class SimplePromptPerturbationMixin:
         variant_paths: Dict[str, Tuple[Path, Path]],
         prompt_template_path: str,
         eval_options: Dict,
-    ) -> Tuple[Dict[str, List[JudgePrediction]], Dict[str, Path]]:
+    ) -> Tuple[Dict[str, List[JudgePrediction]], Dict[str, Path], Dict[str, int]]:
         """Run the judge for each perturbation variant and collect predictions."""
 
         variant_predictions: Dict[str, List[JudgePrediction]] = {}
         variant_output_paths: Dict[str, Path] = {}
+        variant_failures: Dict[str, int] = {}
+        max_attempts = max(1, getattr(self, "max_parse_retries", 1))
+
+        def _retry_temperature(options: Dict[str, object]) -> float:
+            raw = options.get("temperature", 0.0)
+            try:
+                value = float(raw)
+            except (TypeError, ValueError):
+                value = 0.0
+            return value if value not in {0.0, -0.0} else 0.2
 
         for label in self.variant_order:
             variant_examples = variants.get(label, [])
             if label not in variant_paths:
                 continue
             result_path, output_path = variant_paths[label]
-            predictions, fails = self.base.judge.evaluate(  # type: ignore[attr-defined]
-                variant_examples,
-                prompt_template_path=prompt_template_path,
-                result_path=str(result_path),
-                output_text_path=str(output_path),
-                parse_fn=self.base._wrap_parse_fn,  # type: ignore[attr-defined]
-                **eval_options,
-            )
-            logging.info("Finished variant '%s' with %d parse failures", label, fails)
-            variant_predictions[label] = predictions
-            variant_output_paths[label] = output_path
+            final_predictions: List[JudgePrediction] = []
+            final_fails = 0
+            success = False
+            attempt_index = 0
 
-        return variant_predictions, variant_output_paths
+            for attempt in range(max_attempts):
+                attempt_options = dict(eval_options)
+                if attempt > 0:
+                    attempt_options["temperature"] = _retry_temperature(attempt_options)
+                attempt_index = attempt + 1
+                predictions, fails = self.base.judge.evaluate(  # type: ignore[attr-defined]
+                    variant_examples,
+                    prompt_template_path=prompt_template_path,
+                    result_path=str(result_path),
+                    output_text_path=str(output_path),
+                    parse_fn=self.base._wrap_parse_fn,  # type: ignore[attr-defined]
+                    **attempt_options,
+                )
+                logging.info("Variant '%s' attempt %d produced %d parse failures", label, attempt_index, fails)
+                final_predictions = predictions
+                final_fails = fails
+                if fails == 0:
+                    success = True
+                    break
+                if attempt < max_attempts - 1:
+                    logging.warning(
+                        "Retrying variant '%s' due to parse failures (attempt %d of %d)",
+                        label,
+                        attempt_index + 1,
+                        max_attempts,
+                    )
+
+            variant_predictions[label] = final_predictions
+            variant_output_paths[label] = output_path
+            variant_failures[label] = final_fails
+
+            if success:
+                logging.debug("Variant '%s' parsed successfully after %d attempt(s)", label, attempt_index)
+            else:
+                logging.error("Variant '%s' completed with %d parse failures after %d attempt(s)", label, final_fails, attempt_index)
+
+        return variant_predictions, variant_output_paths, variant_failures
 
     def _aggregate_predictions(
         self,
@@ -436,6 +482,7 @@ class PointwisePipeline(SimplePromptPerturbationMixin):
         self.prompt_method = "pointwise_vanilla"
         self.eval_method = "base_pointwise"
         self.enable_prompt_perturbation = enable_prompt_perturbation
+        self.max_parse_retries = 5
 
         self.results_root = (results_root or (self.reife_root / "results")).resolve()
         self.results_root.mkdir(parents=True, exist_ok=True)
