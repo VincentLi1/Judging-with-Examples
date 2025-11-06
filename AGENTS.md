@@ -20,6 +20,7 @@
 - Ensure `results/biggen_bench` is a writable directory before launching Qwen BigGen jobs; if a legacy symlink exists, remove it so the pipeline can recreate the directory (it is safe to add the symlink back after runs complete if needed).
 - Likewise for the default datasets (`results/llm_grader`, `results/flask`, `results/mt_bench`, `results/chatbot_arena`), replace legacy symlinks with real directories before multi-dataset runs; restore the links afterward if downstream tooling relies on them.
 - Larger Qwen runs (BigGen paraphrase counts ≥5 or multi-dataset sweeps) require A100-80G nodes to avoid KV-cache OOM on 16 GB GPUs—use `--constraint=a100-80g` for those, while smaller N (≤3) can stay on the general `gpu` pool.
+- When working from the local machine, reconnect via `ssh <host>` before running commands; if the connection fails due to a lingering control socket, rerun the SSH command with escalation (which clears the socket) and proceed.
 - Bouchet cluster GPU notes:
   - Dedicated H200 interactive node now lives in `gpu_devel`; use it for short debugging sessions (<=6h, max 2 GPUs per user, 2 submitted jobs).
   - `gpu_h200` is batch-only for H200 jobs; queue limits: 16 GPUs/user, 16 running jobs, 48-hour max.
