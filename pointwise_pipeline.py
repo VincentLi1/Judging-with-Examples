@@ -530,6 +530,36 @@ def main() -> None:
         default=5,
         help="Maximum attempts per variant when recovering from parse failures.",
     )
+    parser.add_argument(
+        "--eval_temperature",
+        type=float,
+        default=None,
+        help="Override the sampling temperature passed to the judge model (defaults to pipeline value).",
+    )
+    parser.add_argument(
+        "--num_paraphrase_variants",
+        type=int,
+        default=1,
+        help="Number of paraphrased prompt variants generated per example when perturbations are enabled.",
+    )
+    parser.add_argument(
+        "--paraphrase_temperature",
+        type=float,
+        default=0.35,
+        help="Sampling temperature used when generating paraphrased prompts.",
+    )
+    parser.add_argument(
+        "--paraphrase_top_p",
+        type=float,
+        default=0.9,
+        help="Top-p value used when generating paraphrased prompts.",
+    )
+    parser.add_argument(
+        "--paraphrase_max_tokens",
+        type=int,
+        default=512,
+        help="Maximum tokens to generate while paraphrasing prompt sections.",
+    )
     args = parser.parse_args()
 
     log_path = configure_logging(args)
@@ -569,12 +599,21 @@ def main() -> None:
         enable_prompt_perturbation=not args.disable_prompt_perturbation,
         results_root=PROJECT_ROOT / "results",
         logs_root=PROJECT_ROOT / "logs",
+        paraphrase_variants=args.num_paraphrase_variants,
+        paraphrase_temperature=args.paraphrase_temperature,
+        paraphrase_top_p=args.paraphrase_top_p,
+        paraphrase_max_tokens=args.paraphrase_max_tokens,
     )
     pipeline.max_parse_retries = max(1, args.parse_retries)
 
     if dataset_names:
         logging.info("Restricting evaluation to datasets: %s", ", ".join(dataset_names))
-    pipeline.run(overwrite_ok=args.overwrite_ok)
+
+    eval_kwargs = {}
+    if args.eval_temperature is not None:
+        eval_kwargs["temperature"] = args.eval_temperature
+
+    pipeline.run(overwrite_ok=args.overwrite_ok, **eval_kwargs)
     logging.info("Pipeline run completed")
 
 

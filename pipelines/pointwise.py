@@ -12,6 +12,7 @@ from pathlib import Path
 from statistics import StatisticsError, mean, median, stdev
 from typing import Dict, Iterable, List, Mapping, Optional, Sequence, Tuple
 
+from ReIFE.methods.utils import prompt_to_chatml
 from ReIFE.utils import open_utf8
 
 from data_loaders import DatasetLoader, create_dataset_loader
@@ -49,20 +50,28 @@ class DatasetPipelineConfig:
 
 
 class SimplePromptPerturbationMixin:
-    """Mixin implementing a simple two-variant prompt perturbation strategy."""
+    """Mixin implementing paraphrase-based prompt perturbations."""
 
     replacement_tokens = {
         "instructions": "apple",
         "reference_answer": "banana",
-        "student_answer": "capricorn",
         "rubric": "delorean",
     }
 
-    variant_order = ("original", "perturbed")
+    PARAPHRASE_SECTION_PROMPT = """<|im_start|>system
+You are a careful editor who paraphrases evaluation materials while preserving intent, structure, and any numeric values.
+Keep Markdown headings (###, #) unchanged and retain scoring scales exactly as written.
+<|im_end|>
+<|im_start|>user
+Rewrite the following <<SECTION_NAME>> text using different wording while keeping every requirement, limit, and meaning identical.
+Return only the rewritten text, without commentary.
 
-    def _perturb_text(self, text: str | None, token: str) -> str:
-        if not text:
-            return text or ""
+<<SECTION_NAME>>:
+<<TEXT>>
+<|im_end|>
+"""
+
+    def _perturb_text(self, text: str, token: str) -> str:
         words = text.split()
         for idx in range(4, len(words), 5):
             words[idx] = token
@@ -97,13 +106,13 @@ class SimplePromptPerturbationMixin:
     def _build_variants(
         self, processed_examples: List[PromptExample]
     ) -> tuple[Dict[str, List[PromptExample]], Dict[str, List[Dict[str, object]]]]:
-        variants: Dict[str, List[PromptExample]] = {label: [] for label in self.variant_order}
+        variant_labels = tuple(getattr(self, "variant_order", ("original",)))
+        variants: Dict[str, List[PromptExample]] = {label: [] for label in variant_labels}
         perturbation_info: Dict[str, List[Dict[str, object]]] = {}
 
         for example in processed_examples:
             original_meta = copy.deepcopy(example.metadata)
             original_meta["perturbation_label"] = "original"
-            original_student_answer = original_meta.get("student_answer") or example.output
             variants["original"].append(
                 PromptExample(
                     id=example.id,
@@ -114,66 +123,131 @@ class SimplePromptPerturbationMixin:
             )
 
             sections = copy.deepcopy(original_meta.get("sections", {}))
-            perturbation_info[example.id] = [
+            perturbation_entries = [
                 {
                     "label": "original",
                     "sections": sections,
-                    "student_answer": original_student_answer,
+                    "student_answer": original_meta.get("student_answer", example.output),
                 }
             ]
+            perturbation_info[example.id] = perturbation_entries
 
-            pert_sections = copy.deepcopy(sections)
-            if "assignment" in pert_sections:
-                assignment_text = pert_sections["assignment"]
-                if isinstance(assignment_text, str) and assignment_text.strip():
-                    pert_sections["assignment"] = self._perturb_text(
-                        assignment_text, self.replacement_tokens["instructions"]
-                    )
-            if "rubric" in pert_sections:
-                rubric_text = pert_sections["rubric"]
-                if isinstance(rubric_text, str) and rubric_text.strip():
-                    pert_sections["rubric"] = self._perturb_text(
-                        rubric_text, self.replacement_tokens["rubric"]
-                    )
-            if "reference_answer" in pert_sections:
-                reference_text = pert_sections["reference_answer"]
-                if isinstance(reference_text, str) and reference_text.strip():
-                    pert_sections["reference_answer"] = self._perturb_text(
-                        reference_text, self.replacement_tokens["reference_answer"]
-                    )
+            additional_labels = variant_labels[1:]
+            if not additional_labels:
+                continue
 
-            pert_student_answer = self._perturb_text(
-                original_student_answer,
-                self.replacement_tokens["student_answer"],
+            variant_sections = self._generate_variant_sections(
+                sections=sections,
+                variant_count=len(additional_labels),
             )
 
-            pert_instruction = self._render_instruction(
-                pert_sections, original_meta.get("max_score")
-            )
-
-            pert_meta = copy.deepcopy(original_meta)
-            pert_meta["sections"] = pert_sections
-            pert_meta["student_answer"] = pert_student_answer
-            pert_meta["perturbation_label"] = "perturbed"
-
-            variants["perturbed"].append(
-                PromptExample(
+            for label, section_payload in zip(additional_labels, variant_sections):
+                instruction = self._render_instruction(section_payload, original_meta.get("max_score"))
+                variant_meta = copy.deepcopy(original_meta)
+                variant_meta["sections"] = section_payload
+                variant_meta["perturbation_label"] = label
+                variant_example = PromptExample(
                     id=example.id,
-                    instruction=pert_instruction,
-                    output=pert_student_answer,
-                    metadata=pert_meta,
+                    instruction=instruction,
+                    output=example.output,
+                    metadata=variant_meta,
                 )
-            )
-
-            perturbation_info[example.id].append(
-                {
-                    "label": "perturbed",
-                    "sections": pert_sections,
-                    "student_answer": pert_student_answer,
-                }
-            )
+                variants[label].append(variant_example)
+                perturbation_entries.append(
+                    {
+                        "label": label,
+                        "sections": section_payload,
+                        "student_answer": variant_meta.get("student_answer", example.output),
+                    }
+                )
 
         return variants, perturbation_info
+
+    def _generate_variant_sections(
+        self, *, sections: Dict[str, object], variant_count: int
+    ) -> List[Dict[str, object]]:
+        if variant_count <= 0:
+            return []
+
+        if getattr(self, "_paraphrase_disabled", False):
+            return [self._simple_variant_sections(sections) for _ in range(variant_count)]
+
+        assignment_variants = self._paraphrase_text_multi(
+            sections.get("assignment", ""), variant_count, section_name="assignment"
+        )
+        rubric_variants = self._paraphrase_text_multi(
+            sections.get("rubric", ""), variant_count, section_name="rubric"
+        )
+        reference_variants = self._paraphrase_text_multi(
+            sections.get("reference_answer", ""), variant_count, section_name="reference answer"
+        )
+
+        variant_sections: List[Dict[str, object]] = []
+        for idx in range(variant_count):
+            payload = copy.deepcopy(sections)
+            if assignment_variants:
+                payload["assignment"] = assignment_variants[idx]
+            if rubric_variants:
+                payload["rubric"] = rubric_variants[idx]
+            if reference_variants:
+                payload["reference_answer"] = reference_variants[idx]
+            variant_sections.append(payload)
+        return variant_sections
+
+    def _simple_variant_sections(self, sections: Dict[str, object]) -> Dict[str, object]:
+        payload = copy.deepcopy(sections)
+        if "assignment" in payload:
+            payload["assignment"] = self._perturb_text(
+                payload["assignment"], self.replacement_tokens["instructions"]
+            )
+        if "rubric" in payload:
+            payload["rubric"] = self._perturb_text(
+                payload["rubric"], self.replacement_tokens["rubric"]
+            )
+        if "reference_answer" in payload:
+            payload["reference_answer"] = self._perturb_text(
+                payload["reference_answer"], self.replacement_tokens["reference_answer"]
+            )
+        return payload
+
+    def _paraphrase_text_multi(
+        self, text: str, count: int, *, section_name: str
+    ) -> List[str]:
+        if count <= 0 or not text or not text.strip():
+            return []
+
+        template = self._compose_paraphrase_prompt(text, section_name)
+        messages = prompt_to_chatml(template)
+
+        try:
+            outputs = self.model.generate(  # type: ignore[attr-defined]
+                prompts=[messages],
+                n=count,
+                max_tokens=getattr(self, "paraphrase_max_tokens", 512),
+                temperature=getattr(self, "paraphrase_temperature", 0.35),
+                top_p=getattr(self, "paraphrase_top_p", 0.9),
+                use_tqdm=False,
+            )[0]
+        except Exception as exc:  # pragma: no cover - defensive logging
+            logging.warning("Paraphrase generation failed for %s: %s", section_name, exc)
+            return [text] * count
+
+        paraphrased: List[str] = []
+        for output in outputs:
+            rewritten = output.get("text", "").strip()
+            paraphrased.append(rewritten if rewritten else text)
+
+        while len(paraphrased) < count:
+            paraphrased.append(text)
+
+        return paraphrased[:count]
+
+    def _compose_paraphrase_prompt(self, text: str, section_name: str) -> str:
+        sanitized = text.strip()
+        prompt = self.PARAPHRASE_SECTION_PROMPT
+        prompt = prompt.replace("<<SECTION_NAME>>", section_name.upper())
+        prompt = prompt.replace("<<TEXT>>", sanitized)
+        return prompt
 
     def _variant_path(self, base: Path, label: str) -> Path:
         return base.with_name(f"{base.stem}.{label}{base.suffix}")
@@ -205,7 +279,7 @@ class SimplePromptPerturbationMixin:
             overwrite_ok=overwrite_ok,
         )
 
-        variant_predictions, variant_output_paths, variant_failures = self._evaluate_variants(
+        variant_predictions, variant_output_paths = self._evaluate_variants(
             variants=variants,
             variant_paths=variant_paths,
             prompt_template_path=prompt_template_path,
@@ -217,13 +291,6 @@ class SimplePromptPerturbationMixin:
             variant_predictions=variant_predictions,
             perturbation_info=perturbation_info,
         )
-
-        dataset_label = dataset_key or getattr(dataset, "key", "<unknown>")
-        total_failures = sum(variant_failures.values())
-        if total_failures:
-            logging.error("Dataset %s encountered %d parse failures after retries", dataset_label, total_failures)
-        else:
-            logging.info("Dataset %s parsed successfully without remaining failures", dataset_label)
 
         self._persist_perturbation_outputs(
             base_result_path=base_result_path,
@@ -276,69 +343,30 @@ class SimplePromptPerturbationMixin:
         variant_paths: Dict[str, Tuple[Path, Path]],
         prompt_template_path: str,
         eval_options: Dict,
-    ) -> Tuple[Dict[str, List[JudgePrediction]], Dict[str, Path], Dict[str, int]]:
+    ) -> Tuple[Dict[str, List[JudgePrediction]], Dict[str, Path]]:
         """Run the judge for each perturbation variant and collect predictions."""
 
         variant_predictions: Dict[str, List[JudgePrediction]] = {}
         variant_output_paths: Dict[str, Path] = {}
-        variant_failures: Dict[str, int] = {}
-        max_attempts = max(1, getattr(self, "max_parse_retries", 1))
-
-        def _retry_temperature(options: Dict[str, object]) -> float:
-            raw = options.get("temperature", 0.0)
-            try:
-                value = float(raw)
-            except (TypeError, ValueError):
-                value = 0.0
-            return value if value not in {0.0, -0.0} else 0.2
 
         for label in self.variant_order:
             variant_examples = variants.get(label, [])
             if label not in variant_paths:
                 continue
             result_path, output_path = variant_paths[label]
-            final_predictions: List[JudgePrediction] = []
-            final_fails = 0
-            success = False
-            attempt_index = 0
-
-            for attempt in range(max_attempts):
-                attempt_options = dict(eval_options)
-                if attempt > 0:
-                    attempt_options["temperature"] = _retry_temperature(attempt_options)
-                attempt_index = attempt + 1
-                predictions, fails = self.base.judge.evaluate(  # type: ignore[attr-defined]
-                    variant_examples,
-                    prompt_template_path=prompt_template_path,
-                    result_path=str(result_path),
-                    output_text_path=str(output_path),
-                    parse_fn=self.base._wrap_parse_fn,  # type: ignore[attr-defined]
-                    **attempt_options,
-                )
-                logging.info("Variant '%s' attempt %d produced %d parse failures", label, attempt_index, fails)
-                final_predictions = predictions
-                final_fails = fails
-                if fails == 0:
-                    success = True
-                    break
-                if attempt < max_attempts - 1:
-                    logging.warning(
-                        "Retrying variant '%s' due to parse failures (attempt %d of %d)",
-                        label,
-                        attempt_index + 1,
-                        max_attempts,
-                    )
-
-            variant_predictions[label] = final_predictions
+            predictions, fails = self.base.judge.evaluate(  # type: ignore[attr-defined]
+                variant_examples,
+                prompt_template_path=prompt_template_path,
+                result_path=str(result_path),
+                output_text_path=str(output_path),
+                parse_fn=self.base._wrap_parse_fn,  # type: ignore[attr-defined]
+                **eval_options,
+            )
+            logging.info("Finished variant '%s' with %d parse failures", label, fails)
+            variant_predictions[label] = predictions
             variant_output_paths[label] = output_path
-            variant_failures[label] = final_fails
 
-            if success:
-                logging.debug("Variant '%s' parsed successfully after %d attempt(s)", label, attempt_index)
-            else:
-                logging.error("Variant '%s' completed with %d parse failures after %d attempt(s)", label, final_fails, attempt_index)
-
-        return variant_predictions, variant_output_paths, variant_failures
+        return variant_predictions, variant_output_paths
 
     def _aggregate_predictions(
         self,
@@ -474,6 +502,10 @@ class PointwisePipeline(SimplePromptPerturbationMixin):
         enable_prompt_perturbation: bool = True,
         results_root: Optional[Path] = None,
         logs_root: Optional[Path] = None,
+        paraphrase_variants: int = 1,
+        paraphrase_temperature: float = 0.35,
+        paraphrase_top_p: float = 0.9,
+        paraphrase_max_tokens: int = 512,
     ) -> None:
         self.model = model
         self.eval_callable = eval_callable
@@ -481,8 +513,11 @@ class PointwisePipeline(SimplePromptPerturbationMixin):
         self.model_name = model_name
         self.prompt_method = "pointwise_vanilla"
         self.eval_method = "base_pointwise"
-        self.enable_prompt_perturbation = enable_prompt_perturbation
-        self.max_parse_retries = 5
+        self.num_paraphrase_variants = max(0, paraphrase_variants)
+        self.paraphrase_temperature = paraphrase_temperature
+        self.paraphrase_top_p = paraphrase_top_p
+        self.paraphrase_max_tokens = paraphrase_max_tokens
+        self.enable_prompt_perturbation = enable_prompt_perturbation and self.num_paraphrase_variants > 0
 
         self.results_root = (results_root or (self.reife_root / "results")).resolve()
         self.results_root.mkdir(parents=True, exist_ok=True)
@@ -491,6 +526,16 @@ class PointwisePipeline(SimplePromptPerturbationMixin):
 
         self.datasets = list(datasets) if datasets else None
         self.dataset_configs = self._initialise_dataset_configs(dataset_loaders or {})
+
+        model_lacks_generation = not hasattr(self.model, "generate")
+        is_dummy = self.model.__class__.__name__ == "DummyPointwiseAPI"
+        self._paraphrase_disabled = model_lacks_generation or is_dummy
+
+        self.variant_order: List[str] = ["original"]
+        if self.enable_prompt_perturbation:
+            self.variant_order.extend(
+                f"paraphrase_{idx + 1}" for idx in range(self.num_paraphrase_variants)
+            )
 
         primary_config = self.dataset_configs.get("llm_grader")
         if primary_config is None and self.dataset_configs:
@@ -526,13 +571,11 @@ class PointwisePipeline(SimplePromptPerturbationMixin):
         definitions["flask"] = (flask_loader, FLASKPromptProcessor(), prompt_template)
 
         mt_loader = overrides.get("mt_bench") or create_dataset_loader("mt_bench", project_root)
-        if hasattr(mt_loader, "scoring_scale"):
-            mt_loader.scoring_scale = 5
-        mt_scale = getattr(mt_loader, "scoring_scale", 5)
+        mt_scale = getattr(mt_loader, "scoring_scale", 10)
         mt_processor = PairwisePointwisePromptProcessor(
             dataset_key="mt_bench",
             system_instructions=(
-                "You are an MT-Bench adjudicator. Score the assistant response on a {scale}-point scale (1 = lowest, {scale} = highest) "
+                "You are an MT-Bench adjudicator. Score the assistant response on a {scale}-point scale "
                 "considering helpfulness, accuracy, and clarity."
             ).format(scale=mt_scale),
             scoring_scale=mt_scale,

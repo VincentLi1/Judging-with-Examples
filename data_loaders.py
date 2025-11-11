@@ -207,6 +207,8 @@ class BiGGenDatasetLoader(DatasetLoader):
 
     DEFAULT_RESPONSES = "sample_responses.json"
     DEFAULT_EVALUATIONS = "sample_evals.json"
+    HF_RESULTS_DATASET = "prometheus-eval/BiGGen-Bench-Results"
+    HF_DEFAULT_SPLIT = "human_eval"
 
     def __init__(
         self,
@@ -215,13 +217,19 @@ class BiGGenDatasetLoader(DatasetLoader):
         responses_filename: Optional[str] = None,
         evaluations_filename: Optional[str] = None,
         max_examples: Optional[int] = None,
+        hf_dataset_id: Optional[str] = HF_RESULTS_DATASET,
+        hf_split: str = HF_DEFAULT_SPLIT,
     ) -> None:
         super().__init__(root)
+        self._use_local_responses = responses_filename is not None
         self.responses_path = root / (responses_filename or self.DEFAULT_RESPONSES)
         self.evaluations_path = (
             root / evaluations_filename if evaluations_filename else root / self.DEFAULT_EVALUATIONS
         )
         self.max_examples = max_examples
+        self.hf_dataset_id = hf_dataset_id
+        self.hf_split = hf_split
+        self._responses_cache: Optional[Dict[str, dict]] = None
 
     def _load_optional_evaluations(self) -> Dict[str, dict]:
         if not self.evaluations_path.exists():
@@ -262,16 +270,72 @@ class BiGGenDatasetLoader(DatasetLoader):
                         scores.append(float(value))
         return scores
 
-    def load(self) -> DatasetBundle:
-        if not self.responses_path.exists():
+    def _load_responses_payload(self) -> Dict[str, dict]:
+        if self._responses_cache is not None:
+            return self._responses_cache
+
+        if self._use_local_responses:
+            if not self.responses_path.exists():
+                raise FileNotFoundError(
+                    f"BiGGen-Bench responses file '{self.responses_path}' not found. Provide a valid responses file."
+                )
+            with self.responses_path.open(encoding="utf-8") as handle:
+                payload = json.load(handle)
+            if not isinstance(payload, dict):
+                raise ValueError(
+                    f"Expected BiGGen-Bench responses at '{self.responses_path}' to be a JSON object."
+                )
+            self._responses_cache = payload
+            return payload
+
+        if not self.hf_dataset_id:
             raise FileNotFoundError(
-                f"BiGGen-Bench responses file '{self.responses_path}' not found."
+                "No BiGGen-Bench responses file provided and no HuggingFace dataset configured."
             )
 
-        with self.responses_path.open(encoding="utf-8") as f:
-            raw_data = json.load(f)
-        if not isinstance(raw_data, dict):
-            raise ValueError("Expected BiGGen-Bench responses to be a JSON object keyed by id.")
+        try:
+            from datasets import load_dataset  # type: ignore
+        except ImportError as exc:  # pragma: no cover - optional dependency
+            logging.error(
+                "datasets package unavailable; install 'datasets' to fetch BiGGen-Bench responses from HuggingFace."
+            )
+            raise
+
+        logging.info(
+            "Downloading BiGGen-Bench split '%s' from '%s' via datasets.load_dataset",
+            self.hf_split,
+            self.hf_dataset_id,
+        )
+        dataset = load_dataset(self.hf_dataset_id, split=self.hf_split)
+        payload: Dict[str, dict] = {}
+        for idx, row in enumerate(dataset):
+            row_id = row.get("id") or row.get("uuid") or f"{self.hf_split}-{idx}"
+            entry_id = str(row_id)
+            payload[entry_id] = {
+                "id": entry_id,
+                "input": row.get("input") or "",
+                "response": row.get("response") or "",
+                "reference_answer": row.get("reference_answer"),
+                "score_rubric": row.get("score_rubric") or {},
+                "capability": row.get("capability"),
+                "task": row.get("task"),
+                "instance_idx": row.get("instance_idx"),
+                "system_prompt": row.get("system_prompt"),
+                "max_score": row.get("max_score", 5),
+                "human_score": row.get("human_score"),
+                "human_scores": row.get("human_scores"),
+                "human_score_source": row.get("human_score_source"),
+            }
+        if not payload:
+            raise FileNotFoundError(
+                f"HuggingFace dataset '{self.hf_dataset_id}' split '{self.hf_split}' returned no BiGGen-Bench entries."
+            )
+
+        self._responses_cache = payload
+        return payload
+
+    def load(self) -> DatasetBundle:
+        raw_data = self._load_responses_payload()
 
         evaluations = self._load_optional_evaluations()
         entries: List[dict] = []
@@ -303,6 +367,13 @@ class BiGGenDatasetLoader(DatasetLoader):
                     score_provider = "gpt-4.1"
                     proxy_count += 1
 
+            if not human_scores:
+                sample_scores = self._extract_human_scores(sample)
+                if sample_scores:
+                    human_scores = sample_scores
+                    score_source = sample.get("human_score_source") or "dataset_field"
+                    score_provider = sample.get("human_score_provider")
+
             if human_scores:
                 human_mean = sum(human_scores) / len(human_scores)
             else:
@@ -319,7 +390,7 @@ class BiGGenDatasetLoader(DatasetLoader):
                 "task": sample.get("task"),
                 "instance_idx": sample.get("instance_idx"),
                 "system_prompt": sample.get("system_prompt"),
-                "max_score": 5,
+                "max_score": sample.get("max_score", 5),
                 "human_scores": human_scores,
                 "human_score_source": score_source,
                 "human_score_provider": score_provider,
@@ -328,10 +399,15 @@ class BiGGenDatasetLoader(DatasetLoader):
             entries.append(entry)
             human_means.append(human_mean)
 
+        source_desc = (
+            str(self.responses_path)
+            if self._use_local_responses
+            else f"{self.hf_dataset_id}:{self.hf_split}"
+        )
         logging.info(
             "Loaded %d BiGGen-Bench examples from %s",
             len(entries),
-            self.responses_path,
+            source_desc,
         )
         if not any(entry.get("human_scores") for entry in entries):
             logging.warning(
@@ -682,7 +758,7 @@ class MTBenchHumanJudgmentsLoader(PairwiseJudgmentDatasetLoader):
         *,
         data_dir: Optional[str] = None,
         max_examples: Optional[int] = None,
-        scoring_scale: int = 5,
+        scoring_scale: int = 10,
         local_path: Optional[Path] = None,
         hf_chunk_pct: float = 10.0,
     ) -> None:
