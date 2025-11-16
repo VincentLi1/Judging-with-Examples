@@ -747,6 +747,14 @@ def analyze_pointwise_results(
         "examples_with_human_scores": len(human_examples),
         "examples_with_perturbations": len(perturbation_examples),
     }
+    if examples_list:
+        summary["score_min"] = min(float(ex.original) for ex in examples_list)
+        summary["score_max"] = max(float(ex.original) for ex in examples_list)
+    if perturbation_examples:
+        all_perturbed = np.concatenate([ex.perturbed for ex in perturbation_examples if ex.n_perturbations > 0])
+        if all_perturbed.size:
+            summary["perturbation_min"] = float(np.min(all_perturbed))
+            summary["perturbation_max"] = float(np.max(all_perturbed))
     if scale_max is not None:
         summary["scale_override"] = float(scale_max)
 

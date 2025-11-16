@@ -1,0 +1,1 @@
+{"id": "sample_keep", "data": {"id": "sample_keep"}, "metadata": {"task": "task_keep", "perturbations": [{"label": "original", "score": 3.0}, {"label": "paraphrase_1", "score": 2.5}], "perturbation_scores": {"original": 3.0, "paraphrase_1": 2.5}}, "result": {"score": 4.0}}
