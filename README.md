@@ -1,79 +1,17 @@
-# Prompt Perturbation: Addressing Scoring Reliability and Consistency in LLM-As-A-Judge Frameworks on Rubric-Graded Tasks
+# Judging with Examples: Improving LLM Judge Alignment on Nonverifiable Rewards via Prompting for Examples
 Vincent Li, Yixin Liu (advisor), Arman Cohan (advisor)  
-September 2025
+December 2025
 
-## Introduction
+Large language models (LLMs) are increasingly used as automated judges in evaluation pipelines for tasks such as short-answer grading, alignment assessment, and model-to-model comparison. However, LLM-as-a-judge systems are known to suffer from misalignment with human preferences. Prior work has proposed solutions including rubrics, reference answers, checklists, and agentic judging workflows, yet these approaches do not directly address a core underlying weakness: many judge models simply fail due to a lack of grounding in their evaluation process—they do not understand what constitutes a good response, and what constitutes a bad response.
 
-The past few years have seen an explosion of growth in the capabilities of large language models (LLMs) across a variety of complex and useful tasks, such as mathematical reasoning, general knowledge QA, coding ability, domain knowledge in fields such as medicine and law, and understanding of world languages. With the growth of LLM capabilities comes the inevitable need to objectively benchmark and evaluate the quality of their outputs. While some highly technical tasks, such as math or coding, can be evaluated using simple rules-based or programmatic techniques, there is a need for other evaluation strategies on tasks for which rules-based evaluation is insufficient.
+In this work, we introduce **Judging with Examples**, a simple and model-agnostic prompting strategy designed to increase the semantic grounding of LLM judges. Before the judge evaluates the target student response, it is first asked to produce example responses corresponding to each rubric score. This example-generation step encourages the model to construct an internal representation of the rubric, the task, and the expected semantic distinctions. The resulting examples are then appended to the original judging prompt, yielding a more grounded assessment.
 
-Traditionally, these evaluations were done by expert human annotators. However, due to the labor-intensiveness of human annotation, the paradigm of LLM-as-a-judge was introduced, in which a strong LLM could be used in the place of a human annotator to provide evaluations. Within the LLM-as-a-judge paradigm, one emerging line of research explores the potential for LLM-as-a-judge systems to perform evaluations based on checklists or rubrics, on tasks such as grading short answer responses in undergraduate level coursework, or evaluating quality of summarization of scientific abstracts. Within the LLM-as-a-judge paradigm, there are two main types of evaluation:  
-1. **Comparative**: multiple responses are presented and the judge is tasked with identifying which responses are better or worse.  
-2. **Scoring**: the judge is responsible for providing a numerical score, usually ranging from 1–5, to evaluate the quality of different dimensions of the response, as is the case in rubric-based evaluation.
+We evaluate our method on a subset of twenty difficult instances from the BiGGen Bench, selected specifically for their large disagreement between two judge models (Llama-3.1-8B-Instruct and Qwen-2.5-14B-Instruct). Applying **Judging with Examples** using the Llama-3.1-8B-Instruct model reduces mean absolute deviation from GPT-5.1 scores by **20.5%** on these challenging cases. Our findings indicate that grounding the judge through explicit example construction is an effective and computationally lightweight method for improving score reliability, particularly for complex tasks requiring deep understanding.
 
-However, LLM-as-a-judge systems often face the issues of reliability and consistency: when given similar responses, they often do not give consistent scores. They may exhibit different behavior when the input is perturbed, such as through paraphrasing, changing the order of responses (comparative evaluation), altering response length, or reordering criteria in the rubric.
+**Note:** In our GitHub repo, we include submodules from other works, such as:
 
-In the present work, we propose to address this lack of reliability through **prompt perturbation**: given an original prompt and an LLM-as-a-judge system, we perturb the prompt using a variety of different methods to arrive at *N* prompts that are differently worded but preserve the meaning. We then run the given LLM-as-a-judge system on each of the *N* perturbed prompts and average the scores to arrive at the final judgment. The advantage of our proposed method is threefold:
+* FLASK — [https://github.com/kaistAI/FLASK](https://github.com/kaistAI/FLASK)
+* ReIFE — [https://arxiv.org/abs/2410.07069](https://arxiv.org/abs/2410.07069)
+* llm_grader — [https://github.com/wenjing1170/llm_grader](https://github.com/wenjing1170/llm_grader)
+* prometheus-eval — [https://github.com/prometheus-eval/prometheus-eval](https://github.com/prometheus-eval/prometheus-eval)
 
-1. By preemptively perturbing the prompts, the overall judgment is the average of many judgments, reducing randomness and increasing consistency.  
-2. By effectively sampling multiple judgments, the method provides a measure of variance or uncertainty, helping users assess trust in the scores.  
-3. Because this is a generative process, prompt perturbation can also be used to generate training data to train LLMs for more consistent judgments.
-
-## Problem Formulation
-
-We define an LLM-as-a-judge system *J* that converts an input prompt *P* into a result vector of real numbers *S*, assuming rubric-based numerical scoring. Typically, the input prompt consists of:
-
-1. The instructions and task description *I*  
-2. The evaluation rubric *R*  
-3. The response to be evaluated *E*  
-4. (Optional) A reference response *T*, against which *E* is compared.  
-
-We model uncertainty in the scoring process as stochasticity: the score vector *S* is a sample from some underlying probability distribution. Even when the judge is deterministic (e.g., temperature = 0), the input itself can be modeled as stochastic, since responses may be phrased differently while preserving meaning. A judge is consistent if scoring repeated samples from this distribution yields similar scores.
-
-## Related Works
-
-### Known Sources of Bias in Non-Adversarial Perturbations
-Biases can arise from both rubric and response presentation. Examples include:  
-- Rubric order bias (different ordering of criteria influences scores).  
-- Length bias (favoring longer responses regardless of quality).  
-- Self-preference bias (judges favoring responses generated by the same LLM).  
-- Refinement-aware bias (favoring responses labeled as “refined”).  
-- Paraphrasing bias (scoring inconsistently on paraphrased responses).  
-
-### Adversarial Perturbation
-Adversarial perturbations, such as inserting irrelevant characters or tokens, can also influence judgments in both comparative and scoring tasks. These remain a concern for robustness.
-
-## Proposed Approach
-
-We propose a **prompt perturbation** approach:  
-
-1. Apply perturbation techniques to generate *N* perturbed copies of prompts.  
-   - Paraphrase responses.  
-   - Back-translate (translate to another language and back).  
-   - Change rubric criterion order.  
-   - Change score representation.  
-   - Reword responses to be longer/shorter (same meaning).  
-   - Insert random punctuation.  
-   - Replace non-stopwords with synonyms.  
-
-2. Run the LLM-as-a-judge system on each perturbed prompt.  
-3. Output the **average judgment** as the final score.
-
-## Evaluation and Benchmarking
-
-### Evaluation Datasets
-We propose using existing rubric-based benchmarks (e.g., ExpertLongBench, FLASK, BigGen Bench, and others). Many of these already come with provided rubrics, making them suitable for this study.
-
-To benchmark reliability, we draw on two complementary evaluation frameworks:  
-- **Scoring Bias Framework**: measures robustness by score variance, correlation with gold scores, and consistency under perturbation.  
-- **CALM Framework**: evaluates multiple bias types using Robustness Rate and Consistency Rate.  
-
-If our perturbation method reduces variance and improves alignment with human ratings compared to these baselines, we can claim improved reliability.
-
-### LLM-As-A-Judge Systems
-Due to compute limitations, we propose to use smaller LLMs as judges (≤7B parameters), without any agentic judging pipeline. A standard prompt template will be used for evaluation.
-
-## Proposed Milestones
-- **Week of September 28**: Set up repository and code; reproduce baseline results.  
-- **Week of October 26**: Implement prompt perturbation pipeline; run preliminary experiments.  
-- **Week of November 30**: Complete experiments; draft paper.  
-- **December 11**: Submit final paper.
