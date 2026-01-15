@@ -309,6 +309,13 @@ class PromptPerturbationTests(unittest.TestCase):
                 SYSTEM_INSTRUCTIONS="You are a meticulous teaching assistant."
             )
         )
+        self.mixin.variant_order = ("original", "paraphrase_1")
+        self.mixin._paraphrase_disabled = True
+        self.mixin.num_paraphrase_variants = 1
+        self.mixin.paraphrase_temperature = 0.35
+        self.mixin.paraphrase_top_p = 0.9
+        self.mixin.paraphrase_max_tokens = 128
+        self.mixin.model = None
 
     def _build_example(self) -> PromptExample:
         sections = {
@@ -340,31 +347,28 @@ class PromptPerturbationTests(unittest.TestCase):
         variants, info = self.mixin._build_variants([example])
 
         self.assertIn("original", variants)
-        self.assertIn("perturbed", variants)
+        self.assertIn("paraphrase_1", variants)
 
         original_example = variants["original"][0]
-        perturbed_example = variants["perturbed"][0]
+        perturbed_example = variants["paraphrase_1"][0]
 
         self.assertNotEqual(original_example.instruction, perturbed_example.instruction)
-        self.assertNotEqual(original_example.output, perturbed_example.output)
-
-        self.assertIn("apple", perturbed_example.instruction)
-        self.assertIn("capricorn", perturbed_example.output)
+        self.assertEqual(original_example.output, perturbed_example.output)
 
         orig_sections = original_example.metadata["sections"]
         pert_sections = perturbed_example.metadata["sections"]
 
-        self.assertNotEqual(orig_sections["rubric"], pert_sections["rubric"])
-        self.assertNotEqual(orig_sections["reference_answer"], pert_sections["reference_answer"])
+        self.assertIn("apple", pert_sections["assignment"])
+        self.assertIn("delorean", pert_sections["rubric"])
+        self.assertIn("banana", pert_sections["reference_answer"])
         self.assertEqual(orig_sections["instructor_criteria"], pert_sections.get("instructor_criteria"))
 
         perturb_list = info[example.id]
         labels = {entry.get("label") for entry in perturb_list}
-        self.assertSetEqual(labels, {"original", "perturbed"})
+        self.assertSetEqual(labels, {"original", "paraphrase_1"})
         original_info = next(entry for entry in perturb_list if entry.get("label") == "original")
-        perturbed_info = next(entry for entry in perturb_list if entry.get("label") == "perturbed")
-        self.assertIn("student_answer", perturbed_info)
-        self.assertNotEqual(
+        perturbed_info = next(entry for entry in perturb_list if entry.get("label") == "paraphrase_1")
+        self.assertEqual(
             original_info.get("student_answer"),
             perturbed_info.get("student_answer"),
         )
