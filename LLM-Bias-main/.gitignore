@@ -1,0 +1,8 @@
+.env
+test.py
+__pycache__/
+*.pyc
+test/
+data/*.parquet
+data/*.jsonl
+token_log.txt
