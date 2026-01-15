@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "/var/spool/slurmd/job46685368/slurm_script", line 269, in <module>
-    main()
-  File "/var/spool/slurmd/job46685368/slurm_script", line 261, in main
-    raise FileNotFoundError(
-FileNotFoundError: pointwise_pipeline.py not found at expected path: /var/spool/slurmd/job46685368/pointwise_pipeline.py

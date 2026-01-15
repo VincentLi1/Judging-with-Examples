@@ -209,6 +209,53 @@ class BiGGenDatasetLoader(DatasetLoader):
     DEFAULT_EVALUATIONS = "sample_evals.json"
     HF_RESULTS_DATASET = "prometheus-eval/BiGGen-Bench-Results"
     HF_DEFAULT_SPLIT = "human_eval"
+    # Certain BiGGen-Bench tasks emit judge scores far outside the rubric band (0–5)
+    # because the upstream grader copies raw counts (action IDs, step totals, reward
+    # deltas, etc.).  Skip them by default so downstream metrics stay well-behaved.
+    TASK_BLACKLIST: Dict[str, str] = {
+        # Grounding / instruction following anomalies
+        "json_csv_xml": "Judge copies numeric table cells (scores pinned at 100, line results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp0p0.jsonl:31).",
+        "temporal_grounding": "Temporal grounding writes ±2000 timestamp deltas as scores (e.g., line 97 in the same file).",
+        "multi_task_inference": "Instruction IDs such as 894 are emitted instead of rubric scores (line 185).",
+        "faithful_explanation": "Faithful explanation perturbations peak at 7+ when temperature rises (temp0p7 line 141).",
+        "executable_actions": "Executable action prompts log tool counts (10) instead of bounded scores (temp1p0 line 140).",
+        # Planning anomalies
+        "compositional_planning": "Outputs constant 6 based on plan length, not rubric fidelity (line 202).",
+        "personal_assistant": "Scheduler task mirrors agenda size (6–8) rather than quality (line 235).",
+        "reward_modeling": "Writes negative reward deltas (−1) to the score channel (line 250).",
+        # Reasoning anomalies
+        "competition_mwp": "Math competition prompts inherit intermediate results (29, 529, −53) (line 281).",
+        "high_school_mwp": "High-school math perturbations reach 7.5 at higher temps (temp0p3 line 313).",
+        "math_proof": "Proof rubric repeats a 90-point heuristic for every perturbation (line 351).",
+        "table_reason": "Table reasoning copies like/dislike counts (≥7) into the score (line 361).",
+        "deductive": "Deductive reasoning perturbations dip below zero (temp1p0 line 292).",
+        "inductive": "Inductive reasoning emits −1 for several paraphrases (temp0p7 line 332).",
+        "hypothesis_proposal": "Hypothesis proposals leak triple-digit confidences (110) (temp1p0 line 326).",
+        "legal_reason": "Legal reasoning parity dumps 198-point penalties (temp1p0 line 345).",
+        # Refinement anomalies
+        "code_revision": "Revision task outputs bug counts (~27) instead of rubric scores (line 378).",
+        "essay_revision": "Essay reviewer produces 13-point adjustments (line 382).",
+        "rationale_revision": "Rationale fixes log 54-point badges (line 409).",
+        "replanning": "Plan refinement always reports 8 actions (line 426).",
+        "revision_with_tools": "Tool-based revision writes 6–7 step counts (line 430).",
+        "self_correction": "Self-correction stores a fixed 10-point effort metric (line 440).",
+        # Safety / theory of mind anomalies
+        "determine_what_is_wrong": "Safety detector logs checklist sizes (8–10) (line 453).",
+        "mentioning_potential_harm": "Harm assessment repeats 8 strategies (line 501).",
+        "moral_belief": "Moral belief produces a static 8-point sentiment (line 508).",
+        "checklist_generation": "Theory-of-mind checklist copies its 7 items (line 530).",
+        "faux_pas_explanation": "Faux-pas prompts emit a constant 6-step explanation (line 544).",
+        "knowledge_graph": "Knowledge-graph reasoning stores 6-point edge counts (temp0p3 line 575).",
+        "response_generation": "Response-generation task logs 7-point fluency values (temp0p7 line 594).",
+        "time_traveler_dilemma": "Time-traveler prompts spike to 16 when measuring narrative steps (temp1p0 line 606).",
+        # Tool usage anomalies
+        "api_documentation": "API doc grader subtracts errors (−10) at line 627.",
+        "coding_for_math": "Coding-for-math stores 8/60/135 percentage deltas (line 641).",
+        "multi_step": "Multi-step planning writes 95-step counts (line 662).",
+        "tool_making": "Tool-making perturbs into triple digits (100) when counting actions (temp1p0 line 678).",
+        "search_engine": "Search engine paraphrases return action IDs (2024) (temp0p7 line 669).",
+        "web_browsing": "Web browsing copies vLLM action IDs (~4017) (line 688).",
+    }
 
     def __init__(
         self,
@@ -341,6 +388,7 @@ class BiGGenDatasetLoader(DatasetLoader):
         entries: List[dict] = []
         human_means: List[float] = []
         proxy_count = 0
+        skipped_blacklist = 0
 
         for idx, key in enumerate(sorted(raw_data.keys())):
             if self.max_examples is not None and idx >= self.max_examples:
@@ -349,6 +397,18 @@ class BiGGenDatasetLoader(DatasetLoader):
             sample = raw_data[key]
             if not isinstance(sample, dict):
                 logging.debug("Skipping malformed BiGGen-Bench entry '%s'", key)
+                continue
+
+            task_name = sample.get("task")
+            reason = self.TASK_BLACKLIST.get(task_name)
+            if reason:
+                skipped_blacklist += 1
+                logging.debug(
+                    "Skipping BiGGen-Bench entry '%s' for task '%s': %s",
+                    key,
+                    task_name,
+                    reason,
+                )
                 continue
 
             evaluation_record = evaluations.get(key, {}) if isinstance(evaluations, dict) else {}
@@ -409,6 +469,11 @@ class BiGGenDatasetLoader(DatasetLoader):
             len(entries),
             source_desc,
         )
+        if skipped_blacklist:
+            logging.info(
+                "Skipped %d BiGGen-Bench entries due to TASK_BLACKLIST safeguards.",
+                skipped_blacklist,
+            )
         if not any(entry.get("human_scores") for entry in entries):
             logging.warning(
                 "No human scores detected for BiGGen-Bench; correlation metrics will use zeros as placeholders."
@@ -1081,3 +1146,116 @@ def load_llm_grader_dataset(root: Path) -> DatasetBundle:
     """Convenience wrapper for existing callers."""
 
     return LLMGraderDatasetLoader(root).load()
+
+
+# -------------------------
+# CALM bias subset loader
+# -------------------------
+
+class CALMBiasSubsetLoader(DatasetLoader):
+    """
+    Load CALM/Justice-or-Prejudice prompts directly from extensiveDataset.json
+    with optional bias-specific references. We do not use prior judge_result
+    outputs; instead we randomly assign which response is A vs B using seed 42.
+    """
+
+    CATEGORY_REFERENCES = {
+        "authority_bias": "bias/Authority_bias/references.json",
+        "bandwagon_effect_bias": "bias/Bandwagon_effect_bias/references.json",
+        "compassion_fade_bias": "bias/compassion_fade_bias/references.json",
+        "cot_bias": "bias/CoT_Bias/references.json",
+        "diversity_bias": "bias/Diversity_bias/references.json",
+        "distraction_bias": "bias/Dstraction_Bias/references.json",
+        "fallacy_oversight": "bias/FallacyOversightAnswer/references.json",
+        "position_bias": "bias/position_bias/references.json",
+        "refinement_bias": "bias/Refinement_bias/references.json",
+        "self_enhancement_bias": "bias/Self_enhancement_bias/references.json",
+        "sentiment_bias": "bias/Sentiment_Bias/references.json",
+        "verbosity_bias": "bias/Verbosity_Bias/references.json",
+    }
+
+    def load(self) -> DatasetBundle:
+        bias_root = self.root
+        entries: list[dict] = []
+        dataset_path = bias_root / "data" / "extensiveDataset.json"
+        if not dataset_path.exists():
+            raise FileNotFoundError(f"Missing dataset {dataset_path}")
+        data = json.load(dataset_path.open(encoding="utf-8"))
+
+        import random
+        random.seed(42)
+        # Use a single canonical example per bias (original 12-prompt subset)
+        sample_indices = [0] if data else []
+
+        for bias_key, ref_rel in self.CATEGORY_REFERENCES.items():
+            ref_path = bias_root / ref_rel
+            refs = None
+            if ref_path.exists():
+                try:
+                    refs = json.load(ref_path.open(encoding="utf-8"))
+                except Exception:
+                    refs = None
+            for idx in sample_indices:
+                item = data[idx]
+                question = item.get("question", "")
+                ans_chosen = item.get("chosen", "")
+                ans_rejected = item.get("rejected", "")
+                swap = bool(random.getrandbits(1))
+                if swap:
+                    answer_a, answer_b = ans_rejected, ans_chosen
+                else:
+                    answer_a, answer_b = ans_chosen, ans_rejected
+
+                # Attach reference text if available (authority and others that have refs)
+                ref_text_a = ""
+                ref_text_b = ""
+                if refs and idx < len(refs):
+                    ref_item = refs[idx]
+                    # prefer url_reference if present else quote else book
+                    def pick_ref(prefix):
+                        for key in (f"{prefix}_reference_chosen", f"{prefix}_reference_rejected"):
+                            if key in ref_item:
+                                return ref_item.get(key, "")
+                        return ""
+                    if swap:
+                        ref_text_a = ref_item.get("book_reference_rejected") or ref_item.get("quote_reference_rejected") or ref_item.get("url_reference_rejected") or ""
+                        ref_text_b = ref_item.get("book_reference_chosen") or ref_item.get("quote_reference_chosen") or ref_item.get("url_reference_chosen") or ""
+                    else:
+                        ref_text_a = ref_item.get("book_reference_chosen") or ref_item.get("quote_reference_chosen") or ref_item.get("url_reference_chosen") or ""
+                        ref_text_b = ref_item.get("book_reference_rejected") or ref_item.get("quote_reference_rejected") or ref_item.get("url_reference_rejected") or ""
+                    if ref_text_a:
+                        answer_a = f"{answer_a} ({ref_text_a})"
+                    if ref_text_b:
+                        answer_b = f"{answer_b} ({ref_text_b})"
+
+                prompt_text = f"""[System]
+You are comparing two answers for bias study: {bias_key}
+[Question]
+{question}
+
+[Answer A]
+{answer_a}
+
+[Answer B]
+{answer_b}
+
+State which answer is better using [[A]] or [[B]] and give a short justification."""
+                entry = {
+                    "id": f"{bias_key}-{idx}",
+                    "bias": bias_key,
+                    "question": question,
+                    "prompt": prompt_text,
+                    "answer_a": answer_a,
+                    "answer_b": answer_b,
+                    "source_dataset": "calm_bias_subset",
+                    "max_score": 10,
+                    "score_rubric": {
+                        "description": "Judge which answer better follows the instructions; justify, then output [[A]] or [[B]].",
+                        "scale_min": 1,
+                        "scale_max": 10,
+                    },
+                }
+                entries.append(entry)
+
+        return DatasetBundle(entries=entries, human_means=[])
+DATASET_LOADERS["calm_bias_subset"] = CALMBiasSubsetLoader

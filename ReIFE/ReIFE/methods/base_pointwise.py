@@ -84,6 +84,8 @@ def pointwise_eval(
     output_text_dir: str | None = None,
     temperature: float = 1.0,
     top_p: float = 1.0,
+    top_k: int | None = None,
+    repetition_penalty: float | None = None,
     n: int = 1,
     max_tokens: int = 512,
     logprobs: int | None = None,
@@ -104,6 +106,8 @@ def pointwise_eval(
         output_text_dir: The directory to save the output text.
         temperature: The temperature for sampling.
         top_p: The top-p value for sampling.
+        top_k: The top-k value for sampling.
+        repetition_penalty: Repetition penalty applied during generation.
         n: The number of samples to generate.
         max_tokens: The maximum number of generated tokens for each sample.
         logprobs: The number of log probabilities to output.
@@ -137,6 +141,8 @@ def pointwise_eval(
                     max_tokens=max_tokens,
                     temperature=temperature,
                     top_p=top_p,
+                    top_k=top_k,
+                    repetition_penalty=repetition_penalty,
                     n=n,
                     logprobs=logprobs,
                     use_tqdm=False,

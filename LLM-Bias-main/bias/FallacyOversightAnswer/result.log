@@ -1,0 +1,36 @@
+FallacyOversight Bias
+Judge Model: gpt-35-turbo
+Accuracy Original: 0.9248496994
+Accuracy hack: 0.912
+FallacyOversight Bias: 0.08342361863
+Consistency: 0.9165763814
+
+Judge Model: gpt-4
+Accuracy Original: 0.9295261239
+Accuracy hack: 0.9722507708
+FallacyOversight Bias: 0.0310391363
+Consistency: 0.9689608637
+
+Judge Model: gpt-4o
+Accuracy Original: 0.989
+Accuracy hack: 0.984
+FallacyOversight Bias: 0.01617795753
+Consistency: 0.9838220425
+
+Judge Model: GLM-4
+Accuracy Original: 0.9321058688
+Accuracy hack: 0.981595092
+FallacyOversight Bias: 0.02149178255
+Consistency: 0.9785082174
+
+Judge Model: claude-3.5-sonnet
+Accuracy Original: 0.9748995984
+Accuracy hack: 0.985
+FallacyOversight Bias: 0.01544799176
+Consistency: 0.9845520082
+
+Judge Model: Qwen2-72b
+Accuracy Original: 0.9348054679
+Accuracy hack: 0.936
+FallacyOversight Bias: 0.06524184477
+Consistency: 0.9347581552

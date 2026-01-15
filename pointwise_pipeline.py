@@ -161,9 +161,12 @@ def load_model_from_args(args: argparse.Namespace) -> Tuple[object, str]:
 
     backend = args.model_backend
     model_name_override = getattr(args, "model_name", None)
+    model_identifier = args.model_pt
+    if backend == "gemini" and not model_identifier.startswith("models/"):
+        model_identifier = f"models/{model_identifier}"
 
-    vllm_backends = {"hfvllm", "hfnosysvllm", "prometheusvllm"}
-    api_backends = {"gpt", "gpt-proxy", "o1"}
+    vllm_backends = {"hfvllm", "hfnosysvllm", "prometheusvllm", "glmvllm"}
+    api_backends = {"gpt", "gpt-proxy", "o1", "gemini"}
 
     if backend in vllm_backends:
         if not torch.cuda.is_available():
@@ -177,7 +180,7 @@ def load_model_from_args(args: argparse.Namespace) -> Tuple[object, str]:
         tensor_parallel_size = args.tensor_parallel_size
         swap_space = getattr(args, "swap_space", 2)
         model = model_cls(
-            model_pt=args.model_pt,
+            model_pt=model_identifier,
             tensor_parallel_size=tensor_parallel_size,
             download_dir=download_dir,
             gpu_memory_utilization=args.gpu_memory_utilization,
@@ -187,19 +190,26 @@ def load_model_from_args(args: argparse.Namespace) -> Tuple[object, str]:
             max_model_len=args.max_model_len,
             dtype=dtype,
         )
-        model_name = model_name_override or args.model_pt.rsplit('/', 1)[-1]
+        model_name = model_name_override or model_identifier.rsplit("/", 1)[-1]
         return model, model_name
 
     if backend in api_backends:
         model_cls = get_model(backend)
-        key_path = _resolve_required_path(args.api_key_path, "--api_key_path")
-        account_path = args.api_account_path
-        if backend != "gpt-proxy":
+        key_path = getattr(args, "api_key_path", None)
+        account_path = getattr(args, "api_account_path", None)
+
+        if backend == "gemini":
+            key_path = str(Path(key_path).expanduser()) if key_path else None
+            account_path = None
+        elif backend == "gpt-proxy":
+            key_path = _resolve_required_path(key_path, "--api_key_path")
+            account_path = str(Path(account_path).expanduser()) if account_path else None
+        else:
+            key_path = _resolve_required_path(key_path, "--api_key_path")
             account_path = _resolve_required_path(account_path, "--api_account_path")
-        elif account_path:
-            account_path = str(Path(account_path).expanduser())
+
         model = model_cls(
-            model_pt=args.model_pt,
+            model_pt=model_identifier,
             key_path=key_path,
             account_path=account_path,
             parallel_size=args.api_parallel_size,
@@ -207,7 +217,7 @@ def load_model_from_args(args: argparse.Namespace) -> Tuple[object, str]:
             initial_wait_time=args.api_initial_wait_time,
             end_wait_time=args.api_end_wait_time,
         )
-        model_name = model_name_override or args.model_pt
+        model_name = model_name_override or model_identifier
         return model, model_name
 
     raise ValueError(f"Unsupported model backend: {backend}")
@@ -425,7 +435,7 @@ def main() -> None:
         "--model_backend",
         type=str,
         default="hfvllm",
-        choices=["hfvllm", "hfnosysvllm", "prometheusvllm", "gpt", "gpt-proxy", "o1"],
+        choices=["hfvllm", "hfnosysvllm", "prometheusvllm", "glmvllm", "gpt", "gpt-proxy", "o1", "gemini"],
         help="Backend registered in ReIFE.models to instantiate when not using the dummy model.",
     )
     parser.add_argument(
@@ -537,6 +547,30 @@ def main() -> None:
         help="Override the sampling temperature passed to the judge model (defaults to pipeline value).",
     )
     parser.add_argument(
+        "--eval_top_p",
+        type=float,
+        default=None,
+        help="Override the sampling top-p parameter passed to the judge model.",
+    )
+    parser.add_argument(
+        "--eval_top_k",
+        type=int,
+        default=None,
+        help="Override the sampling top-k parameter passed to the judge model.",
+    )
+    parser.add_argument(
+        "--eval_repetition_penalty",
+        type=float,
+        default=None,
+        help="Override the repetition penalty used during generation.",
+    )
+    parser.add_argument(
+        "--eval_max_tokens",
+        type=int,
+        default=None,
+        help="Override the max generated tokens per sample.",
+    )
+    parser.add_argument(
         "--num_paraphrase_variants",
         type=int,
         default=1,
@@ -612,6 +646,14 @@ def main() -> None:
     eval_kwargs = {}
     if args.eval_temperature is not None:
         eval_kwargs["temperature"] = args.eval_temperature
+    if args.eval_top_p is not None:
+        eval_kwargs["top_p"] = args.eval_top_p
+    if args.eval_top_k is not None:
+        eval_kwargs["top_k"] = args.eval_top_k
+    if args.eval_repetition_penalty is not None:
+        eval_kwargs["repetition_penalty"] = args.eval_repetition_penalty
+    if args.eval_max_tokens is not None:
+        eval_kwargs["max_tokens"] = args.eval_max_tokens
 
     pipeline.run(overwrite_ok=args.overwrite_ok, **eval_kwargs)
     logging.info("Pipeline run completed")

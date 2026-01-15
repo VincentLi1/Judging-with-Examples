@@ -1,0 +1,120 @@
+Judge model:  gpt-35-turbo
+Number percent:  Homosexual
+Accuracy of original answers:  0.54
+Accuracy of worse_hacked answers:  0.5724137931034483
+Consistency_hack_worse:  0.696551724137931
+Judge model:  gpt-4
+Number percent:  Homosexual
+Accuracy of original answers:  0.7241379310344828
+Accuracy of worse_hacked answers:  0.7132867132867133
+Consistency_hack_worse:  0.8297872340425532
+Judge model:  gpt-4o
+Number percent:  Homosexual
+Accuracy of original answers:  0.68
+Accuracy of worse_hacked answers:  0.6644295302013423
+Consistency_hack_worse:  0.8187919463087249
+Judge model:  GLM-4
+Number percent:  Homosexual
+Accuracy of original answers:  0.6510067114093959
+Accuracy of worse_hacked answers:  0.6733333333333333
+Consistency_hack_worse:  0.7785234899328859
+Judge model:  claude-3.5-sonnet
+Number percent:  Homosexual
+Accuracy of original answers:  0.6986301369863014
+Accuracy of worse_hacked answers:  0.6788990825688074
+Consistency_hack_worse:  0.944954128440367
+Judge model:  Qwen2-72b
+Number percent:  Homosexual
+Accuracy of original answers:  0.6711409395973155
+Accuracy of worse_hacked answers:  0.7066666666666667
+Consistency_hack_worse:  0.8389261744966443
+Judge model:  gpt-35-turbo
+Number percent:  Black
+Accuracy of original answers:  0.54
+Accuracy of worse_hacked answers:  0.5782312925170068
+Consistency_hack_worse:  0.6598639455782312
+Judge model:  gpt-4
+Number percent:  Black
+Accuracy of original answers:  0.7241379310344828
+Accuracy of worse_hacked answers:  0.6805555555555556
+Consistency_hack_worse:  0.8428571428571429
+Judge model:  gpt-4o
+Number percent:  Black
+Accuracy of original answers:  0.68
+Accuracy of worse_hacked answers:  0.6866666666666666
+Consistency_hack_worse:  0.82
+Judge model:  GLM-4
+Number percent:  Black
+Accuracy of original answers:  0.6510067114093959
+Accuracy of worse_hacked answers:  0.5906040268456376
+Consistency_hack_worse:  0.7837837837837838
+Judge model:  claude-3.5-sonnet
+Number percent:  Black
+Accuracy of original answers:  0.6986301369863014
+Accuracy of worse_hacked answers:  0.6986301369863014
+Consistency_hack_worse:  0.896551724137931
+Judge model:  Qwen2-72b
+Number percent:  Black
+Accuracy of original answers:  0.6711409395973155
+Accuracy of worse_hacked answers:  0.6733333333333333
+Consistency_hack_worse:  0.8187919463087249
+Judge model:  gpt-35-turbo
+Number percent:  Female
+Accuracy of original answers:  0.54
+Accuracy of worse_hacked answers:  0.5069444444444444
+Consistency_hack_worse:  0.6458333333333334
+Judge model:  gpt-4
+Number percent:  Female
+Accuracy of original answers:  0.7241379310344828
+Accuracy of worse_hacked answers:  0.7092198581560284
+Consistency_hack_worse:  0.8248175182481752
+Judge model:  gpt-4o
+Number percent:  Female
+Accuracy of original answers:  0.68
+Accuracy of worse_hacked answers:  0.6845637583892618
+Consistency_hack_worse:  0.825503355704698
+Judge model:  GLM-4
+Number percent:  Female
+Accuracy of original answers:  0.6510067114093959
+Accuracy of worse_hacked answers:  0.6912751677852349
+Consistency_hack_worse:  0.7651006711409396
+Judge model:  claude-3.5-sonnet
+Number percent:  Female
+Accuracy of original answers:  0.6986301369863014
+Accuracy of worse_hacked answers:  0.7241379310344828
+Consistency_hack_worse:  0.9236111111111112
+Judge model:  Qwen2-72b
+Number percent:  Female
+Accuracy of original answers:  0.6711409395973155
+Accuracy of worse_hacked answers:  0.7133333333333334
+Consistency_hack_worse:  0.8053691275167785
+Judge model:  gpt-35-turbo
+Number percent:  HIV Positive
+Accuracy of original answers:  0.54
+Accuracy of worse_hacked answers:  0.5664335664335665
+Consistency_hack_worse:  0.6923076923076923
+Judge model:  gpt-4
+Number percent:  HIV Positive
+Accuracy of original answers:  0.7241379310344828
+Accuracy of worse_hacked answers:  0.6783216783216783
+Consistency_hack_worse:  0.8561151079136691
+Judge model:  gpt-4o
+Number percent:  HIV Positive
+Accuracy of original answers:  0.68
+Accuracy of worse_hacked answers:  0.7133333333333334
+Consistency_hack_worse:  0.82
+Judge model:  GLM-4
+Number percent:  HIV Positive
+Accuracy of original answers:  0.6510067114093959
+Accuracy of worse_hacked answers:  0.6866666666666666
+Consistency_hack_worse:  0.8322147651006712
+Judge model:  claude-3.5-sonnet
+Number percent:  HIV Positive
+Accuracy of original answers:  0.6986301369863014
+Accuracy of worse_hacked answers:  0.7107438016528925
+Consistency_hack_worse:  0.9421487603305785
+Judge model:  Qwen2-72b
+Number percent:  HIV Positive
+Accuracy of original answers:  0.6711409395973155
+Accuracy of worse_hacked answers:  0.7181208053691275
+Consistency_hack_worse:  0.825503355704698

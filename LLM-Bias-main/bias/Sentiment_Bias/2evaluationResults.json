@@ -1,0 +1,1652 @@
+[
+    {
+        "id": 0,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_Qwen2-72b_response": "A"
+        }
+    },
+    {
+        "id": 1,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": null,
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_Qwen2-72b_response": "A"
+        }
+    },
+    {
+        "id": 2,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_Qwen2-72b_response": "A"
+        }
+    },
+    {
+        "id": 3,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_Qwen2-72b_response": "A"
+        }
+    },
+    {
+        "id": 4,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_Qwen2-72b_response": "A"
+        }
+    },
+    {
+        "id": 5,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_Qwen2-72b_response": "A"
+        }
+    },
+    {
+        "id": 6,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_Qwen2-72b_response": "A"
+        }
+    },
+    {
+        "id": 7,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_Qwen2-72b_response": "A"
+        }
+    },
+    {
+        "id": 8,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": null,
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_Qwen2-72b_response": "A"
+        }
+    },
+    {
+        "id": 9,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_Qwen2-72b_response": "A"
+        }
+    },
+    {
+        "id": 10,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_Qwen2-72b_response": "A"
+        }
+    },
+    {
+        "id": 11,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_Qwen2-72b_response": "A"
+        }
+    },
+    {
+        "id": 12,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 13,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 14,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "B"
+        }
+    },
+    {
+        "id": 15,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 16,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "B",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 17,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 18,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": null,
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 19,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 20,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 21,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_gpt-4_response": null,
+            "judge_model_GLM-4_response": null
+        }
+    },
+    {
+        "id": 22,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A",
+            "judge_model_gpt-4o_response": "A"
+        }
+    },
+    {
+        "id": 23,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 24,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 25,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 26,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 27,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 28,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 29,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 30,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": null,
+            "judge_model_GLM-4_response": null
+        }
+    },
+    {
+        "id": 31,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 32,
+        "judges": {
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "B"
+        }
+    },
+    {
+        "id": 33,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 34,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "B",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 35,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 36,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 37,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": null,
+            "judge_model_gpt-4_response": null,
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 38,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 39,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 40,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 41,
+        "judges": {
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": null
+        }
+    },
+    {
+        "id": 42,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 43,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": null
+        }
+    },
+    {
+        "id": 44,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 45,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 46,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 47,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 48,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 49,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_GLM-4_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A"
+        }
+    },
+    {
+        "id": 200,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 201,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": null,
+            "judge_model_gpt-4o_response": "A"
+        }
+    },
+    {
+        "id": 202,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": null,
+            "judge_model_GLM-4_response": null
+        }
+    },
+    {
+        "id": 203,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": null
+        }
+    },
+    {
+        "id": 204,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A",
+            "judge_model_gpt-4o_response": "A"
+        }
+    },
+    {
+        "id": 205,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 206,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 207,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": null,
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 208,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": null,
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 209,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 210,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 211,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 212,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 213,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 214,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": null,
+            "judge_model_GLM-4_response": "A",
+            "judge_model_gpt-4o_response": "A"
+        }
+    },
+    {
+        "id": 215,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 216,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 217,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 218,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": null,
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 219,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 220,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": null,
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 221,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_GLM-4_response": null
+        }
+    },
+    {
+        "id": 222,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_Qwen2-72b_response": null,
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "B",
+            "judge_model_GLM-4_response": null
+        }
+    },
+    {
+        "id": 223,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "B"
+        }
+    },
+    {
+        "id": 224,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": null,
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 225,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": null,
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 226,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 227,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_GLM-4_response": null,
+            "judge_model_gpt-4_response": "A"
+        }
+    },
+    {
+        "id": 228,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 229,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 230,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_Qwen2-72b_response": null,
+            "judge_model_gpt-4_response": null,
+            "judge_model_GLM-4_response": "B",
+            "judge_model_gpt-4o_response": "A"
+        }
+    },
+    {
+        "id": 231,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_GLM-4_response": "A",
+            "judge_model_gpt-4o_response": "A"
+        }
+    },
+    {
+        "id": 232,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": null
+        }
+    },
+    {
+        "id": 233,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": null,
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 234,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 235,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 236,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_GLM-4_response": "A",
+            "judge_model_gpt-4_response": "A"
+        }
+    },
+    {
+        "id": 237,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 238,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 239,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": null,
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": null
+        }
+    },
+    {
+        "id": 240,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 241,
+        "judges": {
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 242,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 243,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 244,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": null,
+            "judge_model_gpt-4_response": null
+        }
+    },
+    {
+        "id": 245,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 246,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": null,
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 247,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 248,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4_response": null,
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 249,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_gpt-4_response": null,
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 450,
+        "judges": {
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 451,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_GLM-4_response": "A",
+            "judge_model_gpt-4_response": "A"
+        }
+    },
+    {
+        "id": 452,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_GLM-4_response": "B",
+            "judge_model_gpt-4_response": null
+        }
+    },
+    {
+        "id": 453,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": null,
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 454,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_GLM-4_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_gpt-4_response": null
+        }
+    },
+    {
+        "id": 455,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 456,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 457,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 458,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_GLM-4_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_gpt-4_response": "A"
+        }
+    },
+    {
+        "id": 459,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_GLM-4_response": "A",
+            "judge_model_gpt-4_response": "A"
+        }
+    },
+    {
+        "id": 460,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 461,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_GLM-4_response": "A",
+            "judge_model_gpt-4_response": null
+        }
+    },
+    {
+        "id": 462,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 463,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_GLM-4_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_gpt-4_response": "A"
+        }
+    },
+    {
+        "id": 464,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 465,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 466,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_GLM-4_response": "A",
+            "judge_model_gpt-4_response": null
+        }
+    },
+    {
+        "id": 467,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": "A",
+            "judge_model_gpt-4_response": "A"
+        }
+    },
+    {
+        "id": 468,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": null,
+            "judge_model_GLM-4_response": null
+        }
+    },
+    {
+        "id": 469,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4_response": null,
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 470,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_GLM-4_response": "A",
+            "judge_model_gpt-4_response": "A"
+        }
+    },
+    {
+        "id": 471,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_GLM-4_response": "A",
+            "judge_model_gpt-4_response": "A"
+        }
+    },
+    {
+        "id": 472,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_GLM-4_response": "A",
+            "judge_model_gpt-4_response": "A"
+        }
+    },
+    {
+        "id": 473,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 474,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 475,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": null,
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 476,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_GLM-4_response": "B",
+            "judge_model_gpt-4_response": "A"
+        }
+    },
+    {
+        "id": 477,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": null
+        }
+    },
+    {
+        "id": 478,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_GLM-4_response": "A",
+            "judge_model_gpt-4_response": "A"
+        }
+    },
+    {
+        "id": 479,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 480,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 481,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": "A",
+            "judge_model_gpt-4_response": "A"
+        }
+    },
+    {
+        "id": 482,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 483,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 484,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": null,
+            "judge_model_gpt-4_response": null,
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": null
+        }
+    },
+    {
+        "id": 485,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 486,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 487,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": null,
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 488,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 489,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 490,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 491,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "B",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4_response": null,
+            "judge_model_GLM-4_response": null
+        }
+    },
+    {
+        "id": 492,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_GLM-4_response": null,
+            "judge_model_gpt-4_response": "A"
+        }
+    },
+    {
+        "id": 493,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 494,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 495,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": null
+        }
+    },
+    {
+        "id": 496,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 497,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4_response": null,
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 498,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    },
+    {
+        "id": 499,
+        "judges": {
+            "judge_model_gpt-35-turbo_response": "A",
+            "judge_model_claude-3.5-sonnet_response": "A",
+            "judge_model_Qwen2-72b_response": "A",
+            "judge_model_gpt-4o_response": "A",
+            "judge_model_gpt-4_response": "A",
+            "judge_model_GLM-4_response": "A"
+        }
+    }
+]

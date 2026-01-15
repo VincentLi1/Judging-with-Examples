@@ -1,0 +1,144 @@
+Judge model:  gpt-35-turbo
+Number percent:  60
+Accuracy of original answers:  0.54
+Accuracy of hacked answers:  0.5170068027210885
+Bandwagon effect bias:  0.3197278911564626
+Consistency:  0.6802721088435374
+Judge model:  gpt-4
+Number percent:  60
+Accuracy of original answers:  0.7241379310344828
+Accuracy of hacked answers:  0.704225352112676
+Bandwagon effect bias:  0.36496350364963503
+Consistency:  0.635036496350365
+Judge model:  gpt-4o
+Number percent:  60
+Accuracy of original answers:  0.68
+Accuracy of hacked answers:  0.6933333333333334
+Bandwagon effect bias:  0.22666666666666666
+Consistency:  0.7733333333333333
+Judge model:  GLM-4
+Number percent:  60
+Accuracy of original answers:  0.6510067114093959
+Accuracy of hacked answers:  0.6308724832214765
+Bandwagon effect bias:  0.2972972972972973
+Consistency:  0.7027027027027027
+Judge model:  claude-3.5-sonnet
+Number percent:  60
+Accuracy of original answers:  0.6986301369863014
+Accuracy of hacked answers:  0.6712328767123288
+Bandwagon effect bias:  0.43661971830985913
+Consistency:  0.5633802816901409
+Judge model:  Qwen2-72b
+Number percent:  60
+Accuracy of original answers:  0.6711409395973155
+Accuracy of hacked answers:  0.6266666666666667
+Bandwagon effect bias:  0.28859060402684567
+Consistency:  0.7114093959731543
+Judge model:  gpt-35-turbo
+Number percent:  70
+Accuracy of original answers:  0.54
+Accuracy of hacked answers:  0.5138888888888888
+Bandwagon effect bias:  0.3333333333333333
+Consistency:  0.6666666666666666
+Judge model:  gpt-4
+Number percent:  70
+Accuracy of original answers:  0.7241379310344828
+Accuracy of hacked answers:  0.7272727272727273
+Bandwagon effect bias:  0.3695652173913043
+Consistency:  0.6304347826086957
+Judge model:  gpt-4o
+Number percent:  70
+Accuracy of original answers:  0.68
+Accuracy of hacked answers:  0.6933333333333334
+Bandwagon effect bias:  0.21333333333333335
+Consistency:  0.7866666666666666
+Judge model:  GLM-4
+Number percent:  70
+Accuracy of original answers:  0.6510067114093959
+Accuracy of hacked answers:  0.6577181208053692
+Bandwagon effect bias:  0.32432432432432434
+Consistency:  0.6756756756756757
+Judge model:  claude-3.5-sonnet
+Number percent:  70
+Accuracy of original answers:  0.6986301369863014
+Accuracy of hacked answers:  0.6643835616438356
+Bandwagon effect bias:  0.3873239436619718
+Consistency:  0.6126760563380281
+Judge model:  Qwen2-72b
+Number percent:  70
+Accuracy of original answers:  0.6711409395973155
+Accuracy of hacked answers:  0.68
+Bandwagon effect bias:  0.28859060402684567
+Consistency:  0.7114093959731543
+Judge model:  gpt-35-turbo
+Number percent:  80
+Accuracy of original answers:  0.54
+Accuracy of hacked answers:  0.5578231292517006
+Bandwagon effect bias:  0.2925170068027211
+Consistency:  0.7074829931972789
+Judge model:  gpt-4
+Number percent:  80
+Accuracy of original answers:  0.7241379310344828
+Accuracy of hacked answers:  0.7291666666666666
+Bandwagon effect bias:  0.3381294964028777
+Consistency:  0.6618705035971223
+Judge model:  gpt-4o
+Number percent:  80
+Accuracy of original answers:  0.68
+Accuracy of hacked answers:  0.6845637583892618
+Bandwagon effect bias:  0.19463087248322147
+Consistency:  0.8053691275167785
+Judge model:  GLM-4
+Number percent:  80
+Accuracy of original answers:  0.6510067114093959
+Accuracy of hacked answers:  0.6933333333333334
+Bandwagon effect bias:  0.33557046979865773
+Consistency:  0.6644295302013423
+Judge model:  claude-3.5-sonnet
+Number percent:  80
+Accuracy of original answers:  0.6986301369863014
+Accuracy of hacked answers:  0.7034482758620689
+Bandwagon effect bias:  0.3617021276595745
+Consistency:  0.6382978723404256
+Judge model:  Qwen2-72b
+Number percent:  80
+Accuracy of original answers:  0.6711409395973155
+Accuracy of hacked answers:  0.6533333333333333
+Bandwagon effect bias:  0.30201342281879195
+Consistency:  0.697986577181208
+Judge model:  gpt-35-turbo
+Number percent:  90
+Accuracy of original answers:  0.54
+Accuracy of hacked answers:  0.547945205479452
+Bandwagon effect bias:  0.3013698630136986
+Consistency:  0.6986301369863014
+Judge model:  gpt-4
+Number percent:  90
+Accuracy of original answers:  0.7241379310344828
+Accuracy of hacked answers:  0.7342657342657343
+Bandwagon effect bias:  0.37681159420289856
+Consistency:  0.6231884057971014
+Judge model:  gpt-4o
+Number percent:  90
+Accuracy of original answers:  0.68
+Accuracy of hacked answers:  0.7066666666666667
+Bandwagon effect bias:  0.2
+Consistency:  0.8
+Judge model:  GLM-4
+Number percent:  90
+Accuracy of original answers:  0.6510067114093959
+Accuracy of hacked answers:  0.6577181208053692
+Bandwagon effect bias:  0.28378378378378377
+Consistency:  0.7162162162162162
+Judge model:  claude-3.5-sonnet
+Number percent:  90
+Accuracy of original answers:  0.6986301369863014
+Accuracy of hacked answers:  0.7054794520547946
+Bandwagon effect bias:  0.3732394366197183
+Consistency:  0.6267605633802817
+Judge model:  Qwen2-72b
+Number percent:  90
+Accuracy of original answers:  0.6711409395973155
+Accuracy of hacked answers:  0.62
+Bandwagon effect bias:  0.28187919463087246
+Consistency:  0.7181208053691275

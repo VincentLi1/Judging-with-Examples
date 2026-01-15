@@ -85,7 +85,8 @@ torchvision @ file:///home/conda/feedstock_root/build_artifacts/torchvision_1724
 tornado @ file:///home/conda/feedstock_root/build_artifacts/tornado_1756854920986/work
 tqdm @ file:///home/conda/feedstock_root/build_artifacts/tqdm_1735661334605/work
 traitlets @ file:///home/conda/feedstock_root/build_artifacts/traitlets_1733367359838/work
-transformers @ file:///home/conda/feedstock_root/build_artifacts/transformers_1760462214437/work
+transformers==5.0.0rc0
+accelerate==1.12.0
 typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_typing_extensions_1756220668/work
 tzdata @ file:///home/conda/feedstock_root/build_artifacts/python-tzdata_1742745135198/work
 unicodedata2 @ file:///home/conda/feedstock_root/build_artifacts/unicodedata2_1756494453070/work
@@ -97,3 +98,4 @@ xxhash @ file:///home/conda/feedstock_root/build_artifacts/python-xxhash_1759440
 yarl @ file:///home/conda/feedstock_root/build_artifacts/yarl_1749554822108/work
 zipp @ file:///home/conda/feedstock_root/build_artifacts/zipp_1749421620841/work
 zstandard==0.25.0
+google-genai==1.54.0

@@ -39,7 +39,7 @@ class BaseLLM(ABC):
         """
 
         if AutoTokenizer is None or AutoModelForCausalLM is None:
-            raise ModuleNotFoundError("transformers is required to instantiate BaseLLM")
+            raise ModuleNotFoundError("transformers and vllm are required to instantiate BaseVLLM")
 
         self.device = device
         self.tokenizer = AutoTokenizer.from_pretrained(model_pt)
@@ -74,26 +74,57 @@ class BaseLLM(ABC):
             padded_tensors[i, -len(t) :] = torch.tensor(t, dtype=torch.long)
         return padded_tensors
 
-    def right_pad(self, tensors: torch.Tensor, max_length: int = -1) -> torch.Tensor:
-        """
-        Right pads a batch of tensors with the specified maximum length.
+class BaseVLLM(ABC):
+    STOP_TOKEN_IDS = None
 
-        Args:
-            tensors (torch.Tensor): The batch of tensors to be padded.
-            max_length (int, optional): The maximum length to pad the tensors to. If not provided, the maximum length
-                among the tensors in the batch will be used. Defaults to -1.
+    def __init__(
+        self,
+        model_pt: str,
+        tensor_parallel_size: int,
+        max_input_len: int,
+        max_model_len: int,
+        gpu_memory_utilization: float = 0.9,
+        swap_space: int = 4,
+        dtype: str = "auto",
+        quantization: str | None = None,
+        download_dir: str | None = None,
+        enforce_eager: bool = False,
+        tokenizer_mode: str = "slow",
+    ):
+        """Initializes the BaseVLLM."""
+        if AutoTokenizer is None or LLM is None:
+            raise ModuleNotFoundError("transformers and vllm are required to instantiate BaseVLLM")
 
-        Returns:
-            torch.Tensor: The padded batch of tensors.
-        """
-        if max_length < 0:
-            max_length = max([len(t) for t in tensors])
-        padded_tensors = torch.full(
-            (len(tensors), max_length), self.tokenizer.pad_token_id, dtype=torch.long
+        tokenizer = AutoTokenizer.from_pretrained(model_pt, use_fast=False, trust_remote_code=True)
+
+        tokenizer_arg = model_pt  # ensure string
+        if model_pt.lower().endswith("glm-4.6v-flash") or "glm-4.6v-flash" in model_pt.lower():
+            try:
+                import vllm.transformers_utils.runai_utils as _runai
+                _runai.is_runai_obj_uri = lambda x: False
+            except Exception:
+                pass
+
+
+        self.model = LLM(
+            model=model_pt,
+            tokenizer=tokenizer_arg,
+            tensor_parallel_size=tensor_parallel_size,
+            download_dir=download_dir,
+            gpu_memory_utilization=gpu_memory_utilization,
+            dtype=dtype,
+            swap_space=swap_space,
+            quantization=quantization,
+            enforce_eager=enforce_eager,
+            max_model_len=max_model_len,
+            tokenizer_mode=tokenizer_mode,
+            trust_remote_code=True,
         )
-        for i, t in enumerate(tensors):
-            padded_tensors[i, : len(t)] = torch.tensor(t, dtype=torch.long)
-        return padded_tensors
+        self.tokenizer = tokenizer
+        self.max_input_len = max_input_len
+        self.max_model_len = max_model_len
+
+
 
     @abstractmethod
     def get_scoring_prompt(
@@ -184,12 +215,25 @@ class BaseVLLM(ABC):
             tokenizer_mode (str, optional): The tokenizer mode. Defaults to "slow".
         """
 
+        """Initializes the BaseVLLM."""
         if AutoTokenizer is None or LLM is None:
             raise ModuleNotFoundError("transformers and vllm are required to instantiate BaseVLLM")
 
         tokenizer = AutoTokenizer.from_pretrained(model_pt, use_fast=False, trust_remote_code=True)
+
+        # Pass tokenizer path to vLLM to avoid tokenizer objects hitting runai utils.
+        tokenizer_arg = model_pt
+
+        tok_cls = type(tokenizer)
+        if not hasattr(tok_cls, "all_special_tokens_extended"):
+            try:
+                setattr(tok_cls, "all_special_tokens_extended", property(lambda self: self.all_special_tokens))
+            except Exception:
+                pass
+
         self.model = LLM(
             model=model_pt,
+            tokenizer=tokenizer_arg,
             tensor_parallel_size=tensor_parallel_size,
             download_dir=download_dir,
             gpu_memory_utilization=gpu_memory_utilization,
@@ -204,6 +248,7 @@ class BaseVLLM(ABC):
         self.tokenizer = tokenizer
         self.max_input_len = max_input_len
         self.max_model_len = max_model_len
+
 
     @abstractmethod
     def get_generation_prompt(
@@ -228,6 +273,8 @@ class BaseVLLM(ABC):
         max_tokens: int = 1024,
         temperature: float = 1.0,
         top_p: float = 1.0,
+        top_k: int | None = None,
+        repetition_penalty: float | None = None,
         logprobs: int | None = None,
         use_tqdm: bool = True,
         input_length: int | None = None,
@@ -266,6 +313,8 @@ class BaseVLLM(ABC):
             temperature=temperature,
             max_tokens=max_tokens,
             top_p=top_p,
+            top_k=top_k,
+            repetition_penalty=repetition_penalty,
             logprobs=logprobs,
             stop_token_ids=self.STOP_TOKEN_IDS,
         )

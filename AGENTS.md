@@ -22,17 +22,47 @@
 - Larger Qwen runs (BigGen paraphrase counts ≥5 or multi-dataset sweeps) require A100-80G nodes to avoid KV-cache OOM on 16 GB GPUs—use `--constraint=a100-80g` for those, while smaller N (≤3) can stay on the general `gpu` pool.
 - When working from the local machine, reconnect via `ssh <host>` before running commands; if the connection fails due to a lingering control socket, rerun the SSH command with escalation (which clears the socket) and proceed.
 - Bouchet cluster GPU notes:
-  - Dedicated H200 interactive node now lives in `gpu_devel`; use it for short debugging sessions (<=6h, max 2 GPUs per user, 2 submitted jobs).
-  - `gpu_h200` is batch-only for H200 jobs; queue limits: 16 GPUs/user, 16 running jobs, 48-hour max.
-  - `gpu` partition hosts Emerald Rapids + RTX 5000 Ada nodes (4×32 GB each). Defaults: 1h, 1 CPU, 5 GiB RAM per CPU; request GPUs explicitly, e.g. `--gpus=rtx_5000_ada:2`. Queue limits: 32 GPUs per user/group, 32 running jobs, 48-hour max.
-  - Match `--cpus-per-task` and `--mem` to single-node capacity (48 cores, 479 GiB RAM) when targeting RTX 5000 Ada nodes.
 
-- **Partition cheat sheet:**
-  - `gpu`: mix of nodes (A5000 24 GB, A100 40/80 GB, V100 16 GB, RTX 5000 16 GB, RTX 2080 Ti 11 GB). Keep `--nodes=1` and request ≤4 GPUs; stay within node memory (`--mem` ≤ available per type, e.g. 200 G fits A5000 nodes, 360 G fits A100‑40G).
-  - `gpu_devel`: shorter queue/time limit; includes A5000/A100/RTX3090/RTX5000/V100. Also single-node jobs; adjust `--mem` to the target node (24–984 GiB depending on GPU).
-- If local tests (e.g., `test_pointwise_pipeline.py`) are killed by OOM, rerun them under Slurm: `srun -p gpu_devel --nodes=1 --gpus=2 --time=1:00:00 --mem=32G <command>`.
-- When submitting long runs, pin everything to a single host to avoid Ray placement issues: include `--nodes=1 --gpus-per-node=2` in `sbatch`.
-- ReIFE submodule is vendored in `ReIFE/`; datasets cloned into `llm_grader/`, `prometheus-eval/`, `FLASK/`.
+## BiGGen-Bench score blacklist
+The judge occasionally copies raw integers (action IDs, timestamp offsets, plan lengths, etc.) into the score channel. When that happens the deviations blow past the 0–5 rubric and corrupt robustness metrics. Until upstream fixes the grading prompts, `BiGGenDatasetLoader` automatically skips the following tasks (examples reference the latest qwen2.5-14B outputs):
+
+- `api_documentation` (tool_usage) – perturbation:original=-10.0 in example `tool_usage_api_documentation_1` (results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp0p0.jsonl:627)
+- `checklist_generation` (theory_of_mind) – perturbation:original=7.0 in example `theory_of_mind_checklist_generation_4` (results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp0p0.jsonl:530)
+- `code_revision` (refinement) – perturbation:original=27.0 in example `refinement_code_revision_7` (results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp0p0.jsonl:378)
+- `coding_for_math` (tool_usage) – perturbation:original=8.0 in example `tool_usage_coding_for_math_5` (results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp0p0.jsonl:641)
+- `competition_mwp` (reasoning) – result_score=529.0 in example `reasoning_competition_mwp_0` (results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp0p0.jsonl:281)
+- `compositional_planning` (planning) – perturbation:original=6.0 in example `planning_compositional_planning_1` (results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp0p0.jsonl:202)
+- `deductive` (reasoning) – perturbation:paraphrase_14=-2.0 in example `reasoning_deductive_1` (results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp1p0.jsonl:292)
+- `determine_what_is_wrong` (safety) – perturbation:original=10.0 in example `safety_determine_what_is_wrong_6` (results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp0p0.jsonl:453)
+- `essay_revision` (refinement) – perturbation:original=13.0 in example `refinement_essay_revision_1` (results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp0p0.jsonl:382)
+- `executable_actions` (instruction_following) – perturbation:paraphrase_10=10.0 in example `instruction_following_executable_actions_9` (results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp1p0.jsonl:140)
+- `faithful_explanation` (instruction_following) – perturbation:paraphrase_7=7.0 in example `instruction_following_faithful_explanation_0` (results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp0p7.jsonl:141)
+- `faux_pas_explanation` (theory_of_mind) – perturbation:original=6.0 in example `theory_of_mind_faux_pas_explanation_8` (results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp0p0.jsonl:544)
+- `high_school_mwp` (reasoning) – perturbation:paraphrase_2=7.5 in example `reasoning_high_school_mwp_2` (results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp0p3.jsonl:313)
+- `hypothesis_proposal` (reasoning) – perturbation:paraphrase_9=110.0 in example `reasoning_hypothesis_proposal_5` (results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp1p0.jsonl:326)
+- `inductive` (reasoning) – perturbation:paraphrase_6=-1.0 in example `reasoning_inductive_1` (results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp0p7.jsonl:332)
+- `json_csv_xml` (grounding) – result_score=100.0 in example `grounding_json_csv_xml_0` (results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp0p0.jsonl:31)
+- `knowledge_graph` (theory_of_mind) – perturbation:paraphrase_16=6.0 in example `theory_of_mind_knowledge_graph_9` (results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp0p3.jsonl:575)
+- `legal_reason` (reasoning) – perturbation:paraphrase_2=198.0 in example `reasoning_legal_reason_4` (results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp1p0.jsonl:345)
+- `math_proof` (reasoning) – result_score=90.0 in example `reasoning_math_proof_0` (results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp0p0.jsonl:351)
+- `mentioning_potential_harm` (safety) – perturbation:original=8.0 in example `safety_mentioning_potential_harm_4` (results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp0p0.jsonl:501)
+- `moral_belief` (safety) – perturbation:original=8.0 in example `safety_moral_belief_1` (results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp0p0.jsonl:508)
+- `multi_step` (tool_usage) – result_score=95.0 in example `tool_usage_multi_step_6` (results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp0p0.jsonl:662)
+- `multi_task_inference` (instruction_following) – perturbation:original=894.0 in example `instruction_following_multi_task_inference_4` (results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp0p0.jsonl:185)
+- `personal_assistant` (planning) – perturbation:original=7.0 in example `planning_personal_assistant_4` (results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp0p0.jsonl:235)
+- `rationale_revision` (refinement) – result_score=54.0 in example `refinement_rationale_revision_0` (results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp0p0.jsonl:409)
+- `replanning` (refinement) – result_score=8.0 in example `refinement_replanning_8` (results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp0p0.jsonl:426)
+- `response_generation` (theory_of_mind) – perturbation:original=7.0 in example `theory_of_mind_response_generation_8` (results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp0p7.jsonl:594)
+- `revision_with_tools` (refinement) – result_score=7.0 in example `refinement_revision_with_tools_2` (results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp0p0.jsonl:430)
+- `reward_modeling` (planning) – perturbation:original=-1.0 in example `planning_reward_modeling_9` (results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp0p0.jsonl:250)
+- `search_engine` (tool_usage) – perturbation:paraphrase_20=2024.0 in example `tool_usage_search_engine_3` (results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp0p7.jsonl:669)
+- `self_correction` (refinement) – result_score=10.0 in example `refinement_self_correction_2` (results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp0p0.jsonl:440)
+- `table_reason` (reasoning) – perturbation:original=7.0 in example `reasoning_table_reason_0` (results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp0p0.jsonl:361)
+- `temporal_grounding` (grounding) – perturbation:original=2010.0 in example `grounding_temporal_grounding_6` (results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp0p0.jsonl:97)
+- `time_traveler_dilemma` (theory_of_mind) – perturbation:paraphrase_18=16.0 in example `theory_of_mind_time_traveler_dilemma_0` (results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp1p0.jsonl:606)
+- `tool_making` (tool_usage) – perturbation:paraphrase_14=100.0 in example `tool_usage_tool_making_2` (results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp1p0.jsonl:678)
+- `web_browsing` (tool_usage) – result_score=4017.0 in example `tool_usage_web_browsing_2` (results/biggen_bench/biggen_bench_pointwise_vanilla.base_pointwise.qwen2.5-14b-instruct-temp0p0.jsonl:688)
+
 
 ## Core Workflows
 - `pointwise_pipeline.py`: runs the judge over selected datasets, optionally with prompt perturbations.  

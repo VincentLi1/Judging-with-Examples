@@ -1,0 +1,79 @@
+Position BIAS (g.t)
+Judge Model: gpt-35-turbo
+Accuracy: 0.5793103448275863
+Accuracy_r: 0.5379310344827586
+Position Bias: 0.43448275862068964
+Accuracy_1_error_2: 0.23908045977011494
+Accuracy_2_error_1: 0.19540229885057472
+Judge Model: gpt-4
+Accuracy: 0.6690307328605201
+Accuracy_r: 0.6910377358490566
+Position Bias: 0.18203309692671396
+Accuracy_1_error_2: 0.08274231678486997
+Accuracy_2_error_1: 0.09692671394799054
+Judge Model: gpt-4o
+Accuracy: 0.684931506849315
+Accuracy_r: 0.6621004566210046
+Position Bias: 0.2237442922374429
+Accuracy_1_error_2: 0.1232876712328767
+Accuracy_2_error_1: 0.1004566210045662
+Judge Model: GLM-4
+Accuracy: 0.6415525114155252
+Accuracy_r: 0.639269406392694
+Position Bias: 0.2191780821917808
+Accuracy_1_error_2: 0.1095890410958904
+Accuracy_2_error_1: 0.1095890410958904
+Judge Model: claude-3.5-sonnet
+Accuracy: 0.6720183486238532
+Accuracy_r: 0.6935483870967742
+Position Bias: 0.16820276497695852
+Accuracy_1_error_2: 0.07142857142857142
+Accuracy_2_error_1: 0.0944700460829493
+Judge Model: Qwen2-72b
+Accuracy: 0.678082191780822
+Accuracy_r: 0.6484018264840182
+Position Bias: 0.23972602739726026
+Accuracy_1_error_2: 0.13470319634703196
+Accuracy_2_error_1: 0.1050228310502283
+
+<<<<<<< HEAD
+=======
+Position BIAS
+Generate_model = ['mixtral-8x22b', 'mistral-7b']
+Judge Model: gpt-35-turbo
+First chosen A is better and then be hacked: 0.4988558352402746
+First chosen B is better and then be hacked: 0.006864988558352402
+First chosen equally good and then be hacked: 0.013729977116704805
+Position Bias: 0.5194508009153318
+Consistency: 0.4691075514874142
+Judge Model: gpt-4
+First chosen A is better and then be hacked: 0.06150341685649203
+First chosen B is better and then be hacked: 0.025056947608200455
+First chosen equally good and then be hacked: 0.10250569476082004
+Position Bias: 0.18906605922551253
+Consistency: 0.7061503416856492
+Judge Model: gpt-4o
+First chosen A is better and then be hacked: 0.26651480637813213
+First chosen B is better and then be hacked: 0.018223234624145785
+First chosen equally good and then be hacked: 0.00683371298405467
+Position Bias: 0.29157175398633256
+Consistency: 0.6924829157175398
+Judge Model: GLM-4
+First chosen A is better and then be hacked: 0.1004566210045662
+First chosen B is better and then be hacked: 0.06164383561643835
+First chosen equally good and then be hacked: 0.0410958904109589
+Position Bias: 0.20319634703196346
+Consistency: 0.728310502283105
+Judge Model: claude-3.5-sonnet
+First chosen A is better and then be hacked: 0.06192660550458716
+First chosen B is better and then be hacked: 0.07110091743119266
+First chosen equally good and then be hacked: 0.027522935779816515
+Position Bias: 0.16055045871559634
+Consistency: 0.7798165137614679
+Judge Model: Qwen2-72b
+First chosen A is better and then be hacked: 0.1958997722095672
+First chosen B is better and then be hacked: 0.009111617312072893
+First chosen equally good and then be hacked: 0.04328018223234624
+Position Bias: 0.24829157175398633
+Consistency: 0.7107061503416856
+>>>>>>> 280721ac1c68685200e59331790aa5f8faf8dae5

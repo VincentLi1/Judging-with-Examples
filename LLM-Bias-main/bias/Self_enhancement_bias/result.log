@@ -1,0 +1,156 @@
+------------------------------------------
+Judge model:  gpt-35-turbo
+Test model:  gpt-35-turbo
+Average rating:  5.21
+Z-score Normalized average rating:  -0.7049035976069866
+Min-Max Normalized average rating:  0.4677777777777778
+Test model:  gpt-4
+Average rating:  6.4
+Z-score Normalized average rating:  -0.08319246450519581
+Min-Max Normalized average rating:  0.6000000000000001
+Test model:  gpt-4o
+Average rating:  6.474747474747475
+Z-score Normalized average rating:  -0.04414092062137237
+Min-Max Normalized average rating:  0.6083052749719416
+Test model:  GLM-4
+Average rating:  6.02
+Z-score Normalized average rating:  -0.28172207003349914
+Min-Max Normalized average rating:  0.5577777777777777
+Test model:  claude-3.5-sonnet
+Average rating:  6.39
+Z-score Normalized average rating:  -0.08841692780857255
+Min-Max Normalized average rating:  0.5988888888888888
+Test model:  Qwen2-72b
+Average rating:  5.95
+Z-score Normalized average rating:  -0.31829331315713355
+Min-Max Normalized average rating:  0.55
+------------------------------------------
+Judge model:  gpt-4
+Test model:  gpt-35-turbo
+Average rating:  5.67
+Z-score Normalized average rating:  -0.46457828565167264
+Min-Max Normalized average rating:  0.5188888888888888
+Test model:  gpt-4
+Average rating:  6.98
+Z-score Normalized average rating:  0.21982640709063497
+Min-Max Normalized average rating:  0.6644444444444445
+Test model:  gpt-4o
+Average rating:  6.79
+Z-score Normalized average rating:  0.12056160432648332
+Min-Max Normalized average rating:  0.6433333333333333
+Test model:  GLM-4
+Average rating:  6.38
+Z-score Normalized average rating:  -0.09364139111194883
+Min-Max Normalized average rating:  0.5977777777777777
+Test model:  claude-3.5-sonnet
+Average rating:  6.25
+Z-score Normalized average rating:  -0.16155941405584187
+Min-Max Normalized average rating:  0.5833333333333334
+Test model:  Qwen2-72b
+Average rating:  6.82
+Z-score Normalized average rating:  0.13623499423661262
+Min-Max Normalized average rating:  0.6466666666666667
+------------------------------------------
+Judge model:  gpt-4o
+Test model:  gpt-35-turbo
+Average rating:  5.568421052631579
+Z-score Normalized average rating:  -0.5176478339438644
+Min-Max Normalized average rating:  0.5076023391812865
+Test model:  gpt-4
+Average rating:  7.0
+Z-score Normalized average rating:  0.23027533369738754
+Min-Max Normalized average rating:  0.6666666666666666
+Test model:  gpt-4o
+Average rating:  7.010204081632653
+Z-score Normalized average rating:  0.23560641870083301
+Min-Max Normalized average rating:  0.6678004535147393
+Test model:  GLM-4
+Average rating:  6.416666666666667
+Z-score Normalized average rating:  -0.07448502566623519
+Min-Max Normalized average rating:  0.6018518518518519
+Test model:  claude-3.5-sonnet
+Average rating:  6.666666666666667
+Z-score Normalized average rating:  0.056126556918174614
+Min-Max Normalized average rating:  0.6296296296296297
+Test model:  Qwen2-72b
+Average rating:  6.744897959183674
+Z-score Normalized average rating:  0.09699820861125522
+Min-Max Normalized average rating:  0.6383219954648527
+------------------------------------------
+Judge model:  GLM-4
+Test model:  gpt-35-turbo
+Average rating:  5.614583333333333
+Z-score Normalized average rating:  -0.4935305197912169
+Min-Max Normalized average rating:  0.5127314814814814
+Test model:  gpt-4
+Average rating:  6.561224489795919
+Z-score Normalized average rating:  0.001038678549239866
+Min-Max Normalized average rating:  0.6179138321995465
+Test model:  gpt-4o
+Average rating:  6.622448979591836
+Z-score Normalized average rating:  0.033025188569911344
+Min-Max Normalized average rating:  0.6247165532879818
+Test model:  GLM-4
+Average rating:  6.552083333333333
+Z-score Normalized average rating:  -0.003737085099680186
+Min-Max Normalized average rating:  0.6168981481481481
+Test model:  claude-3.5-sonnet
+Average rating:  6.288659793814433
+Z-score Normalized average rating:  -0.14136174664588166
+Min-Max Normalized average rating:  0.5876288659793815
+Test model:  Qwen2-72b
+Average rating:  6.525252525252525
+Z-score Normalized average rating:  -0.017754742321491778
+Min-Max Normalized average rating:  0.6139169472502806
+------------------------------------------
+Judge model:  claude-3.5-sonnet
+Test model:  gpt-35-turbo
+Average rating:  5.65
+Z-score Normalized average rating:  -0.4750272122584252
+Min-Max Normalized average rating:  0.5166666666666667
+Test model:  gpt-4
+Average rating:  7.08
+Z-score Normalized average rating:  0.2720710401243987
+Min-Max Normalized average rating:  0.6755555555555556
+Test model:  gpt-4o
+Average rating:  7.16
+Z-score Normalized average rating:  0.3138667465514099
+Min-Max Normalized average rating:  0.6844444444444444
+Test model:  GLM-4
+Average rating:  6.67
+Z-score Normalized average rating:  0.057868044685966555
+Min-Max Normalized average rating:  0.63
+Test model:  claude-3.5-sonnet
+Average rating:  7.04
+Z-score Normalized average rating:  0.25117318691089313
+Min-Max Normalized average rating:  0.6711111111111111
+Test model:  Qwen2-72b
+Average rating:  6.86
+Z-score Normalized average rating:  0.1571328474501182
+Min-Max Normalized average rating:  0.6511111111111112
+------------------------------------------
+Judge model:  Qwen2-72b
+Test model:  gpt-35-turbo
+Average rating:  6.08
+Z-score Normalized average rating:  -0.2503752902132405
+Min-Max Normalized average rating:  0.5644444444444444
+Test model:  gpt-4
+Average rating:  7.474747474747475
+Z-score Normalized average rating:  0.47830540971626684
+Min-Max Normalized average rating:  0.7194163860830528
+Test model:  gpt-4o
+Average rating:  7.424242424242424
+Z-score Normalized average rating:  0.4519192314163858
+Min-Max Normalized average rating:  0.7138047138047138
+Test model:  GLM-4
+Average rating:  6.92
+Z-score Normalized average rating:  0.18847962727037634
+Min-Max Normalized average rating:  0.6577777777777778
+Test model:  claude-3.5-sonnet
+Average rating:  7.17
+Z-score Normalized average rating:  0.3190912098547862
+Min-Max Normalized average rating:  0.6855555555555556
+Test model:  Qwen2-72b
+Average rating:  7.64
+Z-score Normalized average rating:  0.5646409851134765
+Min-Max Normalized average rating:  0.7377777777777778

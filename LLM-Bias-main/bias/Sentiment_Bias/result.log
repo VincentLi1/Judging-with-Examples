@@ -1,0 +1,134 @@
+hack type: different sentiments
+Judge Model: gpt-35-turbo
+Accuracy Original: 0.9248496994
+Accuracy changeAnswer1toCheerful: 0.81
+Accuracy changeAnswer2toCheerful: 0.9033333333
+Accuracy changeAnswer1toSad: 0.6163934426
+Accuracy changeAnswer2toSad: 0.9233333333
+Accuracy changeAnswer1toAngry: 0.5766666667
+Accuracy changeAnswer2toAngry: 0.98
+Accuracy changeAnswer1toFear: 0.59
+Accuracy changeAnswer2toFear: 0.9366666667
+
+Judge Model: gpt-4
+Accuracy Original: 0.9295261239
+Accuracy changeAnswer1toCheerful: 0.6147186147
+Accuracy changeAnswer2toCheerful: 0.96484375
+Accuracy changeAnswer1toSad: 0.1948529412
+Accuracy changeAnswer2toSad: 0.9965753425
+Accuracy changeAnswer1toAngry: 0.256227758
+Accuracy changeAnswer2toAngry: 0.9966329966
+Accuracy changeAnswer1toFear: 0.1678571429
+Accuracy changeAnswer2toFear: 1
+
+Judge Model: gpt-4o
+Accuracy Original: 0.989
+Accuracy changeAnswer1toCheerful: 0.7233333333
+Accuracy changeAnswer2toCheerful: 0.98
+Accuracy changeAnswer1toSad: 0.3442622951
+Accuracy changeAnswer2toSad: 0.9933333333
+Accuracy changeAnswer1toAngry: 0.2333333333
+Accuracy changeAnswer2toAngry: 0.9966666667
+Accuracy changeAnswer1toFear: 0.3444816054
+Accuracy changeAnswer2toFear: 0.9966666667
+
+Judge Model: GLM-4
+Accuracy Original: 0.9321058688
+Accuracy changeAnswer1toCheerful: 0.7375565611
+Accuracy changeAnswer2toCheerful: 0.9037656904
+Accuracy changeAnswer1toSad: 0.2350746269
+Accuracy changeAnswer2toSad: 0.9542253521
+Accuracy changeAnswer1toAngry: 0.2981818182
+Accuracy changeAnswer2toAngry: 0.9789473684
+Accuracy changeAnswer1toFear: 0.2116788321
+Accuracy changeAnswer2toFear: 0.9828767123
+
+Judge Model: claude-3.5-sonnet
+Accuracy Original: 0.9748995984
+Accuracy changeAnswer1toCheerful: 0.5892255892
+Accuracy changeAnswer2toCheerful: 0.9966442953
+Accuracy changeAnswer1toSad: 0.2262295082
+Accuracy changeAnswer2toSad: 0.9966666667
+Accuracy changeAnswer1toAngry: 0.2266666667
+Accuracy changeAnswer2toAngry: 1
+Accuracy changeAnswer1toFear: 0.2307692308
+Accuracy changeAnswer2toFear: 1
+
+Judge Model: Qwen2-72b
+Accuracy Original: 0.9348054679
+Accuracy changeAnswer1toCheerful: 0.6993243243
+Accuracy changeAnswer2toCheerful: 0.8805460751
+Accuracy changeAnswer1toSad: 0.2295081967
+Accuracy changeAnswer2toSad: 0.9933333333
+Accuracy changeAnswer1toAngry: 0.2066666667
+Accuracy changeAnswer2toAngry: 0.9966666667
+Accuracy changeAnswer1toFear: 0.1571906355
+Accuracy changeAnswer2toFear: 0.9966666667
+
+HackingRate changeAnswer1toCheerful: 0.1966666667
+HackingRate changeAnswer2toCheerful: 0.09030100334
+HackingRate changeAnswer1toSad: 0.3411371237
+HackingRate changeAnswer2toSad: 0.08361204013
+HackingRate changeAnswer1toAngry: 0.3612040134
+HackingRate changeAnswer2toAngry: 0.05351170569
+HackingRate changeAnswer1toFear: 0.3612040134
+HackingRate changeAnswer2toFear: 0.07692307692
+
+Consistency changeAnswer1toCheerful: 0.8033333333
+Consistency changeAnswer2toCheerful: 0.9096989967
+Consistency changeAnswer1toSad: 0.6588628763
+Consistency changeAnswer2toSad: 0.9163879599
+Consistency changeAnswer1toAngry: 0.6387959866
+Consistency changeAnswer2toAngry: 0.9464882943
+Consistency changeAnswer1toFear: 0.6387959866
+Consistency changeAnswer2toFear: 0.9230769231
+
+Judge Model: gpt-4
+Consistency changeAnswer1toCheerful: 0.6818181818
+Consistency changeAnswer2toCheerful: 0.8878504673
+Consistency changeAnswer1toSad: 0.2706422018
+Consistency changeAnswer2toSad: 0.9201680672
+Consistency changeAnswer1toAngry: 0.3659574468
+Consistency changeAnswer2toAngry: 0.9214876033
+Consistency changeAnswer1toFear: 0.2543859649
+Consistency changeAnswer2toFear: 0.9211618257
+
+Judge Model: gpt-4o
+Consistency changeAnswer1toCheerful: 0.7266666667
+Consistency changeAnswer2toCheerful: 0.97
+Consistency changeAnswer1toSad: 0.3433333333
+Consistency changeAnswer2toSad: 0.9833333333
+Consistency changeAnswer1toAngry: 0.2433333333
+Consistency changeAnswer2toAngry: 0.9866666667
+Consistency changeAnswer1toFear: 0.3545150502
+Consistency changeAnswer2toFear: 0.9866666667
+
+Judge Model: GLM-4
+Consistency changeAnswer1toCheerful: 0.7696335079
+Consistency changeAnswer2toCheerful: 0.9045226131
+Consistency changeAnswer1toSad: 0.3055555556
+Consistency changeAnswer2toSad: 0.9071729958
+Consistency changeAnswer1toAngry: 0.3799126638
+Consistency changeAnswer2toAngry: 0.949790795
+Consistency changeAnswer1toFear: 0.2707423581
+Consistency changeAnswer2toFear: 0.9430894309
+
+Judge Model: claude-3.5-sonnet
+Consistency changeAnswer1toCheerful: 0.6088435374
+Consistency changeAnswer2toCheerful: 0.9762711864
+Consistency changeAnswer1toSad: 0.2592592593
+Consistency changeAnswer2toSad: 0.9696969697
+Consistency changeAnswer1toAngry: 0.2558922559
+Consistency changeAnswer2toAngry: 0.9730639731
+Consistency changeAnswer1toFear: 0.2601351351
+Consistency changeAnswer2toFear: 0.9730639731
+
+Judge Model: Qwen2-72b
+Consistency changeAnswer1toCheerful: 0.7259786477
+Consistency changeAnswer2toCheerful: 0.8705035971
+Consistency changeAnswer1toSad: 0.3074204947
+Consistency changeAnswer2toSad: 0.9293286219
+Consistency changeAnswer1toAngry: 0.2826855124
+Consistency changeAnswer2toAngry: 0.925795053
+Consistency changeAnswer1toFear: 0.2375886525
+Consistency changeAnswer2toFear: 0.925795053

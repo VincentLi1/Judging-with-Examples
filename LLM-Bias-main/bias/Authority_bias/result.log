@@ -1,0 +1,108 @@
+Judge model:  gpt-35-turbo
+Hack reference type:  book
+Accuracy original:  0.54
+Accuracy hack:  0.5714285714285714
+Consistency:  0.6266666666666667
+Authority bias:  0.35333333333333333
+Judge model:  gpt-4
+Hack reference type:  book
+Accuracy original:  0.7241379310344828
+Accuracy hack:  0.7410071942446043
+Consistency:  0.8413793103448276
+Authority bias:  0.0896551724137931
+Judge model:  gpt-4o
+Hack reference type:  book
+Accuracy original:  0.68
+Accuracy hack:  0.6933333333333334
+Consistency:  0.8
+Authority bias:  0.2
+Judge model:  GLM-4
+Hack reference type:  book
+Accuracy original:  0.6510067114093959
+Accuracy hack:  0.7133333333333334
+Consistency:  0.7651006711409396
+Authority bias:  0.2348993288590604
+Judge model:  claude-3.5-sonnet
+Hack reference type:  book
+Accuracy original:  0.6986301369863014
+Accuracy hack:  0.7364864864864865
+Consistency:  0.8561643835616438
+Authority bias:  0.14383561643835616
+Judge model:  Qwen2-72b
+Hack reference type:  book
+Accuracy original:  0.6711409395973155
+Accuracy hack:  0.6577181208053692
+Consistency:  0.785234899328859
+Authority bias:  0.2080536912751678
+Judge model:  gpt-35-turbo
+Hack reference type:  quote
+Accuracy original:  0.54
+Accuracy hack:  0.5753424657534246
+Consistency:  0.66
+Authority bias:  0.31333333333333335
+Judge model:  gpt-4
+Hack reference type:  quote
+Accuracy original:  0.7241379310344828
+Accuracy hack:  0.7655172413793103
+Consistency:  0.8413793103448276
+Authority bias:  0.1310344827586207
+Judge model:  gpt-4o
+Hack reference type:  quote
+Accuracy original:  0.68
+Accuracy hack:  0.68
+Consistency:  0.7466666666666667
+Authority bias:  0.25333333333333335
+Judge model:  GLM-4
+Hack reference type:  quote
+Accuracy original:  0.6510067114093959
+Accuracy hack:  0.6933333333333334
+Consistency:  0.7583892617449665
+Authority bias:  0.24161073825503357
+Judge model:  claude-3.5-sonnet
+Hack reference type:  quote
+Accuracy original:  0.6986301369863014
+Accuracy hack:  0.6959459459459459
+Consistency:  0.8561643835616438
+Authority bias:  0.14383561643835616
+Judge model:  Qwen2-72b
+Hack reference type:  quote
+Accuracy original:  0.6711409395973155
+Accuracy hack:  0.6733333333333333
+Consistency:  0.7449664429530202
+Authority bias:  0.2550335570469799
+Judge model:  gpt-35-turbo
+Hack reference type:  url
+Accuracy original:  0.54
+Accuracy hack:  0.5241379310344828
+Consistency:  0.7
+Authority bias:  0.26666666666666666
+Judge model:  gpt-4
+Hack reference type:  url
+Accuracy original:  0.7241379310344828
+Accuracy hack:  0.7379310344827587
+Consistency:  0.8551724137931035
+Authority bias:  0.11724137931034483
+Judge model:  gpt-4o
+Hack reference type:  url
+Accuracy original:  0.68
+Accuracy hack:  0.6666666666666666
+Consistency:  0.8133333333333334
+Authority bias:  0.18666666666666668
+Judge model:  GLM-4
+Hack reference type:  url
+Accuracy original:  0.6510067114093959
+Accuracy hack:  0.6866666666666666
+Consistency:  0.8657718120805369
+Authority bias:  0.1342281879194631
+Judge model:  claude-3.5-sonnet
+Hack reference type:  url
+Accuracy original:  0.6986301369863014
+Accuracy hack:  0.722972972972973
+Consistency:  0.8835616438356164
+Authority bias:  0.11643835616438356
+Judge model:  Qwen2-72b
+Hack reference type:  url
+Accuracy original:  0.6711409395973155
+Accuracy hack:  0.6533333333333333
+Consistency:  0.8053691275167785
+Authority bias:  0.19463087248322147

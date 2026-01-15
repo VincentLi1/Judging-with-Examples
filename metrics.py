@@ -25,6 +25,7 @@ __all__ = [
     "continuous_robustness",
     "adversarial_magnitude_metrics",
     "human_alignment",
+    "krippendorff_alpha_interval",
     "score_token_stats_single",
     "score_string_stats_from_logprobs",
     "load_pointwise_results",
@@ -211,6 +212,53 @@ def adversarial_magnitude_metrics(
     asdr = float(np.mean(abs_delta) / scale)
     rmsdr = float(np.sqrt(np.mean(delta ** 2)) / scale)
     return {"aSDR": asdr, "RMSDR": rmsdr, "n": int(originals.size)}
+
+
+
+
+def krippendorff_alpha_interval(ratings: Union[Sequence[Sequence[Number]], np.ndarray]) -> float:
+    """Compute Krippendorff's alpha (interval scale) for numeric ratings."""
+    ratings_array = np.asarray(ratings, dtype=float)
+    if ratings_array.ndim != 2:
+        raise ValueError("ratings must be a 2-D array shaped (n_raters, n_items).")
+    mask = np.isfinite(ratings_array)
+    if not mask.any():
+        return np.nan
+    observed_values = np.unique(ratings_array[mask])
+    if observed_values.size <= 1:
+        return 1.0
+    diffs_sq = (observed_values[:, None] - observed_values[None, :]) ** 2
+    n_items = ratings_array.shape[1]
+    n_categories = observed_values.size
+    Do_num = 0.0
+    Do_den = 0.0
+    n_c = np.zeros(n_categories, dtype=float)
+    for j in range(n_items):
+        col = ratings_array[:, j]
+        valid = col[np.isfinite(col)]
+        n_valid = valid.size
+        if n_valid < 2:
+            continue
+        Do_den += n_valid * (n_valid - 1)
+        if n_categories == 1:
+            return 1.0
+        sorted_valid = np.sort(valid)
+        idx = np.searchsorted(observed_values, sorted_valid)
+        counts = np.bincount(idx, minlength=n_categories).astype(float)
+        n_c += counts
+        Do_num += float(np.sum(diffs_sq * (counts[:, None] * counts[None, :])))
+    if Do_den == 0.0:
+        return np.nan
+    Do = Do_num / Do_den
+    total = float(n_c.sum())
+    if total <= 1.0:
+        return np.nan
+    De_den = total * (total - 1.0)
+    De_num = float(np.sum(diffs_sq * (n_c[:, None] * n_c[None, :])))
+    De = De_num / De_den if De_den else np.nan
+    if not np.isfinite(De) or De == 0.0:
+        return 1.0 if np.isfinite(De) else np.nan
+    return float(1.0 - Do / De)
 
 
 def human_alignment(
@@ -546,11 +594,13 @@ def _compute_human_alignment(
 ) -> Dict[str, Union[int, float]]:
     judge_scores: list[float] = []
     human_means: list[float] = []
+    human_ratings: list[np.ndarray] = []
     for example in examples:
         if example.human_scores.size == 0:
             continue
         judge_scores.append(example.model_score)
         human_means.append(float(np.mean(example.human_scores)))
+        human_ratings.append(np.asarray(example.human_scores, dtype=float))
 
     if len(judge_scores) < 2:
         return {}
@@ -567,6 +617,16 @@ def _compute_human_alignment(
     summary["spearman_rho"] = alignment.get("spearman_rho", np.nan)
     summary["spearman_p"] = alignment.get("spearman_p", np.nan)
     summary["cohen_kappa"] = alignment.get("cohen_kappa", np.nan)
+    alpha = np.nan
+    if human_ratings:
+        max_raters = max(arr.size for arr in human_ratings)
+        if max_raters >= 2:
+            matrix = np.full((max_raters, len(human_ratings)), np.nan, dtype=float)
+            for col, scores in enumerate(human_ratings):
+                if scores.size:
+                    matrix[: scores.size, col] = scores
+            alpha = krippendorff_alpha_interval(matrix)
+    summary["krippendorff_alpha"] = alpha
     return summary
 
 
@@ -747,6 +807,16 @@ def analyze_pointwise_results(
         "examples_with_human_scores": len(human_examples),
         "examples_with_perturbations": len(perturbation_examples),
     }
+    if examples_list:
+        summary["score_min"] = min(float(ex.original) for ex in examples_list)
+        summary["score_max"] = max(float(ex.original) for ex in examples_list)
+    if perturbation_examples:
+        perturb_arrays = [ex.perturbed for ex in perturbation_examples if ex.n_perturbations > 0]
+        if perturb_arrays:
+            combined = np.concatenate(perturb_arrays) if len(perturb_arrays) > 1 else perturb_arrays[0]
+            if combined.size:
+                summary["perturbation_min"] = float(np.min(combined))
+                summary["perturbation_max"] = float(np.max(combined))
     if scale_max is not None:
         summary["scale_override"] = float(scale_max)
 

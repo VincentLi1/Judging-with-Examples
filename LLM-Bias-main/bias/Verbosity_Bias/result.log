@@ -1,0 +1,36 @@
+Verbosity Bias
+Judge Model: gpt-35-turbo
+Accuracy Original: 0.9248496994
+Accuracy After Verbosity: 0.877
+Verbosity Bias: 0.102
+Consistency: 0.898
+
+Judge Model: gpt-4
+Accuracy Original: 0.9295261239
+Accuracy After Verbosity: 0.9553862894
+Verbosity Bias: 0.2764645427
+Consistency: 0.7235354573
+
+Judge Model: gpt-4o
+Accuracy Original: 0.989
+Accuracy After Verbosity: 0.98
+Verbosity Bias: 0.023
+Consistency: 0.977
+
+Judge Model: GLM-4
+Accuracy Original: 0.9321058688
+Accuracy After Verbosity: 0.9128959276
+Verbosity Bias: 0.2923076923
+Consistency: 0.7076923077
+
+Judge Model: claude-3.5-sonnet
+Accuracy Original: 0.9748995984
+Accuracy After Verbosity: 0.964
+Verbosity Bias: 0.052
+Consistency: 0.948
+
+Judge Model: Qwen2-72b
+Accuracy Original: 0.9348054679
+Accuracy After Verbosity: 0.8686868687
+Verbosity Bias: 0.1643286573
+Consistency: 0.8356713427

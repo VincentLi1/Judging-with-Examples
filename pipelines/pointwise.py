@@ -25,6 +25,7 @@ from prompt_processors import (
     LLMGraderPromptProcessor,
     PairwiseComparisonPromptProcessor,
     PairwisePointwisePromptProcessor,
+    PreRenderedPromptProcessor,
     PromptExample,
     PromptProcessor,
     arena_extra_sections,
@@ -569,6 +570,15 @@ class PointwisePipeline(SimplePromptPerturbationMixin):
             "flask", project_root / "FLASK"
         )
         definitions["flask"] = (flask_loader, FLASKPromptProcessor(), prompt_template)
+
+        calm_loader = overrides.get("calm_bias_subset") or create_dataset_loader(
+            "calm_bias_subset", project_root / "LLM-Bias-main"
+        )
+        definitions["calm_bias_subset"] = (
+            calm_loader,
+            PreRenderedPromptProcessor(dataset_key="calm_bias_subset"),
+            prompt_template,
+        )
 
         mt_loader = overrides.get("mt_bench") or create_dataset_loader("mt_bench", project_root)
         mt_scale = getattr(mt_loader, "scoring_scale", 10)

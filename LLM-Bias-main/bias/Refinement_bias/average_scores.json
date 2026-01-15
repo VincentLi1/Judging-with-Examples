@@ -1,0 +1,32 @@
+{
+  "gpt-35-turbo": {
+    "initial": 4.886666666666667,
+    "polished": 5.233333333333333,
+    "full_conversation": 4.946666666666666
+  },
+  "Qwen2-72b": {
+    "initial": 8.08,
+    "polished": 8.306666666666667,
+    "full_conversation": 8.446666666666667
+  },
+  "gpt-4o": {
+    "initial": 7.374149659863946,
+    "polished": 7.443661971830986,
+    "full_conversation": 7.204081632653061
+  },
+  "claude-3.5-sonnet": {
+    "initial": 7.216216216216216,
+    "polished": 7.6375838926174495,
+    "full_conversation": 7.726666666666667
+  },
+  "gpt-4": {
+    "initial": 7.546666666666667,
+    "polished": 7.513333333333334,
+    "full_conversation": 7.68
+  },
+  "GLM-4": {
+    "initial": 6.971631205673759,
+    "polished": 7.291666666666667,
+    "full_conversation": 7.390070921985815
+  }
+}

@@ -161,6 +161,7 @@ def _compose_instruction_sections(
     max_score: Optional[float] = None,
     rubric_heading: str = "Score Rubric",
     instructions_heading: str = "Task Instructions",
+    reference_heading: str = "Reference Answer",
 ) -> tuple[str, Dict[str, Any]]:
     sections: List[str] = []
     section_map: Dict[str, Any] = {}
@@ -173,7 +174,7 @@ def _compose_instruction_sections(
     if reference_answer:
         ref_text = reference_answer.strip()
         if ref_text:
-            sections.append("### Reference Answer\n" + ref_text)
+            sections.append(f"### {reference_heading}\n" + ref_text)
             section_map["reference_answer"] = ref_text
 
     rubric_body = score_rubric_text.strip()
@@ -406,6 +407,7 @@ class BiGGenPromptProcessor(PromptProcessor):
             reference_answer=reference_answer,
             extra_sections=extra_sections,
             max_score=entry.get("max_score"),
+            reference_heading="Reference Response (Ground Truth; not produced by the model)",
         )
 
         return instruction_text, section_map
@@ -666,6 +668,35 @@ class PairwisePointwisePromptProcessor(PromptProcessor):
                         metadata=metadata,
                     )
                 )
+        return processed
+
+
+class PreRenderedPromptProcessor(PromptProcessor):
+    """Pass through already-rendered prompts stored in dataset entries."""
+
+    def __init__(self, *, dataset_key: str, default_max_score: int = 10) -> None:
+        self.dataset_key = dataset_key
+        self.default_max_score = default_max_score
+
+    def build_examples(self, raw_entries: Iterable[dict]) -> List[PromptExample]:
+        processed: List[PromptExample] = []
+        for entry in raw_entries:
+            prompt = _normalize_text(entry.get("prompt"))
+            if not prompt:
+                logging.debug("Skipping %s entry %s due to empty prompt", self.dataset_key, entry.get("id"))
+                continue
+
+            metadata = dict(entry)
+            metadata.setdefault("dataset", self.dataset_key)
+            metadata.setdefault("max_score", self.default_max_score)
+            processed.append(
+                PromptExample(
+                    id=str(entry.get("id")),
+                    instruction=prompt,
+                    output="",
+                    metadata=metadata,
+                )
+            )
         return processed
 
 

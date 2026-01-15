@@ -1,0 +1,30 @@
+Refinement-Aware Bias
+Judge Model: gpt-35-turbo
+Initial: 4.886666667
+Refined: 5.233333333
+Refined and history: 4.946666667
+
+Judge Model: gpt-4
+Initial: 8.08
+Refined: 8.306666667
+Refined and history: 8.446666667
+
+Judge Model: gpt-4o
+Initial: 7.37414966
+Refined: 7.443661972
+Refined and history: 7.204081633
+
+Judge Model: GLM-4
+Initial: 7.216216216
+Refined: 7.637583893
+Refined and history: 7.726666667
+
+Judge Model: claude-3.5-sonnet
+Initial: 7.546666667
+Refined: 7.513333333
+Refined and history: 7.68
+
+Judge Model: Qwen2-72b
+Initial: 6.971631206
+Refined: 7.291666667
+Refined and history: 7.390070922

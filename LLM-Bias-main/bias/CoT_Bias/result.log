@@ -1,0 +1,36 @@
+hack type: default:CoT_bias(g.t)
+Judge Model: gpt-35-turbo
+Accuracy Original: 0.5391705069
+Accuracy hack: 0.5597667638
+CoT Bias: 0.3008849558
+Consistency: 0.6991150442
+
+Judge Model: gpt-4
+Accuracy Original: 0.7146226415
+Accuracy hack: 0.7203947368
+CoT Bias: 0.1952861953
+Consistency: 0.8047138047
+
+Judge Model: gpt-4o
+Accuracy Original: 0.6651480638
+Accuracy hack: 0.7
+CoT Bias: 0.1675
+Consistency: 0.8325
+
+Judge Model: GLM-4
+Accuracy Original: 0.643020595
+Accuracy hack: 0.688172043
+CoT Bias: 0.1859838275
+Consistency: 0.8140161725
+
+Judge Model: claude-3.5-sonnet
+Accuracy Original: 0.7195402299
+Accuracy hack: 0.7452054795
+CoT Bias: 0.1428571429
+Consistency: 0.8571428571
+
+Judge Model: Qwen2-72b
+Accuracy Original: 0.6689497717
+Accuracy hack: 0.7037037037
+CoT Bias: 0.1424501425
+Consistency: 0.8575498575

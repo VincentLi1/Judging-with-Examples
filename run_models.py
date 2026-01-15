@@ -64,6 +64,46 @@ MODEL_SPECS: Sequence[ModelSpec] = (
             "4096",
         ),
     ),
+    ModelSpec(
+        name="gemini-2.5-flash-lite",
+        backend="gemini",
+        model_pt="models/gemini-2.5-flash-lite",
+        extra_args=(
+            "--model_name",
+            "gemini-2.5-flash-lite",
+            "--api_parallel_size",
+            "4",
+        ),
+    ),
+    ModelSpec(
+        name="glm-4.6v-flash",
+        backend="glmvllm",
+        model_pt="zai-org/GLM-4.6V-Flash",
+        extra_args=(
+            "--model_name",
+            "glm-4.6v-flash",
+            "--tensor_parallel_size",
+            "1",
+            "--gpu_memory_utilization",
+            "0.9",
+            "--swap_space",
+            "8",
+            "--max_input_len",
+            "8192",
+            "--max_model_len",
+            "16384",
+            "--eval_temperature",
+            "0.8",
+            "--eval_top_p",
+            "0.6",
+            "--eval_top_k",
+            "2",
+            "--eval_repetition_penalty",
+            "1.1",
+            "--eval_max_tokens",
+            "16384",
+        ),
+    ),
 )
 
 
@@ -100,13 +140,13 @@ def parse_args(argv: Sequence[str]) -> argparse.Namespace:
         "--gpt_key_path",
         type=str,
         default=None,
-        help="Path to API key file for GPT-OSS backend.",
+        help="Path to API key file for API-backed models (GPT, Gemini, etc.).",
     )
     parser.add_argument(
         "--gpt_account_path",
         type=str,
         default=None,
-        help="Path to account / organisation file for GPT-OSS backend.",
+        help="Path to account / organisation file for GPT/O1 backends (ignored by Gemini).",
     )
     parser.add_argument(
         "--python",
@@ -130,6 +170,16 @@ def parse_args(argv: Sequence[str]) -> argparse.Namespace:
         type=str,
         nargs=argparse.REMAINDER,
         help="Additional arguments appended to every pointwise_pipeline invocation.",
+    )
+    parser.add_argument(
+        "--include_gemini",
+        action="store_true",
+        help="Also run the Gemini Flash API judge (requires GEMINI_API_KEY or --api_key_path).",
+    )
+    parser.add_argument(
+        "--include_glm",
+        action="store_true",
+        help="Also run the GLM-4.6V-Flash judge (requires an A100 GPU).",
     )
     return parser.parse_args(argv)
 
@@ -194,8 +244,17 @@ def build_command(
 def run_all_models(cli_args: argparse.Namespace) -> None:
     failures: list[tuple[str, int]] = []
     max_attempts = max(1, getattr(cli_args, "retries", 1))
-
+    selected_specs: list[ModelSpec] = []
     for spec in MODEL_SPECS:
+        if spec.backend == "gemini" and not getattr(cli_args, "include_gemini", False):
+            print(f"Skipping {spec.name} (pass --include_gemini to enable)")
+            continue
+        if spec.backend == "glmvllm" and not getattr(cli_args, "include_glm", False):
+            print(f"Skipping {spec.name} (pass --include_glm to enable)")
+            continue
+        selected_specs.append(spec)
+
+    for spec in selected_specs:
         success = False
         skipped = False
         last_code = 0
