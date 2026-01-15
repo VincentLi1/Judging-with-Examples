@@ -1,2 +1,0 @@
-<score>10</score>
-<score>6</score>

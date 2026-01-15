@@ -1,4 +1,0 @@
-<score>2</score>
-<score>1</score>
-<score>2</score>
-<score>1</score>
