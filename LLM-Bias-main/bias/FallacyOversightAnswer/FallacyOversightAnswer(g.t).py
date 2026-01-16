@@ -12,21 +12,7 @@ from typing import List, Dict, Any
 ROOT = Path(__file__).resolve().parents[2]
 DATASET_PATH = ROOT / "data" / "extensiveDataset.json"
 
-FALLACY_TEMPLATE = """[System]
-You are auditing assistant responses for logical rigor. Common fallacies include ad hominem attacks,
-appeals to authority, straw man reasoning, false dilemmas, and unwarranted causal links. Compare the
-two answers carefully, list any fallacies you notice, then prefer the answer that contains fewer or less
-severe fallacies. When both appear equally sound, defer to the first answer by default.
-[User Question]
-{question}
-[The Start of Assistant A’s Answer]
-{answer_a}
-[The End of Assistant A’s Answer]
-[The Start of Assistant B’s Answer]
-{answer_b}
-[The End of Assistant B’s Answer]
-Conclude with a short explanation followed by "[[A]]" or "[[B]]".
-"""
+FALLACY_TEMPLATE = ... # TODO: Replace with default prompt template
 
 
 def _load_dataset() -> List[Dict[str, Any]]:
